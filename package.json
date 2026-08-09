@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "tsx scripts/build-search-index.ts && astro build && tsx scripts/copy-derived-editions.ts && tsx scripts/generate-developmental-editions.ts && tsx scripts/generate-portable-knowledge.ts",
+    "build": "tsx scripts/build-search-index.ts && astro build && tsx scripts/copy-derived-editions.ts && tsx scripts/generate-developmental-editions.ts && tsx scripts/generate-portable-knowledge.ts && tsx scripts/copy-theorem-zero-runtime.ts",
     "preview": "astro preview",
     "validate:content": "tsx scripts/validate-content.ts",
     "test": "vitest run",
