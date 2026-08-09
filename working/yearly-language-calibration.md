@@ -1,476 +1,404 @@
-# Working Language Calibration: Ages 5–18
+# Working Language Calibration: Recursive Developmental Editions, Ages 5–18
 
 **Status:** Editorial control document. Not canonical theory.
 
-This file governs **how each yearly essay is written**, not what the theory claims.
+## Governing correction
 
-The essays are intended for adult readers. The age sequence is an invisible authorial control system. Nevertheless, the language at each stage should genuinely respect the cognitive and linguistic load associated with that age. The point is not to imitate children, use childish jokes, or announce an age. The point is to constrain vocabulary, sentence structure, abstraction, inferential distance, and conceptual density so that the reader experiences a natural deepening.
+This file controls **how the complete theory is articulated at each developmental year**.
 
-The structure and rhetorical furniture remain stable. The examples remain substantially stable. The understanding deepens because both **the concepts permitted** and **the language available to express them** become progressively richer.
+It must be read together with `working/yearly-developmental-essay-plan.md`.
 
-The guiding principle is lossless simplification:
+Every edition from 6 through 18 is approximately 3,000 words and traverses the **whole system**. The language calibration therefore does not assign advanced vocabulary to isolated topic-essays. It determines how every recurring part of the architecture can be truthfully expressed at that year’s linguistic and cognitive resolution.
 
-> Earlier language should be simple because it says less at once, not because it says something false.
+The actual reader is adult throughout. The developmental ages are an invisible authorial control system.
 
----
+> **Adult audience; genuinely age-calibrated language; complete theory every year.**
 
-## Global language rules
-
-1. **Concrete before abstract.** Early essays describe what happens in situations before naming the general structure.
-2. **One inferential step at a time.** Early prose should rarely require the reader to hold several qualifications in suspension.
-3. **Terminology follows comprehension.** A technical term should appear only after the reader can already recognize the distinction it names.
-4. **No juvenile performance.** Avoid baby talk, schoolroom cheerfulness, fake dialogue with a child, or simplified spelling.
-5. **Adult dignity throughout.** The prose may be simple, but it should remain calm, elegant, and serious.
-6. **Recurring examples gain resolution.** The same event can first be described in ordinary terms, then structurally, then formally.
-7. **Syntax tracks abstraction.** Sentence complexity should increase gradually with conceptual complexity.
-8. **Modality becomes more exact over time.** Early essays can say “can,” “often,” and “in this case”; later essays distinguish demonstration, proposal, hypothesis, possibility, necessity, and empirical warrant.
-9. **Do not front-load the mature vocabulary.** The reader should feel the structure before receiving its final name.
-10. **By Year 18, nothing important is linguistically withheld.** The reader should be able to enter the monograph, Atlas, glossary, academic positioning, and Research Status without a conceptual gear change.
+The point is not to imitate a child. It is to limit vocabulary, sentence structure, abstraction, inferential distance, conceptual compression, and qualification so that the theory deepens naturally without ever teaching something that must later be unlearned.
 
 ---
 
-# Year 5 baseline
+# Global rules
 
-The existing Five-Year-Old Edition is the tonal and structural starting point.
-
-### Language characteristics
-
-- short to medium sentences;
-- concrete physical examples;
-- ordinary verbs: asks, stops, opens, fixes, joins, works;
-- one distinction per paragraph;
-- technical terms introduced with immediate plain-language glosses;
-- repeated question structure;
-- little nominal abstraction;
-- almost no extended qualification inside one sentence.
-
-### Permitted abstraction
-
-The reader can understand that a situation can be unfinished in a particular way, that different kinds of changes answer different problems, and that three recurring questions can be combined.
-
-### Avoid
-
-“Structural determination,” “semantic individuation,” “admissible region,” “functional irreducibility,” “prospective generation,” “epistemic warrant,” and similarly compressed mature formulations.
+1. **Whole theory every year.** Opening pressure, all three axes, the 54-position architecture, coordinate generation, form/crystallization/manifestation, intelligibility/truth, formation, theory level, and claims boundary must all remain present.
+2. **Concrete before abstract.** Early editions show the distinction before naming it.
+3. **One inferential step at a time.** Early prose does not ask the reader to hold several qualifications in suspension.
+4. **Terminology follows comprehension.** A mature term appears only after the reader can already recognize what it names.
+5. **No juvenile performance.** No baby talk, fake child dialogue, schoolroom tone, simplified spelling, or “now that you are seven” framing.
+6. **Adult dignity throughout.** Simplicity is conceptual economy.
+7. **Recurring examples gain resolution.** Do not replace familiar examples merely to make later essays seem advanced.
+8. **Syntax tracks abstraction.** Sentence complexity grows with conceptual complexity.
+9. **Modality becomes increasingly exact.** “Can” and “often” eventually differentiate into internal demonstration, hypothesis, empirical warrant, necessity, and falsifiability.
+10. **Nothing important is revoked.** Later language should say “more precisely,” not “actually, the earlier account was wrong.”
+11. **No mature concept is absent merely because its mature name is withheld.** The early edition must express the same structural truth concretely.
+12. **By 18, nothing important is withheld.** The reader should be able to enter the canonical monograph and research documents without a conceptual gear change.
 
 ---
 
-# Year 6
+# Developmental language profiles
 
-### Linguistic target
+## Year 5 — Existing baseline
 
-Still strongly concrete. Sentences may become slightly longer, but almost every abstract statement should be anchored immediately in an example.
+**Mode:** concrete recognition.
 
-### Sentence form
+Short-to-medium sentences, familiar physical examples, ordinary verbs, one distinction per paragraph, repeated questions, immediate glosses for unavoidable terminology.
 
-Mostly one main clause plus one explanatory clause.
-
-Example shape:
-
-> A game can stop without being finished. If everyone walks away while the question is still unanswered, the activity has ended, but the problem has not been settled.
-
-### Vocabulary permitted
-
-finish, enough, demand, answer, still open, no longer needed, what the situation was waiting for, what still had to happen.
-
-### Vocabulary preferably withheld
-
-sufficiency, governing demand, indexed completion, structural condition.
-
-The concept may be present before the mature wording.
-
-### Conceptual load
-
-One new distinction: **stopping versus completing**.
-
-The phrase “enough for this problem” can prepare the later term “sufficiency.”
+The complete architecture can be stated, but abstract relations among its parts remain largely implicit.
 
 ---
 
-# Year 7
+## Year 6 — Concrete causal explanation
 
-### Linguistic target
+**Mode:** “what was needed, and what happened that made it enough?”
 
-Concrete comparison becomes central. The prose can ask the reader to compare two or three cases and identify what stayed the same.
+### Syntax
 
-### Sentence form
+Mostly one main clause plus one explanatory clause. Short chains of cause and consequence.
 
-Two-step causal reasoning is acceptable. Parallel sentence structures should do much of the explanatory work.
+### Preferred language across the system
 
-Example shape:
+- opening pressure → “what the situation is still waiting for”
+- Transformation Pattern → “the kind of change that was needed”
+- Completion Topology → “how that change became enough”
+- Persistence Mode → “how the answer is still there afterward”
+- 54 positions → “the different events made when the three answers are combined”
+- generated form → “the shape made by the three answers together”
+- crystallization → “a useful name for that shape”
+- manifestation → “a real case where the shape happens”
+- formation → “one part can finish before the whole thing finishes”
+- intelligibility/truth → “something can be clear enough to understand and still be wrong”
+- claims → “we have found a pattern; that does not mean everything must fit it”
 
-> In all three cases, the same kind of problem changes. What differs is the way the change becomes enough.
+### New linguistic capacity
 
-### Vocabulary permitted
+Stopping versus genuinely answering what was unfinished.
 
-kind of change, centre, spread across, no longer in charge, enough, same change / different completion.
+### Withhold where possible
 
-### First technical release
-
-**Transformation Pattern** and **Completion Topology** may be used after the contrast has been made clear.
-
-### Special handling of Release
-
-Prefer “the old constraint is no longer in charge” before “de-governance.” The mature term can appear later as a gloss.
-
-### Conceptual load
-
-One primary distinction: **what changed ≠ what made the change enough**.
+sufficiency, governing demand, structural determination, semantic individuation, state-space, epistemic warrant.
 
 ---
 
-# Year 8
+## Year 7 — Controlled comparison
 
-### Linguistic target
+**Mode:** “these look similar, but they answer different questions.”
 
-The prose can sustain one abstract noun at a time if it remains tied to a familiar case.
+### Syntax
 
-### Sentence form
+Parallel comparisons; two-step causal reasoning.
 
-Short chains of three related sentences are preferable to one heavily qualified sentence.
+### Preferred language
 
-Example shape:
+- opening pressure → “the kind of unfinished problem”
+- Transformation → “what kind of change happened”
+- Topology → “what made that change enough”
+- Release → “the old thing is no longer in charge of what happens next”
+- Persistence → “what kind of result remains”
+- 54 positions → “combinations of three different answers”
+- generated form → “each answer changes the final shape in its own way”
+- crystallization → “the label comes after the shape”
+- manifestation → “different things can show the same pattern”
+- formation → “how it got there is not quite the same as what it became”
+- claims → “different questions inside the system are not yet proof about how every mind works”
 
-> The bridge remains in more than one sense. It stands as a finished object. It also holds because its parts support one another. And it changes what can happen, because the car can now cross.
+### Technical terms
 
-### Vocabulary permitted
+Transformation Pattern, Completion Topology, Persistence Mode may be used after their functional differences have been shown.
 
-remain, result, relation, support, ability, effect, available afterward.
+---
+
+## Year 8 — Concrete-to-abstract mapping
+
+**Mode:** recurring structure across changing material.
+
+### Syntax
+
+Three-step explanatory sequences are acceptable. One abstract noun at a time, immediately anchored in a case.
+
+### Preferred language
+
+invariant can still be avoided; prefer “what stays the same when the example changes.”
+
+Standing/Bearing/Efficacy can be explained as three different senses in which a result remains available.
+
+The 54 positions become “a structured space of possible completed shapes,” but `state-space` need not yet be used.
+
+Generated form becomes “the same event-shape showing up in different material.”
+
+The claims boundary becomes “seeing the same pattern in many examples is not the same as proving it appears everywhere.”
+
+---
+
+## Year 9 — Invariant and substitution reasoning
+
+**Mode:** hold one contribution fixed and vary the others.
+
+### Syntax
+
+Controlled abstraction; explicit comparison of variables without symbolic notation.
+
+### Available vocabulary
+
+contribution, invariant, substitute, hold fixed, vary, recurring role, reduce, independent contribution.
+
+### Whole-system expression
+
+The three axes can now be discussed as functionally separable contributions. Coordinate families can be compared systematically. Cross-domain manifestations can serve as evidence for structural recurrence. Historical routes can vary while a completed structure remains comparable.
+
+### Claims control
+
+“Functional independence” requires an immediate qualification: independence inside the grammar is not yet statistical, causal, psychological, or metaphysical independence.
+
+---
+
+## Year 10 — Generative abstraction
+
+**Mode:** rule over examples.
+
+### Syntax
+
+Moderately complex sentences with one embedded qualification.
+
+### Available vocabulary
+
+generate, constraint, grammar, coordinate, event-shape, composition, rule.
+
+### Whole-system expression
+
+Opening pressure constrains what kind of transformation can answer a situation. The three axes are compositional roles. The 54 positions are generated combinations rather than memorized categories. The coordinate produces an event-shape before a canonical name is consulted.
 
 ### Technical release
 
-**Persistence Mode**, Standing, Bearing, Efficacy.
+**constraint grammar**, **coordinate-generated form**, first careful use of **phenomenological syntax** after a plain-language explanation.
 
-### Conceptual load
+### Claims control
 
-One distinction with three values: **three ways a completed result remains available**.
-
-### Avoid
-
-“post-completion availability” as an unexplained phrase. The phrase may appear only after the examples have earned it.
+Generation inside the architecture does not establish cognitive universality.
 
 ---
 
-# Year 9
+## Year 11 — Layered representation
 
-### Linguistic target
+**Mode:** distinguish structure, selected semantic realization, and particular instance.
 
-The prose can begin to reason explicitly about variables while staying non-symbolic.
+### Syntax
 
-### Sentence form
+Longer contrastive constructions become appropriate.
 
-Comparison sentences with controlled abstraction:
+### Available vocabulary
 
-> Keep the kind of change the same and alter the way it becomes complete. Something recognizable remains constant.
-
-### Vocabulary permitted
-
-hold one thing fixed, vary another, contribution, separate question, recurring role, cannot be reduced to.
-
-### Technical release
-
-**independent contribution** may be used carefully. “Functional independence” can appear with an immediate limitation.
-
-### Conceptual load
-
-The reader can now follow recurrence under substitution.
-
-### Claims discipline
-
-Always distinguish internal functional independence from claims about psychology, causation, or statistics.
-
----
-
-# Year 10
-
-### Linguistic target
-
-The reader can now tolerate a genuinely abstract object if it has been built from repeated examples.
-
-### Sentence form
-
-Moderately complex sentences with one embedded qualification are acceptable.
-
-### Vocabulary permitted
-
-generate, constraint, grammar, pattern, coordinate, event-shape, rule, combination.
-
-### Technical release
-
-**constraint grammar**, **coordinate-generated form**, and a first careful use of **phenomenological syntax**.
-
-“Phenomenological syntax” must be glossed as the shape of an event as it becomes complete, not ordinary sentence syntax.
-
-### Conceptual load
-
-The system is no longer merely a list of forms. The reader can grasp that the three answers jointly constrain what kind of event belongs at a position.
-
----
-
-# Year 11
-
-### Linguistic target
-
-Three levels of description can now be held apart in one discussion.
-
-### Sentence form
-
-Longer contrastive constructions become appropriate:
-
-> The coordinate-generated form tells us what the structure requires; the canonical crystallization selects a particularly clear semantic realization; the concrete manifestation is an instance in some actual material.
-
-### Vocabulary permitted
-
-form, name, realization, instance, structure, semantic choice, general / particular.
+form, realization, instance, semantic, structural, individuation, theoretical priority.
 
 ### Technical release
 
 **coordinate-generated form**, **canonical crystallization**, **concrete manifestation**, **structural determination**, **semantic individuation**.
 
-### Conceptual load
+### Whole-system expression
 
-Three nested representational/theoretical levels.
-
-### Avoid
-
-Introducing “semantic individuation” before the reader has already understood why the same generated form can support more than one particular realization.
+Every recurring example can now be located simultaneously at coordinate level, crystallization level, and manifestation level. The 54 positions define structural regions rather than 54 necessary names.
 
 ---
 
-# Year 12
+## Year 12 — Graded structural abstraction
 
-### Linguistic target
+**Mode:** bounded freedom inside constraint.
 
-The prose may now use abstract spatial metaphors such as width, region, narrowness, latitude, provided their theoretical meaning is made explicit.
+### Syntax
 
-### Sentence form
+Multi-clause comparison is normal. Abstract spatial metaphors may be used carefully.
 
-Multi-clause comparison becomes normal.
+### Available vocabulary
 
-### Vocabulary permitted
-
-narrow, broad, constrained, freedom, range, latitude, region, what the coordinate requires versus what it leaves open.
+narrow, broad, constrained, latitude, admissible, region, degree, semantic freedom.
 
 ### Technical release
 
-**Near-determinate**, **Tightly constrained**, **Open realization**, **admissible region**, **semantic freedom**, **constraint strength**.
+**Near-determinate**, **Tightly constrained**, **Open realization**, **constraint strength**, **admissible region**, **semantic freedom**.
 
-### Conceptual load
+### Whole-system expression
 
-The reader can understand graded determination without treating freedom as arbitrariness.
+The same three-axis grammar generates coordinates of differing semantic width. Every coordinate is structurally specified, but not every coordinate fixes its crystallization equally tightly.
 
 ---
 
-# Year 13
+## Year 13 — Structural/historical dual description
 
-### Linguistic target
+**Mode:** completed form versus process of formation.
 
-Temporal and structural descriptions can now be separated explicitly.
+### Syntax
 
-### Sentence form
+Narrative sequence and structural analysis can be held in parallel.
 
-Narrative-to-analysis transitions can become more sophisticated. The reader can follow a sequence of local events and then a higher-level description of the completed whole.
+### Available vocabulary
 
-### Vocabulary permitted
-
-history, local, global, provisional, governing, landing, reanalysis, final organization.
+historical, local, global, provisional, governing, landing, reanalysis, final organization.
 
 ### Technical release
 
 **historical formation**, **local completion**, **governing transformation**, **landing**, **persistent result**.
 
-### Conceptual load
+### Whole-system expression
 
-The reader can distinguish a completed coordinate from the path by which it was reached.
+The coordinate describes achieved organization. Formation history describes how that organization came to govern the whole. Sentences can now be treated explicitly as a privileged observational case rather than the ontology of the grammar.
 
-### Important terminology control
+### Terminology control
 
-Explicitly distinguish **Opening** as a Transformation Pattern from **opening** as a historical phase.
+Opening (Transformation Pattern) must remain distinct from opening (historical phase).
 
 ---
 
-# Year 14
+## Year 14 — Light formalism
 
-### Linguistic target
+**Mode:** nested periodic organization.
 
-The prose can now sustain light formal abstraction and patterned numerical reasoning.
+### Syntax
 
-### Sentence form
+Longer analytical paragraphs; each should have a stated invariant.
 
-Longer explanatory paragraphs are acceptable if each paragraph has a clearly stated invariant.
+### Available vocabulary
 
-### Vocabulary permitted
-
-periodic, rhythm, cycle, state-space, substitution, recurrence, nested pattern, slow rhythm / fast rhythm.
+periodic, state-space, rhythm, cycle, substitution, recurrence, Cartesian product if properly prepared.
 
 ### Technical release
 
-**periodicity**, **finite state-space**, and the nested 6 × 3 × 3 organization as a formal pattern.
+**periodicity**, **finite state-space**, nested **6 × 3 × 3** rhythms.
 
-### Conceptual load
+### Whole-system expression
 
-The reader can see repeated functional roles across the Atlas rather than merely repeated names.
+The six transformations define six nine-position families; topologies repeat within them; persistence modes cycle within topologies. Generated roles repeat without semantic identity.
 
-### Avoid
+### Claims control
 
-Using “mathematical proof,” “complete formal system,” or “axiomatized” unless explicitly denying that stronger status.
+Finite and periodic does not mean metaphysically exhaustive, mathematically proven complete, or fully axiomatized.
 
 ---
 
-# Year 15
+## Year 15 — Prospective conditional reasoning
 
-### Linguistic target
+**Mode:** derive before revealing the example.
 
-The prose can now reason prospectively rather than only descriptively.
+### Syntax
 
-### Sentence form
+Conditional reasoning can become central.
 
-Conditional constructions become central:
+### Available vocabulary
 
-> If a coordinate fixes this kind of transformation, this topology of sufficiency, and this persistence mode, then any admissible realization must satisfy all three constraints.
-
-### Vocabulary permitted
-
-prospective, derive, predict in the internal sense, admissible, candidate realization, constraint satisfaction, before seeing the example.
+prospective, derive, candidate, admissible, constraint satisfaction, prediction with qualification.
 
 ### Technical release
 
-**prospective generation**, **generated sentence**, **admissible region**, **constraint satisfaction**.
+**prospective generation**, **generated sentence**, **constraint satisfaction**.
 
-### Conceptual load
+### Whole-system expression
 
-The reader can distinguish internal derivation from empirical prediction.
+Given a coordinate, derive a domain-general event-sentence, delimit its admissible region, then reveal crystallizations and manifestations. Formation history remains a separate question.
 
-### Claims discipline
+### Claims control
 
-“Predict” must be qualified unless referring to a tested empirical prediction. Prefer “prospectively generate” for the internal theoretical operation.
+Prefer “prospectively generate” to “predict” unless discussing actual empirical testing.
 
 ---
 
-# Year 16
+## Year 16 — Metatheoretical history
 
-### Linguistic target
+**Mode:** the theory can understand its own conceptual development.
 
-The prose can now carry conceptual history and metatheory at the same time.
+### Syntax
 
-### Sentence form
+Extended historical contrast and qualification are appropriate.
 
-More extended sentences with historical contrast and qualification are appropriate.
-
-### Vocabulary permitted
+### Available vocabulary
 
 reinterpretation, explanatory level, under-theorized, ontology, representation, retrospective reconstruction, theoretical distance.
 
-### Technical release
+### Whole-system expression
 
-Work / Orientation / Survivor may be discussed as historical vocabulary; mature terms should govern current exposition.
-
-### Conceptual load
-
-The reader can understand that a theory may preserve its architecture while changing its understanding of what that architecture explains.
-
-### Avoid
-
-Treating historical vocabulary as interchangeable with mature vocabulary without marking the change in theoretical status.
+Work/Orientation/Survivor can be reconstructed as historical precursors to Transformation/Topology/Persistence. The 6×3×3 skeleton persists while its theoretical interpretation changes. Sentence resolution becomes the route of discovery rather than the ontology of the mature framework.
 
 ---
 
-# Year 17
+## Year 17 — Academic positioning
 
-### Linguistic target
+**Mode:** mature disciplinary and explanatory-level distinction.
 
-Fully adult academic prose becomes appropriate, though clarity should still dominate density.
+### Syntax
 
-### Sentence form
+Fully adult academic prose, with complex qualification and explicit scope conditions.
 
-Complex qualification, contrast among disciplines, and explicit scope conditions are now permitted.
+### Available vocabulary
 
-### Vocabulary permitted
+functional-phenomenological, explanatory level, disciplinary location, mechanism, implementation, computational, epistemic, empirical, ontological.
 
-functional-phenomenological, explanatory level, disciplinary location, mechanism, implementation, representation, computational, epistemic, empirical, ontological.
+### Whole-system expression
 
-### Technical release
+The complete grammar can be located relative to theoretical cognitive science, philosophy of cognitive science, phenomenology, linguistics, cognitive psychology, systems theory, AI/computation, and epistemology without collapsing into any of them.
 
-The full vocabulary of the academic-positioning document may be used, provided distinctions are preserved.
+### Claims language
 
-### Conceptual load
-
-The reader can locate the theory relative to neighboring disciplines without collapsing resemblance into identity.
-
-### Claims discipline
-
-Use formulations such as “best current placement,” “closest descriptive neighbor,” “does not presently specify,” and “would require validation.”
+“best current placement,” “closest descriptive neighbor,” “does not presently specify,” “would require validation.”
 
 ---
 
-# Year 18
+## Year 18 — Full scholarly precision
 
-### Linguistic target
+**Mode:** formal and epistemic self-understanding.
 
-Full mature academic precision. Nothing important is simplified merely to preserve the developmental conceit.
+### Syntax
 
-### Sentence form
+The qualification structure of the monograph, glossary, academic positioning, and Research Status may now be used directly.
 
-The prose can use the qualification structure of the monograph, glossary, academic positioning, and Research Status directly.
+### Available vocabulary
 
-### Vocabulary permitted
+internal demonstration, external empirical validation, exhaustiveness, metaphysical necessity, unique recoverability, inter-rater reliability, ablation, baseline comparison, falsification, causal mechanism, independent replication, empirical independence.
 
-internal demonstration, empirical validation, exhaustiveness, metaphysical necessity, unique recoverability, inter-rater reliability, ablation, baseline, falsification, causal mechanism, independent replication, empirical independence.
+### Whole-system expression
 
-### Conceptual load
-
-The reader should be able to distinguish:
-
-- what the corpus demonstrates internally;
-- what the theory proposes;
-- what remains hypothesis;
-- what has not been proven;
-- what evidence could support it;
-- what evidence could weaken or defeat it.
+Nothing important remains merely implicit. The reader can state the mature definitions of opening pressure, all three axes, 54-position periodic state-space, functional independence, coordinate-generated phenomenological syntax, admissible regions, canonical crystallization, concrete manifestation, constraint strength, historical formation, intelligibility/truth ordering, academic position, demonstrated internal results, open hypotheses, unproven stronger claims, and empirical research programme.
 
 ### Final tonal move
 
-Only after the mature claims boundary has been stated should the essay reveal the hidden authorial device. The line must feel like a retrospective recognition, not a joke that makes the preceding essays seem unserious.
+Only after this full account is complete should the hidden developmental device be revealed.
 
 **Required final line:**
 
 > **And, of course, we knew all along that you were never five.**
 
-The line means: the reader was always respected as an adult; the simplicity was deliberate control of conceptual load; the age progression governed the explanation rather than defining the audience.
-
 ---
 
-# Cross-year linguistic progression at a glance
+# Cross-year compression table
 
-| Year | Dominant language mode | Typical abstraction load |
+| Year | Dominant linguistic operation | Whole-theory resolution |
 |---|---|---|
-| 5 | concrete description | one visible distinction |
-| 6 | concrete causal explanation | one hidden criterion |
-| 7 | controlled comparison | two functions separated |
-| 8 | concrete-to-abstract mapping | three modes of remainder |
-| 9 | invariant/substitution reasoning | functional separability |
-| 10 | generative abstraction | rule over examples |
-| 11 | layered representation | form/name/instance |
-| 12 | graded structural abstraction | bounded semantic latitude |
-| 13 | historical + structural dual description | process versus achieved form |
+| 5 | concrete recognition | complete skeleton |
+| 6 | concrete causal explanation | enough-for-this-problem |
+| 7 | controlled comparison | three different questions |
+| 8 | cross-material recognition | recurring event-shapes |
+| 9 | invariant/substitution reasoning | functionally separable contributions |
+| 10 | generative abstraction | constraint grammar |
+| 11 | layered representation | form / crystallization / manifestation |
+| 12 | graded abstraction | constraint strength / semantic latitude |
+| 13 | dual structural-historical description | completed form / formation history |
 | 14 | light formalism | periodic state-space |
-| 15 | prospective conditional reasoning | admissible generation |
-| 16 | metatheoretical history | reinterpretation of architecture |
-| 17 | academic positioning | explanatory-level distinctions |
-| 18 | full scholarly precision | claims, evidence, falsification |
+| 15 | prospective derivation | admissible generation |
+| 16 | metatheoretical history | reinterpretation of surviving architecture |
+| 17 | disciplinary abstraction | explanatory level / academic position |
+| 18 | full scholarly qualification | architecture + research-status boundary |
 
 ---
 
-# Draft audit questions
+# Draft audit
 
-For every yearly essay, ask:
+For every yearly essay ask:
 
-1. Could the core reasoning be followed at the intended hidden age without prior exposure to the later vocabulary?
-2. Is the prose still dignified enough for an adult reader?
-3. Has any technical term appeared before the reader has already understood the distinction it names?
-4. Has sentence complexity increased faster than conceptual understanding?
-5. Has a recurring example genuinely gained analytical resolution?
-6. Does the essay preserve every important truth established earlier?
-7. Does the final paragraph create the exact question the next essay answers?
-8. Would the mature version be able to say “yes, and more precisely…” rather than “that earlier explanation was wrong”? 
+1. Does it articulate the **whole system**, rather than merely the new distinction for that age?
+2. Could the core reasoning be followed at the hidden developmental age without relying on later vocabulary?
+3. Does the prose retain adult dignity?
+4. Has any term appeared before the reader understands what it names?
+5. Has sentence complexity increased faster than conceptual capacity?
+6. Do recurring examples gain genuine analytical resolution?
+7. Does every earlier truth survive?
+8. Is the claims boundary expressed at the available resolution rather than omitted?
+9. Does the new distinction alter the reader’s understanding of the whole architecture?
+10. Can the next edition truthfully say “yes — and more precisely…”?
 
-If the answer to any of these is no, the developmental progression has failed even if the individual essay is otherwise accurate.
+If any answer is no, the developmental progression has failed even if the isolated explanation is accurate.
