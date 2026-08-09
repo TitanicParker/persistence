@@ -22,6 +22,7 @@ const expositionEssays = [
 ---
 <BaseLayout description="A static digital publication of the Constraint Grammar of Completed Intelligibility, with simple explanations, a portable study edition, formal theory, a 54-cell atlas, explanatory forms, glossary, research status, and derived essays." sourceStatus="Publication entrance · editorial framing">
   <div class="page home-page">
+    <a class="sentence-receptacle-link" href={publicationPath('sentence-receptacle/')} aria-label="Sentence Receptacle — future work">Sentence Receptacle</a>
     <aside class="homepage-rights-notice" aria-label="Copyright and rights status"><span>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</span><a href={publicationPath('rights/')}>Rights & Permissions →</a></aside>
 
     <section class="hero home-hero">
@@ -59,3 +60,48 @@ const expositionEssays = [
     </section>
   </div>
 </BaseLayout>
+
+<style>
+  .home-page { position: relative; }
+  .sentence-receptacle-link {
+    position: absolute;
+    top: -1.35rem;
+    right: 0;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    min-height: 2rem;
+    padding: .38rem .65rem;
+    border: 1px solid var(--border, #d8d3c8);
+    border-radius: 999px;
+    color: inherit;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: .58;
+    transition: opacity .15s ease, background .15s ease, transform .15s ease;
+  }
+  .sentence-receptacle-link:hover,
+  .sentence-receptacle-link:focus-visible {
+    opacity: 1;
+    background: rgba(247,245,239,.9);
+    transform: translateY(-1px);
+  }
+  .sentence-receptacle-link:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+  }
+  @media (max-width: 700px) {
+    .sentence-receptacle-link {
+      position: static;
+      margin: 0 0 .8rem auto;
+      width: max-content;
+      display: flex;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .sentence-receptacle-link { transition: none; }
+  }
+</style>
