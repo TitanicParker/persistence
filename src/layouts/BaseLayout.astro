@@ -8,15 +8,7 @@ const {
   description = 'A periodic generative theory of transformation, completion, and persistence.',
   sourceStatus,
 } = Astro.props;
-const navItems = [
-  ['Theory', 'theory/'],
-  ['Atlas', 'atlas/'],
-  ['54 Forms', 'forms/'],
-  ['Glossary', 'glossary/'],
-  ['Research', 'research-status/'],
-  ['About', 'about/'],
-  ['Rights', 'rights/'],
-];
+const navItems = [['Theory','theory/'],['Atlas','atlas/'],['54 Forms','forms/'],['Glossary','glossary/'],['Research','research-status/'],['About','about/'],['Rights','rights/']];
 const currentPath = Astro.url.pathname;
 const isActive = (path: string) => currentPath === publicationPath(path) || currentPath.startsWith(publicationPath(path));
 const canonical = new URL(currentPath, Astro.site ?? 'https://titanicparker.github.io');
@@ -27,65 +19,18 @@ const showRightsGate = currentPath !== rightsPath && currentPath !== `${rightsPa
 <!doctype html>
 <html lang="en" class:list={{ 'cg-rights-locked': showRightsGate }}>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
-    <link rel="icon" href={publicationPath('favicon.svg')} type="image/svg+xml" />
-    <link rel="stylesheet" href={publicationPath('rights-gate.css')} />
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Constraint Grammar of Completed Intelligibility" />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:url" content={canonical} />
-    <meta property="og:image" content={socialImage} />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={socialImage} />
-    <title>{title}</title>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content={description} />
+    <link rel="canonical" href={canonical} /><link rel="icon" href={publicationPath('favicon.svg')} type="image/svg+xml" /><link rel="stylesheet" href={publicationPath('rights-gate.css')} />
+    <meta property="og:type" content="website" /><meta property="og:site_name" content="Constraint Grammar of Completed Intelligibility" /><meta property="og:title" content={title} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={socialImage} /><title>{title}</title>
   </head>
   <body>
-    {showRightsGate && (
-      <section class="cg-rights-gate" id="cg-rights-gate" aria-labelledby="cg-rights-gate-title">
-        <div class="cg-rights-gate__panel">
-          <p class="cg-rights-gate__eyebrow">Copyright & rights notice</p>
-          <h1 id="cg-rights-gate-title">Before entering this publication</h1>
-          <p class="cg-rights-gate__copyright">Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</p>
-          <p>This publication is publicly viewable but has not been released under an open-source, Creative Commons, or other general reuse license.</p>
-          <p>By selecting the acknowledgement below, you confirm that the copyright and rights status of this publication has been brought to your attention. This acknowledgement does not itself grant any license or permission to reproduce, adapt, redistribute, publish, sublicense, sell, or create derivative works.</p>
-          <div class="cg-rights-gate__actions">
-            <button class="cg-rights-gate__button" type="button" data-cg-rights-acknowledge>I acknowledge the Rights & Permissions notice — Enter publication</button>
-            <a href={rightsPath}>Read Copyright, Rights & Permissions</a>
-          </div>
-          <p class="cg-rights-gate__note">Acknowledgement is stored only in this browser and may be requested again if the notice changes.</p>
-        </div>
-      </section>
-    )}
+    {showRightsGate && (<section class="cg-rights-gate" id="cg-rights-gate" aria-labelledby="cg-rights-gate-title"><div class="cg-rights-gate__panel"><p class="cg-rights-gate__eyebrow">Copyright & rights notice</p><h1 id="cg-rights-gate-title">Before entering this publication</h1><p class="cg-rights-gate__copyright">Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</p><p>This publication is publicly viewable but has not been released under an open-source, Creative Commons, or other general reuse license.</p><p>A limited personal-study permission allows the Portable Knowledge Edition to be downloaded and used as reference material in a GPT or other AI tool for private study and exploration. Broader reproduction, redistribution, adaptation, publication, commercial use, or other reuse requires prior written permission from the copyright holder.</p><p>By selecting the acknowledgement below, you confirm that the copyright and rights status of this publication has been brought to your attention. The acknowledgement itself grants no rights beyond the permission stated on the Rights & Permissions page.</p><div class="cg-rights-gate__actions"><button class="cg-rights-gate__button" type="button" data-cg-rights-acknowledge>I acknowledge the Rights & Permissions notice — Enter publication</button><a href={rightsPath}>Read Copyright, Rights & Permissions</a></div><p class="cg-rights-gate__note">Acknowledgement is stored only in this browser and may be requested again if the notice changes.</p></div></section>)}
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    <div class="site-shell">
-      <header class="site-header">
-        <a class="site-title" href={publicationPath()}>Constraint Grammar</a>
-        <nav class="site-nav" aria-label="Publication">
-          {navItems.map(([label, path]) => (
-            <a href={publicationPath(path)} aria-current={isActive(path) ? 'page' : undefined}>{label}</a>
-          ))}
-        </nav>
-      </header>
+    <div class="site-shell"><header class="site-header"><a class="site-title" href={publicationPath()}>Constraint Grammar</a><nav class="site-nav" aria-label="Publication">{navItems.map(([label,path]) => (<a href={publicationPath(path)} aria-current={isActive(path) ? 'page' : undefined}>{label}</a>))}</nav></header>
       {sourceStatus && <div class="document-status"><span>{sourceStatus}</span></div>}
       <main id="main-content" tabindex="-1"><slot /></main>
-      <footer class="site-footer">
-        <p><strong>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</strong></p>
-        <p>Constraint Grammar of Completed Intelligibility. Source texts remain canonical; interface copy and derived editions are identified by status.</p>
-        <nav aria-label="Publication information">
-          <a href={publicationPath('research-status/')}>Research status</a>
-          <a href={publicationPath('about/')}>About & provenance</a>
-          <a href={publicationPath('rights/')}>Rights & Permissions</a>
-          <a href={publicationPath('search/')}>Search</a>
-          <a href="https://github.com/TitanicParker/persistence">Repository</a>
-        </nav>
-      </footer>
-    </div>
-    <script src={publicationPath('rights-gate.js')} defer></script>
+      <footer class="site-footer"><p><strong>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</strong></p><p>Constraint Grammar of Completed Intelligibility. Source texts remain canonical; interface copy and derived editions are identified by status.</p><nav aria-label="Publication information"><a href={publicationPath('constraint-grammar-portable-knowledge-edition.txt')} download>Portable Knowledge Edition (.txt)</a><a href={publicationPath('research-status/')}>Research status</a><a href={publicationPath('about/')}>About & provenance</a><a href={publicationPath('rights/')}>Rights & Permissions</a><a href={publicationPath('search/')}>Search</a><a href="https://github.com/TitanicParker/persistence">Repository</a></nav></footer>
+    </div><script src={publicationPath('rights-gate.js')} defer></script>
   </body>
 </html>
