@@ -1,9 +1,19 @@
 import { marked } from 'marked';
+import { slugify } from './slugs';
 
 marked.setOptions({ gfm: true, breaks: false });
 
 export function renderMarkdown(raw: string): string {
-  return marked.parse(raw, { async: false }) as string;
+  const rendered = marked.parse(raw, { async: false }) as string;
+  const seen = new Map<string, number>();
+  return rendered.replace(/<h([1-6])>([\s\S]*?)<\/h\1>/g, (_whole, level, inner) => {
+    const text = inner.replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"');
+    const base = slugify(text) || 'section';
+    const count = seen.get(base) ?? 0;
+    seen.set(base, count + 1);
+    const id = count ? `${base}-${count + 1}` : base;
+    return `<h${level} id="${id}">${inner}</h${level}>`;
+  });
 }
 
 export function monographBodyToMarkdown(raw: string): string {
