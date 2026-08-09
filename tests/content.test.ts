@@ -2,6 +2,7 @@ import { describe, expect, test } from 'vitest';
 import { parseAtlas } from '../src/lib/content/atlas';
 import { parseExpositions } from '../src/lib/content/expositions';
 import { parseGlossary } from '../src/lib/content/glossary';
+import { resolveGlossaryReference } from '../src/lib/content/glossary-links';
 import { parseMonograph } from '../src/lib/content/monograph';
 import { numberedSlug, slugify, assertUniqueSlugs } from '../src/lib/content/slugs';
 import { validateContent } from '../src/lib/content/validation';
@@ -34,6 +35,24 @@ describe('publication content invariants', () => {
     expect(term?.definition).toMatch(/sufficiently determinate/i);
     expect(term?.functionInTheory).toBeTruthy();
     expect(term?.distinguishFrom).toBeTruthy();
+  });
+
+  test('glossary reference pass only resolves deterministic normalization cases', () => {
+    const report = validateContent().glossary;
+    expect(report.startingUnresolvedReferences).toBe(187);
+    expect(report.resolvedReferences.length).toBeGreaterThan(0);
+    expect(report.unresolvedReferences.length).toBeLessThan(report.startingUnresolvedReferences);
+    expect(report.resolvedReferences.length + report.unresolvedReferences.length).toBe(report.startingUnresolvedReferences);
+    expect(Object.values(report.unresolvedByCategory).reduce((sum, count) => sum + count, 0)).toBe(report.unresolvedReferences.length);
+  });
+
+  test('safe glossary cross-link resolution preserves ambiguity boundaries', () => {
+    const terms = parseGlossary();
+    const punctuation = resolveGlossaryReference('completion.', terms);
+    expect(punctuation?.term.slug).toBe('completion');
+    expect(punctuation?.category).toBe('punctuation/case mismatch');
+    expect(resolveGlossaryReference('Opening', terms)?.term.term).toBe('Opening');
+    expect(resolveGlossaryReference('not a canonical glossary term', terms)).toBeNull();
   });
 
   test('monograph recognizes parts and numbered reading units', () => {

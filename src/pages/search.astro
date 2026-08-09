@@ -1,0 +1,65 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { publicationPath } from '../lib/site';
+---
+<BaseLayout
+  title="Search — Constraint Grammar"
+  description="Search theory chapters, atlas cells, forms, glossary terms, and supporting essay headings."
+  sourceStatus="Publication navigation · progressive enhancement"
+>
+  <article class="reading-index search-page">
+    <header>
+      <p class="eyebrow">Static publication search</p>
+      <h1>Search the publication</h1>
+      <p class="lede">Search chapter titles, atlas cells, form names, glossary terms, and history/academic headings. The underlying reading pages remain fully usable without JavaScript.</p>
+    </header>
+
+    <form class="search-form" role="search" onsubmit="return false">
+      <label for="publication-search">Search titles, terms, and categories</label>
+      <input id="publication-search" name="q" type="search" autocomplete="off" placeholder="Try “completion”, “Differentiation”, or “invariance”" />
+      <p id="search-status" class="search-status" aria-live="polite">Type at least two characters to search.</p>
+    </form>
+
+    <ol id="search-results" class="search-results"></ol>
+
+    <noscript>
+      <p>Search requires a small optional script. You can still browse the <a href={publicationPath('theory/')}>theory</a>, <a href={publicationPath('atlas/')}>atlas</a>, <a href={publicationPath('forms/')}>54 forms</a>, and <a href={publicationPath('glossary/')}>glossary</a> directly.</p>
+    </noscript>
+  </article>
+
+  <script define:vars={{ indexUrl: publicationPath('search-index.json'), baseUrl: publicationPath() }}>
+    const input = document.querySelector('#publication-search');
+    const results = document.querySelector('#search-results');
+    const status = document.querySelector('#search-status');
+    let records = [];
+
+    fetch(indexUrl)
+      .then((response) => {
+        if (!response.ok) throw new Error('Search index unavailable');
+        return response.json();
+      })
+      .then((data) => { records = data; })
+      .catch(() => { status.textContent = 'Search index could not be loaded. Browse the publication directly instead.'; });
+
+    input?.addEventListener('input', () => {
+      const query = input.value.trim().toLocaleLowerCase();
+      results.replaceChildren();
+      if (query.length < 2) {
+        status.textContent = 'Type at least two characters to search.';
+        return;
+      }
+      const matches = records.filter((record) => `${record.title} ${record.kind} ${record.detail}`.toLocaleLowerCase().includes(query)).slice(0, 60);
+      status.textContent = `${matches.length} result${matches.length === 1 ? '' : 's'} shown.`;
+      for (const record of matches) {
+        const li = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = `${baseUrl}${record.path}`;
+        link.textContent = record.title;
+        const meta = document.createElement('span');
+        meta.textContent = `${record.kind} · ${record.detail}`;
+        li.append(link, meta);
+        results.append(li);
+      }
+    });
+  </script>
+</BaseLayout>

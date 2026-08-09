@@ -11,13 +11,13 @@ for (const term of terms) {
   if (letter && !firstTermByLetter.has(letter)) firstTermByLetter.set(letter, term.slug);
 }
 ---
-<BaseLayout title="Glossary — Constraint Grammar">
+<BaseLayout title="Glossary — Constraint Grammar" description="Authoritative glossary of preferred mature terminology, distinctions, relations, and legacy terms in the Constraint Grammar project." sourceStatus="Authoritative glossary">
   <article class="reading-index glossary-index">
     <header>
       <p class="eyebrow">Terminological reference</p>
       <h1>Glossary</h1>
       <p class="lede">Canonical terms parsed from the exhaustive glossary, preserving preferred status, distinctions, relations, and theoretical section.</p>
-      <p class="index-guidance">Use the alphabetical strip to jump through the reference, then open a term for its full definition and theoretical function. Legacy and deprecated terms remain visible where the source records them.</p>
+      <p class="index-guidance">Use the alphabetical strip to jump through the reference, then open a term for its full definition and theoretical function. Legacy and deprecated terms remain visible where the source records them. Cross-references are linked only where resolution is source-safe.</p>
     </header>
     <nav class="alphabet" aria-label="Alphabetical glossary index">{letters.map((letter) => <a href={`#letter-${letter}`}>{letter}</a>)}</nav>
     {grouped.map(([category, categoryTerms]) => <section class="glossary-category"><h2>{category}</h2><dl>{categoryTerms!.map((term) => {

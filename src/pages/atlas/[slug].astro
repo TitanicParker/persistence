@@ -15,7 +15,7 @@ export function getStaticPaths() {
 }
 const { cell, previous, next } = Astro.props;
 ---
-<BaseLayout title={`${cell.canonicalCrystallization} — Atlas`}>
+<BaseLayout title={`${cell.canonicalCrystallization} — Atlas`} description={`${cell.canonicalCrystallization}: canonical atlas cell ${cell.number}, ${cell.transformationPattern} / ${cell.completionTopology} / ${cell.persistenceMode}.`} sourceStatus="Canonical structural atlas">
   <article class="prose atlas-cell">
     <header><p class="eyebrow">Atlas · Cell {cell.number} of 54 · {cell.transformationPattern} / {cell.completionTopology} / {cell.persistenceMode}</p><h1>{cell.canonicalCrystallization}</h1><p class="lede">{cell.coordinateGeneratedForm}</p></header>
     <p class="index-crosslink"><a href={publicationPath('atlas/')}>← Atlas overview</a> · <a href={publicationPath(`forms/${cell.slug}/`)}>Plain-language exposition</a></p>

@@ -2,6 +2,17 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { parseEssay } from '../lib/content/essays';
 import { renderMarkdown } from '../lib/content/render';
+import { publicationPath } from '../lib/site';
 const essay = parseEssay('academic'); const html = renderMarkdown(essay.raw);
 ---
-<BaseLayout title={`${essay.title} — Constraint Grammar`}><article class="prose essay"><nav class="toc" aria-label="On this page"><strong>Contents</strong><ol>{essay.sections.filter((s) => s.level <= 2).map((s) => <li><a href={`#${s.slug}`}>{s.title}</a></li>)}</ol></nav><div set:html={html} /></article></BaseLayout>
+<BaseLayout
+  title={`${essay.title} — Constraint Grammar`}
+  description="Academic disciplinary positioning, novelty claims, limitations, and research programme for the Constraint Grammar of Completed Intelligibility."
+  sourceStatus="Academic positioning"
+>
+  <article class="prose essay">
+    <aside class="editorial-note"><strong>Claims boundary.</strong> This document positions the project academically. For a concise public distinction between internal demonstration, open hypotheses, and unproven claims, see <a href={publicationPath('research-status/')}>Research Status</a>.</aside>
+    <nav class="toc" aria-label="On this page"><strong>Contents</strong><ol>{essay.sections.filter((s) => s.level <= 2).map((s) => <li><a href={`#${s.slug}`}>{s.title}</a></li>)}</ol></nav>
+    <div set:html={html} />
+  </article>
+</BaseLayout>
