@@ -3,22 +3,113 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { parseAtlas } from '../../lib/content/atlas';
 import { publicationPath } from '../../lib/site';
 const cells = parseAtlas();
+const transformations = [...new Set(cells.map((cell) => cell.transformationPattern))];
+const topologies = [...new Set(cells.map((cell) => cell.completionTopology))];
+const persistenceModes = [...new Set(cells.map((cell) => cell.persistenceMode))];
 ---
-<BaseLayout title="Atlas — Constraint Grammar">
+<BaseLayout
+  title="Atlas — Constraint Grammar"
+  description="Explore the complete 54-position structural atlas of Transformation Pattern, Completion Topology, and Persistence Mode."
+  sourceStatus="Canonical structural atlas"
+>
   <article class="reading-index">
     <header>
       <p class="eyebrow">Formal reference · 6 × 3 × 3</p>
       <h1>The 54-cell atlas</h1>
       <p class="lede">Each cell is one coordinate in the theory’s finite state-space: a Transformation Pattern, Completion Topology, and Persistence Mode jointly constrain a generated form and its canonical crystallization.</p>
-      <p class="index-guidance">Read down the list to compare neighboring positions, or open any cell for its coordinate-forced sentence, manifestations, constraint strength, and link to the corresponding plain-language exposition.</p>
+      <p class="index-guidance">All fifty-four cells are present in the static HTML. The controls below are optional progressive enhancement for comparing subsets of the structure.</p>
     </header>
+
     <aside class="coordinate-key" aria-label="How to read an atlas cell">
       <div><strong>Transformation</strong><span>What kind of change answers the opening pressure?</span></div>
       <div><strong>Topology</strong><span>What makes that transformation sufficient?</span></div>
       <div><strong>Persistence</strong><span>What kind of achieved reality remains?</span></div>
     </aside>
-    <ol class="atlas-list">
-      {cells.map((cell) => <li><article><header><span class="cell-number">Cell {String(cell.number).padStart(2,'0')}</span><h2><a href={publicationPath(`atlas/${cell.slug}/`)}>{cell.canonicalCrystallization}</a></h2></header><p>{cell.coordinateGeneratedForm}</p><dl><dt>Transformation</dt><dd>{cell.transformationPattern}</dd><dt>Topology</dt><dd>{cell.completionTopology}</dd><dt>Persistence</dt><dd>{cell.persistenceMode}</dd></dl><a class="text-link" href={publicationPath(`atlas/${cell.slug}/`)}>Inspect cell →</a></article></li>)}
+
+    <form class="atlas-filters" aria-label="Filter Atlas cells" onsubmit="return false">
+      <div>
+        <label for="filter-transformation">Transformation Pattern</label>
+        <select id="filter-transformation" name="transformation">
+          <option value="">All six</option>
+          {transformations.map((value) => <option value={value}>{value}</option>)}
+        </select>
+      </div>
+      <div>
+        <label for="filter-topology">Completion Topology</label>
+        <select id="filter-topology" name="topology">
+          <option value="">All three</option>
+          {topologies.map((value) => <option value={value}>{value}</option>)}
+        </select>
+      </div>
+      <div>
+        <label for="filter-persistence">Persistence Mode</label>
+        <select id="filter-persistence" name="persistence">
+          <option value="">All three</option>
+          {persistenceModes.map((value) => <option value={value}>{value}</option>)}
+        </select>
+      </div>
+      <button type="button" id="reset-atlas">Reset</button>
+      <p id="atlas-filter-status" class="filter-status" aria-live="polite">Showing all 54 cells.</p>
+    </form>
+
+    <ol class="atlas-list" id="atlas-cells">
+      {cells.map((cell) => (
+        <li data-transformation={cell.transformationPattern} data-topology={cell.completionTopology} data-persistence={cell.persistenceMode}>
+          <article>
+            <header><span class="cell-number">Cell {String(cell.number).padStart(2,'0')}</span><h2><a href={publicationPath(`atlas/${cell.slug}/`)}>{cell.canonicalCrystallization}</a></h2></header>
+            <p>{cell.coordinateGeneratedForm}</p>
+            <dl><dt>Transformation</dt><dd>{cell.transformationPattern}</dd><dt>Topology</dt><dd>{cell.completionTopology}</dd><dt>Persistence</dt><dd>{cell.persistenceMode}</dd></dl>
+            <a class="text-link" href={publicationPath(`atlas/${cell.slug}/`)}>Inspect cell →</a>
+          </article>
+        </li>
+      ))}
     </ol>
   </article>
+
+  <script>
+    const transformation = document.querySelector('#filter-transformation');
+    const topology = document.querySelector('#filter-topology');
+    const persistence = document.querySelector('#filter-persistence');
+    const reset = document.querySelector('#reset-atlas');
+    const status = document.querySelector('#atlas-filter-status');
+    const cells = [...document.querySelectorAll('#atlas-cells > li')];
+
+    const apply = (syncUrl = true) => {
+      const selectedTransformation = transformation?.value ?? '';
+      const selectedTopology = topology?.value ?? '';
+      const selectedPersistence = persistence?.value ?? '';
+      let visible = 0;
+      for (const cell of cells) {
+        const match = (!selectedTransformation || cell.dataset.transformation === selectedTransformation)
+          && (!selectedTopology || cell.dataset.topology === selectedTopology)
+          && (!selectedPersistence || cell.dataset.persistence === selectedPersistence);
+        cell.hidden = !match;
+        if (match) visible += 1;
+      }
+      status.textContent = `Showing ${visible} of 54 cells.`;
+      if (syncUrl) {
+        const params = new URLSearchParams();
+        if (selectedTransformation) params.set('transformation', selectedTransformation);
+        if (selectedTopology) params.set('topology', selectedTopology);
+        if (selectedPersistence) params.set('persistence', selectedPersistence);
+        const query = params.toString();
+        history.replaceState(null, '', query ? `${location.pathname}?${query}` : location.pathname);
+      }
+    };
+
+    const params = new URLSearchParams(location.search);
+    if (transformation && params.has('transformation')) transformation.value = params.get('transformation');
+    if (topology && params.has('topology')) topology.value = params.get('topology');
+    if (persistence && params.has('persistence')) persistence.value = params.get('persistence');
+    apply(false);
+
+    [transformation, topology, persistence].forEach((control) => control?.addEventListener('change', () => apply()));
+    reset?.addEventListener('click', () => {
+      if (transformation) transformation.value = '';
+      if (topology) topology.value = '';
+      if (persistence) persistence.value = '';
+      apply();
+      transformation?.focus();
+    });
+  </script>
 </BaseLayout>
