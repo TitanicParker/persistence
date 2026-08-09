@@ -12,6 +12,14 @@ import { publicationPath } from '../lib/site';
       <p class="eyebrow">Future work</p>
       <h1>Sentence Receptacle</h1>
       <p class="lede">A sentence is small enough to hold in the hand and rich enough to show a whole act of intelligibility becoming complete.</p>
+      <div class="origin-riddle" aria-label="A question before language">
+        <p class="origin-riddle__eyebrow">Before the sentence</p>
+        <p class="origin-riddle__question">Why can a pattern mean something before we have words for what it means?</p>
+        <p class="origin-riddle__answer">A firework unfolds and we follow it. A kaleidoscope turns and something resolves. A mandala, a tessellation, a tiling, a repeating rhythm: each can become intelligible before it becomes verbal.</p>
+        <p class="origin-riddle__answer">They seem to strike a note between <strong>word-fullness and wordlessness</strong>—enough form to be grasped, enough openness that the grasp has not yet been exhausted by explanation.</p>
+        <p class="origin-riddle__answer">And something more peculiar happens: we do not entirely choose the moment of recognition. Completion arrives. A pattern settles, releases, clicks, lands. We find ourselves at a point of realisation before we have decided to be there.</p>
+        <p class="origin-riddle__answer">The runtime exists to give that situation room to <strong>resume its own lawful unfolding</strong>: not to tell the viewer what to realise, but to make possible the encounter in which intelligibility is found involuntarily.</p>
+      </div>
       <div class="receptacle-placeholder" aria-label="Future Sentence Receptacle interface concept">
         <span>One sentence will go here.</span>
         <span class="status">Not yet active</span>
@@ -46,11 +54,25 @@ import { publicationPath } from '../lib/site';
       <p>Later work could allow readers to compare alternative readings, hold one coordinate constant while changing another, inspect neighboring forms, trace the difference between a completed form and its formation history, and see why intelligibility can be analyzed before truth or correctness is judged.</p>
     </section>
 
+    <section class="substrate-destination">
+      <p class="eyebrow">The wordless place</p>
+      <h2>A place of realisation.</h2>
+      <p>The Sentence Receptacle is one way of looking back from language. A sentence gives us a finished, human-scale object through which completion can be inspected. But the riddle points further back: toward the kind of lawful pattern we already recognise in an unfolding firework, a kaleidoscope, a mandala, a tessellation, or a tiled field—structure that can become graspable before it has been converted into prose.</p>
+      <p><strong>Theorem Zero — Canonical Substrate v1.0</strong> is the current expression of that wordless origin-point. Its canonical substrate defines a locked infinite triangular / barycentric field. Finite activations select from that field; overlays and rendering express those selections without acquiring authority over the substrate itself.</p>
+      <p>The runtime is not chiefly an illustration of a theory already stated elsewhere. It is an opportunity for the lawful situation to resume itself in front of the viewer. Emergence, relation, repetition, completion, release: the viewer is not first told what these mean. Instead, the conditions are restored in which some form of completion may be found involuntarily.</p>
+      <p>That is the wager of the runtime: that intelligibility can occur as an event of realisation before it becomes an act of description. We recognise enoughness before we explain enoughness. We meet completion before we possess its vocabulary.</p>
+      <p>This is not a claim that the runtime has proven the metaphysical origin of language, thought, or reality. It is a disciplined philosophical placement inside this project: before the sentence, before the explanatory grammar, before the words, there is a proposed lawful field in which something may already become intelligible.</p>
+      <a class="theorem-zero-link" href={publicationPath('theorem-zero/')}>
+        <span><strong>Enter Theorem Zero</strong><small>Canonical Substrate v1.0 · the wordless runtime</small></span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
     <section class="boundary-section">
       <p class="eyebrow">Boundary</p>
       <h2>This page records an intention, not a finished capability.</h2>
       <p>No sentence-analysis engine is being claimed here. The receptacle does not yet classify arbitrary sentences, prove psychological reality, establish unique coordinates, or demonstrate empirical validity. Those would be separate engineering and research achievements.</p>
-      <p>The purpose of this page is to reserve the conceptual doorway: <strong>one sentence as a window into the completed act of intelligibility.</strong></p>
+      <p>The purpose of this page is to reserve the conceptual doorway: <strong>one sentence as a window into the completed act of intelligibility, with a wordless place of realisation waiting behind it.</strong></p>
     </section>
 
     <footer class="receptacle-footer">
@@ -65,6 +87,11 @@ import { publicationPath } from '../lib/site';
   .receptacle-hero { padding: 3rem 0 4rem; }
   .receptacle-hero h1 { max-width: 9ch; font-size: clamp(3.4rem, 9vw, 7.5rem); line-height: .92; letter-spacing: -.055em; margin: .35rem 0 1.4rem; }
   .receptacle-hero .lede { max-width: 700px; font-size: clamp(1.2rem, 2.4vw, 1.65rem); }
+  .origin-riddle { margin-top:2.35rem; padding:1.25rem 1.35rem 1.35rem; border-left:3px solid #9e978c; background:linear-gradient(90deg,rgba(245,241,233,.78),rgba(255,253,248,0)); }
+  .origin-riddle p { margin:0; }
+  .origin-riddle__eyebrow { font:700 .66rem/1.3 ui-sans-serif,system-ui,sans-serif; letter-spacing:.12em; text-transform:uppercase; color:#777168; }
+  .origin-riddle__question { max-width:25ch; margin-top:.55rem !important; font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.35rem,3vw,2rem); line-height:1.15; font-style:italic; }
+  .origin-riddle__answer { max-width:64ch; margin-top:.78rem !important; color:#676159; font-size:.92rem; }
   .receptacle-placeholder { margin-top: 2.4rem; min-height: 110px; padding: 1.35rem 1.5rem; border: 1px dashed #aaa399; border-radius: 18px; display:flex; align-items:center; justify-content:space-between; gap:1rem; background:linear-gradient(145deg,#faf7f0,#fffdf8); font-family:ui-sans-serif,system-ui,sans-serif; color:#5f5a53; }
   .receptacle-placeholder > span:first-child { font-family: Georgia, 'Times New Roman', serif; font-size:1.2rem; font-style:italic; }
   .receptacle-placeholder .status { flex:0 0 auto; padding:.45rem .65rem; border:1px solid #d8d3c8; border-radius:999px; font-size:.68rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
@@ -78,6 +105,17 @@ import { publicationPath } from '../lib/site';
   .steps p { margin:0; color:#514d47; }
   .window-section { position:relative; }
   .window-section:after { content:'“'; position:absolute; right:0; top:1.5rem; font-family:Georgia,'Times New Roman',serif; font-size:8rem; line-height:1; color:#e8e2d7; pointer-events:none; }
+  .substrate-destination { position:relative; overflow:hidden; margin:2rem -1.5rem 0; padding:3rem 1.5rem; border:1px solid #263b42; border-radius:20px; background:radial-gradient(circle at 88% 20%,rgba(100,255,210,.12),transparent 32%),linear-gradient(145deg,#0a1219,#101f28); color:#eef7f3; }
+  .substrate-destination:after { content:''; position:absolute; width:15rem; height:15rem; right:-7rem; bottom:-8rem; border:1px solid rgba(100,255,210,.22); border-radius:50%; box-shadow:0 0 0 2.7rem rgba(100,255,210,.035),0 0 0 5.4rem rgba(143,185,255,.025); pointer-events:none; }
+  .substrate-destination .eyebrow { color:#a7c8c0; }
+  .substrate-destination h2 { max-width:17ch; }
+  .substrate-destination > p:not(.eyebrow) { color:#c9d8d4; }
+  .theorem-zero-link { position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-top:2rem; padding:1rem 1.1rem; border:1px solid rgba(100,255,210,.34); border-radius:14px; color:#f4fff9; text-decoration:none; background:rgba(100,255,210,.055); transition:transform .15s ease,background .15s ease,border-color .15s ease; }
+  .theorem-zero-link:hover { transform:translateY(-2px); background:rgba(100,255,210,.09); border-color:rgba(100,255,210,.58); }
+  .theorem-zero-link:focus-visible { outline:3px solid #64ffd2; outline-offset:3px; }
+  .theorem-zero-link strong { display:block; font-size:1rem; }
+  .theorem-zero-link small { display:block; margin-top:.2rem; color:#9fb9b2; font:600 .72rem/1.4 ui-sans-serif,system-ui,sans-serif; letter-spacing:.03em; }
+  .theorem-zero-link > span:last-child { font-size:1.45rem; }
   .boundary-section { background:#f5f1e9; margin-left:-1.5rem; margin-right:-1.5rem; padding-left:1.5rem; padding-right:1.5rem; border-radius:18px; }
   .receptacle-footer { display:flex; justify-content:space-between; gap:1rem; padding:2.5rem 0 1rem; font-weight:700; }
   .receptacle-footer a { text-underline-offset:.2em; }
@@ -88,4 +126,5 @@ import { publicationPath } from '../lib/site';
     .window-section:after { display:none; }
     .receptacle-footer { flex-direction:column; }
   }
+  @media(prefers-reduced-motion:reduce){.theorem-zero-link{transition:none}}
 </style>

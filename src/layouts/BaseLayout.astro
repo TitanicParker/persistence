@@ -8,7 +8,7 @@ const {
   description = 'A periodic generative theory of transformation, completion, and persistence.',
   sourceStatus,
 } = Astro.props;
-const navItems = [['Theory','theory/'],['Atlas','atlas/'],['54 Forms','forms/'],['Glossary','glossary/'],['Research','research-status/'],['About','about/'],['Rights','rights/']];
+const navItems = [['Wordless','wordless/'],['Theory','theory/'],['Atlas','atlas/'],['54 Forms','forms/'],['Glossary','glossary/'],['Research','research-status/'],['About','about/'],['Rights','rights/']];
 const currentPath = Astro.url.pathname;
 const isActive = (path: string) => currentPath === publicationPath(path) || currentPath.startsWith(publicationPath(path));
 const canonical = new URL(currentPath, Astro.site ?? 'https://titanicparker.github.io');
@@ -30,7 +30,7 @@ const showRightsGate = currentPath !== rightsPath && currentPath !== `${rightsPa
     <div class="site-shell"><header class="site-header"><a class="site-title" href={publicationPath()}>Constraint Grammar</a><nav class="site-nav" aria-label="Publication">{navItems.map(([label,path]) => (<a href={publicationPath(path)} aria-current={isActive(path) ? 'page' : undefined}>{label}</a>))}</nav></header>
       {sourceStatus && <div class="document-status"><span>{sourceStatus}</span></div>}
       <main id="main-content" tabindex="-1"><slot /></main>
-      <footer class="site-footer"><p><strong>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</strong></p><p>Constraint Grammar of Completed Intelligibility. Source texts remain canonical; interface copy and derived editions are identified by status.</p><nav aria-label="Publication information"><a href={publicationPath('constraint-grammar-portable-knowledge-edition.txt')} download>Portable Knowledge Edition (.txt)</a><a href={publicationPath('research-status/')}>Research status</a><a href={publicationPath('about/')}>About & provenance</a><a href={publicationPath('rights/')}>Rights & Permissions</a><a href={publicationPath('search/')}>Search</a><a href="https://github.com/TitanicParker/persistence">Repository</a></nav></footer>
+      <footer class="site-footer"><p><strong>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</strong></p><p>Constraint Grammar of Completed Intelligibility. Source texts remain canonical; interface copy and derived editions are identified by status.</p><nav aria-label="Publication information"><a href={publicationPath('wordless/')}>Wordless</a><a href={publicationPath('constraint-grammar-portable-knowledge-edition.txt')} download>Portable Knowledge Edition (.txt)</a><a href={publicationPath('research-status/')}>Research status</a><a href={publicationPath('about/')}>About & provenance</a><a href={publicationPath('rights/')}>Rights & Permissions</a><a href={publicationPath('search/')}>Search</a><a href="https://github.com/TitanicParker/persistence">Repository</a></nav></footer>
     </div><script src={publicationPath('rights-gate.js')} defer></script>
   </body>
 </html>

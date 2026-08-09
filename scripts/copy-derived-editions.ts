@@ -51,7 +51,7 @@ for (const edition of editions) {
   if (!html.includes('</head>')) throw new Error(`${edition.source}: missing </head>`);
   html = html.replace('</head>', `${metadata}\n</head>`);
 
-  const shell = `<div class="cg-publication-shell" role="banner"><div><strong><a href="/persistence/">Constraint Grammar</a></strong><div class="cg-edition-status">${edition.label}</div></div><nav aria-label="Publication"><a href="/persistence/">Home</a><a href="/persistence/theory/">Formal theory</a><a href="/persistence/research-status/">Research status</a><a href="/persistence/about/">About</a><a href="/persistence/rights/">Rights</a></nav></div>`;
+  const shell = `<div class="cg-publication-shell" role="banner"><div><strong><a href="/persistence/">Constraint Grammar</a></strong><div class="cg-edition-status">${edition.label}</div></div><nav aria-label="Publication"><a href="/persistence/wordless/">Wordless</a><a href="/persistence/">Home</a><a href="/persistence/theory/">Formal theory</a><a href="/persistence/research-status/">Research status</a><a href="/persistence/about/">About</a><a href="/persistence/rights/">Rights</a></nav></div>`;
 
   if (edition.route === 'five-year-old/') {
     html = html.replace(/<body([^>]*)>/i, `<body$1 data-developmental-reader data-next="/persistence/five-year-old/6/#essay-start">${gate}${shell}${agePath(5)}`);
@@ -63,7 +63,7 @@ for (const edition of editions) {
   }
 
   const swipeScript = edition.route === 'five-year-old/' ? `<script src="/persistence/developmental-swipe.js" defer></script>` : '';
-  const footer = `<footer class="cg-publication-footer"><p><strong>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</strong></p><p><strong>Constraint Grammar of Completed Intelligibility</strong> · ${edition.label}</p><p>This essay is a derived interpretation of the same framework. The canonical theory, structural atlas, explanatory companion, and glossary remain distinct source documents.</p><p><a href="/persistence/rights/">Rights & Permissions</a> · <a href="/persistence/about/">Publication provenance and citation guidance</a></p></footer><script src="/persistence/rights-gate.js" defer></script>${swipeScript}`;
+  const footer = `<footer class="cg-publication-footer"><p><strong>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</strong></p><p><strong>Constraint Grammar of Completed Intelligibility</strong> · ${edition.label}</p><p>This essay is a derived interpretation of the same framework. The canonical theory, structural atlas, explanatory companion, and glossary remain distinct source documents.</p><p><a href="/persistence/wordless/">Wordless table of contents</a> · <a href="/persistence/rights/">Rights & Permissions</a> · <a href="/persistence/about/">Publication provenance and citation guidance</a></p></footer><script src="/persistence/rights-gate.js" defer></script>${swipeScript}`;
   if (!html.includes('</body>')) throw new Error(`${edition.source}: missing </body>`);
   html = html.replace('</body>', `${footer}\n</body>`);
 
