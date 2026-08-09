@@ -2,24 +2,42 @@
 import '../styles/global.css';
 import '../styles/content.css';
 import { publicationPath } from '../lib/site';
-const { title = 'Constraint Grammar of Completed Intelligibility', description = 'A periodic generative theory of transformation, completion, and persistence.' } = Astro.props;
+const {
+  title = 'Constraint Grammar of Completed Intelligibility',
+  description = 'A periodic generative theory of transformation, completion, and persistence.',
+  sourceStatus,
+} = Astro.props;
 const navItems = [
   ['Theory', 'theory/'],
   ['Atlas', 'atlas/'],
   ['54 Forms', 'forms/'],
   ['Glossary', 'glossary/'],
-  ['History', 'history/'],
-  ['Academic', 'academic/'],
+  ['Research', 'research-status/'],
+  ['About', 'about/'],
 ];
 const currentPath = Astro.url.pathname;
 const isActive = (path: string) => currentPath === publicationPath(path) || currentPath.startsWith(publicationPath(path));
+const canonical = new URL(currentPath, Astro.site ?? 'https://titanicparker.github.io');
+const socialImage = new URL(publicationPath('social-preview.svg'), Astro.site ?? 'https://titanicparker.github.io');
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href={publicationPath('favicon.svg')} type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Constraint Grammar of Completed Intelligibility" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
     <title>{title}</title>
   </head>
   <body>
@@ -33,9 +51,16 @@ const isActive = (path: string) => currentPath === publicationPath(path) || curr
           ))}
         </nav>
       </header>
+      {sourceStatus && <div class="document-status"><span>{sourceStatus}</span></div>}
       <main id="main-content"><slot /></main>
       <footer class="site-footer">
-        Constraint Grammar of Completed Intelligibility. Source texts remain canonical; interface copy is editorial scaffolding only.
+        <p>Constraint Grammar of Completed Intelligibility. Source texts remain canonical; interface copy and derived editions are identified by status.</p>
+        <nav aria-label="Publication information">
+          <a href={publicationPath('research-status/')}>Research status</a>
+          <a href={publicationPath('about/')}>About & provenance</a>
+          <a href={publicationPath('search/')}>Search</a>
+          <a href="https://github.com/TitanicParker/persistence">Repository</a>
+        </nav>
       </footer>
     </div>
   </body>
