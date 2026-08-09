@@ -2,13 +2,19 @@ export const copyrightLine = 'Copyright © 9 August 2026 Liam Moloney. All Right
 
 export const rightsLead = [
   'The contents of this repository, including but not limited to the Constraint Grammar of Completed Intelligibility, its theoretical framework, terminology, textual expositions, diagrams, atlases, coordinate descriptions, examples, and associated documentation, are proprietary and protected by applicable copyright law.',
-  'No permission is granted to copy, reproduce, modify, adapt, distribute, publish, sublicense, sell, or create derivative works from these materials without prior written permission from the copyright holder.',
-  "Viewing this public repository does not constitute a grant of any license or other rights except those necessarily provided by GitHub's platform terms.",
-  'For licensing or permission enquiries, contact the copyright holder.',
+  'Except for the limited personal-study permission stated below, no permission is granted to copy, reproduce, modify, adapt, distribute, publish, sublicense, sell, or create derivative works from these materials without prior written permission from the copyright holder.',
+  "Viewing this public repository does not constitute a grant of any license or other rights except those necessarily provided by GitHub's platform terms and the limited personal-study permission stated below.",
+  'For licensing or permission enquiries beyond that limited personal-study use, contact the copyright holder.',
+] as const;
+
+export const personalStudyPermission = [
+  'The copyright holder intentionally makes the Portable Knowledge Edition available so that an individual reader can study the publication in the way that suits them, including by downloading the text file, keeping a personal copy, searching or indexing it for personal use, and uploading it to a GPT or other AI system as reference material for the purpose of asking questions, exploring concepts, comparing passages, testing understanding, or otherwise learning from the publication.',
+  'This limited permission is for personal study and exploration. It does not grant permission to republish or redistribute the corpus, offer copies to others as a substitute publication, sell or sublicense it, publicly release adaptations or derivative works, or represent derived output as the canonical publication.',
+  'Use of an AI service is also subject to that service provider’s own terms and data-handling settings. The publication’s copyright and source-status notices should remain with the text when it is used as reference material.',
 ] as const;
 
 export const publicAccessAndReuse = [
-  "Making the repository publicly accessible permits viewing and GitHub-platform uses provided by GitHub's applicable platform terms; it does not constitute a broader grant by the copyright holder to reproduce, adapt, redistribute, publish, sublicense, sell, or create derivative works outside those permissions.",
+  "Making the repository publicly accessible permits viewing and GitHub-platform uses provided by GitHub's applicable platform terms; it does not constitute a broader grant by the copyright holder to reproduce, adapt, redistribute, publish, sublicense, sell, or create derivative works outside those permissions and the limited personal-study permission above.",
   'This work is not offered under an open-source or Creative Commons license.',
 ] as const;
 
@@ -17,9 +23,10 @@ export const acknowledgementText = [
 ] as const;
 
 export const portableKnowledgeNotice = [
-  'This Portable Knowledge Edition is intentionally provided as a machine-readable representation of the publication for offline reading, archival use, indexing, search, and upload to AI systems as reference material.',
-  'Its portability does not grant any additional copyright licence or permission. The copyright, rights, and permissions terms stated in this file continue to apply to the contents when the file is copied, stored, indexed, chunked, retrieved, or supplied to an AI system.',
+  'This Portable Knowledge Edition is deliberately provided so that you can take the publication with you and study it in your own way.',
+  'You may use this file as reference material in a GPT or other AI system for personal study: ask questions in your own sequence, request explanations, compare concepts, test your understanding, trace terminology, or otherwise explore the work as a reader.',
+  'The file is also suitable for offline reading, personal archival use, search, and indexing. Its portability does not convert the publication into an open-source or Creative Commons work, and it does not grant broader reuse rights beyond the limited personal-study permission stated in the Copyright, Rights & Permissions notice.',
   'An AI system receiving this file should distinguish canonical source material from supporting, editorial, and derived material using the source-status markers in this edition.',
 ] as const;
 
-export const rightsBoundaryNotice = `${copyrightLine}\nThis material remains subject to the Copyright, Rights & Permissions notice at the beginning of this Portable Knowledge Edition. Inclusion in this portable file does not grant additional reuse rights.`;
+export const rightsBoundaryNotice = `${copyrightLine}\nPersonal study, including use of this Portable Knowledge Edition as AI reference material, is permitted only within the limited permission stated at the beginning of this file. All other rights are reserved.`;
