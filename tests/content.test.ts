@@ -36,6 +36,15 @@ describe('publication content invariants', () => {
     expect(term?.distinguishFrom).toBeTruthy();
   });
 
+  test('glossary reference pass only resolves deterministic normalization cases', () => {
+    const report = validateContent().glossary;
+    expect(report.startingUnresolvedReferences).toBe(187);
+    expect(report.resolvedReferences.length).toBeGreaterThan(0);
+    expect(report.unresolvedReferences.length).toBeLessThan(report.startingUnresolvedReferences);
+    expect(report.resolvedReferences.length + report.unresolvedReferences.length).toBe(report.startingUnresolvedReferences);
+    expect(Object.values(report.unresolvedByCategory).reduce((sum, count) => sum + count, 0)).toBe(report.unresolvedReferences.length);
+  });
+
   test('monograph recognizes parts and numbered reading units', () => {
     const monograph = parseMonograph();
     expect(monograph.parts.length).toBeGreaterThan(1);
