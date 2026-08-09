@@ -2,7 +2,7 @@ name: Content validation
 
 on:
   push:
-    branches: [publication-foundation]
+    branches: [publication-foundation, publication-finishing-pass]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -14,12 +14,12 @@ jobs:
       contents: read
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
-      - name: Use Node.js 22
-        uses: actions/setup-node@v4
+      - name: Use Node.js 24
+        uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
           cache: npm
 
       - name: Install locked dependencies
@@ -51,37 +51,74 @@ jobs:
           test -f dist/layman/index.html
           test -f dist/venture/index.html
           test -f dist/mainstream/index.html
+          test -f dist/research-status/index.html
+          test -f dist/about/index.html
+          test -f dist/search/index.html
+          test -f dist/search-index.json
+          test -f dist/sitemap.xml
+          test -f dist/robots.txt
+          test -f dist/favicon.svg
+          test -f dist/social-preview.svg
+
           grep -q "Understand the idea" dist/index.html
           grep -q "Explore the opportunity" dist/index.html
           grep -q "Study the theory" dist/index.html
+          grep -q 'href="/persistence/research-status/' dist/index.html
           grep -q 'href="/persistence/layman/' dist/index.html
           grep -q 'href="/persistence/venture/' dist/index.html
           grep -q 'href="/persistence/theory/' dist/index.html
+
+          grep -q "What has not been proven" dist/research-status/index.html
+          grep -q "What would falsify or weaken the theory" dist/research-status/index.html
+          grep -q "Suggested citation" dist/about/index.html
+          grep -q "Canonical source corpus" dist/about/index.html
+          grep -q "Static publication search" dist/search/index.html
+          grep -q '"kind":"Theory chapter"' dist/search-index.json
+          grep -q '"kind":"Atlas cell"' dist/search-index.json
+          grep -q '"kind":"Glossary term"' dist/search-index.json
+
+          grep -q 'id="filter-transformation"' dist/atlas/index.html
+          grep -q 'id="filter-topology"' dist/atlas/index.html
+          grep -q 'id="filter-persistence"' dist/atlas/index.html
+          test "$(grep -o 'data-transformation=' dist/atlas/index.html | wc -l)" -eq 54
+
           grep -q "Layman's Edition" dist/layman/index.html
           grep -q "VC Investment Memo" dist/venture/index.html
           grep -q "If We Learned to See Completion" dist/mainstream/index.html
+          grep -q "Derived explanatory essay" dist/layman/index.html
+          grep -q "Derived strategic interpretation" dist/venture/index.html
+          grep -q "Derived consequences essay" dist/mainstream/index.html
+          grep -q 'href="/persistence/research-status/' dist/layman/index.html
+
           grep -q "The object of study" dist/theory/01-the-object-of-study/index.html
           grep -q "Focal distinguished standing" dist/atlas/01-focal-mark/index.html
           grep -q "A field can contain many perfectly visible things" dist/forms/01-focal-mark/index.html
           grep -q "sufficiently determinate" dist/glossary/completed-intelligibility/index.html
           grep -q "From Sentence Resolution to Constraint Grammar" dist/history/index.html
           grep -q "Academic Landscape" dist/academic/index.html
+
+          grep -q '<link rel="canonical" href="https://titanicparker.github.io/persistence/' dist/index.html
+          grep -q 'https://titanicparker.github.io/persistence/theory/01-the-object-of-study/' dist/theory/01-the-object-of-study/index.html
+          grep -q 'https://titanicparker.github.io/persistence/atlas/01-focal-mark/' dist/atlas/01-focal-mark/index.html
+          grep -q 'https://titanicparker.github.io/persistence/glossary/completed-intelligibility/' dist/glossary/completed-intelligibility/index.html
+          grep -q '<loc>https://titanicparker.github.io/persistence/research-status/</loc>' dist/sitemap.xml
+
           grep -q 'href="/persistence/atlas/' dist/index.html
           grep -q 'href="/persistence/forms/' dist/index.html
           grep -q 'href="/persistence/glossary/' dist/index.html
           grep -qE '(href|src)="/persistence/_astro/' dist/index.html
-          if grep -R -qE 'href="/(theory|atlas|forms|glossary|history|academic|layman|venture|mainstream)(/|\")' dist; then
+          if grep -R -qE 'href="/(theory|atlas|forms|glossary|history|academic|layman|venture|mainstream|research-status|about|search)(/|\")' dist; then
             echo "Found a publication link that escaped the /persistence/ base path" >&2
             exit 1
           fi
           if grep -R -qE '<script[^>]+type="module"' dist/theory dist/forms dist/glossary dist/history dist/academic; then
-            echo "Unexpected module hydration script found on reading routes" >&2
+            echo "Unexpected module hydration script found on core reading routes" >&2
             exit 1
           fi
-          echo "Audience entrances, derived editions, representative reading routes, and /persistence/ base paths verified."
+          echo "Finishing routes, search index, derived editions, Atlas enhancement, canonical URLs, and /persistence/ base paths verified."
 
       - name: Upload static build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: static-publication
           path: dist
