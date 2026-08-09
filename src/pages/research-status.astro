@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { publicationPath } from '../lib/site';
+---
+<BaseLayout
+  title="Research Status — Constraint Grammar"
+  description="What the Constraint Grammar project currently demonstrates, what remains a research claim, and what evidence could weaken or support it."
+  sourceStatus="Research status · editorial synthesis"
+>
+  <article class="prose status-page">
+    <header>
+      <p class="eyebrow">Claims boundary</p>
+      <h1>What is established, what remains open</h1>
+      <p class="lede">This page separates properties demonstrated inside the present corpus from hypotheses that require external empirical support. Internal completeness is not the same thing as empirical universality.</p>
+    </header>
+
+    <section>
+      <h2>What the project currently demonstrates</h2>
+      <p>Within its own published corpus, the project demonstrates a coherent compositional architecture built from six Transformation Patterns, three Completion Topologies, and three Persistence Modes. Their Cartesian product specifies fifty-four coordinate positions.</p>
+      <ul>
+        <li>A complete 6 × 3 × 3 formal architecture and a 54-position structural atlas.</li>
+        <li>A deterministic one-to-one correspondence between the atlas records and the fifty-four explanatory companion texts.</li>
+        <li>A mature terminology with explicit distinctions among coordinate-generated form, canonical crystallization, and concrete manifestation.</li>
+        <li>Repeated use of the same coordinate vocabulary across the examples and analyses contained in this publication.</li>
+      </ul>
+      <p>These are claims about the organization and internal consistency of the published theory. They do not by themselves establish psychological, causal, or metaphysical reality.</p>
+    </section>
+
+    <section>
+      <h2>What is currently a hypothesis or research claim</h2>
+      <ul>
+        <li>That the dimensions correspond to psychologically real distinctions in human cognition.</li>
+        <li>That the same coordinate structure recurs reliably across domains not used to develop the framework.</li>
+        <li>That trained independent raters can classify cases with useful agreement.</li>
+        <li>That the framework generalizes beyond the examples currently analysed by the project.</li>
+        <li>That the 54-position space is exhaustive rather than a productive but incomplete taxonomy.</li>
+        <li>That Transformation Pattern, Completion Topology, and Persistence Mode remain empirically independent rather than collapsing under observation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What has not been proven</h2>
+      <p>The publication does not claim to have established:</p>
+      <ul>
+        <li>metaphysical necessity;</li>
+        <li>empirical universality;</li>
+        <li>a unique classification for every possible case;</li>
+        <li>a causal mechanism that produces the proposed structure;</li>
+        <li>clinical effectiveness;</li>
+        <li>commercial effectiveness.</li>
+      </ul>
+      <p>The derived Venture Edition is a strategic interpretation of possible consequences if the framework proves useful; it is not evidence that those consequences will occur.</p>
+    </section>
+
+    <section>
+      <h2>What would count as evidence</h2>
+      <p>Useful evidence would test the theory against uncertainty and alternatives rather than merely produce more illustrative examples.</p>
+      <ul>
+        <li>Blind classification studies with cases withheld from theory development.</li>
+        <li>Inter-rater agreement measured before and after explicit training.</li>
+        <li>Held-out examples drawn from domains not represented in the originating corpus.</li>
+        <li>Direct comparison with simpler or competing taxonomies.</li>
+        <li>Ablation studies testing whether one or more dimensions can be removed without meaningful loss.</li>
+        <li>Tests of predictive or diagnostic value against baseline descriptions.</li>
+        <li>Comparisons between human and model classifications, with disagreements analysed rather than averaged away.</li>
+        <li>Independent cross-domain replication.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What would falsify or weaken the theory</h2>
+      <p>The framework should be weakened, revised, or rejected if evidence repeatedly shows that its claimed structure does not earn its complexity. Examples include:</p>
+      <ul>
+        <li>systematic cases that cannot be represented without ad hoc repair to the coordinate scheme;</li>
+        <li>persistently low inter-rater reliability even after clear training and definitions;</li>
+        <li>empirical collapse of supposedly independent dimensions into one another;</li>
+        <li>a simpler alternative taxonomy explaining the same observations as well or better;</li>
+        <li>failure to predict, discriminate, or diagnose completion structure better than reasonable baseline descriptions.</li>
+      </ul>
+    </section>
+
+    <nav class="reader-nav" aria-label="Research status related reading">
+      <a href={publicationPath('theory/')}>Formal theory</a>
+      <a href={publicationPath('academic/')}>Academic positioning</a>
+    </nav>
+  </article>
+</BaseLayout>
