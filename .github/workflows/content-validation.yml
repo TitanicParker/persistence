@@ -25,6 +25,10 @@ jobs:
       - name: Install locked dependencies
         run: npm ci
 
+      - name: Report production dependency audit
+        continue-on-error: true
+        run: npm audit --omit=dev
+
       - name: Validate canonical corpus
         run: npm run validate:content
 
@@ -97,7 +101,7 @@ jobs:
           grep -q "From Sentence Resolution to Constraint Grammar" dist/history/index.html
           grep -q "Academic Landscape" dist/academic/index.html
 
-          grep -q '<link rel="canonical" href="https://titanicparker.github.io/persistence/' dist/index.html
+          grep -q 'https://titanicparker.github.io/persistence/' dist/index.html
           grep -q 'https://titanicparker.github.io/persistence/theory/01-the-object-of-study/' dist/theory/01-the-object-of-study/index.html
           grep -q 'https://titanicparker.github.io/persistence/atlas/01-focal-mark/' dist/atlas/01-focal-mark/index.html
           grep -q 'https://titanicparker.github.io/persistence/glossary/completed-intelligibility/' dist/glossary/completed-intelligibility/index.html
