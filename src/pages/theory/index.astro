@@ -4,9 +4,13 @@ import { parseMonograph } from '../../lib/content/monograph';
 import { publicationPath } from '../../lib/site';
 const monograph = parseMonograph();
 ---
-<BaseLayout title={`Theory — ${monograph.title}`}>
+<BaseLayout
+  title={`Theory — ${monograph.title}`}
+  description="The mature monograph for the Constraint Grammar of Completed Intelligibility, presented as stable static reading units."
+  sourceStatus="Canonical theory"
+>
   <article class="reading-index">
-    <header><p class="eyebrow">The principal monograph</p><h1>{monograph.title}</h1><p class="lede">{monograph.subtitle}</p></header>
+    <header><p class="eyebrow">The principal monograph</p><h1>{monograph.title}</h1><p class="lede">{monograph.subtitle}</p><p class="index-guidance">For the boundary between internal theoretical structure and external empirical claims, read <a href={publicationPath('research-status/')}>Research Status</a>.</p></header>
     <section aria-labelledby="contents"><h2 id="contents">Reading units</h2>
       <ol class="chapter-list">
         {monograph.chapters.map((chapter) => <li><a href={publicationPath(`theory/${chapter.slug}/`)}>{chapter.number ? `${chapter.number}. ` : ''}{chapter.title}</a>{chapter.partTitle && <small>{chapter.partTitle}</small>}</li>)}
