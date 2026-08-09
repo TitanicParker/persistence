@@ -2,7 +2,7 @@ name: Content validation
 
 on:
   push:
-    branches: [publication-foundation, publication-finishing-pass, homepage-study-sequence]
+    branches: [publication-foundation, publication-finishing-pass, homepage-study-sequence, agent/developmental-reading-path]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -52,6 +52,11 @@ jobs:
           test -f dist/search-index.json
           test -f dist/constraint-grammar-portable-knowledge-edition.txt
 
+          for year in $(seq 6 18); do
+            test -f "dist/five-year-old/${year}/index.html"
+            grep -q 'meta name="robots" content="noindex,follow"' "dist/five-year-old/${year}/index.html"
+          done
+
           grep -q "Two simple ways in" dist/index.html
           grep -q 'href="/persistence/layman/' dist/index.html
           grep -q 'href="/persistence/five-year-old/' dist/index.html
@@ -64,6 +69,26 @@ jobs:
 
           grep -q "The Five-Year-Old Edition" dist/five-year-old/index.html
           grep -q "How Does Something Become" dist/five-year-old/index.html
+          grep -q 'href="/persistence/five-year-old/6/' dist/five-year-old/index.html
+          grep -q "Continue the explanation" dist/five-year-old/index.html
+          grep -q "How Does Something Become Finished Enough to Let Us Go On?" dist/five-year-old/6/index.html
+          grep -q 'href="/persistence/five-year-old/7/' dist/five-year-old/6/index.html
+          grep -q "What the Theory Has Shown—and What It Still Has to Earn" dist/five-year-old/18/index.html
+          grep -q "And, of course, we knew all along that you were never five." dist/five-year-old/18/index.html
+
+          if grep -q 'five-year-old/6/' dist/index.html; then
+            echo "Developmental sequence leaked into homepage navigation" >&2
+            exit 1
+          fi
+          if grep -q 'five-year-old/6/' dist/search-index.json; then
+            echo "Developmental sequence leaked into the ordinary search index" >&2
+            exit 1
+          fi
+          if grep -q "And, of course, we knew all along that you were never five." dist/constraint-grammar-portable-knowledge-edition.txt; then
+            echo "Developmental sequence leaked into the Portable Knowledge Edition" >&2
+            exit 1
+          fi
+
           grep -q "Portable Knowledge Edition: personal study permission" dist/rights/index.html
           grep -q "Permission for broader use" dist/rights/index.html
 
@@ -91,7 +116,7 @@ jobs:
             echo "Unexpected module hydration script found on core reading routes" >&2
             exit 1
           fi
-          echo "Homepage study sequence, Five-Year-Old Edition, portable knowledge edition, canonical routes, and /persistence/ base paths verified."
+          echo "Homepage, gateway-only developmental sequence, portable knowledge edition, canonical routes, and /persistence/ base paths verified."
       - name: Upload static build
         uses: actions/upload-artifact@v7
         with:
