@@ -18,29 +18,39 @@ jobs:
         with:
           ref: publication-foundation
 
+      - name: Detect committed lockfile
+        id: lockfile
+        shell: bash
+        run: |
+          if [[ -f package-lock.json ]]; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Use Node.js 22 without cache while bootstrapping
-        if: ${{ hashFiles('package-lock.json') == '' }}
+        if: ${{ steps.lockfile.outputs.exists == 'false' }}
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
       - name: Use Node.js 22 with npm cache
-        if: ${{ hashFiles('package-lock.json') != '' }}
+        if: ${{ steps.lockfile.outputs.exists == 'true' }}
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
 
       - name: Bootstrap lockfile and install dependencies
-        if: ${{ hashFiles('package-lock.json') == '' }}
+        if: ${{ steps.lockfile.outputs.exists == 'false' }}
         run: npm install
 
       - name: Install locked dependencies
-        if: ${{ hashFiles('package-lock.json') != '' }}
+        if: ${{ steps.lockfile.outputs.exists == 'true' }}
         run: npm ci
 
       - name: Commit generated lockfile
-        if: ${{ github.event_name == 'pull_request' && hashFiles('package-lock.json') == '' }}
+        if: ${{ github.event_name == 'pull_request' && steps.lockfile.outputs.exists == 'false' }}
         shell: bash
         run: |
           set -euo pipefail
