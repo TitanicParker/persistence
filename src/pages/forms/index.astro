@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { parseExpositions } from '../../lib/content/expositions';
+const expositions = parseExpositions();
+---
+<BaseLayout title="54 Forms — Constraint Grammar">
+  <article class="reading-index"><header><p class="eyebrow">Plain-language reading mode</p><h1>The 54 forms</h1><p class="lede">Fifty-four source-derived expositions, ordered by coordinate position.</p></header>
+    <ol class="chapter-list">{expositions.map((ex) => <li><a href={`/forms/${ex.slug}/`}>{String(ex.number).padStart(2,'0')} · {ex.canonicalCrystallization}</a><small>{ex.transformationPattern} / {ex.completionTopology} / {ex.persistenceMode}</small></li>)}</ol>
+  </article>
+</BaseLayout>
