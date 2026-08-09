@@ -1,0 +1,1679 @@
+THE CONSTRAINT GRAMMAR OF COMPLETED INTELLIGIBILITY
+Plain-Language Expositions of the Fifty-Four Generated Forms — Final Edition
+
+These expositions approach each form as a familiar event of completion. The coordinate labels are retained for reference, but the prose asks the reader to feel the structure from inside the situation: what remains unresolved, what changes, what makes that change sufficient, and what kind of result is left. The coordinate-generated form is therefore kept distinct from its canonical crystallization, while the three established manifestations show the same event-shape recurring in different materials.
+
+CELL 1
+
+Differentiation / Focal / Standing
+
+Coordinate-generated form: Focal distinguished standing
+
+Canonical crystallization: Focal mark
+
+Companion utterance: "This."
+
+Constraint strength: Near-determinate
+
+A field can contain many perfectly visible things and still leave one elementary matter unresolved: which one is meant. Nothing needs to be added to the field. What is missing is a difference that has become decisive at one place. Once one candidate is singled out, the field does not have to be reorganized everywhere; it settles around that candidate. And the result does not need a continuing relation or a further effect to keep it intelligible. The selected thing itself is now available as the achieved result. This is the smallest kind of completed differentiation: not a scale, not a sorting, not an exclusion, but one thing coming forward and remaining there as the one indicated.
+
+The movement is compact: undifferentiated candidate → focal discrimination → distinguished standing. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+Crowded keyring. One key is pointed out. That key stands as the indicated one.
+
+Many stars overhead. An astronomer singles out one star. That star stands as the one meant.
+
+Several faces in a photograph. A finger points to one face. That person stands as the identified figure.
+
+Across those three scenes, the materials change but the completion does not. A difference is concentrated upon one focal candidate until that candidate stands as the distinguished one.
+
+'Focal mark' adds almost no structural content beyond the generated form. Once one candidate is differentiated, completion gathers on it, and the result simply stands, the natural local event is indication. The freedom lies mainly in what is pointed out, not in the shape of the completion.
+
+"This."
+
+
+CELL 2
+
+Differentiation / Focal / Bearing
+
+Coordinate-generated form: Focal contrast-bearing distinction
+
+Canonical crystallization: Binary bearing
+
+Companion utterance: "This, not that."
+
+Constraint strength: Tightly constrained
+
+Two alternatives can remain live even when both are already clearly distinguishable. The unresolvedness lies in which side will count. Completion comes when one is selected, but the rejected side does not disappear from the meaning of the choice. The selected route is this route rather than that one; the chosen setting is this setting against its opposite. The event therefore gathers at one selected locus while carrying the contrast that made the selection possible. If the alternative could simply fall away, the result would be an isolated standing. Here the completed distinction still bears its other side inside it.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Two routes remain possible. The left route is chosen over the right. The left route stands as “this, not that”.
+
+Two similar switches offer opposite settings. One setting is selected against the other. The chosen setting stands through its contrast.
+
+Two finalists remain. One candidate is selected rather than the other. The winner stands with the rejected alternative as defining opposite.
+
+Seen whole, the event moves from live alternatives, through focal selection, into contrast-bearing standing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+One focal alternative is distinguished while its completed standing remains constitutively defined by the alternative against which it was selected.
+
+The generated form requires a focally selected distinction whose meaning retains its contrasting alternative. 'Binary bearing' sharpens that by making the surviving contrast explicitly two-sided. The coordinate does not require every possible contrast to be literally binary, but it strongly directs us toward selection-under-opposition. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"This, not that."
+
+
+CELL 3
+
+Differentiation / Focal / Efficacy
+
+Coordinate-generated form: Focal operative distinction
+
+Canonical crystallization: Boundary act
+
+Companion utterance: "This far."
+
+Constraint strength: Open realization
+
+Sometimes a difference matters because it changes what can happen at one point. A channel may continue, a runner may keep moving, a line may keep extending. The unresolved question is where continuation will cease to count as continuation. Once one locus is made decisive, that difference is not merely noticed: it takes effect. The gate stops the water; the finish line ends the run; the marked point terminates the stroke. The coordinate requires a focal distinction with consequence. It does not by itself require that consequence to be a boundary, which is why the familiar form that emerges here is more specific than the coordinate alone.
+
+Its inner course can be stated simply: undifferentiated continuation → operative focal distinction → changed continuation. The coordinate fixes that deep course, but it does not yet decide every semantic detail of the crystallization.
+
+Water runs freely along a channel. A gate is lowered at one point. The flow stops there.
+
+A runner continues along an open course. The finish line fixes the endpoint. The run ends at that line.
+
+A pencil stroke extends across the page. The hand stops at a marked point. The line terminates there.
+
+The common structure can therefore be stated more broadly than any one of those scenes:
+
+A focal difference becomes operative so that one determinate locus changes what can continue or occur.
+
+The coordinate requires an operative difference concentrated at one locus. 'Boundary act' adds the specific idea that the efficacy is stopping or terminating continuation. Other focal operative distinctions are possible in principle, so the boundary belongs to crystallization rather than to the bare coordinate. That distinction is the point of calling this an Open realization: the coordinate determines a recognizable phenomenological syntax, while the canonical crystallization chooses one especially lucid semantic member of that wider admissible region.
+
+"This far."
+
+
+CELL 4
+
+Differentiation / Distributed / Standing
+
+Coordinate-generated form: Distributed distinguished standing
+
+Canonical crystallization: Scope standing
+
+Companion utterance: "Within this."
+
+Constraint strength: Tightly constrained
+
+A scope is not made by pointing to one thing. It appears when a difference is made to hold over an extent. Before the change, the woodland, workshop, or discussion has no settled inside for the purpose at hand. A criterion is then carried through a region, and the region itself becomes the completed result. One point would not be enough: the distinction has to cover what is to count as inside. Once it does, what remains is simply the differentiated extent—there to be taken up as the relevant scope.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Open woodland with no study boundary. Researchers mark one plot and apply the study criterion within it. That plot stands as the protected study region.
+
+A workshop floor with mixed activity. One marked area is designated for assembly. That area stands as the assembly zone.
+
+A long discussion ranging over many issues. The group fixes the present question as the operative scope. That question stands as the region within which discussion counts.
+
+At full compression, the change is undelimited field → criterion distributed across an extent → differentiated region standing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+A criterion is made to hold across a plurality or extent until a differentiated region or arrangement stands as such.
+
+The coordinate requires a distributed difference whose achieved extent stands. 'Scope standing' specifies that the standing is a region of applicability—an inside. That is strongly guided, though not the only conceivable distributed differentiated standing. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Within this."
+
+
+CELL 5
+
+Differentiation / Distributed / Bearing
+
+Coordinate-generated form: Context-bearing distinction
+
+Canonical crystallization: Context-bound mark
+
+Companion utterance: "This here."
+
+Constraint strength: Tightly constrained
+
+A mark can be perfectly clear and still make sense only here. The dealer token is special for this round; the theatre door is special for tonight; the map symbol is special at the reader's present position. The difference is therefore not carried by the object alone. It is made within a wider arrangement, and that arrangement remains part of what the distinction means. The completion is distributed because the surrounding field supplies the conditions under which the mark counts, and it persists as bearing because the mark cannot be detached from that context without changing its identity.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Identical red tokens used in several games. One token is marked as the dealer token for this round. Its distinction stands only within that game context.
+
+Several doors look alike in a theatre corridor. A temporary sign marks one as the actors’ entrance for tonight. That door stands as distinct within the current performance context.
+
+Repeated symbols appear across a map. One symbol is highlighted as “you are here” at the current location. That mark stands through its local context.
+
+The form's own movement is equivalent occurrences → context-indexed distinction → context-bearing standing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+Something becomes distinct within a wider field, but its completed distinction remains inseparable from the contextual relations through which it counts there.
+
+The generated form already requires a distinction that remains dependent on the wider field through which it counts. 'Context-bound mark' names that dependence as contextual indexing. It is a close sharpening rather than an arbitrary choice. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"This here."
+
+
+CELL 6
+
+Differentiation / Distributed / Efficacy
+
+Coordinate-generated form: Distributed differential efficacy
+
+Canonical crystallization: Field separation
+
+Companion utterance: "These among these."
+
+Constraint strength: Near-determinate
+
+A mixed field is not resolved by finding one interesting member. The same difference has to be applied through the range until the field itself is reorganized. Sorting recyclables, assigning runners to age groups, and separating viable seeds all require the criterion to travel through the plurality. The result is not merely that differences are known; the differences now govern treatment. Items go into different streams, groups, or sets. The completed distinction therefore exists as something the field can now do with its members.
+
+What has to happen, in order, is mixed plurality → distributed discrimination → operative separation. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+Mixed recyclables move along a sorting belt. Scanners discriminate plastic from the rest across the stream. Plastic items are operatively separated.
+
+Runners of several age groups gather at registration. Officials sort competitors across the field by age category. Distinct race groups are produced.
+
+Mixed seeds cover a sorting tray. The gardener separates viable seeds from damaged ones across the batch. Two operatively distinct sets result.
+
+Across those three scenes, the materials change but the completion does not. A distinguishing criterion is carried through a plurality until it produces an operative separation or differential treatment across the field.
+
+Once a criterion differentiates across a plurality and leaves an operative consequence, 'Field separation' follows with little remainder. The exact sorting mechanism and domain may vary; the structural event is nearly fixed.
+
+"These among these."
+
+
+CELL 7
+
+Differentiation / Release / Standing
+
+Coordinate-generated form: Released differentiated standing
+
+Canonical crystallization: Opposed standing
+
+Companion utterance: "Opposed."
+
+Constraint strength: Tightly constrained
+
+Two positions can be present without yet being allowed to stand apart. The unresolved pressure is a common holding that keeps their difference from taking its own shape. Completion arrives when that common governance is broken and the positions can stand independently. The coordinate requires released differentiation: the earlier conflation no longer decides the field. The canonical form sharpens this into opposition. That sharpening matters, because separation alone would satisfy the broader generated syntax; standing over against one another is the more specific crystallization.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Two teams treated as one undifferentiated crowd. They are set against each other as opponents. Two opposed sides stand.
+
+Two magnetic poles considered without relation. They are oriented into opposition. Opposed polar standings become clear.
+
+Two arguments blended together in discussion. Their claims are separated and placed against one another. Two opposed positions stand.
+
+The movement is compact: conflated positions → release into differentiation → distinct standings. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+Previously conflated possibilities are released from common governance so that differentiated positions can stand independently.
+
+The coordinates require differentiated standings made possible by release from conflation. 'Opposed standing' adds that the separated positions face one another as contraries. That is a significant but strongly guided sharpening. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Opposed."
+
+
+CELL 8
+
+Differentiation / Release / Bearing
+
+Coordinate-generated form: Released comparative bearing
+
+Canonical crystallization: Graded contrast
+
+Companion utterance: "More and less."
+
+Constraint strength: Tightly constrained
+
+Variation can be real yet flattened. Several temperatures, speeds, or shades may differ without those differences being organized as more and less. The change occurs when the flat holding is released and the members take places in a comparative order. No single member is enough to carry the result, because every position is intelligible through its relation to others: hotter than, slower than, darker than. The completed difference therefore persists as bearing. The coordinate nearly demands comparison, while the canonical crystallization selects gradation as the particularly natural form that comparison takes.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Several cups seem simply “hot”. Their temperatures are ordered from cooler to hotter. A more-and-less gradient stands.
+
+Runners finish with different speeds. Their performances are ranked by pace. A graded contrast from faster to slower stands.
+
+Paint samples look like similar shades. They are arranged from lightest to darkest. A continuous gradient of difference stands.
+
+Seen whole, the event moves from flattened variation, through release into ordered difference, into comparative bearing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+A previously flattened or commonly held difference is released into a differentiated arrangement whose members remain intelligible by their relative bearing.
+
+The coordinate requires released differentiation whose completed identity is comparative. 'Graded contrast' specifies that the comparison takes ordered degrees rather than some other relative structure. The atlas examples make that sharpening especially natural. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"More and less."
+
+
+CELL 9
+
+Differentiation / Release / Efficacy
+
+Coordinate-generated form: Released exclusionary efficacy
+
+Canonical crystallization: Exclusive cut
+
+Companion utterance: "Not admitted."
+
+Constraint strength: Tightly constrained
+
+Admission has a peculiar structure: a criterion does not merely describe candidates; it changes what may pass. At first, several candidates are still live before the threshold. Completion comes when the shared admissibility is broken. What fails the criterion is no longer governed as though it remained equally eligible, and the distinction takes effect in what proceeds. The result is therefore not simply a standing classification. It is an exclusion with consequences. This makes the local form much narrower than a generic act of differentiation.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Two people both approach a single-seat kayak. One is admitted to take the seat and the other is excluded. Only one occupant proceeds.
+
+Two keys fit partway into a lock. The correct key is accepted and the other rejected. Only the admitted key operates the lock.
+
+Several entries reach a members-only gate. Membership is checked and nonmembers are refused. Admission proceeds by operative exclusion.
+
+Its inner course can be stated simply: shared admissibility → release by criterion → operative exclusion. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+A distinction becomes complete by releasing what fails its criterion from prior admissibility, producing an effective separation in what may proceed.
+
+The generated form already points toward a criterion that removes some candidates from what may proceed. 'Exclusive cut' gives that operative removal a concise local name. The coordinate leaves little room beyond how exclusion is implemented. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Not admitted."
+
+
+CELL 10
+
+Opening / Focal / Standing
+
+Coordinate-generated form: Focal available field
+
+Canonical crystallization: Source field
+
+Companion utterance: "From here."
+
+Constraint strength: Near-determinate
+
+An opening can gather around a source. Before the lamp is switched on, before a beacon becomes an origin, before a speaker takes the microphone, the surrounding field lacks a point from which availability spreads. The change is not merely that one object is selected; what becomes available around it is enlarged. Completion is achieved when the field can be taken up from that source, and what remains is the opened field itself. Source and field belong together so tightly here that the crystallization is almost already contained in the generated form.
+
+At full compression, the change is constrained availability → focal source opening → available field. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+A dark room with little visible. One lamp is switched on at the center. A visible field opens from that source.
+
+A map with no local reference point. One beacon is fixed as the origin. The surrounding area becomes intelligible from that point.
+
+A crowd waits without knowing where instructions come from. One speaker takes the microphone. An audible field gathers around that source.
+
+Across those three scenes, the materials change but the completion does not. Availability opens around one privileged source or centre until an enlarged field stands as accessible from there.
+
+'Source field' is almost simply the coordinate-generated form compressed. Focal opening produces an available field from a privileged source, and Standing leaves that field there as achieved.
+
+"From here."
+
+
+CELL 11
+
+Opening / Focal / Bearing
+
+Coordinate-generated form: Source-bearing divergence
+
+Canonical crystallization: Source-carried divergence
+
+Companion utterance: "From here, either way."
+
+Constraint strength: Near-determinate
+
+One source can give rise to more than one way forward without ceasing to be the source of all of them. A fork, a branching phrase, or a manifold does not merely add options somewhere in the field; the divergence gathers at one origin. And the branches remain intelligible as branches of that origin. Their source relation survives the opening. The result therefore differs both from a bare list of available options and from an active branching mechanism: what remains is a set of continuations carrying their common beginning with them.
+
+The form's own movement is single continuation → focal opening into alternatives → source-bearing divergence. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+One trail reaches a mountain fork. Two paths open from the same junction. Divergent routes remain linked to one source.
+
+One melody reaches a branching phrase. The composer develops two different continuations from it. Both musical paths bear their common origin.
+
+One central pipe reaches a manifold. Flow is divided into several source-linked branches. Multiple paths extend from the same supply.
+
+Across those three scenes, the materials change but the completion does not. Several possibilities open from one focal source while each completed continuation remains intelligible through its bearing back to that common origin.
+
+The coordinate practically supplies the phrase: multiple openings from one source remain source-related. 'Source-carried divergence' only tightens the wording of a form that is already nearly determinate.
+
+"From here, either way."
+
+
+CELL 12
+
+Opening / Focal / Efficacy
+
+Coordinate-generated form: Focal generative opening
+
+Canonical crystallization: Branching output
+
+Companion utterance: "More ways open."
+
+Constraint strength: Tightly constrained
+
+A point can do more than stand as an origin; it can become productive. The opening pressure is a single continuation or restricted possibility-set. At one locus the field changes so that multiple continuations become operative. Buds split a stem, a question opens lines of inquiry, switches send trains onto outgoing tracks. The completion is focal because branching is organized at the source point, and efficacious because the new possibilities are not merely conceivable—they are now generated paths of continuation.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+One young stem grows upward. Buds split its growth into several shoots. Multiple growing branches result.
+
+One initial question guides a lesson. The teacher opens several lines of inquiry from it. Multiple avenues of investigation grow.
+
+One railway line reaches a switching yard. Switches send trains onto several outgoing tracks. Multiple continuations become operative.
+
+What has to happen, in order, is closed possibility set → focal generative opening → multiple operative continuations. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+A focal point of opening actively generates multiple new continuations or possibilities.
+
+The coordinate fixes focal opening as productive efficacy. 'Branching output' chooses branching as the local image of that production. Other kinds of focal generative opening remain imaginable, so the name adds a real but narrow sharpening. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"More ways open."
+
+
+CELL 13
+
+Opening / Distributed / Standing
+
+Coordinate-generated form: Distributed passage standing
+
+Canonical crystallization: Alternate passage
+
+Companion utterance: "Another way through."
+
+Constraint strength: Tightly constrained
+
+When the usual way through is blocked, an opening is not complete merely because a new point becomes available. Passage has to be re-established through an intervening field. The side road, connecting corridor, and higher trail all solve the same problem: the field becomes traversable again by another route. What remains after the change is not an ongoing mechanism but a passage that stands open. The canonical crystallization adds the idea of alternation to a broader coordinate demand for distributed passage standing.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+The main road is blocked. Traffic is redirected along a side route. Another way through stands open.
+
+A hallway is closed for repairs. People cross the building by a connecting corridor. An alternate passage remains available.
+
+The usual hiking trail is flooded. Walkers take a higher path around the water. Passage continues by another route.
+
+The movement is compact: blocked traversal → distributed opening across a field → passage standing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+Availability is enlarged through traversal of a plurality or intervening field until an additional passage or route stands open.
+
+Distributed opening that remains as a passage strongly suggests another way through. 'Alternate passage' adds the semantic relation to a blocked or usual route. The coordinate is narrow but does not logically require alternation. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Another way through."
+
+
+CELL 14
+
+Opening / Distributed / Bearing
+
+Coordinate-generated form: Span-bearing reach
+
+Canonical crystallization: Span-carried reach
+
+Companion utterance: "Reachable across."
+
+Constraint strength: Near-determinate
+
+Distance is the important unresolvedness here. Something can exist at the far side and still not be available from here. The opening must succeed through the interval itself. A bridge, cable, or suspension span enlarges reach only by maintaining a connection across what separates the two positions. That connection cannot disappear from the completed meaning: the far side remains reachable because the carrier remains. Opening, distributed sufficiency, and bearing therefore fuse into one unusually narrow event-shape.
+
+Seen whole, the event moves from local availability, through span-maintaining connection, into distant reach. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+A village lies beyond a river. A bridge carries passage across the gap. The far bank remains reachable.
+
+A computer sits far from the router. A network cable spans the distance. Connection is maintained at the remote machine.
+
+Two cliffs are separated by a ravine. A suspension bridge links the span. The opposite side stays within reach.
+
+Across those three scenes, the materials change but the completion does not. Something previously local becomes available at a separated position because a connection maintains reach across the intervening span.
+
+Here generation and crystallization nearly coincide. Opening must cross a span, and the achieved reach remains through its carrier. 'Span-carried reach' is little more than the event's natural name.
+
+"Reachable across."
+
+
+CELL 15
+
+Opening / Distributed / Efficacy
+
+Coordinate-generated form: Distributed availability
+
+Canonical crystallization: Field distribution
+
+Companion utterance: "Available throughout."
+
+Constraint strength: Near-determinate
+
+A resource may be available and yet too local to count as available for the field that needs it. The tank, access point, or depot is not absent; the problem is concentration. Completion comes when outlets, repeaters, or stations distribute access through the relevant extent. One successful point would not settle the situation, because the plurality itself is the target. And what remains is practical efficacy: water, network access, or supplies can now be used throughout the field.
+
+Its inner course can be stated simply: localized access → distributed openings → field-wide efficacy. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+Water is available only at one tank. Irrigation lines distribute outlets across the field. Water becomes available throughout the crops.
+
+One wireless access point cannot cover the building. Repeaters are placed through the floors. Network access becomes available throughout.
+
+Supplies are stored at one central depot. Stations are opened across the festival grounds. Essential supplies become available throughout the site.
+
+Across those three scenes, the materials change but the completion does not. An initially localized availability is distributed through a wider field until access becomes operative throughout that plurality.
+
+Distributed Opening plus Efficacy almost demands availability throughout a field. 'Field distribution' is therefore a compressed name for a structure the coordinates have already specified.
+
+"Available throughout."
+
+
+CELL 16
+
+Opening / Release / Standing
+
+Coordinate-generated form: Released option standing
+
+Canonical crystallization: Released option
+
+Companion utterance: "Free to choose."
+
+Constraint strength: Near-determinate
+
+Freedom of choice begins when compulsion stops governing. The second route, project topic, or machine mode does not have to be created from nothing; it has to become genuinely available. The decisive change is therefore both an opening and a release. Once the old restriction loses its authority, an option simply stands. Nothing more has to operate for the form to be complete. The possibility is there, and it is live in a way it was not before.
+
+At full compression, the change is governed restriction → release into alternative → option standing. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+A hiker is required to follow one marked trail. The restriction is lifted and a second route is opened. An alternative stands available for choice.
+
+A student must complete one fixed project topic. The teacher permits a choice among several topics. A genuine option stands open.
+
+A machine is locked to one operating mode. The lock is released and another mode becomes selectable. An alternative operating state stands available.
+
+Across those three scenes, the materials change but the completion does not. A prior restriction loses its governance, leaving an additional possibility standing as genuinely available.
+
+A possibility becomes available because restriction ceases to govern, and the possibility simply stands. 'Released option' is the natural contraction of that event; very little semantic choice remains.
+
+"Free to choose."
+
+
+CELL 17
+
+Opening / Release / Bearing
+
+Coordinate-generated form: Released continuity bearing
+
+Canonical crystallization: Continual passage
+
+Companion utterance: "Through without break."
+
+Constraint strength: Open realization
+
+Interruption can govern an opening as strongly as a locked door. The path broken into stair-like segments, the isolated musical notes, and the disconnected pools all prevent continuity from being carried through. Completion arrives when segmentation ceases to rule the field and passage can persist across what had divided it. Because the continuity remains what it is only through that maintained through-line, the residue is bearing rather than a bare standing. The coordinate requires released continuity; 'continual passage' is one especially clear way of giving that structure a local face.
+
+The form's own movement is interrupted continuity → release from segmentation → continuous bearing. The coordinate fixes that deep course, but it does not yet decide every semantic detail of the crystallization.
+
+A path rises in separate stair-like sections. The steps give way to one uninterrupted ramp. Continuous passage bears through the rise.
+
+Music advances in broken, isolated notes. The phrasing is joined into one sustained line. Continuity carries through the passage.
+
+Water moves through disconnected pools. Channels join them into one flowing course. The flow continues through without breaks.
+
+The common structure can therefore be stated more broadly than any one of those scenes:
+
+A prior interruption or segmentation loses its governance so that enlarged continuity persists through an unbroken bearing.
+
+The coordinate requires enlarged continuity made possible by release from interruption and maintained through a bearing. 'Continual passage' chooses passage as the concrete semantic shape. Other sustained continuities could realize the same syntax. That distinction is the point of calling this an Open realization: the coordinate determines a recognizable phenomenological syntax, while the canonical crystallization chooses one especially lucid semantic member of that wider admissible region.
+
+"Through without break."
+
+
+CELL 18
+
+Opening / Release / Efficacy
+
+Coordinate-generated form: Released beyond-limit efficacy
+
+Canonical crystallization: Edge opening
+
+Companion utterance: "Beyond."
+
+Constraint strength: Tightly constrained
+
+An edge matters when it still governs what can happen beyond it. A wall, rock face, or shoreline marks a limit at which continuation stops. The opening becomes complete only when that limit loses its controlling force—through a gate, tunnel, or pier—and the result is consequential: movement can now reach where it could not reach before. The form is therefore not just an opened possibility standing nearby. It is a released limit whose loss of governance has changed the field's effective reach.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+A walled garden ends at a closed boundary. A gate is cut through the wall. Passage reaches beyond the former edge.
+
+Miners reach a sealed rock face. A tunnel is broken through. Access extends beyond the previous limit.
+
+A fenced path stops at the shoreline. A pier is built outward over the water. Movement reaches beyond the old edge.
+
+What has to happen, in order, is limiting edge → release through breach → beyond-limit efficacy. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+A governing limit is broken or released so that continuation becomes effectively capable of reaching beyond its former edge.
+
+The coordinate requires a released limit whose loss of governance yields effective beyond-reach. 'Edge opening' is a tight crystallization, though the released limit need not always be literally spatial. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Beyond."
+
+
+CELL 19
+
+Relating / Focal / Standing
+
+Coordinate-generated form: Focal relation standing
+
+Canonical crystallization: Direct bearing
+
+Companion utterance: "This bears on that."
+
+Constraint strength: Near-determinate
+
+Two terms can coexist without a relation between them being part of the situation. The rope between boats, the phone call between people, and the wire between sensor and alarm each establish one privileged connection. Once that connection is made, nothing else has to spread through a larger field for the relation to count as complete. The relation itself is simply there. This is why direct bearing is nearly forced: the transformation is relational, the completion gathers at one link, and the residue is the relation standing as achieved.
+
+The movement is compact: unrelated terms → focal connection → relation standing. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+A loose rope lies between two boats. The rope is tied directly from one to the other. A direct connection stands between them.
+
+Two people have no contact. One calls the other by phone. A direct relation stands between them.
+
+A sensor and alarm are separate. The sensor is wired straight to the alarm. The sensor now bears directly on the alarm.
+
+Across those three scenes, the materials change but the completion does not. A bearing is established directly around a focal connection until the relation itself stands as determinate.
+
+A focal relation is established and simply stands. 'Direct bearing' is almost forced because the relation's focality is most naturally realized as one direct connection.
+
+"This bears on that."
+
+
+CELL 20
+
+Relating / Focal / Bearing
+
+Coordinate-generated form: Focal counterbearing
+
+Canonical crystallization: Pivoted balance
+
+Companion utterance: "Held in counterbalance."
+
+Constraint strength: Open realization
+
+A relation can settle around a centre without leaving a single self-standing result. In a seesaw, mobile, or scale, the important thing is how opposing tendencies are held around a pivot. The field becomes complete when the focal relation organizes those tendencies into a maintained counterbearing. Remove the relation of counterweight and the result disappears. The coordinate therefore demands a focal relational bearing, but it does not uniquely demand balance or a physical pivot. 'Pivoted balance' is a vivid realization of a broader region in which focal relation persists through constitutive counterrelation.
+
+Seen whole, the event moves from unequal tendencies, through focal relational countering, into sustained counterbearing. The coordinate fixes that deep course, but it does not yet decide every semantic detail of the crystallization.
+
+A seesaw tips under one child’s weight. Another child shifts on the opposite side around the fulcrum. A balanced relation stands.
+
+A mobile hangs heavier on one side. A counterweight is moved across the central support. The two sides hold in balance.
+
+A scale pan drops under one load. Weight is added to the opposing pan around the pivot. A balanced bearing is established.
+
+The common structure can therefore be stated more broadly than any one of those scenes:
+
+A focal relation organizes unequal tendencies so that the achieved arrangement persists through maintained counterbearing.
+
+The coordinate requires a focal relation that persists through counterbearing. 'Pivoted balance' specifies balance around a pivot as the local realization. The structural region is wider than that specific mechanical image. That distinction is the point of calling this an Open realization: the coordinate determines a recognizable phenomenological syntax, while the canonical crystallization chooses one especially lucid semantic member of that wider admissible region.
+
+"Held in counterbalance."
+
+
+CELL 21
+
+Relating / Focal / Efficacy
+
+Coordinate-generated form: Focal responsive efficacy
+
+Canonical crystallization: Responsive return
+
+Companion utterance: "Answered."
+
+Constraint strength: Open realization
+
+Some relations become intelligible only when they answer. A call, phrase, or gesture can be perfectly clear and still leave the relational event unfinished until something corresponds to it. The completion gathers around that initiating relation and is known by what it produces: an echo, answering phrase, or returned wave. What remains is not merely the fact of connection but the accomplished response. Yet response is one way among several in which a focal relation might become efficacious, so the canonical form remains more specific than the coordinate requirement.
+
+Its inner course can be stated simply: unreciprocated occurrence → focal relational elicitation → response effect. The coordinate fixes that deep course, but it does not yet decide every semantic detail of the crystallization.
+
+One person calls across a valley. The sound returns from the cliff face. An echo answers the call.
+
+A drummer plays a short phrase. Another drummer answers with a matching phrase. A call-and-return effect occurs.
+
+A child waves from across the street. The friend waves back in response. The initial gesture is answered.
+
+The common structure can therefore be stated more broadly than any one of those scenes:
+
+A focal relation becomes efficacious when one occurrence elicits or produces a corresponding occurrence from another term.
+
+The coordinate requires focal relational efficacy. 'Responsive return' specifies the efficacy as answer or return. Response is vivid and natural, but not uniquely required by the coordinates. That distinction is the point of calling this an Open realization: the coordinate determines a recognizable phenomenological syntax, while the canonical crystallization chooses one especially lucid semantic member of that wider admissible region.
+
+"Answered."
+
+
+CELL 22
+
+Relating / Distributed / Standing
+
+Coordinate-generated form: Distributed relation standing
+
+Canonical crystallization: Sequential link
+
+Companion utterance: "Then."
+
+Constraint strength: Tightly constrained
+
+Order is a relation that belongs to more than one member. Recipe steps, photographs, and train stops can all be present without a settled before-and-after. The change occurs when their bearings are arranged across the plurality. No single item can contain the sequence, because predecessor and successor depend on the ordered field. Once the ordering is established, however, it can simply stand as the result. The canonical crystallization names one especially natural distributed relational standing: sequence.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Recipe steps lie unordered on the counter. They are arranged from preparation to cooking to serving. A sequence stands as “then”.
+
+Photographs from a trip are mixed together. They are ordered by when each was taken. A before-and-after sequence stands.
+
+Train stops are listed without order. They are arranged from departure through each successive station. The route stands as a sequence.
+
+At full compression, the change is unordered plurality → distributed relational ordering → sequence standing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+Distinct members are placed into an ordered bearing across a plurality until the relational ordering itself stands.
+
+The coordinate requires a distributed relational order that stands. 'Sequential link' selects predecessor-successor order from the narrower family of possible distributed standings. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Then."
+
+
+CELL 23
+
+Relating / Distributed / Bearing
+
+Coordinate-generated form: Reciprocal bearing
+
+Canonical crystallization: Reciprocal shift
+
+Companion utterance: "Each changes the other."
+
+Constraint strength: Near-determinate
+
+Mutuality begins when neither side can be understood as acting alone. Dancers adjust to each other, buyer and seller revise their offers, rowers compensate for one another. The relation is distributed because it is constituted across more than one position, and it persists as bearing because each position remains what it is only through the other's response. The completion is not merely an ordered arrangement or an effect produced by the system. It is the reciprocal relation itself, continuously defining the participants.
+
+The form's own movement is independent positions → mutual distributed adjustment → reciprocal bearing. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+Two dancers begin with independent movements. Each adjusts timing and position to the other. A mutually responsive duet develops.
+
+Buyer and seller begin from separate demands. Each changes their offer in response to the other. A reciprocal negotiating relation develops.
+
+Two rowers correct a drifting boat. Each stroke changes what the other must compensate for. Their movements become mutually adjusting.
+
+Across those three scenes, the materials change but the completion does not. Multiple positions become mutually determining across the field so that each continues to be intelligible through its reciprocal bearing on the others.
+
+Distributed Relating with Bearing almost compels reciprocity: each position remains constituted through the others. 'Reciprocal shift' gives that mutual determination its natural local name.
+
+"Each changes the other."
+
+
+CELL 24
+
+Relating / Distributed / Efficacy
+
+Coordinate-generated form: Distributed relational efficacy
+
+Canonical crystallization: Relational cycle
+
+Companion utterance: "Back into itself."
+
+Constraint strength: Open realization
+
+A network of relations can do more than stand as an order or hold its members in mutual dependence. It can acquire an effect of its own. Water circulates, a ball returns through the passing chain, a signal feeds back through devices. The coordinate requires distributed relational efficacy: the relations across the plurality must become organized so that the structure itself does something. Cyclic return is not forced by those three constraints, however. It is the canonical sharpening that makes the efficacy especially vivid by closing the chain back into itself.
+
+What has to happen, in order, is open relational chain → distributed closure and organization → systemic relational effect. The coordinate fixes that deep course, but it does not yet decide every semantic detail of the crystallization.
+
+Water leaves a reservoir, turns a wheel, and runs back into the system. The return channel closes the path. A repeating circulation operates.
+
+A ball passes from one player to the next without return. The final player sends it back to the first. The passing relation becomes a cycle.
+
+A signal moves through several connected devices. The last device feeds the signal back to the first. The chain closes into a recurring loop.
+
+The common structure can therefore be stated more broadly than any one of those scenes:
+
+Relations distributed across a plurality become organized so that the relational structure itself produces a systemic effect.
+
+The coordinate requires distributed relation that produces a systemic effect. 'Relational cycle' adds closure-by-return. The cycle is a lucid member of the admissible family, not a requirement already contained in the coordinate. That distinction is the point of calling this an Open realization: the coordinate determines a recognizable phenomenological syntax, while the canonical crystallization chooses one especially lucid semantic member of that wider admissible region.
+
+"Back into itself."
+
+
+CELL 25
+
+Relating / Release / Standing
+
+Coordinate-generated form: Released correspondence standing
+
+Canonical crystallization: Pattern alignment
+
+Companion utterance: "The same arrangement."
+
+Constraint strength: Tightly constrained
+
+Surface difference can conceal a relation that matters more. Two mosaics differ in material, melodies in key, constellations in scale. The unresolvedness ends when those surface differences stop governing comparison and a common arrangement can stand instead. Completion occurs by release: what first looked decisive becomes secondary. What remains is a correspondence that can simply be taken up as the achieved result. 'Pattern alignment' sharpens the broader coordinate demand by specifying the standing relation as sameness of arrangement.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Two floor mosaics look different in color and material. Their tile positions are matched by arrangement. The same underlying pattern stands in both.
+
+A melody appears in two different keys. Corresponding notes are aligned by interval pattern. One shared musical arrangement stands across both versions.
+
+Two constellations are drawn at different scales. Their point-to-point layout is aligned. The same spatial pattern stands despite surface difference.
+
+The movement is compact: surface mismatch → release to common relation → correspondence standing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+Surface separation or difference loses its governance so that an underlying correspondence can stand as the relevant relation.
+
+The coordinate requires surface difference to lose authority so that correspondence can stand. 'Pattern alignment' specifies the correspondence as sameness of arrangement. That is a strong but not uniquely forced sharpening. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"The same arrangement."
+
+
+CELL 26
+
+Relating / Release / Bearing
+
+Coordinate-generated form: Released correspondence bearing
+
+Canonical crystallization: Role correspondence
+
+Companion utterance: "This plays that role."
+
+Constraint strength: Tightly constrained
+
+Things need not look alike to correspond. A goalkeeper and a gate, a heart and a pump, a conductor and a traffic controller can remain strikingly different in material while a deeper bearing becomes visible. The form completes when surface mismatch loses its authority and the correspondence itself becomes constitutive. But unlike a standing pattern, the result here lives through the mapping: this plays the role of that. Remove the role relation and the completion disappears. The canonical crystallization therefore specifies role as the kind of correspondence that the coordinate more generally requires.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+A goalkeeper and a castle gate look unrelated. Each is mapped by the role of blocking entry. One stands in the corresponding role of the other.
+
+A heart and a mechanical pump differ in form. Each is matched by the role of driving fluid through a system. A functional correspondence stands.
+
+A conductor and a traffic controller work in different settings. Each is mapped by the role of coordinating many moving parts. A role correspondence stands between them.
+
+Seen whole, the event moves from surface mismatch, through release to deeper mapping, into correspondence bearing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+Apparent mismatch is released as governing, while distinct things remain intelligible through a deeper correspondence that each bears to the other.
+
+The generated form requires a correspondence that survives through the mapping itself. 'Role correspondence' identifies role as the mapping relation. The coordinate could support another deep correspondence, but role is tightly guided by its structure. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"This plays that role."
+
+
+CELL 27
+
+Relating / Release / Efficacy
+
+Coordinate-generated form: Released emergent efficacy
+
+Canonical crystallization: Emergent coordination
+
+Companion utterance: "Something appears between them."
+
+Constraint strength: Tightly constrained
+
+Local relations can begin as private adjustments and end by producing something no single participant contains. Birds follow neighbors, clappers entrain to nearby beats, drivers respond to local traffic. The important release is from isolated governance: no member's local trajectory alone determines the field. As interactions take over, a larger pattern becomes efficacious. What persists is not merely mutual bearing but an organized effect—flocking, shared rhythm, circulating flow. 'Emergent coordination' is a strong sharpening because the coordinate already points toward an effect that appears through interaction rather than at any one locus.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Individual birds follow nearby neighbors. Their local adjustments interact. A coordinated flocking pattern appears.
+
+Separate audience members begin clapping at different tempos. Each adjusts to surrounding beats. A shared rhythm emerges across the crowd.
+
+Cars enter a busy roundabout with local spacing adjustments. Drivers continually respond to nearby traffic. An organized circulating flow appears.
+
+Its inner course can be stated simply: isolated local relations → release into interacting field → emergent systemic effect. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+Locally separate bearings are released from isolated governance so that their interaction produces an operative pattern not reducible to any one member.
+
+The coordinates already imply a systemic effect emerging when isolated local bearings cease to govern separately. 'Emergent coordination' gives that effect a particularly apt semantic name, adding less than in the more open Relating cells. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Something appears between them."
+
+
+CELL 28
+
+Repair / Focal / Standing
+
+Coordinate-generated form: Focal corrected standing
+
+Canonical crystallization: Focal adjustment
+
+Companion utterance: "Set right."
+
+Constraint strength: Near-determinate
+
+Repair can be almost embarrassingly local. One string is sharp, one picture is crooked, one brake pad rubs. The criterion is already clear; the unresolvedness is concentrated at the misfit. Completion comes when adjustment at that point brings the situation into line with the target, and the corrected state itself is what remains. There is no need for a distributed test or a release from a governing fault across the whole system. The repaired determination simply stands: tuned, level, aligned.
+
+At full compression, the change is local misfit → focal correction toward criterion → corrected standing. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+One guitar string sounds sharp. Its tuning peg is adjusted toward the target pitch. The note stands correctly tuned.
+
+A picture hangs crooked on the wall. One corner is raised into alignment. The frame stands level.
+
+A bicycle brake pad rubs the rim. Its position is shifted at the contact point. The brake stands correctly aligned.
+
+Across those three scenes, the materials change but the completion does not. A localized misfit is adjusted toward a determinate target until the corrected state itself stands.
+
+Focal Repair that leaves a corrected standing almost says 'adjust this until it is right.' 'Focal adjustment' adds little beyond that structural necessity.
+
+"Set right."
+
+
+CELL 29
+
+Repair / Focal / Bearing
+
+Coordinate-generated form: Focal proportional bearing
+
+Canonical crystallization: Proportional correction
+
+Companion utterance: "Rightly balanced."
+
+Constraint strength: Tightly constrained
+
+Some local repairs are not achieved by moving one thing to an absolute target but by getting its proportion right relative to something else. A backpack, recipe, or presentation can all be wrong because one contribution bears too much weight. The correction gathers around that imbalance, but the result cannot be detached from the relation among the factors. It remains correct only as an appropriate proportion. This is why the coordinate strongly narrows toward proportional correction even though other focal relational repairs remain conceivable.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+A backpack pulls heavily to one side. Weight is redistributed between its compartments. The load bears evenly.
+
+A recipe tastes overwhelmingly salty. The other ingredients are increased in proportion. The mixture stands with corrected balance.
+
+A presentation gives one topic too much emphasis. Time is reassigned among the sections. The whole presentation bears a better weighting.
+
+The form's own movement is disproportional relation → focal adjustment of relative weighting → balanced bearing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+A focal misfit is repaired by altering its bearing relative to other factors until the corrected result persists through an appropriate proportion or balance.
+
+The generated form requires a local correction that remains correct through relation among factors. 'Proportional correction' chooses balance or weighting as that relation. It is strongly guided but not uniquely inevitable. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Rightly balanced."
+
+
+CELL 30
+
+Repair / Focal / Efficacy
+
+Coordinate-generated form: Focal corrective efficacy
+
+Canonical crystallization: Load transfer
+
+Companion utterance: "The burden shifts."
+
+Constraint strength: Open realization
+
+A local failure can be repaired by changing where a burden is carried. An overloaded shelf, an injured leg, and a strained bridge beam all have a focal problem whose solution must take effect. The repair is complete when support is redirected so that functioning can continue. Yet the coordinate itself requires only focal corrective efficacy: a local misfit is repaired in a way that restores effective operation. Load transfer is the chosen crystallization, not the only imaginable mechanism by which such efficacy could be achieved.
+
+What has to happen, in order, is localized failure → focal corrective redistribution → restored efficacy. The coordinate fixes that deep course, but it does not yet decide every semantic detail of the crystallization.
+
+One overloaded shelf begins to bow. Part of its weight is moved onto a new support. The strain is carried correctly.
+
+An injured hiker cannot bear weight on one leg. A crutch transfers part of the load to the arms. Walking proceeds with corrected support.
+
+A bridge beam carries excessive force at one point. An added brace redirects the load into another support. The structural burden is redistributed.
+
+The common structure can therefore be stated more broadly than any one of those scenes:
+
+A localized misfit is repaired by redistributing what bears upon the focal problem so that effective functioning is restored.
+
+The coordinate requires local corrective efficacy. 'Load transfer' chooses redistribution of burden as the mechanism. Because other mechanisms could restore focal functioning, this is a genuinely open crystallization. That distinction is the point of calling this an Open realization: the coordinate determines a recognizable phenomenological syntax, while the canonical crystallization chooses one especially lucid semantic member of that wider admissible region.
+
+"The burden shifts."
+
+
+CELL 31
+
+Repair / Distributed / Standing
+
+Coordinate-generated form: Distributed corrected standing
+
+Canonical crystallization: Cross-position validation
+
+Companion utterance: "Does it still hold across?"
+
+Constraint strength: Open realization
+
+A result that works in one position may still be untrustworthy. The unresolved pressure is not necessarily visible failure but insufficiently tested standing. A rule, route, or fastening must survive another direction or case before it can count as settled. Completion therefore cannot happen at one point: the candidate is carried across positions and checked there. What remains afterward is a validated standing. The coordinate leaves open which cross-position test is decisive; reversal is the particular sharpening supplied by the examples and canonical form.
+
+The movement is compact: untested arrangement → corrective checking across positions → validated standing. The coordinate fixes that deep course, but it does not yet decide every semantic detail of the crystallization.
+
+A mathematical rule seems valid in one direction. The relation is tested in reverse. The claim stands only if the reversed case also holds.
+
+A route appears passable downhill. The same path is tried uphill. Its standing is tested by reversal.
+
+A fastening method holds when pulled from one side. Force is applied from the opposite side. The fastening stands as tested under inversion.
+
+The common structure can therefore be stated more broadly than any one of those scenes:
+
+A candidate arrangement is corrected or validated by checking it across more than one position, direction, or case until the result can stand.
+
+The coordinate requires a corrected or validated standing achieved across multiple positions or cases. 'Cross-position validation' emphasizes testing rather than some other distributed repair. The examples further sharpen the test toward reversal. That distinction is the point of calling this an Open realization: the coordinate determines a recognizable phenomenological syntax, while the canonical crystallization chooses one especially lucid semantic member of that wider admissible region.
+
+"Does it still hold across?"
+
+
+CELL 32
+
+Repair / Distributed / Bearing
+
+Coordinate-generated form: Distributed corrective bearing
+
+Canonical crystallization: Joint-bound repair
+
+Companion utterance: "Right between both."
+
+Constraint strength: Tightly constrained
+
+Some repairs live between requirements. Bathwater cannot merely be cooler; it must remain warm. A microphone cannot merely be louder; it must stay below feedback. A sauce cannot merely be thinner; it must not become watery. The correction is distributed across constraints that have to be met together, and the achieved state remains defined by those bounds. The result therefore holds through a relation among requirements rather than standing free of them. 'Joint-bound repair' is a close crystallization of this already narrow conjunction.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Bathwater is too hot for comfort but must remain warm. Hot and cold inputs are adjusted together. The mixture stands within both required bounds.
+
+A microphone is too quiet yet close to feedback. Gain and speaker level are jointly adjusted. The sound stands at a workable balance between both constraints.
+
+A sauce is too thick but must not become watery. Liquid and reduction are adjusted together. The mixture stands at the required consistency.
+
+Seen whole, the event moves from incompatible constraints, through joint distributed adjustment, into condition-bearing correction. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+Several constitutive constraints are jointly adjusted until a corrected state can persist only by remaining appropriately related to all of them.
+
+Joint adjustment under multiple constitutive constraints is already close to 'Joint-bound repair.' The crystallization specifies the plurality as bounding requirements, which is a meaningful but tightly guided addition. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Right between both."
+
+
+CELL 33
+
+Repair / Distributed / Efficacy
+
+Coordinate-generated form: Distributed corrective efficacy
+
+Canonical crystallization: In-course correction
+
+Companion utterance: "Corrected in course."
+
+Constraint strength: Open realization
+
+A process can fail while it is still unfolding. The cyclist, boat, and drill do not need to be stopped, rebuilt, and then restarted; the correction is made within the course itself. Because the trajectory extends through time or space, completion is distributed across the unfolding rather than localized in a single static adjustment. And the result is efficacy: the process now proceeds in a restored direction. The coordinate does not force steering or turning specifically, which leaves room for other kinds of in-course correction.
+
+Its inner course can be stated simply: failing process → distributed in-course correction → restored operation. The coordinate fixes that deep course, but it does not yet decide every semantic detail of the crystallization.
+
+A cyclist drifts off the intended line. The handlebars turn at the point of deviation. The bicycle returns to the proper course.
+
+A boat is being carried toward rocks. The rudder is turned where the course fails. The boat regains safe direction.
+
+A drill begins entering wood at the wrong angle. The operator redirects it immediately. The drilling path is restored to the intended line.
+
+The common structure can therefore be stated more broadly than any one of those scenes:
+
+A failing process is corrected within its distributed unfolding so that the larger trajectory again proceeds effectively.
+
+The coordinate requires repair distributed through an unfolding process and leaving restored efficacy. 'In-course correction' selects trajectory repair as the local realization; other distributed corrective operations could fit. That distinction is the point of calling this an Open realization: the coordinate determines a recognizable phenomenological syntax, while the canonical crystallization chooses one especially lucid semantic member of that wider admissible region.
+
+"Corrected in course."
+
+
+CELL 34
+
+Repair / Release / Standing
+
+Coordinate-generated form: Released corrected standing
+
+Canonical crystallization: Limit reset
+
+Companion utterance: "A better limit."
+
+Constraint strength: Tightly constrained
+
+A bad limit can govern an otherwise workable system. The fence, cutoff, or budget cap is not just one local error; it determines what the field is allowed to do. Repair becomes complete when that defective governance is removed and a better constraint stands in its place. The old limit ceases to rule, but the outcome is not mere freedom from limits. A corrected limit remains. This is why release and standing belong together here: de-governance makes possible a new determination that can itself be taken up as settled.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+A fence line cuts through the usable part of a field. The faulty boundary is removed and redrawn farther out. A better limit stands.
+
+A machine’s safety cutoff stops it before normal operating range. The threshold is released and reset correctly. The proper operating limit stands.
+
+A budget cap is set too low to cover essential work. The old ceiling is lifted and replaced with a workable one. The corrected spending boundary stands.
+
+At full compression, the change is defective governance → release and replacement → corrected standing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+A defective governing constraint is released and replaced so that a corrected limit or organization can stand in its place.
+
+Release from a defective governor plus corrected Standing strongly suggests replacing a bad constraint with a better one. 'Limit reset' names one narrow and natural member of that family. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"A better limit."
+
+
+CELL 35
+
+Repair / Release / Bearing
+
+Coordinate-generated form: Released conditional correction
+
+Canonical crystallization: Condition reversal
+
+Companion utterance: "Reverse when this holds."
+
+Constraint strength: Near-determinate
+
+A continuing tendency can be correct only until a condition is reached. The elevator rises, the thermostat heats, the sailboat turns—then a threshold or state makes continuation in the same direction wrong. Completion occurs when that earlier tendency loses its authority and the process reverses under the decisive condition. The corrected state remains condition-bound: it is right because this condition now holds. That combination leaves little semantic room, which is why condition reversal sits so close to the generated form.
+
+The form's own movement is faulty tendency → condition-triggered release or reversal → corrected conditional bearing. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+An elevator continues rising. The upper-limit sensor is triggered. The motor reverses and the elevator bears downward.
+
+A thermostat keeps heating a room. The target temperature is reached. Heating stops and cooling begins.
+
+A sailboat keeps turning one way. A marked wind condition is met. The helm reverses its turn and the boat bears the other way.
+
+Across those three scenes, the materials change but the completion does not. A faulty ongoing tendency is abandoned or reversed when some condition becomes decisive, leaving the corrected state governed by that condition.
+
+The coordinates nearly generate 'condition reversal' word for word: a faulty tendency loses governance when a condition becomes decisive, and the corrected result remains condition-bound.
+
+"Reverse when this holds."
+
+
+CELL 36
+
+Repair / Release / Efficacy
+
+Coordinate-generated form: Released corrective efficacy
+
+Canonical crystallization: Disorder released
+
+Companion utterance: "Free of the fault."
+
+Constraint strength: Near-determinate
+
+Faults often announce themselves by what they prevent: a chain jams, a drain blocks, a printer misfeeds. Repair is complete not merely when a defective part is identified but when the fault stops governing operation. Once the obstruction is cleared or the mechanism realigned, the system can work again. The achieved remainder is therefore efficacy, not a corrected object contemplated at rest. The form is almost forced: release from fault and restored operation are two sides of the same completion.
+
+What has to happen, in order, is active fault → repair and release → restored operation. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+A bicycle chain skips and jams under load. The derailleur is repaired and the fault cleared. The drivetrain runs smoothly.
+
+A drain is blocked by debris. The obstruction is removed. Water flows freely again.
+
+A printer repeatedly misfeeds paper. The jammed rollers are cleaned and realigned. Pages feed smoothly through the machine.
+
+Across those three scenes, the materials change but the completion does not. An active fault is removed from governance so that the previously obstructed process becomes effectively capable of operating correctly.
+
+When an active fault is released and effective operation returns, 'Disorder released' is almost simply the completed event named. The mechanism can vary, but the form scarcely does.
+
+"Free of the fault."
+
+
+CELL 37
+
+Integration / Focal / Standing
+
+Coordinate-generated form: Focal integrated standing
+
+Canonical crystallization: Focal whole
+
+Companion utterance: "One whole."
+
+Constraint strength: Near-determinate
+
+Parts do not become a whole merely by being near one another. Jigsaw pieces, instrument components, and ingredients have to acquire places or roles in one organization. The completion gathers around that whole: one image, one violin, one dish. Once the organization is achieved, the whole itself can simply stand as the result. Nothing about its identity depends on keeping a separate contrast in view, and nothing further has to be done for completion to be intelligible. The parts have become one thing.
+
+The movement is compact: separate parts → focal role-integration → whole standing. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+Loose jigsaw pieces. The pieces are fitted around one emerging picture. One completed image stands.
+
+Separate instrument parts. Each part is fitted into its proper place in one instrument. One violin stands.
+
+Scattered ingredients and components. Each is assembled into its role in the finished dish. One composed dish stands.
+
+Across those three scenes, the materials change but the completion does not. Separate parts acquire roles around one focal organization until a single integrated whole stands.
+
+Integration, focal sufficiency, and Standing jointly leave one whole as the achieved result. 'Focal whole' is virtually identical with the generated form.
+
+"One whole."
+
+
+CELL 38
+
+Integration / Focal / Bearing
+
+Coordinate-generated form: Focal unity bearing
+
+Canonical crystallization: Frame-held whole
+
+Companion utterance: "Held as one."
+
+Constraint strength: Tightly constrained
+
+A whole can depend on the relation that holds its parts together. Photographs in an album spread, objects framed by staging, map fragments under a common border and scale all become one by being gathered within a unifying frame. The completion is focal because one whole organizes the parts, but the result persists through the holding relation itself. Remove the frame, scale, or staging relation and the unity changes. 'Frame-held whole' therefore names the semantic mechanism that sharpens the broader demand for focal unity bearing.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Separate photographs lie unrelated on a table. They are arranged within one album spread. A unified image-set is held as one.
+
+Isolated objects sit across a stage. Lighting and staging frame them within one scene. One coherent stage image is held together.
+
+Several map fragments are viewed separately. They are placed within one common border and scale. One unified map is held as a single whole.
+
+Seen whole, the event moves from separate parts, through focal integration through holding relation, into unity bearing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+Separate parts are gathered around one focal whole whose unity persists through a constitutive frame or relation holding the parts together.
+
+The coordinate requires one whole whose unity persists through a holding relation. 'Frame-held whole' identifies framing as that relation. Other holding relations are possible, so the name is a strong sharpening rather than a necessity. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Held as one."
+
+
+CELL 39
+
+Integration / Focal / Efficacy
+
+Coordinate-generated form: Focal integrated efficacy
+
+Canonical crystallization: Joint capacity
+
+Companion utterance: "Together able."
+
+Constraint strength: Near-determinate
+
+Scissors are not useful because their blades, pivot, and handles merely coexist. Players do not execute a play because they merely stand on the same field. A bicycle drive does not propel because its components simply touch. In each case, parts acquire roles in one organization and that organization yields a new capacity. The completion gathers around the whole, and what remains is efficacy: together the parts can now do what none could do in isolation. The canonical name is almost a literal reading of the coordinate-generated event.
+
+Its inner course can be stated simply: separate capacities → focal integration → joint efficacy. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+Blades, pivot, and handles lie separately. The parts are organized into scissors. Together they can cut.
+
+Players stand individually without formation. They are organized into coordinated positions. Together they can execute the play.
+
+Gears, chain, pedals, and wheel are separate. They are organized into one drive system. Together they can propel the bicycle.
+
+Across those three scenes, the materials change but the completion does not. Parts are organized around one whole so that their coordinated roles yield a joint capacity unavailable to them separately.
+
+The coordinate already says that organized parts around one whole yield a new capacity. 'Joint capacity' is therefore very nearly forced.
+
+"Together able."
+
+
+CELL 40
+
+Integration / Distributed / Standing
+
+Coordinate-generated form: Distributed integrated standing
+
+Canonical crystallization: Role array
+
+Companion utterance: "Each in its place."
+
+Constraint strength: Near-determinate
+
+Organization across a plurality often becomes visible as placement. Chess pieces, workers, and orchestral sections are not yet a structured whole when their roles are unassigned. Completion requires the role pattern to extend across the system, not merely to settle one privileged member. Once each part has its place, the organized arrangement itself stands. It may later perform, move, or change, but the completed result here is the role array as achieved structure.
+
+At full compression, the change is unassigned parts → roles distributed across system → organized standing. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+Unplaced chess pieces before a game. Each piece is set into its proper starting position. The full board structure stands.
+
+Workers gather without assigned stations. Each person is placed into a defined production role. The working line stands as an organized array.
+
+Instruments are scattered before an orchestra rehearsal. Each section takes its designated place. The orchestral structure stands.
+
+Across those three scenes, the materials change but the completion does not. Parts receive differentiated roles across an organized plurality until the distributed structure itself stands as a whole.
+
+A distributed integration that simply stands almost inevitably takes the shape of differentiated roles across an organized array. 'Role array' is the concise crystallization of that requirement.
+
+"Each in its place."
+
+
+CELL 41
+
+Integration / Distributed / Bearing
+
+Coordinate-generated form: Distributed mutual-support bearing
+
+Canonical crystallization: Mutual-support structure
+
+Companion utterance: "Held through each other."
+
+Constraint strength: Tightly constrained
+
+Some wholes exist only because their parts hold one another. A truss, arch, or chain cannot be understood as a set of individually self-supporting pieces. Its completion lies across the span, where each member's place contributes to a mutual support relation. The result remains what it is through that interdependence. This is why the form is not simply an integrated structure standing, nor yet a system doing some external work. Its achieved reality is the distributed bearing that lets the whole hold.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Loose roof beams cannot support the span. The beams are joined into an interlocking truss. A support network holds across the roof.
+
+Separate stones cannot bridge a stream. They are fitted into a locked arch. The span holds through mutual support.
+
+Isolated links cannot carry a suspended load. The links are interlocked into a chain. Support is maintained across the full length.
+
+The form's own movement is unsupported plurality → distributed integration → mutual-support bearing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+Distributed parts are fitted together across a span or system so that the whole persists through their mutual support and interdependence.
+
+The generated form requires distributed integration that persists through interdependence. 'Mutual-support structure' chooses support as the bearing. The narrowing is significant but closely aligned with the coordinate. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Held through each other."
+
+
+CELL 42
+
+Integration / Distributed / Efficacy
+
+Coordinate-generated form: Distributed integrated efficacy
+
+Canonical crystallization: Role activation
+
+Companion utterance: "In operation."
+
+Constraint strength: Near-determinate
+
+An organized system can be present and still not be operative because a role is missing. The empty relay position, vacant lamp socket, or unfilled drive position leaves the larger arrangement incomplete in practice. When the role is occupied, the change is not merely local: its significance belongs to the distributed system in which that role functions. The result is efficacy—the race can proceed, the lamp can illuminate, the machine can drive. The coordinate almost forces the idea of role activation.
+
+What has to happen, in order, is incomplete system → distributed role occupancy → system function. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+A relay position is empty. A runner takes the designated place in the team. The role becomes operative in the race.
+
+An empty socket leaves a lamp inactive. The bulb is fitted into its system role. Illumination becomes operative.
+
+A machine has an unfilled drive position. The motor is installed into the mechanism. The drive function comes into operation.
+
+Across those three scenes, the materials change but the completion does not. A distributed system becomes functional because a role is successfully occupied or coordinated within the larger organization.
+
+Distributed Integration plus Efficacy leaves little room: a system becomes functional because roles are successfully occupied. 'Role activation' is almost forced by the conjunction.
+
+"In operation."
+
+
+CELL 43
+
+Integration / Release / Standing
+
+Coordinate-generated form: Released integrated standing
+
+Canonical crystallization: Self-maintaining equilibrium
+
+Companion utterance: "Able to remain."
+
+Constraint strength: Tightly constrained
+
+A whole can be unable to remain because imbalance still governs it. The mobile tips, the stone stack slips, the boat lists. Integration here is not about building a whole from scratch so much as reorganizing parts until the imbalance loses control. Completion occurs through release from that governor, and the result is a whole that can simply stand without further correction. 'Self-maintaining equilibrium' sharpens the generated form by naming the particular standing made possible by released imbalance.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+A freestanding mobile keeps tipping under uneven weight. Its parts are fitted into a balanced whole. The mobile remains steadily at rest.
+
+Stones in a small stack keep slipping under an uneven arrangement. The stones are refitted into a stable whole. The stack stands without further support.
+
+A boat lists because its load is badly distributed. Cargo is reorganized into whole-boat balance. The boat remains level.
+
+The movement is compact: imbalanced whole → release through integration → self-maintaining standing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+Parts are reorganized so that prior imbalance ceases to govern them, leaving a self-maintaining integrated whole standing without the former corrective pressure.
+
+The coordinate requires an integrated whole able to stand because prior imbalance no longer governs. 'Self-maintaining equilibrium' identifies equilibrium as the characteristic standing made possible by that release. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Able to remain."
+
+
+CELL 44
+
+Integration / Release / Bearing
+
+Coordinate-generated form: Released equilibrium bearing
+
+Canonical crystallization: Sustained equilibrium
+
+Companion utterance: "Tension that holds."
+
+Constraint strength: Tightly constrained
+
+Tension need not disappear for a whole to become stable. In a tent, bridge, or climbing system, opposing pulls can remain fully active. What changes is that they cease to govern independently and become organized through the whole. The completion is a release from uncoordinated pressure, but the achieved state still depends on those pressures bearing against one another. Stability therefore persists through tension rather than through its elimination. The crystallization 'sustained equilibrium' is tightly guided by this conjunction.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Opposing tent ropes pull without coordination. Their tensions are fitted through the whole structure. The tent stays upright under balanced tension.
+
+Bridge cables carry uneven pulls. Their forces are coordinated through the full span. A sustained support equilibrium holds.
+
+A climber is pulled by several anchor lines at conflicting angles. The lines are adjusted into whole-body balance. The climber remains securely suspended.
+
+Seen whole, the event moves from conflicting forces, through release into integrated balance, into sustained interdependence. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+Previously conflicting forces are released from uncoordinated governance by being integrated into a whole that persists through their continuing balanced interdependence.
+
+The generated form requires release from uncoordinated pressures while the whole persists through their continuing interdependence. 'Sustained equilibrium' is a tight crystallization of that balance-through-bearing. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Tension that holds."
+
+
+CELL 45
+
+Integration / Release / Efficacy
+
+Coordinate-generated form: Released integrated efficacy
+
+Canonical crystallization: Convergent whole
+
+Companion utterance: "Many become one act."
+
+Constraint strength: Near-determinate
+
+Many trajectories can become one act without being reduced to one path. Players, musicians, and robots continue to have distinct roles and movements, but their divergence stops governing them as separate achievements. Integration releases those trajectories into compatibility, and the result is something the whole can do: a play, a performance, an assembly act. The combination of release and efficacy makes convergence toward unified action almost unavoidable once Integration is fixed.
+
+Its inner course can be stated simply: divergent actions → release into role-compatible convergence → unified efficacy. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+Players rush toward the ball on separate paths. Each adjusts into a role-compatible attacking pattern. The team completes one coordinated play.
+
+Separate musicians enter with independent lines. Their parts converge according to the composition. One ensemble performance occurs.
+
+Several assembly robots approach a product from different stations. Their movements converge into compatible roles. One coordinated assembly act is completed.
+
+Across those three scenes, the materials change but the completion does not. Previously divergent parts or trajectories are released into compatible roles within one organization, enabling them to accomplish a unified act.
+
+Release from divergent trajectories, Integration into one organization, and Efficacy together point strongly toward convergence into a unified act. 'Convergent whole' is close to the coordinate's own demand.
+
+"Many become one act."
+
+
+CELL 46
+
+Settlement / Focal / Standing
+
+Coordinate-generated form: Focal settled standing
+
+Canonical crystallization: Settled alternative
+
+Companion utterance: "Chosen."
+
+Constraint strength: Near-determinate
+
+Choice can remain open long after all the alternatives are known. The unresolved pressure is not ignorance but the continued demand to select. A restaurant, layout, or hiking route becomes the focal place where that demand ends. Once one alternative is settled, comparison can stop; the chosen result itself stands. This is one of the clearest forms of Settlement because the field's debt is obvious: it owed a choice, and now it no longer does.
+
+At full compression, the change is live alternatives → focal settlement → chosen standing. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+Several restaurant choices remain open. One is finally chosen and the others are released. The chosen restaurant stands.
+
+A designer has three possible layouts. One layout is selected and further comparison stops. The selected design stands.
+
+Two hiking routes remain live possibilities. The group commits to one route. That route stands as the settled alternative.
+
+Across those three scenes, the materials change but the completion does not. An unresolved demand among live possibilities gathers into one focal settlement until the selected result simply stands and further choosing ceases.
+
+A live demand among alternatives gathers into one settlement and the chosen result stands. 'Settled alternative' is almost forced; the remaining freedom is mainly the domain of choice.
+
+"Chosen."
+
+
+CELL 47
+
+Settlement / Focal / Bearing
+
+Coordinate-generated form: Focal settlement bearing
+
+Canonical crystallization: Unified settlement
+
+Companion utterance: "Together now."
+
+Constraint strength: Open realization
+
+Sometimes what remains unsettled is not which item to choose but whether separated things can be accepted together. Two photograph halves, duplicate records, or measurements are provisionally held apart. Settlement gathers around a focal resolution that joins them, yet the result is not self-standing in isolation: its completed identity persists through equivalence, agreement, or belonging-together. The coordinate therefore requires focal settlement bearing, while 'unified settlement' is one particularly strong way of specifying what relation is settled.
+
+The form's own movement is unresolved separation → focal settlement → relation-bearing unity. The coordinate fixes that deep course, but it does not yet decide every semantic detail of the crystallization.
+
+Two halves of a broken photograph are still treated as separable pieces. They are matched and accepted as belonging together. The image now stands as one, with the two halves bearing equality within it.
+
+Two duplicate records are still handled as separate entries. They are settled as referring to the same person. One identity stands with equivalence between the records.
+
+Two measurements from different instruments are provisionally kept apart. Agreement is established between them. One settled value stands with equal bearing across both readings.
+
+The common structure can therefore be stated more broadly than any one of those scenes:
+
+A focal settlement discharges unresolved separation while the achieved result persists through a constitutive relation joining what had remained apart.
+
+The coordinate requires a focal settlement whose result remains through a constitutive joining relation. 'Unified settlement' specifies that relation as unity or equivalence. Other focal relation-bearing settlements remain possible. That distinction is the point of calling this an Open realization: the coordinate determines a recognizable phenomenological syntax, while the canonical crystallization chooses one especially lucid semantic member of that wider admissible region.
+
+"Together now."
+
+
+CELL 48
+
+Settlement / Focal / Efficacy
+
+Coordinate-generated form: Focal settlement efficacy
+
+Canonical crystallization: Path completion
+
+Companion utterance: "Arrived."
+
+Constraint strength: Tightly constrained
+
+A process can be intelligible at every step and still owe one thing: arrival. The runner, package, and train each continue under an outstanding demand to reach a focal completion condition. Once that condition is met, the process does not merely stand at a new location; its requirement to continue has been discharged. Completion is therefore efficacious: the race, delivery, or journey is now over in the relevant sense. 'Path completion' is a tight semantic sharpening of that focal settlement efficacy.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+A runner still has open track ahead. The finish line is reached. The race is completed.
+
+A package is still moving through the delivery route. It reaches the recipient. The delivery is complete.
+
+A train continues through successive stations. It arrives at its terminal. The journey is completed.
+
+What has to happen, in order, is unfinished process → focal completion condition → closure effect. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+An outstanding process reaches its focal completion condition so that the demand for further continuation is effectively ended.
+
+The coordinate requires an unfinished process to reach a focal completion condition whose effect is to end further continuation. 'Path completion' is strongly guided but adds the semantic image of arrival along a path. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"Arrived."
+
+
+CELL 49
+
+Settlement / Distributed / Standing
+
+Coordinate-generated form: Distributed settled standing
+
+Canonical crystallization: Recurrence settlement
+
+Companion utterance: "It returns."
+
+Constraint strength: Tightly constrained
+
+Repeated events can remain merely scattered until they settle into one recurrence. Tide observations, machine faults, and refrains become intelligible across cases only when the same pattern is recognized through the plurality. No single instance is enough; recurrence exists in the cross-case relation. Yet once recognized, the pattern can simply stand as an achieved determination: it returns. The crystallization narrows a broader distributed settled standing toward repetition as the form that has been settled.
+
+The three established manifestations make the narrowness of the form visible from different sides.
+
+Scattered tide observations seem unrelated. The same rise-and-fall pattern is recognized across days. The recurrence stands as a settled pattern.
+
+A machine fault appears at irregular-looking moments. Repeated cases are aligned around the same operating interval. The fault stands as recurring.
+
+Several songs seem to contain separate phrases. The same refrain is recognized each time it returns. The refrain stands as a recurrence.
+
+The movement is compact: scattered repetitions → distributed settlement → recurring standing. What is fixed is the structure of that movement; what remains available for semantic sharpening is the particular local way the structure is realized.
+
+The coordinate-generated sentence states the required event without committing to one manifestation:
+
+Repeated or dispersed instances are settled across their plurality until a common recurring or case-spanning form can stand as established.
+
+The coordinate requires settlement across a plurality leaving a standing regularity. 'Recurrence settlement' chooses repeated return as the regularity. The structural family is somewhat broader than recurrence alone. This is why the form is Tightly constrained rather than fully forced: the generated region is narrow, but the canonical term still contributes a meaningful specification.
+
+"It returns."
+
+
+CELL 50
+
+Settlement / Distributed / Bearing
+
+Coordinate-generated form: Distributed conditional settlement
+
+Canonical crystallization: Condition-bound settlement
+
+Companion utterance: "Settled if."
+
+Constraint strength: Near-determinate
+
+Conditional uncertainty is peculiar because it can be settled without one condition actually occurring. The picnic plan, machine rule, or student's progression becomes complete when the relevant alternatives are organized under an if. The settlement has to cover the conditions as a distributed field, and it remains inseparable from the condition that qualifies it. Remove the if, and the result is no longer the same settlement. That is why the coordinate lies so close to condition-bound settlement.
+
+Seen whole, the event moves from conditional uncertainty, through distributed settlement across conditions, into condition-bearing result. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+A picnic plan remains uncertain because of the weather. The group settles the rule “go if it stays dry” across both possible conditions. The plan stands with its condition attached.
+
+A machine’s operation depends on temperature. The rule is fixed that it runs only below the threshold. The operating state stands condition-bound.
+
+A student’s progression is undecided. The requirement “advance if the exam is passed” is settled. Progression stands with the qualifying condition.
+
+Across those three scenes, the materials change but the completion does not. Uncertainty across possible conditions is discharged by establishing one settlement whose validity persists together with the condition on which it depends.
+
+The coordinates nearly force conditional settlement: a distributed set of possibilities is settled, and the result remains through the condition. 'Condition-bound settlement' mostly names what is already required.
+
+"Settled if."
+
+
+CELL 51
+
+Settlement / Distributed / Efficacy
+
+Coordinate-generated form: Distributed settlement efficacy
+
+Canonical crystallization: Case settlement
+
+Companion utterance: "Settled across the cases."
+
+Constraint strength: Near-determinate
+
+A collection of similar cases can keep demanding separate decisions. Complaints, measurements, and fouls may each be handled one by one until a common settlement is established across them. Completion cannot occur in a single case; the rule has to hold over the plurality. And what remains is efficacy: the settlement now governs what happens when those cases arise. The form is therefore more than a pattern standing across examples—it is an operative resolution with case-spanning force.
+
+Its inner course can be stated simply: unresolved cases → distributed common settlement → operative case rule. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+Several customer complaints are handled separately. One resolution is established across all matching cases. The same remedy governs the whole set.
+
+Many measurements vary slightly. One common rounding rule is settled across them. A case-spanning result is produced.
+
+Several similar fouls occur during a tournament. Officials settle one ruling for every such case. The decision operates consistently across the cases.
+
+Across those three scenes, the materials change but the completion does not. A common settlement is established across multiple cases so that the unresolved plurality is thereafter governed by one operative resolution.
+
+A distributed settlement that remains as efficacy must govern cases rather than merely describe them. 'Case settlement' is therefore near-determinate, with little freedom beyond the kind of cases and rule.
+
+"Settled across the cases."
+
+
+CELL 52
+
+Settlement / Release / Standing
+
+Coordinate-generated form: Released settled standing
+
+Canonical crystallization: Transformation release
+
+Companion utterance: "Still itself."
+
+Constraint strength: Open realization
+
+Change can leave a persistent question behind: after all this alteration, is it still the same thing? A vessel is painted and fired, a house renovated, a melody transposed. The transformation itself is not undone. What disappears is its power to keep identity unsettled. Completion occurs when the change is released as non-governing for the identity at issue, leaving the thing able to stand as itself. That is a broad coordinate region; the canonical crystallization selects survival through transformation as its characteristic realization.
+
+At full compression, the change is destabilizing demand → release from continued governance → stable standing. The coordinate fixes that deep course, but it does not yet decide every semantic detail of the crystallization.
+
+A clay vessel is painted and fired. The changes are accepted without treating it as a different object. The vessel still stands as itself.
+
+A familiar house is renovated room by room. The alterations are absorbed without breaking its identity. The same house still stands.
+
+A melody is transposed into another key. The change of pitch level is released as non-essential. The melody still stands as itself.
+
+The common structure can therefore be stated more broadly than any one of those scenes:
+
+A destabilizing demand loses its governance, leaving an achieved identity or organization able to stand through the released change.
+
+The coordinate requires a standing result made possible because a destabilizing demand loses governance. 'Transformation release' specifies that demand as change threatening identity. Other released threats to standing are possible, so this remains open. That distinction is the point of calling this an Open realization: the coordinate determines a recognizable phenomenological syntax, while the canonical crystallization chooses one especially lucid semantic member of that wider admissible region.
+
+"Still itself."
+
+
+CELL 53
+
+Settlement / Release / Bearing
+
+Coordinate-generated form: Released explanatory bearing
+
+Canonical crystallization: Retrospective settlement
+
+Companion utterance: "Now it makes sense."
+
+Constraint strength: Near-determinate
+
+Earlier events can remain unresolved even after they are over. Clues, mistakes, or machine readings may sit in the past without a settled bearing. Then a later discovery changes how they can be held together: the final clue, underlying misconception, or hidden fault releases the earlier material from its unresolved status. The past does not disappear; it remains through a new explanatory relation. Settlement therefore completes by release and persists as bearing. Retrospective sense-making is almost forced by that conjunction.
+
+The form's own movement is unresolved past → release through new settlement → explanatory bearing. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+Several earlier clues seem disconnected. The final clue reorganizes their significance. The earlier events now make sense together.
+
+A student’s mistakes seem random. One underlying misconception is recognized. The previous errors now make sense in retrospect.
+
+Unusual machine readings accumulate without explanation. A hidden fault is discovered. The earlier readings now carry a settled explanation.
+
+Across those three scenes, the materials change but the completion does not. An earlier unresolved state loses its governance when a new settlement places its elements into a relation through which they can finally be borne together without further demand.
+
+Settlement by release whose residue is bearing strongly points toward retrospective explanation: earlier unresolved material is newly held together by a relation. 'Retrospective settlement' is consequently near-determinate.
+
+"Now it makes sense."
+
+
+CELL 54
+
+Settlement / Release / Efficacy
+
+Coordinate-generated form: Released settlement efficacy
+
+Canonical crystallization: Continuation discharge
+
+Companion utterance: "Nothing further is owed."
+
+Constraint strength: Near-determinate
+
+Some situations are finished only when nothing further is demanded. A bill can be mostly paid, a checklist nearly complete, a ceremony almost closed, and still remain open because one obligation persists. Settlement here occurs by releasing the residual demand itself. Once the final payment, task, or rite is completed, the old requirement no longer governs what comes next. The result is efficacy in the strict sense of discharge: no further action is owed. Few coordinates collapse toward their crystallization more decisively than this one.
+
+What has to happen, in order, is residual demand → release and discharge → no-further-action effect. The opening, the decisive change, and the achieved remainder fit so closely here that the local form narrows quickly.
+
+A bill remains open with a balance due. The final payment clears it. Nothing further is owed.
+
+A checklist still contains unfinished items. The last required task is completed. No further action remains.
+
+A formal ceremony still awaits its closing act. The final rite is performed. The ceremony requires no further continuation.
+
+Across those three scenes, the materials change but the completion does not. A residual demand for continuation is released completely so that no further action is required and closure becomes an accomplished effect.
+
+Settlement, Release, and Efficacy converge almost perfectly: the remaining demand itself is discharged, and the effect is that no further action is required. 'Continuation discharge' is scarcely more specific than the generated form.
+
+"Nothing further is owed."
+
+
