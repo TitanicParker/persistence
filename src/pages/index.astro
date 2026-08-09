@@ -2,57 +2,60 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { publicationPath } from '../lib/site';
 
-const entrances = [
-  { intent: 'Understand the idea', edition: 'Layman’s Edition', body: 'A plain-language route for a serious non-specialist reader: what the framework is trying to explain, why completion matters, and how the 54-position architecture fits together.', path: 'layman/', action: 'Begin in plain language' },
-  { intent: 'Explore the opportunity', edition: 'Venture Edition', body: 'A strategic and commercial reading of what capabilities, products, and companies might become possible if the framework proves useful.', path: 'venture/', action: 'Read the investment memo' },
-  { intent: 'Study the theory', edition: 'Academic Edition · Formal Theory', body: 'The mature monograph, 54-cell atlas, terminology, scholarly positioning, and research programme for readers who want the formal architecture.', path: 'theory/', action: 'Enter the formal theory' },
-];
-
-const routes = [
-  ['Five-Year-Old Edition', 'The whole theory reduced to three simple questions: what changed, what made it enough, and what is left afterward?', 'five-year-old/'],
-  ['Theory', 'The principal monograph, segmented into durable reading units.', 'theory/'],
+const academicRoutes = [
+  ['Formal Theory', 'The mature monograph, segmented into durable reading units.', 'theory/'],
   ['Atlas', 'The complete 6 × 3 × 3 coordinate system and its 54 generated positions.', 'atlas/'],
   ['54 Forms', 'Plain-language expositions for every coordinate position.', 'forms/'],
   ['Glossary', 'Preferred terminology, distinctions, relations, and theoretical levels.', 'glossary/'],
-  ['Intellectual History', 'How the theory developed from sentence resolution toward constraint grammar.', 'history/'],
-  ['Academic Positioning', 'Disciplinary location, limitations, novelty claims, and research programme.', 'academic/'],
   ['Research Status', 'What the project demonstrates internally, what remains hypothetical, and what evidence could weaken it.', 'research-status/'],
+  ['Academic Positioning', 'Disciplinary location, limitations, novelty claims, and research programme.', 'academic/'],
+  ['Intellectual History', 'How the theory developed from sentence resolution toward constraint grammar.', 'history/'],
   ['About & Provenance', 'Source hierarchy, publication version, repository, and citation guidance.', 'about/'],
   ['Search', 'Find theory chapters, atlas cells, forms, glossary terms, and supporting essay headings.', 'search/'],
 ];
+
+const expositionEssays = [
+  ['Layman’s Edition', 'A serious plain-language explanation of the framework for readers who do not want to begin with formal theory.', 'layman/', 'Derived explanatory essay'],
+  ['Venture Edition', 'A strategic reading of what capabilities, products, and companies might become possible if the framework proves useful.', 'venture/', 'Derived strategic interpretation'],
+  ['If We Learned to See Completion', 'A broader consequences essay about what changes if completion becomes something we can recognize systematically.', 'mainstream/', 'Derived consequences essay'],
+];
 ---
-<BaseLayout description="A static digital publication of the Constraint Grammar of Completed Intelligibility, with formal theory, a 54-cell atlas, explanatory forms, glossary, research status, and derived editions." sourceStatus="Publication entrance · editorial framing">
+<BaseLayout description="A static digital publication of the Constraint Grammar of Completed Intelligibility, with simple explanations, a portable study edition, formal theory, a 54-cell atlas, explanatory forms, glossary, research status, and derived essays." sourceStatus="Publication entrance · editorial framing">
   <div class="page home-page">
-    <aside class="homepage-rights-notice" aria-label="Copyright and rights status">
-      <span>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</span>
-      <a href={publicationPath('rights/')}>Rights & Permissions →</a>
-    </aside>
+    <aside class="homepage-rights-notice" aria-label="Copyright and rights status"><span>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</span><a href={publicationPath('rights/')}>Rights & Permissions →</a></aside>
 
     <section class="hero home-hero">
       <p class="eyebrow">Constraint Grammar of Completed Intelligibility</p>
       <h1>How does something become complete enough to count?</h1>
-      <p class="lede">A theory of transformation, completion, and persistence. The same framework can be entered in plain language, explored for practical opportunity, or studied in its formal architecture.</p>
-      <p class="credibility-note"><a href={publicationPath('research-status/')}>Read the research status and claims boundary →</a></p>
+      <p class="lede">Begin with the idea in ordinary language, take the entire publication away as a study object, or move into the formal academic layer when you are ready.</p>
     </section>
 
-    <section class="entrance-section" aria-labelledby="choose-entrance">
-      <header class="entrance-heading"><p class="eyebrow">Choose your way in</p><h2 id="choose-entrance">Three entrances. One theory.</h2></header>
+    <section class="entrance-section" aria-labelledby="start-simple">
+      <header class="entrance-heading"><p class="eyebrow">Start with the idea</p><h2 id="start-simple">Two simple ways in.</h2></header>
       <div class="entrance-grid">
-        {entrances.map((entrance) => (
-          <a class="entrance-card" href={publicationPath(entrance.path)}><span class="edition-label">{entrance.edition}</span><h3>{entrance.intent}</h3><p>{entrance.body}</p><span class="entrance-action">{entrance.action} →</span></a>
-        ))}
+        <a class="entrance-card" href={publicationPath('layman/')}><span class="edition-label">Layman’s Edition</span><h3>Understand it in plain language</h3><p>A serious non-specialist route through what the framework is trying to explain, why completion matters, and how the 54-position architecture fits together.</p><span class="entrance-action">Read the Layman’s Edition →</span></a>
+        <a class="entrance-card" href={publicationPath('five-year-old/')}><span class="edition-label">Five-Year-Old Edition</span><h3>Reduce it to the smallest questions</h3><p>The whole theory approached through three simple questions: what changed, what made that change enough, and what is left afterward?</p><span class="entrance-action">Read the Five-Year-Old Edition →</span></a>
       </div>
-      <p class="mainstream-note">Want the simplest possible explanation? Read <a href={publicationPath('five-year-old/')}>The Five-Year-Old Edition</a>. For a broader consequences essay, read <a href={publicationPath('mainstream/')}>If We Learned to See Completion</a>.</p>
     </section>
 
-    <section class="section architecture-section" aria-labelledby="architecture-title">
-      <div class="section-intro"><div><p class="eyebrow">The formal architecture</p><h2 id="architecture-title">A finite 6 × 3 × 3 state-space.</h2></div><p>The framework combines six Transformation Patterns, three Completion Topologies, and three Persistence Modes. Their Cartesian product yields fifty-four coordinate positions. The atlas and form pages make those positions inspectable without collapsing generated form, canonical crystallization, and concrete manifestation into one level.</p></div>
+    <section class="section portable-knowledge-section" aria-labelledby="portable-knowledge-title">
+      <div class="section-intro"><div><p class="eyebrow">Study and test it your own way</p><h2 id="portable-knowledge-title">Take the entire publication to a GPT.</h2></div><div>
+        <p>The Portable Knowledge Edition is one plain-text file containing the principal sources, the Five-Year-Old and Layman editions, source-status markers, research context, and the longer derived essays.</p>
+        <p>Download it, upload it to a GPT or another AI tool as reference material, and question, test, compare, or explore the work in whatever sequence helps you understand it. The TXT carries the copyright and permissions notice with it.</p>
+        <p><a class="entrance-action" href={publicationPath('constraint-grammar-portable-knowledge-edition.txt')} download>Download the entire publication (.txt) →</a></p>
+        <p><a href={publicationPath('rights/')}>Read the personal-study permission and Rights & Permissions →</a></p>
+      </div></div>
+    </section>
+
+    <section class="section architecture-section" aria-labelledby="academic-layer-title">
+      <div class="section-intro"><div><p class="eyebrow">Academic layer</p><h2 id="academic-layer-title">Enter the formal publication.</h2></div><p>The academic layer contains the mature monograph, structural Atlas, fifty-four Forms, authoritative Glossary, research-status boundary, disciplinary positioning, intellectual history, provenance, and search.</p></div>
       <div class="architecture" aria-label="Constraint grammar architecture"><div><strong>6</strong><span>Transformation Patterns</span></div><div><strong>3</strong><span>Completion Topologies</span></div><div><strong>3</strong><span>Persistence Modes</span></div></div>
+      <div class="route-grid compact-route-grid">{academicRoutes.map(([title, body, path]) => (<a class="route-card" href={publicationPath(path)}><h3>{title}</h3><p>{body}</p></a>))}</div>
     </section>
 
-    <section class="section" aria-labelledby="publication-tools">
-      <div class="section-intro"><div><p class="eyebrow">Publication tools</p><h2 id="publication-tools">Go directly to the material.</h2></div><p>These routes are for readers who already know what they want. They are secondary to the three audience entrances above, but together they expose the complete publication and its claims boundary.</p></div>
-      <div class="route-grid compact-route-grid">{routes.map(([title, body, path]) => (<a class="route-card" href={publicationPath(path)}><h3>{title}</h3><p>{body}</p></a>))}</div>
+    <section class="section" aria-labelledby="exposition-essays-title">
+      <div class="section-intro"><div><p class="eyebrow">Exposition and interpretation</p><h2 id="exposition-essays-title">Three longer essays.</h2></div><p>These are derived readings of the same framework. They are ways of explaining, interpreting, or extending the implications of the canonical theory rather than replacements for it.</p></div>
+      <div class="route-grid">{expositionEssays.map(([title, body, path, status]) => (<a class="route-card" href={publicationPath(path)}><span class="edition-label">{status}</span><h3>{title}</h3><p>{body}</p></a>))}</div>
     </section>
   </div>
 </BaseLayout>
