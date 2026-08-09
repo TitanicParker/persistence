@@ -23,7 +23,7 @@ const publicationCss = `
 const readingCss = `
 <style id="developmental-reading-path">
 :root{--paper:#fffdf8;--ink:#1c1c19;--muted:#68645d;--rule:#ddd7cb;--soft:#f4f0e8;--accent:#2f5d50;--wide:760px}
-*{box-sizing:border-box}html{font-size:18px;background:var(--paper);color:var(--ink)}body{margin:0;font-family:Georgia,'Times New Roman',serif;line-height:1.72;background:var(--paper)}main{width:min(calc(100% - 2rem),var(--wide));margin:0 auto;padding:4rem 0 6rem}header{margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid var(--rule)}.eyebrow{font:700 .72rem/1.4 system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}h1,h2,h3,h4{line-height:1.08;letter-spacing:-.025em}h1{font-size:clamp(2.6rem,7vw,5rem);margin:.5rem 0 1.2rem}h2{font-size:clamp(1.8rem,4vw,2.6rem);margin:3.5rem 0 1rem}h3{font-size:1.3rem;margin:2.4rem 0 .7rem}h4{font-size:1.1rem;margin:2rem 0 .6rem}p,li{max-width:72ch}strong{font-weight:700}blockquote{margin:1.7rem 0;padding:1.1rem 1.2rem;background:var(--soft);border-left:4px solid var(--accent)}blockquote p{margin:.2rem 0}.sequence-nav{display:flex;justify-content:space-between;gap:1rem;margin:3.5rem 0 0;padding-top:1.5rem;border-top:1px solid var(--rule);font:700 .8rem/1.4 system-ui,sans-serif}.sequence-nav a{color:inherit;text-underline-offset:.2em}.sequence-nav .next{text-align:right;margin-left:auto}.sequence-note{font:.82rem/1.55 system-ui,sans-serif;color:var(--muted);margin:1rem 0 2.5rem}.final-line{font-size:1.25rem;margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--rule)}a{color:inherit}@media(max-width:640px){html{font-size:17px}main{padding-top:2rem}h1{font-size:2.7rem}.sequence-nav{flex-direction:column}.sequence-nav .next{text-align:left;margin-left:0}}
+*{box-sizing:border-box}html{font-size:18px;background:var(--paper);color:var(--ink);scroll-behavior:smooth}body{margin:0;font-family:Georgia,'Times New Roman',serif;line-height:1.72;background:var(--paper)}main{width:min(calc(100% - 2rem),var(--wide));margin:0 auto;padding:4rem 0 6rem}header{margin-bottom:3rem;padding-bottom:2rem;border-bottom:1px solid var(--rule)}.eyebrow{font:700 .72rem/1.4 system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}h1,h2,h3,h4{line-height:1.08;letter-spacing:-.025em;text-wrap:balance}h1{font-size:clamp(2.6rem,7vw,5rem);margin:.5rem 0 1.2rem}h2{font-size:clamp(1.8rem,4vw,2.6rem);margin:3.5rem 0 1rem}h3{font-size:1.3rem;margin:2.4rem 0 .7rem}h4{font-size:1.1rem;margin:2rem 0 .6rem}p,li{max-width:72ch}p{margin:0 0 1.05em}strong{font-weight:700}blockquote{margin:1.7rem 0;padding:1.15rem 1.25rem;background:var(--soft);border-left:4px solid var(--accent);border-radius:0 12px 12px 0}blockquote p{margin:.2rem 0}.sequence-progress{margin:0 0 1.5rem;font:700 .7rem/1.3 ui-sans-serif,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}.sequence-progress__track{height:4px;margin-top:.65rem;background:#e4ded3;border-radius:999px;overflow:hidden}.sequence-progress__fill{display:block;height:100%;background:var(--accent);border-radius:inherit}.sequence-note{font:.9rem/1.6 system-ui,sans-serif;color:var(--muted);margin:1rem 0 2.5rem;max-width:48rem}.sequence-nav{display:flex;justify-content:space-between;gap:1rem;margin:4rem 0 0;padding-top:1.7rem;border-top:1px solid var(--rule);font:700 .8rem/1.4 system-ui,sans-serif}.sequence-nav a{display:inline-flex;align-items:center;min-height:2.75rem;padding:.55rem .8rem;border:1px solid #d2ccc1;border-radius:999px;color:inherit;text-decoration:none;transition:background .15s ease,transform .15s ease}.sequence-nav a:hover{background:#f1ede4;transform:translateY(-1px)}.sequence-nav a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.sequence-nav .next{text-align:right;margin-left:auto}.final-line{font-size:1.28rem;margin-top:2.8rem;padding-top:2rem;border-top:1px solid var(--rule);font-style:italic}.reading-end{margin-top:3rem;padding:1.4rem 1.5rem;background:var(--soft);border:1px solid var(--rule);border-radius:14px;font:0.9rem/1.6 system-ui,sans-serif;color:#46423d}.reading-end strong{display:block;color:var(--ink);margin-bottom:.25rem}a{color:inherit;text-underline-offset:.18em}@media(max-width:640px){html{font-size:17px}main{padding-top:2rem}h1{font-size:2.7rem}.sequence-nav{flex-direction:column}.sequence-nav .next{text-align:left;margin-left:0}.sequence-nav a{width:100%;justify-content:flex-start}}
 </style>`;
 
 const gate = `<section class="cg-rights-gate" id="cg-rights-gate" aria-labelledby="cg-rights-gate-title"><div class="cg-rights-gate__panel"><p class="cg-rights-gate__eyebrow">Copyright & rights notice</p><h1 id="cg-rights-gate-title">Before entering this publication</h1><p class="cg-rights-gate__copyright">Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</p><p>This publication is publicly viewable but has not been released under an open-source, Creative Commons, or other general reuse license.</p><p>By selecting the acknowledgement below, you confirm that the copyright and rights status of this publication has been brought to your attention. This acknowledgement does not itself grant any license or permission to reproduce, adapt, redistribute, publish, sublicense, sell, or create derivative works.</p><div class="cg-rights-gate__actions"><button class="cg-rights-gate__button" type="button" data-cg-rights-acknowledge>I acknowledge the Rights & Permissions notice — Enter publication</button><a href="${BASE}rights/">Read Copyright, Rights & Permissions</a></div><p class="cg-rights-gate__note">Acknowledgement is stored only in this browser and may be requested again if the notice changes.</p></div></section>`;
@@ -67,11 +67,18 @@ function extractYear(master: string, year: number): { title: string; markdown: s
 
 function sequenceNav(year: number): string {
   const previousHref = year === 6 ? `${BASE}five-year-old/` : `${BASE}five-year-old/${year - 1}/`;
-  const previousLabel = year === 6 ? '← Return to the Five-Year-Old Edition' : `← The ${year - 1}-Year-Old Edition`;
+  const previousLabel = year === 6 ? '← Five-Year-Old Edition' : `← ${year - 1}-Year-Old Edition`;
   const next = year < 18
-    ? `<a class="next" href="${BASE}five-year-old/${year + 1}/">Continue to the ${year + 1}-Year-Old Edition →</a>`
+    ? `<a class="next" href="${BASE}five-year-old/${year + 1}/">${year + 1}-Year-Old Edition →</a>`
     : '';
   return `<nav class="sequence-nav" aria-label="Developmental reading sequence"><a href="${previousHref}">${previousLabel}</a>${next}</nav>`;
+}
+
+function progress(year: number): string {
+  const completed = year - 5;
+  const total = 13;
+  const percent = Math.round((completed / total) * 100);
+  return `<div class="sequence-progress" aria-label="Reading sequence progress">Continuation ${completed} of ${total}<div class="sequence-progress__track" aria-hidden="true"><span class="sequence-progress__fill" style="width:${percent}%"></span></div></div>`;
 }
 
 if (!existsSync(MASTER)) throw new Error('Missing developmental_editions_working_master.md');
@@ -92,6 +99,9 @@ for (let year = 6; year <= 18; year += 1) {
   const description = `The ${yearName}-Year-Old Edition: a continuing developmental explanation of the Constraint Grammar of Completed Intelligibility.`;
   const shell = `<div class="cg-publication-shell" role="banner"><div><strong><a href="${BASE}">Constraint Grammar</a></strong><div class="cg-edition-status">Derived explanatory sequence · The ${yearName}-Year-Old Edition</div></div><nav aria-label="Publication"><a href="${BASE}five-year-old/">Five-Year gateway</a><a href="${BASE}rights/">Rights</a></nav></div>`;
   const footer = `<footer class="cg-publication-footer"><p><strong>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</strong></p><p><strong>Constraint Grammar of Completed Intelligibility</strong> · The ${yearName}-Year-Old Edition</p><p>This page is generated from the single developmental editorial master and is derived explanatory material, not canonical theory.</p><p><a href="${BASE}rights/">Rights & Permissions</a></p></footer>`;
+  const endNote = year === 18
+    ? `<aside class="reading-end"><strong>You have reached the end of this reading path.</strong>The formal publication is now available from the main site, but nothing here requires you to leave this route behind as a lesser version of the theory.</aside>`
+    : '';
 
   const html = `<!doctype html>
 <html lang="en">
@@ -117,11 +127,13 @@ ${readingCss}
 ${gate}${shell}
 <main>
 <header>
+${progress(year)}
 <p class="eyebrow">The ${yearName}-Year-Old Edition</p>
 <h1>${title}</h1>
-<p class="sequence-note">A continuation of the Five-Year-Old Edition. The explanation is becoming more precise without changing the theory underneath it.</p>
+<p class="sequence-note">A continuation of the same explanation, with a little more precision available now.</p>
 </header>
 ${article}
+${endNote}
 ${sequenceNav(year)}
 </main>
 ${footer}
