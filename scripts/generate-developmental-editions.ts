@@ -113,10 +113,10 @@ for (let year = 6; year <= 18; year += 1) {
   const yearName = yearNames.get(year)!;
   const canonical = `${SITE}five-year-old/${year}/`;
   const description = `The ${yearName}-Year-Old Edition: a continuing developmental explanation of the Constraint Grammar of Completed Intelligibility.`;
-  const shell = `<div class="cg-publication-shell" role="banner"><div><strong><a href="${BASE}">Constraint Grammar</a></strong><div class="cg-edition-status">Derived explanatory sequence · The ${yearName}-Year-Old Edition</div></div><nav aria-label="Publication"><a href="${BASE}five-year-old/">Five-Year gateway</a><a href="${BASE}rights/">Rights</a></nav></div>`;
-  const footer = `<footer class="cg-publication-footer"><p><strong>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</strong></p><p><strong>Constraint Grammar of Completed Intelligibility</strong> · The ${yearName}-Year-Old Edition</p><p>This page is generated from the single developmental editorial master and is derived explanatory material, not canonical theory.</p><p><a href="${BASE}rights/">Rights & Permissions</a></p></footer>`;
+  const shell = `<div class="cg-publication-shell" role="banner"><div><strong><a href="${BASE}">Constraint Grammar</a></strong><div class="cg-edition-status">Derived explanatory sequence · The ${yearName}-Year-Old Edition</div></div><nav aria-label="Publication"><a href="${BASE}wordless/">Wordless</a><a href="${BASE}five-year-old/">Five-Year gateway</a><a href="${BASE}rights/">Rights</a></nav></div>`;
+  const footer = `<footer class="cg-publication-footer"><p><strong>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</strong></p><p><strong>Constraint Grammar of Completed Intelligibility</strong> · The ${yearName}-Year-Old Edition</p><p>This page is generated from the single developmental editorial master and is derived explanatory material, not canonical theory.</p><p><a href="${BASE}wordless/">Wordless table of contents</a> · <a href="${BASE}rights/">Rights & Permissions</a></p></footer>`;
   const endNote = year === 18
-    ? `<aside class="reading-end"><strong>You have reached the end of this reading path.</strong>The formal publication is now available from the main site, but nothing here requires you to leave this route behind as a lesser version of the theory.</aside>`
+    ? `<aside class="reading-end"><strong>You have reached the end of this reading path.</strong>The formal publication is available from the main site, but nothing here requires you to leave this route behind as a lesser version of the theory.</aside>`
     : '';
   const previous = editionUrl(year - 1);
   const next = year < 18 ? editionUrl(year + 1) : '';
