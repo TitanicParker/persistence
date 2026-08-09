@@ -3,14 +3,29 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { parseExpositions } from '../../lib/content/expositions';
 import { renderPlainBlocks } from '../../lib/content/render';
 import { publicationPath } from '../../lib/site';
-export function getStaticPaths() { return parseExpositions().map((exposition) => ({ params: { slug: exposition.slug }, props: { exposition } })); }
-const { exposition } = Astro.props;
+export function getStaticPaths() {
+  const expositions = parseExpositions();
+  return expositions.map((exposition, index) => ({
+    params: { slug: exposition.slug },
+    props: {
+      exposition,
+      previous: index > 0 ? expositions[index - 1] : null,
+      next: index < expositions.length - 1 ? expositions[index + 1] : null,
+    },
+  }));
+}
+const { exposition, previous, next } = Astro.props;
 const html = renderPlainBlocks(exposition.body.map((b) => b.raw));
 ---
 <BaseLayout title={`${exposition.canonicalCrystallization} — 54 Forms`}>
-  <article class="prose form-page"><header><p class="eyebrow">Cell {exposition.number} · {exposition.transformationPattern} / {exposition.completionTopology} / {exposition.persistenceMode}</p><h1>{exposition.canonicalCrystallization}</h1><p class="lede">{exposition.coordinateGeneratedForm}</p></header>
+  <article class="prose form-page"><header><p class="eyebrow">54 Forms · Cell {exposition.number} of 54 · {exposition.transformationPattern} / {exposition.completionTopology} / {exposition.persistenceMode}</p><h1>{exposition.canonicalCrystallization}</h1><p class="lede">{exposition.coordinateGeneratedForm}</p></header>
+    <p class="index-crosslink"><a href={publicationPath('forms/')}>← All 54 forms</a> · <a href={publicationPath(`atlas/${exposition.slug}/`)}>Formal atlas cell</a></p>
     <dl class="metadata"><dt>Companion utterance</dt><dd>{exposition.companionUtterance}</dd><dt>Constraint strength</dt><dd>{exposition.constraintStrength}</dd></dl>
     <section aria-label="Exposition" set:html={html} />
-    <p><a href={publicationPath(`atlas/${exposition.slug}/`)}>← Return to atlas cell</a></p>
+    <nav class="reader-nav" aria-label="Form navigation">
+      {previous ? <a rel="prev" href={publicationPath(`forms/${previous.slug}/`)}>← {String(previous.number).padStart(2,'0')} {previous.canonicalCrystallization}</a> : <span />}
+      <a href={publicationPath('forms/')}>All 54 forms</a>
+      {next ? <a rel="next" href={publicationPath(`forms/${next.slug}/`)}>{String(next.number).padStart(2,'0')} {next.canonicalCrystallization} →</a> : <span />}
+    </nav>
   </article>
 </BaseLayout>
