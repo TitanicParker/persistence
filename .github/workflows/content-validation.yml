@@ -37,7 +37,7 @@ jobs:
       - name: Inspect representative static HTML
         shell: bash
         run: |
-          set -euo pipefail
+          set -euxo pipefail
           test -f dist/index.html
           test -f dist/theory/index.html
           test -f dist/theory/01-the-object-of-study/index.html
