@@ -1,6 +1,6 @@
 import type { GlossaryTerm } from './types';
 import { readSource, span } from './source';
-import { assertUniqueSlugs, slugify } from './slugs';
+import { assertUniqueSlugs, glossarySlug } from './slugs';
 
 export const GLOSSARY_SOURCE = 'constraint_grammar_exhaustive_glossary.md';
 const FIELD_PREFIXES = ['**Preferred status:**', '**Definition.**', '**Function in the theory.**', '**Distinguish from.**', '**Relations.**'];
@@ -34,12 +34,13 @@ export function parseGlossary(): GlossaryTerm[] {
       for (let i = at + 1; i < slice.length && slice[i].trim() && !FIELD_PREFIXES.some((p) => slice[i].startsWith(p)); i++) text += ` ${slice[i].trim()}`;
       return text;
     };
+    const preferredStatus = value('**Preferred status:**');
     const relationsRaw = value('**Relations.**');
     const relations = relationsRaw.replace(/^See\s+/i, '').split(';').map((s) => s.trim()).filter(Boolean);
     return {
       term: start.term,
-      slug: slugify(start.term),
-      preferredStatus: value('**Preferred status:**'),
+      slug: glossarySlug(start.term, preferredStatus),
+      preferredStatus,
       definition: value('**Definition.**'),
       functionInTheory: value('**Function in the theory.**'),
       distinguishFrom: value('**Distinguish from.**'),
