@@ -2,7 +2,7 @@ name: Content validation
 
 on:
   push:
-    branches: [publication-foundation, publication-finishing-pass, homepage-study-sequence, agent/developmental-reading-path, agent/swipe-developmental-sequence]
+    branches: [publication-foundation, publication-finishing-pass, homepage-study-sequence, agent/developmental-reading-path, agent/swipe-developmental-sequence, agent/sentence-receptacle]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -49,6 +49,7 @@ jobs:
           test -f dist/research-status/index.html
           test -f dist/about/index.html
           test -f dist/search/index.html
+          test -f dist/sentence-receptacle/index.html
           test -f dist/search-index.json
           test -f dist/constraint-grammar-portable-knowledge-edition.txt
           test -f dist/developmental-swipe.js
@@ -64,12 +65,19 @@ jobs:
           grep -q "Two simple ways in" dist/index.html
           grep -q 'href="/persistence/layman/' dist/index.html
           grep -q 'href="/persistence/five-year-old/' dist/index.html
+          grep -q 'href="/persistence/sentence-receptacle/' dist/index.html
+          grep -q "Sentence Receptacle" dist/index.html
           grep -q "Take the entire publication to a GPT" dist/index.html
           grep -q 'href="/persistence/constraint-grammar-portable-knowledge-edition.txt' dist/index.html
           grep -q "Enter the formal publication" dist/index.html
           grep -q "Three longer essays" dist/index.html
           grep -q 'href="/persistence/venture/' dist/index.html
           grep -q 'href="/persistence/mainstream/' dist/index.html
+
+          grep -q "Sentence Receptacle" dist/sentence-receptacle/index.html
+          grep -q "unit of currency of intelligibility" dist/sentence-receptacle/index.html
+          grep -q "Future work" dist/sentence-receptacle/index.html
+          grep -q "No sentence-analysis engine is being claimed here" dist/sentence-receptacle/index.html
 
           grep -q "The Five-Year-Old Edition" dist/five-year-old/index.html
           grep -q "How Does Something Become" dist/five-year-old/index.html
@@ -125,7 +133,7 @@ jobs:
           grep -q "Focal distinguished standing" dist/atlas/01-focal-mark/index.html
           grep -q "sufficiently determinate" dist/glossary/completed-intelligibility/index.html
           grep -q 'https://titanicparker.github.io/persistence/' dist/index.html
-          if grep -R -qE 'href="/(theory|atlas|forms|glossary|history|academic|layman|five-year-old|venture|mainstream|research-status|about|search)(/|\")' dist; then
+          if grep -R -qE 'href="/(theory|atlas|forms|glossary|history|academic|layman|five-year-old|venture|mainstream|research-status|about|search|sentence-receptacle)(/|\")' dist; then
             echo "Found a publication link that escaped the /persistence/ base path" >&2
             exit 1
           fi
@@ -133,7 +141,7 @@ jobs:
             echo "Unexpected module hydration script found on core reading routes" >&2
             exit 1
           fi
-          echo "Homepage, swipable developmental sequence, portable knowledge edition, canonical routes, and /persistence/ base paths verified."
+          echo "Homepage, Sentence Receptacle, swipable developmental sequence, portable knowledge edition, canonical routes, and /persistence/ base paths verified."
       - name: Upload static build
         uses: actions/upload-artifact@v7
         with:
