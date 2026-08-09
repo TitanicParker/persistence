@@ -4,6 +4,7 @@ import { publicationPath } from '../lib/site';
 import {
   acknowledgementText,
   copyrightLine,
+  permissionInvitation,
   personalStudyPermission,
   publicAccessAndReuse,
   rightsLead,
@@ -30,6 +31,11 @@ import {
       <h2>Portable Knowledge Edition: personal study permission</h2>
       {personalStudyPermission.map((paragraph) => <p>{paragraph}</p>)}
       <p><a href={publicationPath('constraint-grammar-portable-knowledge-edition.txt')} download>Download the Portable Knowledge Edition (.txt) →</a></p>
+    </section>
+
+    <section>
+      <h2>Permission for broader use</h2>
+      {permissionInvitation.map((paragraph) => <p>{paragraph}</p>)}
     </section>
 
     <section>
