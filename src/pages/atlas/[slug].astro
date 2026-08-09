@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { parseAtlas } from '../../lib/content/atlas';
+export function getStaticPaths() { return parseAtlas().map((cell) => ({ params: { slug: cell.slug }, props: { cell } })); }
+const { cell } = Astro.props;
+---
+<BaseLayout title={`${cell.canonicalCrystallization} — Atlas`}>
+  <article class="prose atlas-cell">
+    <header><p class="eyebrow">Cell {cell.number} · {cell.transformationPattern} / {cell.completionTopology} / {cell.persistenceMode}</p><h1>{cell.canonicalCrystallization}</h1><p class="lede">{cell.coordinateGeneratedForm}</p></header>
+    <dl class="metadata"><dt>Companion utterance</dt><dd>{cell.companionUtterance}</dd><dt>Constraint strength</dt><dd>{cell.constraintStrength}</dd><dt>Generative movement</dt><dd>{cell.generativeMovement}</dd></dl>
+    <section><h2>Coordinate-forced sentence</h2><p>{cell.coordinateForcedSentence}</p></section>
+    <section><h2>Manifestations</h2><ol>{cell.examples.map((example) => <li>{example}</li>)}</ol></section>
+    <p><a href={`/forms/${cell.slug}/`}>Read the plain-language exposition →</a></p>
+  </article>
+</BaseLayout>
