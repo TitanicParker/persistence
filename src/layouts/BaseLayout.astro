@@ -53,7 +53,8 @@ const showRightsGate = currentPath !== rightsPath && currentPath !== `${rightsPa
           <h1 id="cg-rights-gate-title">Before entering this publication</h1>
           <p class="cg-rights-gate__copyright">Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</p>
           <p>This publication is publicly viewable but has not been released under an open-source, Creative Commons, or other general reuse license.</p>
-          <p>By selecting the acknowledgement below, you confirm that the copyright and rights status of this publication has been brought to your attention. This acknowledgement does not itself grant any license or permission to reproduce, adapt, redistribute, publish, sublicense, sell, or create derivative works.</p>
+          <p>A limited personal-study permission allows the Portable Knowledge Edition to be downloaded and used as reference material in a GPT or other AI tool for private study and exploration. Broader reproduction, redistribution, adaptation, publication, commercial use, or other reuse requires prior written permission from the copyright holder.</p>
+          <p>By selecting the acknowledgement below, you confirm that the copyright and rights status of this publication has been brought to your attention. The acknowledgement itself grants no rights beyond the permission stated on the Rights & Permissions page.</p>
           <div class="cg-rights-gate__actions">
             <button class="cg-rights-gate__button" type="button" data-cg-rights-acknowledge>I acknowledge the Rights & Permissions notice — Enter publication</button>
             <a href={rightsPath}>Read Copyright, Rights & Permissions</a>
@@ -78,6 +79,7 @@ const showRightsGate = currentPath !== rightsPath && currentPath !== `${rightsPa
         <p><strong>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</strong></p>
         <p>Constraint Grammar of Completed Intelligibility. Source texts remain canonical; interface copy and derived editions are identified by status.</p>
         <nav aria-label="Publication information">
+          <a href={publicationPath('constraint-grammar-portable-knowledge-edition.txt')} download>Portable Knowledge Edition (.txt)</a>
           <a href={publicationPath('research-status/')}>Research status</a>
           <a href={publicationPath('about/')}>About & provenance</a>
           <a href={publicationPath('rights/')}>Rights & Permissions</a>
