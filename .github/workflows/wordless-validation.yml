@@ -1,0 +1,60 @@
+name: Wordless validation
+
+on:
+  push:
+    branches: [agent/wire-theorem-zero-destination]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate-wordless:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Use Node.js 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Build publication
+        run: npm run build
+      - name: Verify Wordless circus
+        shell: bash
+        run: |
+          set -euxo pipefail
+          test -f dist/wordless/index.html
+          test -f dist/theorem-zero/index.html
+
+          grep -q '>Wordless<' dist/index.html
+          grep -q 'href="/persistence/wordless/' dist/index.html
+          grep -q 'href="/persistence/theorem-zero/' dist/wordless/index.html
+          grep -q 'Enter the wordless runtime' dist/wordless/index.html
+          grep -q 'Read it at any age' dist/wordless/index.html
+          grep -q 'The whole circus' dist/wordless/index.html
+
+          for year in $(seq 5 18); do
+            if [ "$year" -eq 5 ]; then
+              path='dist/five-year-old/index.html'
+              href='/persistence/five-year-old/#essay-start'
+            else
+              path="dist/five-year-old/${year}/index.html"
+              href="/persistence/five-year-old/${year}/#essay-start"
+            fi
+            test -f "$path"
+            grep -q "href=\"${href}\"" dist/wordless/index.html
+            grep -q 'href="/persistence/wordless/' "$path"
+          done
+
+          grep -q 'Why can a pattern mean something before we have words for what it means?' dist/sentence-receptacle/index.html
+          grep -q 'place of realisation' dist/sentence-receptacle/index.html
+          grep -q 'resume its own lawful unfolding' dist/sentence-receptacle/index.html
+
+          cmp -s theorem_zero_runtime_rolling.html dist/theorem-zero/index.html
+
+          echo 'Wordless table of contents, 5-18 reading circus, Sentence Receptacle riddle, and unchanged Theorem Zero runtime verified.'
