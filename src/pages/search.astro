@@ -5,13 +5,13 @@ import { publicationPath } from '../lib/site';
 <BaseLayout
   title="Search — Constraint Grammar"
   description="Search theory chapters, atlas cells, forms, glossary terms, and supporting essay headings."
-  sourceStatus="Publication navigation · progressive enhancement"
+  sourceStatus="Publication navigation · search index"
 >
   <article class="reading-index search-page">
     <header>
-      <p class="eyebrow">Static publication search</p>
+      <p class="eyebrow">Publication search</p>
       <h1>Search the publication</h1>
-      <p class="lede">Search chapter titles, atlas cells, form names, glossary terms, and history/academic headings. The underlying reading pages remain fully usable without JavaScript.</p>
+      <p class="lede">Search chapter titles, Atlas cells, Form names, Glossary terms, and headings from Intellectual History and Academic Positioning.</p>
     </header>
 
     <form class="search-form" role="search" onsubmit="return false">
@@ -23,7 +23,7 @@ import { publicationPath } from '../lib/site';
     <ol id="search-results" class="search-results"></ol>
 
     <noscript>
-      <p>Search requires a small optional script. You can still browse the <a href={publicationPath('theory/')}>theory</a>, <a href={publicationPath('atlas/')}>atlas</a>, <a href={publicationPath('forms/')}>54 forms</a>, and <a href={publicationPath('glossary/')}>glossary</a> directly.</p>
+      <p>Search needs JavaScript to query the index. You can still browse the <a href={publicationPath('theory/')}>Formal Theory</a>, <a href={publicationPath('atlas/')}>Atlas</a>, <a href={publicationPath('forms/')}>54 Forms</a>, and <a href={publicationPath('glossary/')}>Glossary</a> directly.</p>
     </noscript>
   </article>
 

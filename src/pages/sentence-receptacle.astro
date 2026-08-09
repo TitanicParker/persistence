@@ -4,12 +4,12 @@ import { publicationPath } from '../lib/site';
 ---
 <BaseLayout
   title="Sentence Receptacle — Constraint Grammar of Completed Intelligibility"
-  description="A future-work plan for using the sentence as a concrete window onto completed intelligibility."
-  sourceStatus="Future work · planning note"
+  description="A conceptual prospect for using the sentence as a concrete observational window onto completed intelligibility."
+  sourceStatus="Conceptual prospect · not an implemented analyser"
 >
   <article class="page receptacle-page">
     <header class="receptacle-hero">
-      <p class="eyebrow">Future work</p>
+      <p class="eyebrow">Conceptual prospect</p>
       <h1>Sentence Receptacle</h1>
       <p class="lede">A sentence is small enough to hold in the hand and rich enough to show a whole act of intelligibility becoming complete.</p>
       <div class="origin-riddle" aria-label="A question before language">
@@ -20,25 +20,21 @@ import { publicationPath } from '../lib/site';
         <p class="origin-riddle__answer">And something more peculiar happens: we do not entirely choose the moment of recognition. Completion arrives. A pattern settles, releases, clicks, lands. We find ourselves at a point of realisation before we have decided to be there.</p>
         <p class="origin-riddle__answer">The runtime exists to give that situation room to <strong>resume its own lawful unfolding</strong>: not to tell the viewer what to realise, but to make possible the encounter in which intelligibility is found involuntarily.</p>
       </div>
-      <div class="receptacle-placeholder" aria-label="Future Sentence Receptacle interface concept">
-        <span>One sentence will go here.</span>
-        <span class="status">Not yet active</span>
-      </div>
     </header>
 
     <section>
       <p class="eyebrow">The idea</p>
       <h2>Treat the sentence as a window.</h2>
       <p>The sentence is not being proposed here as the ontology of Constraint Grammar. It is a privileged observational case: compact, inspectable, repeatable, and already central to the intellectual history of the project.</p>
-      <p>The future Sentence Receptacle would take one sentence seriously enough to ask what had to become complete for that sentence to become intelligible as the sentence it is.</p>
+      <p>A future Sentence Receptacle could take one sentence seriously enough to ask what had to become complete for that sentence to become intelligible as the sentence it is.</p>
       <p>In that practical sense, the sentence can function as a <strong>unit of currency of intelligibility</strong>: a small exchangeable object through which the larger grammar can be seen, tested, compared, and explained.</p>
     </section>
 
     <section>
-      <p class="eyebrow">Planned operation</p>
+      <p class="eyebrow">Possible operation</p>
       <h2>One sentence in. A structured reading out.</h2>
       <div class="steps">
-        <div><span>01</span><h3>Receive the sentence</h3><p>Preserve the sentence exactly as given. The receptacle begins from a concrete completed form rather than replacing it with a paraphrase.</p></div>
+        <div><span>01</span><h3>Receive the sentence</h3><p>Preserve the sentence exactly as given. The analysis would begin from a concrete completed form rather than replacing it with a paraphrase.</p></div>
         <div><span>02</span><h3>Ask what was open</h3><p>Identify the unresolved demand or opening pressure against which the sentence becomes intelligible as a completion.</p></div>
         <div><span>03</span><h3>Read the change</h3><p>Ask which Transformation Pattern best describes what became different.</p></div>
         <div><span>04</span><h3>Read what made it enough</h3><p>Ask how completion becomes sufficient: Focal, Distributed, or Release.</p></div>
@@ -50,8 +46,8 @@ import { publicationPath } from '../lib/site';
     <section class="window-section">
       <p class="eyebrow">Why this could matter</p>
       <h2>The sentence can make the whole theory visible at human scale.</h2>
-      <p>A fifty-four-position architecture is easier to understand when a reader can watch one ordinary sentence acquire structure. The receptacle is therefore planned as an explanatory instrument first: something that lets the theory reveal itself through a familiar object.</p>
-      <p>Later work could allow readers to compare alternative readings, hold one coordinate constant while changing another, inspect neighboring forms, trace the difference between a completed form and its formation history, and see why intelligibility can be analyzed before truth or correctness is judged.</p>
+      <p>A fifty-four-position architecture is easier to understand when a reader can watch one ordinary sentence acquire structure. The Receptacle is therefore proposed as an explanatory instrument first: a way to let the theory reveal itself through a familiar object.</p>
+      <p>A mature implementation could let readers compare alternative readings, hold one coordinate constant while changing another, inspect neighboring forms, trace the difference between a completed form and its formation history, and see why intelligibility can be analyzed before truth or correctness is judged.</p>
     </section>
 
     <section class="substrate-destination">
@@ -70,13 +66,13 @@ import { publicationPath } from '../lib/site';
 
     <section class="boundary-section">
       <p class="eyebrow">Boundary</p>
-      <h2>This page records an intention, not a finished capability.</h2>
-      <p>No sentence-analysis engine is being claimed here. The receptacle does not yet classify arbitrary sentences, prove psychological reality, establish unique coordinates, or demonstrate empirical validity. Those would be separate engineering and research achievements.</p>
-      <p>The purpose of this page is to reserve the conceptual doorway: <strong>one sentence as a window into the completed act of intelligibility, with a wordless place of realisation waiting behind it.</strong></p>
+      <h2>This is a conceptual doorway, not a claimed capability.</h2>
+      <p>No sentence-analysis engine is being claimed here. The Receptacle does not classify arbitrary sentences, prove psychological reality, establish unique coordinates, or demonstrate empirical validity. Those would be separate engineering and research achievements.</p>
+      <p>The purpose of this page is to make one prospect explicit without pretending it already exists: <strong>one sentence as a window into the completed act of intelligibility, with a wordless place of realisation waiting behind it.</strong></p>
     </section>
 
     <footer class="receptacle-footer">
-      <a href={publicationPath()}>← Return to the publication</a>
+      <a href={publicationPath('wordless/')}>← Wordless</a>
       <a href={publicationPath('history/')}>Why sentences mattered historically →</a>
     </footer>
   </article>
@@ -92,9 +88,6 @@ import { publicationPath } from '../lib/site';
   .origin-riddle__eyebrow { font:700 .66rem/1.3 ui-sans-serif,system-ui,sans-serif; letter-spacing:.12em; text-transform:uppercase; color:#777168; }
   .origin-riddle__question { max-width:25ch; margin-top:.55rem !important; font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.35rem,3vw,2rem); line-height:1.15; font-style:italic; }
   .origin-riddle__answer { max-width:64ch; margin-top:.78rem !important; color:#676159; font-size:.92rem; }
-  .receptacle-placeholder { margin-top: 2.4rem; min-height: 110px; padding: 1.35rem 1.5rem; border: 1px dashed #aaa399; border-radius: 18px; display:flex; align-items:center; justify-content:space-between; gap:1rem; background:linear-gradient(145deg,#faf7f0,#fffdf8); font-family:ui-sans-serif,system-ui,sans-serif; color:#5f5a53; }
-  .receptacle-placeholder > span:first-child { font-family: Georgia, 'Times New Roman', serif; font-size:1.2rem; font-style:italic; }
-  .receptacle-placeholder .status { flex:0 0 auto; padding:.45rem .65rem; border:1px solid #d8d3c8; border-radius:999px; font-size:.68rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
   section { padding: 3rem 0; border-top: 1px solid #ddd7cb; }
   section h2 { max-width: 16ch; font-size: clamp(2rem, 5vw, 3.4rem); line-height:1; margin:.35rem 0 1.5rem; letter-spacing:-.035em; }
   section > p:not(.eyebrow) { max-width: 68ch; font-size: 1.05rem; }
@@ -121,7 +114,6 @@ import { publicationPath } from '../lib/site';
   .receptacle-footer a { text-underline-offset:.2em; }
   @media(max-width:700px){
     .receptacle-hero { padding-top:2rem; }
-    .receptacle-placeholder { align-items:flex-start; flex-direction:column; }
     .steps { grid-template-columns:1fr; }
     .window-section:after { display:none; }
     .receptacle-footer { flex-direction:column; }

@@ -50,6 +50,7 @@ jobs:
           test -f dist/about/index.html
           test -f dist/search/index.html
           test -f dist/sentence-receptacle/index.html
+          test -f dist/wordless/index.html
           test -f dist/theorem-zero/index.html
           test -f dist/search-index.json
           test -f dist/constraint-grammar-portable-knowledge-edition.txt
@@ -61,14 +62,17 @@ jobs:
             grep -q 'data-developmental-reader' "dist/five-year-old/${year}/index.html"
             grep -q 'class="cg-age-path"' "dist/five-year-old/${year}/index.html"
             grep -q 'developmental-swipe.js' "dist/five-year-old/${year}/index.html"
+            grep -q 'href="/persistence/wordless/' "dist/five-year-old/${year}/index.html"
           done
 
           grep -q "Two simple ways in" dist/index.html
           grep -q 'href="/persistence/layman/' dist/index.html
           grep -q 'href="/persistence/five-year-old/' dist/index.html
+          grep -q 'href="/persistence/wordless/' dist/index.html
           grep -q 'href="/persistence/sentence-receptacle/' dist/index.html
           grep -q "Sentence Receptacle" dist/index.html
-          grep -q "Take the entire publication to a GPT" dist/index.html
+          grep -q "Take the portable study corpus to a GPT" dist/index.html
+          grep -q "later developmental sequence, Wordless, and Theorem Zero remain outside" dist/index.html
           grep -q 'href="/persistence/constraint-grammar-portable-knowledge-edition.txt' dist/index.html
           grep -q "Enter the formal publication" dist/index.html
           grep -q "Three longer essays" dist/index.html
@@ -77,11 +81,16 @@ jobs:
 
           grep -q "Sentence Receptacle" dist/sentence-receptacle/index.html
           grep -q "unit of currency of intelligibility" dist/sentence-receptacle/index.html
-          grep -q "Future work" dist/sentence-receptacle/index.html
+          grep -q "Conceptual prospect" dist/sentence-receptacle/index.html
           grep -q "No sentence-analysis engine is being claimed here" dist/sentence-receptacle/index.html
+          grep -q 'href="/persistence/wordless/' dist/sentence-receptacle/index.html
           grep -q 'href="/persistence/theorem-zero/' dist/sentence-receptacle/index.html
           grep -q "Enter Theorem Zero" dist/sentence-receptacle/index.html
           grep -q "Theorem Zero — Canonical Substrate v1.0" dist/sentence-receptacle/index.html
+          if grep -q "Not yet active" dist/sentence-receptacle/index.html; then
+            echo "Sentence Receptacle still contains placeholder control language" >&2
+            exit 1
+          fi
 
           grep -q '<title>Theorem Zero — Rolling Lawful Runtime</title>' dist/theorem-zero/index.html
           grep -q '"canonical_status": "canonical_substrate_v1_0"' dist/theorem-zero/index.html
@@ -156,7 +165,7 @@ jobs:
           grep -q "Focal distinguished standing" dist/atlas/01-focal-mark/index.html
           grep -q "sufficiently determinate" dist/glossary/completed-intelligibility/index.html
           grep -q 'https://titanicparker.github.io/persistence/' dist/index.html
-          if grep -R -qE 'href="/(theory|atlas|forms|glossary|history|academic|layman|five-year-old|venture|mainstream|research-status|about|search|sentence-receptacle|theorem-zero)(/|\")' dist; then
+          if grep -R -qE 'href="/(theory|atlas|forms|glossary|history|academic|layman|five-year-old|venture|mainstream|research-status|about|search|sentence-receptacle|wordless|theorem-zero)(/|\")' dist; then
             echo "Found a publication link that escaped the /persistence/ base path" >&2
             exit 1
           fi
@@ -164,7 +173,7 @@ jobs:
             echo "Unexpected module hydration script found on core reading routes" >&2
             exit 1
           fi
-          echo "Homepage, Sentence Receptacle, Theorem Zero destination, swipable developmental sequence, portable knowledge edition, canonical routes, and /persistence/ base paths verified."
+          echo "Publication entrance, Wordless, Sentence Receptacle, Theorem Zero, developmental sequence, portable knowledge edition, canonical routes, and /persistence/ base paths verified."
       - name: Upload static build
         uses: actions/upload-artifact@v7
         with:
