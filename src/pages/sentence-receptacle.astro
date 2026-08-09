@@ -12,6 +12,11 @@ import { publicationPath } from '../lib/site';
       <p class="eyebrow">Future work</p>
       <h1>Sentence Receptacle</h1>
       <p class="lede">A sentence is small enough to hold in the hand and rich enough to show a whole act of intelligibility becoming complete.</p>
+      <div class="origin-riddle" aria-label="A question before language">
+        <p class="origin-riddle__eyebrow">Before the sentence</p>
+        <p class="origin-riddle__question">What was there before any of this could be said?</p>
+        <p class="origin-riddle__answer">Not an answer in words. A lawful place from which words, distinctions, completions, and explanations might become possible at all.</p>
+      </div>
       <div class="receptacle-placeholder" aria-label="Future Sentence Receptacle interface concept">
         <span>One sentence will go here.</span>
         <span class="status">Not yet active</span>
@@ -47,13 +52,13 @@ import { publicationPath } from '../lib/site';
     </section>
 
     <section class="substrate-destination">
-      <p class="eyebrow">Behind the receptacle</p>
-      <h2>If the sentence is the window, what is the field behind it?</h2>
-      <p>The Sentence Receptacle is planned as an instrument for looking closely at one completed object. It is not the substrate itself, and it does not imply that a sentence has one uniquely forced coordinate.</p>
-      <p><strong>Theorem Zero</strong> is the current deeper destination. Its canonical substrate defines a locked infinite triangular / barycentric field; finite activations select content from that field, while overlays and rendering remain programmable expressions over it. The distinction matters: what is shown is not allowed to redefine what is lawful underneath.</p>
-      <p>For now, this is where the doorway leads. Entering it moves from the proposed sentence-level window to a full-screen runtime of the underlying lawful substrate.</p>
+      <p class="eyebrow">The wordless place</p>
+      <h2>What if the sentence is not the beginning?</h2>
+      <p>The Sentence Receptacle is one way of looking back from language. A sentence gives us a finished, human-scale object through which completion can be inspected. But the riddle points further back: toward whatever lawful structure must already be available before a sentence can become intelligible as a sentence at all.</p>
+      <p><strong>Theorem Zero</strong> is the current expression of that wordless origin-point. Its canonical substrate defines a locked infinite triangular / barycentric field. Finite activations select from that field; overlays and rendering express those selections without acquiring authority over the substrate itself.</p>
+      <p>This is not a claim that the runtime has proven the metaphysical origin of language, thought, or reality. It is a disciplined philosophical placement inside this project: before the sentence, before the explanatory grammar, before the words, there is a proposed lawful field from which the rest can be approached.</p>
       <a class="theorem-zero-link" href={publicationPath('theorem-zero/')}>
-        <span><strong>Enter Theorem Zero</strong><small>Canonical Substrate v1.0 · full-screen runtime</small></span>
+        <span><strong>Enter Theorem Zero</strong><small>Canonical Substrate v1.0 · the wordless runtime</small></span>
         <span aria-hidden="true">→</span>
       </a>
     </section>
@@ -62,7 +67,7 @@ import { publicationPath } from '../lib/site';
       <p class="eyebrow">Boundary</p>
       <h2>This page records an intention, not a finished capability.</h2>
       <p>No sentence-analysis engine is being claimed here. The receptacle does not yet classify arbitrary sentences, prove psychological reality, establish unique coordinates, or demonstrate empirical validity. Those would be separate engineering and research achievements.</p>
-      <p>The purpose of this page is to reserve the conceptual doorway: <strong>one sentence as a window into the completed act of intelligibility.</strong></p>
+      <p>The purpose of this page is to reserve the conceptual doorway: <strong>one sentence as a window into the completed act of intelligibility, with a wordless question waiting behind it.</strong></p>
     </section>
 
     <footer class="receptacle-footer">
@@ -77,6 +82,11 @@ import { publicationPath } from '../lib/site';
   .receptacle-hero { padding: 3rem 0 4rem; }
   .receptacle-hero h1 { max-width: 9ch; font-size: clamp(3.4rem, 9vw, 7.5rem); line-height: .92; letter-spacing: -.055em; margin: .35rem 0 1.4rem; }
   .receptacle-hero .lede { max-width: 700px; font-size: clamp(1.2rem, 2.4vw, 1.65rem); }
+  .origin-riddle { margin-top:2.35rem; padding:1.25rem 1.35rem 1.35rem; border-left:3px solid #9e978c; background:linear-gradient(90deg,rgba(245,241,233,.78),rgba(255,253,248,0)); }
+  .origin-riddle p { margin:0; }
+  .origin-riddle__eyebrow { font:700 .66rem/1.3 ui-sans-serif,system-ui,sans-serif; letter-spacing:.12em; text-transform:uppercase; color:#777168; }
+  .origin-riddle__question { max-width:24ch; margin-top:.55rem !important; font-family:Georgia,'Times New Roman',serif; font-size:clamp(1.35rem,3vw,2rem); line-height:1.15; font-style:italic; }
+  .origin-riddle__answer { max-width:62ch; margin-top:.75rem !important; color:#676159; font-size:.92rem; }
   .receptacle-placeholder { margin-top: 2.4rem; min-height: 110px; padding: 1.35rem 1.5rem; border: 1px dashed #aaa399; border-radius: 18px; display:flex; align-items:center; justify-content:space-between; gap:1rem; background:linear-gradient(145deg,#faf7f0,#fffdf8); font-family:ui-sans-serif,system-ui,sans-serif; color:#5f5a53; }
   .receptacle-placeholder > span:first-child { font-family: Georgia, 'Times New Roman', serif; font-size:1.2rem; font-style:italic; }
   .receptacle-placeholder .status { flex:0 0 auto; padding:.45rem .65rem; border:1px solid #d8d3c8; border-radius:999px; font-size:.68rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
