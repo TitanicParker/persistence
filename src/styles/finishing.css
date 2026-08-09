@@ -4,6 +4,8 @@
 .site-footer nav { display: flex; flex-wrap: wrap; gap: .6rem 1rem; }
 .site-footer nav a { min-height: 2.4rem; display: inline-flex; align-items: center; }
 .break-anywhere, code { overflow-wrap: anywhere; }
+.credibility-note { margin: 1.5rem 0 0; font: 600 .82rem/1.45 system-ui, sans-serif; }
+.editorial-note { margin: 0 0 2rem; padding: 1rem 1.1rem; border: 1px solid var(--rule); color: var(--muted); font: .9rem/1.55 system-ui, sans-serif; }
 
 .atlas-filters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)) auto; gap: 1rem; align-items: end; margin: 2rem 0; padding: 1.25rem; border: 1px solid var(--rule); }
 .atlas-filters div { display: grid; gap: .4rem; }
@@ -24,6 +26,11 @@
 
 .status-page section, .about-page section { margin-top: 3.5rem; }
 .source-file-list code { font-size: .84em; }
+.resolved-relations { margin: 2.5rem 0; padding-top: 1.25rem; border-top: 1px solid var(--rule); }
+.resolved-relations h2 { margin-top: 0; font-size: 1.45rem; }
+.resolved-relations ul { padding-left: 1.2rem; }
+.resolved-relations li { margin: .65rem 0; }
+.resolved-relations small { display: block; color: var(--muted); font: .75rem/1.4 system-ui, sans-serif; }
 
 @media (max-width: 900px) {
   .atlas-filters { grid-template-columns: 1fr 1fr; }
