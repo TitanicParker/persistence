@@ -8,13 +8,24 @@ const FIELD_PREFIXES = ['**Preferred status:**', '**Definition.**', '**Function 
 export function parseGlossary(): GlossaryTerm[] {
   const { lines } = readSource(GLOSSARY_SOURCE);
   let category = '';
-  const starts: { index: number; term: string; category: string }[] = [];
+  const headings: { index: number; term: string; category: string }[] = [];
   lines.forEach((line, index) => {
     if (/^##\s+/.test(line) && !/^###\s+/.test(line)) category = line.replace(/^##\s+/, '').trim();
-    if (/^###\s+/.test(line)) starts.push({ index, term: line.replace(/^###\s+/, '').trim(), category });
+    if (/^###\s+/.test(line)) headings.push({ index, term: line.replace(/^###\s+/, '').trim(), category });
   });
-  const terms = starts.map((start, idx) => {
-    const end = idx + 1 < starts.length ? starts[idx + 1].index - 1 : lines.length - 1;
+
+  // Only headings that explicitly carry the glossary's structured field schema
+  // are GlossaryTerm records. The source also contains terminological-discipline
+  // subheads such as "Opening / opening" that are prose rules, not term records.
+  // We preserve that distinction instead of synthesizing fields the source omits.
+  const starts = headings.filter((heading) => {
+    const nextHeading = headings.find((candidate) => candidate.index > heading.index)?.index ?? lines.length;
+    return lines.slice(heading.index + 1, nextHeading).some((line) => line.startsWith('**Preferred status:**'));
+  });
+
+  const terms = starts.map((start) => {
+    const headingPosition = headings.findIndex((heading) => heading.index === start.index);
+    const end = headingPosition + 1 < headings.length ? headings[headingPosition + 1].index - 1 : lines.length - 1;
     const slice = lines.slice(start.index + 1, end + 1);
     const value = (prefix: string) => {
       const at = slice.findIndex((l) => l.startsWith(prefix));
