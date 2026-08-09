@@ -48,18 +48,29 @@ jobs:
           test -f dist/glossary/completed-intelligibility/index.html
           test -f dist/history/index.html
           test -f dist/academic/index.html
+          test -f dist/layman/index.html
+          test -f dist/venture/index.html
+          test -f dist/mainstream/index.html
+          grep -q "Understand the idea" dist/index.html
+          grep -q "Explore the opportunity" dist/index.html
+          grep -q "Study the theory" dist/index.html
+          grep -q 'href="/persistence/layman/' dist/index.html
+          grep -q 'href="/persistence/venture/' dist/index.html
+          grep -q 'href="/persistence/theory/' dist/index.html
+          grep -q "Layman's Edition" dist/layman/index.html
+          grep -q "VC Investment Memo" dist/venture/index.html
+          grep -q "If We Learned to See Completion" dist/mainstream/index.html
           grep -q "The object of study" dist/theory/01-the-object-of-study/index.html
           grep -q "Focal distinguished standing" dist/atlas/01-focal-mark/index.html
           grep -q "A field can contain many perfectly visible things" dist/forms/01-focal-mark/index.html
           grep -q "sufficiently determinate" dist/glossary/completed-intelligibility/index.html
           grep -q "From Sentence Resolution to Constraint Grammar" dist/history/index.html
           grep -q "Academic Landscape" dist/academic/index.html
-          grep -q 'href="/persistence/theory/' dist/index.html
           grep -q 'href="/persistence/atlas/' dist/index.html
           grep -q 'href="/persistence/forms/' dist/index.html
           grep -q 'href="/persistence/glossary/' dist/index.html
           grep -qE '(href|src)="/persistence/_astro/' dist/index.html
-          if grep -R -qE 'href="/(theory|atlas|forms|glossary|history|academic)(/|\")' dist; then
+          if grep -R -qE 'href="/(theory|atlas|forms|glossary|history|academic|layman|venture|mainstream)(/|\")' dist; then
             echo "Found a publication link that escaped the /persistence/ base path" >&2
             exit 1
           fi
@@ -67,7 +78,7 @@ jobs:
             echo "Unexpected module hydration script found on reading routes" >&2
             exit 1
           fi
-          echo "Representative reading routes contain source-derived static HTML, respect /persistence/, and contain no module hydration scripts."
+          echo "Audience entrances, derived editions, representative reading routes, and /persistence/ base paths verified."
 
       - name: Upload static build
         uses: actions/upload-artifact@v4
