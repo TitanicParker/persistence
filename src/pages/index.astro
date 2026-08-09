@@ -1,22 +1,74 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { publicationPath } from '../lib/site';
+
+const entrances = [
+  {
+    intent: 'Understand the idea',
+    edition: 'Layman’s Edition',
+    body: 'A plain-language route for a serious non-specialist reader: what the framework is trying to explain, why completion matters, and how the 54-position architecture fits together.',
+    path: 'layman/',
+    action: 'Begin in plain language',
+  },
+  {
+    intent: 'Explore the opportunity',
+    edition: 'Venture Edition',
+    body: 'A strategic and commercial reading of what capabilities, products, and companies might become possible if the framework proves useful.',
+    path: 'venture/',
+    action: 'Read the investment memo',
+  },
+  {
+    intent: 'Study the theory',
+    edition: 'Academic Edition · Formal Theory',
+    body: 'The mature monograph, 54-cell atlas, terminology, scholarly positioning, and research programme for readers who want the formal architecture.',
+    path: 'theory/',
+    action: 'Enter the formal theory',
+  },
+];
+
 const routes = [
-  ['Start here', 'A short orientation to the problem of completed intelligibility and the three primitive dimensions.', 'theory/'],
-  ['Read the theory', 'The principal monograph, segmented into durable chapter routes for sustained reading.', 'theory/'],
-  ['Explore the 54-form atlas', 'See the 6 × 3 × 3 periodic architecture as an explorable coordinate system.', 'atlas/'],
-  ['Read the 54 expositions', 'Move cell by cell through plain-language accounts, manifestations, and coordinate-forced sentences.', 'forms/'],
-  ['Use the glossary', 'Browse preferred mature terminology, distinctions, theoretical levels, and cross-references.', 'glossary/'],
-  ['Follow the intellectual history', 'Trace the movement from sentence resolution to a constraint grammar of completion.', 'history/'],
-  ['Academic positioning', 'Read the disciplinary location, novelty claims, limitations, and proposed research programme.', 'academic/'],
+  ['Theory', 'The principal monograph, segmented into durable reading units.', 'theory/'],
+  ['Atlas', 'The complete 6 × 3 × 3 coordinate system and its 54 generated positions.', 'atlas/'],
+  ['54 Forms', 'Plain-language expositions for every coordinate position.', 'forms/'],
+  ['Glossary', 'Preferred terminology, distinctions, relations, and theoretical levels.', 'glossary/'],
+  ['Intellectual History', 'How the theory developed from sentence resolution toward constraint grammar.', 'history/'],
+  ['Academic Positioning', 'Disciplinary location, limitations, novelty claims, and research programme.', 'academic/'],
 ];
 ---
 <BaseLayout>
-  <div class="page">
-    <section class="hero">
-      <p class="eyebrow">A periodic generative theory of transformation, completion, and persistence</p>
-      <h1>Completed intelligibility, mapped.</h1>
-      <p class="lede">A digital publication for reading and exploring a constraint grammar in which Transformation Pattern, Completion Topology, and Persistence Mode jointly generate fifty-four recurrent positions of completed form.</p>
+  <div class="page home-page">
+    <section class="hero home-hero">
+      <p class="eyebrow">Constraint Grammar of Completed Intelligibility</p>
+      <h1>How does something become complete enough to count?</h1>
+      <p class="lede">A theory of transformation, completion, and persistence. The same framework can be entered in plain language, explored for practical opportunity, or studied in its formal architecture.</p>
+    </section>
+
+    <section class="entrance-section" aria-labelledby="choose-entrance">
+      <header class="entrance-heading">
+        <p class="eyebrow">Choose your way in</p>
+        <h2 id="choose-entrance">Three entrances. One theory.</h2>
+      </header>
+      <div class="entrance-grid">
+        {entrances.map((entrance) => (
+          <a class="entrance-card" href={publicationPath(entrance.path)}>
+            <span class="edition-label">{entrance.edition}</span>
+            <h3>{entrance.intent}</h3>
+            <p>{entrance.body}</p>
+            <span class="entrance-action">{entrance.action} →</span>
+          </a>
+        ))}
+      </div>
+      <p class="mainstream-note">For a broader consequences essay, read <a href={publicationPath('mainstream/')}>If We Learned to See Completion</a>.</p>
+    </section>
+
+    <section class="section architecture-section" aria-labelledby="architecture-title">
+      <div class="section-intro">
+        <div>
+          <p class="eyebrow">The formal architecture</p>
+          <h2 id="architecture-title">A finite 6 × 3 × 3 state-space.</h2>
+        </div>
+        <p>The framework combines six Transformation Patterns, three Completion Topologies, and three Persistence Modes. Their Cartesian product yields fifty-four coordinate positions. The atlas and form pages make those positions inspectable without collapsing generated form, canonical crystallization, and concrete manifestation into one level.</p>
+      </div>
       <div class="architecture" aria-label="Constraint grammar architecture">
         <div><strong>6</strong><span>Transformation Patterns</span></div>
         <div><strong>3</strong><span>Completion Topologies</span></div>
@@ -24,32 +76,21 @@ const routes = [
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" aria-labelledby="publication-tools">
       <div class="section-intro">
         <div>
-          <p class="eyebrow">Orientation</p>
-          <h2>One theory, several reading modes.</h2>
+          <p class="eyebrow">Publication tools</p>
+          <h2 id="publication-tools">Go directly to the material.</h2>
         </div>
-        <p>The publication distinguishes the mature theory from its atlas, its fifty-four plain-language expositions, its terminological reference, and the documents that explain its development and academic position. These materials belong together, but they should not be flattened into one continuous document.</p>
+        <p>These routes are for readers who already know what they want. They are secondary to the three audience entrances above, but together they expose the complete publication foundation.</p>
       </div>
-      <div class="route-grid">
-        {routes.map(([title, body, path], i) => (
+      <div class="route-grid compact-route-grid">
+        {routes.map(([title, body, path]) => (
           <a class="route-card" href={publicationPath(path)}>
-            <small>{String(i + 1).padStart(2, '0')}</small>
             <h3>{title}</h3>
             <p>{body}</p>
           </a>
         ))}
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-intro">
-        <div>
-          <p class="eyebrow">The central distinction</p>
-          <h2>Structure before crystallization.</h2>
-        </div>
-        <p>The publication will preserve a governing distinction of the mature theory: coordinate-generated form → canonical crystallization → concrete manifestation. Atlas views and form pages will make those levels legible without collapsing them into interchangeable labels.</p>
       </div>
     </section>
   </div>
