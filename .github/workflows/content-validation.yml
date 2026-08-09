@@ -63,10 +63,13 @@ jobs:
           test -f dist/robots.txt
           test -f dist/favicon.svg
           test -f dist/social-preview.svg
+          test -f dist/constraint-grammar-portable-knowledge-edition.txt
 
           grep -q "Understand the idea" dist/index.html
           grep -q "Explore the opportunity" dist/index.html
           grep -q "Study the theory" dist/index.html
+          grep -q "Take the whole publication to a GPT" dist/index.html
+          grep -q 'href="/persistence/constraint-grammar-portable-knowledge-edition.txt' dist/index.html
           grep -q 'href="/persistence/research-status/' dist/index.html
           grep -q 'href="/persistence/layman/' dist/index.html
           grep -q 'href="/persistence/venture/' dist/index.html
@@ -80,6 +83,23 @@ jobs:
           grep -q '"kind":"Theory chapter"' dist/search-index.json
           grep -q '"kind":"Atlas cell"' dist/search-index.json
           grep -q '"kind":"Glossary term"' dist/search-index.json
+
+          grep -q "Portable Knowledge Edition: personal study permission" dist/rights/index.html
+          grep -q "Permission for broader use" dist/rights/index.html
+          grep -q "uploading it to a GPT or other AI system" dist/rights/index.html
+
+          grep -q "PORTABLE KNOWLEDGE EDITION" dist/constraint-grammar-portable-knowledge-edition.txt
+          grep -q "Copyright © 9 August 2026 Liam Moloney. All Rights Reserved." dist/constraint-grammar-portable-knowledge-edition.txt
+          grep -q "A SUGGESTED WAY TO USE THIS FILE WITH A GPT OR OTHER AI TOOL" dist/constraint-grammar-portable-knowledge-edition.txt
+          grep -q "If the way you want to use the work goes beyond personal study" dist/constraint-grammar-portable-knowledge-edition.txt
+          grep -q "SOURCE STATUS: CANONICAL THEORY" dist/constraint-grammar-portable-knowledge-edition.txt
+          grep -q "SOURCE STATUS: CANONICAL STRUCTURAL ATLAS" dist/constraint-grammar-portable-knowledge-edition.txt
+          grep -q "SOURCE STATUS: AUTHORITATIVE GLOSSARY" dist/constraint-grammar-portable-knowledge-edition.txt
+          grep -q "SOURCE STATUS: DERIVED STRATEGIC INTERPRETATION" dist/constraint-grammar-portable-knowledge-edition.txt
+          grep -q "THE CONSTRAINT GRAMMAR OF COMPLETED INTELLIGIBILITY" dist/constraint-grammar-portable-knowledge-edition.txt
+          grep -q "Plain-Language Expositions of the Fifty-Four Generated Forms" dist/constraint-grammar-portable-knowledge-edition.txt
+          grep -q "What has not been proven" dist/constraint-grammar-portable-knowledge-edition.txt
+          test "$(wc -c < dist/constraint-grammar-portable-knowledge-edition.txt)" -gt 100000
 
           grep -q 'id="filter-transformation"' dist/atlas/index.html
           grep -q 'id="filter-topology"' dist/atlas/index.html
@@ -119,7 +139,7 @@ jobs:
             echo "Unexpected module hydration script found on core reading routes" >&2
             exit 1
           fi
-          echo "Finishing routes, search index, derived editions, Atlas enhancement, canonical URLs, and /persistence/ base paths verified."
+          echo "Finishing routes, portable knowledge edition, search index, derived editions, Atlas enhancement, canonical URLs, and /persistence/ base paths verified."
 
       - name: Upload static build
         uses: actions/upload-artifact@v7
