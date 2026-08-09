@@ -33,14 +33,21 @@ const routes = [
   ['Glossary', 'Preferred terminology, distinctions, relations, and theoretical levels.', 'glossary/'],
   ['Intellectual History', 'How the theory developed from sentence resolution toward constraint grammar.', 'history/'],
   ['Academic Positioning', 'Disciplinary location, limitations, novelty claims, and research programme.', 'academic/'],
+  ['Research Status', 'What the project demonstrates internally, what remains hypothetical, and what evidence could weaken it.', 'research-status/'],
+  ['About & Provenance', 'Source hierarchy, publication version, repository, and citation guidance.', 'about/'],
+  ['Search', 'Find theory chapters, atlas cells, forms, glossary terms, and supporting essay headings.', 'search/'],
 ];
 ---
-<BaseLayout>
+<BaseLayout
+  description="A static digital publication of the Constraint Grammar of Completed Intelligibility, with formal theory, a 54-cell atlas, explanatory forms, glossary, research status, and derived editions."
+  sourceStatus="Publication entrance · editorial framing"
+>
   <div class="page home-page">
     <section class="hero home-hero">
       <p class="eyebrow">Constraint Grammar of Completed Intelligibility</p>
       <h1>How does something become complete enough to count?</h1>
       <p class="lede">A theory of transformation, completion, and persistence. The same framework can be entered in plain language, explored for practical opportunity, or studied in its formal architecture.</p>
+      <p class="credibility-note"><a href={publicationPath('research-status/')}>Read the research status and claims boundary →</a></p>
     </section>
 
     <section class="entrance-section" aria-labelledby="choose-entrance">
@@ -82,7 +89,7 @@ const routes = [
           <p class="eyebrow">Publication tools</p>
           <h2 id="publication-tools">Go directly to the material.</h2>
         </div>
-        <p>These routes are for readers who already know what they want. They are secondary to the three audience entrances above, but together they expose the complete publication foundation.</p>
+        <p>These routes are for readers who already know what they want. They are secondary to the three audience entrances above, but together they expose the complete publication and its claims boundary.</p>
       </div>
       <div class="route-grid compact-route-grid">
         {routes.map(([title, body, path]) => (
