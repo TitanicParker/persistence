@@ -11,54 +11,19 @@ jobs:
   validate-build:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
     steps:
-      - name: Checkout publication branch
+      - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: publication-foundation
 
-      - name: Detect committed lockfile
-        id: lockfile
-        shell: bash
-        run: |
-          if [[ -f package-lock.json ]]; then
-            echo "exists=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "exists=false" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Use Node.js 22 without cache while bootstrapping
-        if: ${{ steps.lockfile.outputs.exists == 'false' }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-
-      - name: Use Node.js 22 with npm cache
-        if: ${{ steps.lockfile.outputs.exists == 'true' }}
+      - name: Use Node.js 22
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
 
-      - name: Bootstrap lockfile and install dependencies
-        if: ${{ steps.lockfile.outputs.exists == 'false' }}
-        run: npm install
-
       - name: Install locked dependencies
-        if: ${{ steps.lockfile.outputs.exists == 'true' }}
         run: npm ci
-
-      - name: Commit generated lockfile
-        if: ${{ github.event_name == 'pull_request' && steps.lockfile.outputs.exists == 'false' }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add package-lock.json
-          git commit -m "Add deterministic npm lockfile"
-          git push origin HEAD:publication-foundation
 
       - name: Validate canonical corpus
         run: npm run validate:content
