@@ -46,6 +46,18 @@ import { publicationPath } from '../lib/site';
       <p>Later work could allow readers to compare alternative readings, hold one coordinate constant while changing another, inspect neighboring forms, trace the difference between a completed form and its formation history, and see why intelligibility can be analyzed before truth or correctness is judged.</p>
     </section>
 
+    <section class="substrate-destination">
+      <p class="eyebrow">Behind the receptacle</p>
+      <h2>If the sentence is the window, what is the field behind it?</h2>
+      <p>The Sentence Receptacle is planned as an instrument for looking closely at one completed object. It is not the substrate itself, and it does not imply that a sentence has one uniquely forced coordinate.</p>
+      <p><strong>Theorem Zero</strong> is the current deeper destination. Its canonical substrate defines a locked infinite triangular / barycentric field; finite activations select content from that field, while overlays and rendering remain programmable expressions over it. The distinction matters: what is shown is not allowed to redefine what is lawful underneath.</p>
+      <p>For now, this is where the doorway leads. Entering it moves from the proposed sentence-level window to a full-screen runtime of the underlying lawful substrate.</p>
+      <a class="theorem-zero-link" href={publicationPath('theorem-zero/')}>
+        <span><strong>Enter Theorem Zero</strong><small>Canonical Substrate v1.0 · full-screen runtime</small></span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </section>
+
     <section class="boundary-section">
       <p class="eyebrow">Boundary</p>
       <h2>This page records an intention, not a finished capability.</h2>
@@ -78,6 +90,17 @@ import { publicationPath } from '../lib/site';
   .steps p { margin:0; color:#514d47; }
   .window-section { position:relative; }
   .window-section:after { content:'“'; position:absolute; right:0; top:1.5rem; font-family:Georgia,'Times New Roman',serif; font-size:8rem; line-height:1; color:#e8e2d7; pointer-events:none; }
+  .substrate-destination { position:relative; overflow:hidden; margin:2rem -1.5rem 0; padding:3rem 1.5rem; border:1px solid #263b42; border-radius:20px; background:radial-gradient(circle at 88% 20%,rgba(100,255,210,.12),transparent 32%),linear-gradient(145deg,#0a1219,#101f28); color:#eef7f3; }
+  .substrate-destination:after { content:''; position:absolute; width:15rem; height:15rem; right:-7rem; bottom:-8rem; border:1px solid rgba(100,255,210,.22); border-radius:50%; box-shadow:0 0 0 2.7rem rgba(100,255,210,.035),0 0 0 5.4rem rgba(143,185,255,.025); pointer-events:none; }
+  .substrate-destination .eyebrow { color:#a7c8c0; }
+  .substrate-destination h2 { max-width:17ch; }
+  .substrate-destination > p:not(.eyebrow) { color:#c9d8d4; }
+  .theorem-zero-link { position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-top:2rem; padding:1rem 1.1rem; border:1px solid rgba(100,255,210,.34); border-radius:14px; color:#f4fff9; text-decoration:none; background:rgba(100,255,210,.055); transition:transform .15s ease,background .15s ease,border-color .15s ease; }
+  .theorem-zero-link:hover { transform:translateY(-2px); background:rgba(100,255,210,.09); border-color:rgba(100,255,210,.58); }
+  .theorem-zero-link:focus-visible { outline:3px solid #64ffd2; outline-offset:3px; }
+  .theorem-zero-link strong { display:block; font-size:1rem; }
+  .theorem-zero-link small { display:block; margin-top:.2rem; color:#9fb9b2; font:600 .72rem/1.4 ui-sans-serif,system-ui,sans-serif; letter-spacing:.03em; }
+  .theorem-zero-link > span:last-child { font-size:1.45rem; }
   .boundary-section { background:#f5f1e9; margin-left:-1.5rem; margin-right:-1.5rem; padding-left:1.5rem; padding-right:1.5rem; border-radius:18px; }
   .receptacle-footer { display:flex; justify-content:space-between; gap:1rem; padding:2.5rem 0 1rem; font-weight:700; }
   .receptacle-footer a { text-underline-offset:.2em; }
@@ -88,4 +111,5 @@ import { publicationPath } from '../lib/site';
     .window-section:after { display:none; }
     .receptacle-footer { flex-direction:column; }
   }
+  @media(prefers-reduced-motion:reduce){.theorem-zero-link{transition:none}}
 </style>
