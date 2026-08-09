@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { parseMonograph } from '../../lib/content/monograph';
+const monograph = parseMonograph();
+---
+<BaseLayout title={`Theory — ${monograph.title}`}>
+  <article class="reading-index">
+    <header><p class="eyebrow">The principal monograph</p><h1>{monograph.title}</h1><p class="lede">{monograph.subtitle}</p></header>
+    <section aria-labelledby="contents"><h2 id="contents">Reading units</h2>
+      <ol class="chapter-list">
+        {monograph.chapters.map((chapter) => <li><a href={`/theory/${chapter.slug}/`}>{chapter.number ? `${chapter.number}. ` : ''}{chapter.title}</a>{chapter.partTitle && <small>{chapter.partTitle}</small>}</li>)}
+      </ol>
+    </section>
+  </article>
+</BaseLayout>
