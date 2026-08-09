@@ -1,0 +1,23 @@
+{
+  "name": "constraint-grammar-publication",
+  "private": true,
+  "version": "0.2.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "validate:content": "tsx scripts/validate-content.ts",
+    "test": "vitest run",
+    "check": "npm run validate:content && npm test && npm run build"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.4",
+    "astro": "^5.13.2",
+    "marked": "^16.2.1"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.5",
+    "vitest": "^3.2.4"
+  }
+}

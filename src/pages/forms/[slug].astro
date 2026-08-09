@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { parseExpositions } from '../../lib/content/expositions';
+import { renderPlainBlocks } from '../../lib/content/render';
+import { publicationPath } from '../../lib/site';
+export function getStaticPaths() { return parseExpositions().map((exposition) => ({ params: { slug: exposition.slug }, props: { exposition } })); }
+const { exposition } = Astro.props;
+const html = renderPlainBlocks(exposition.body.map((b) => b.raw));
+---
+<BaseLayout title={`${exposition.canonicalCrystallization} — 54 Forms`}>
+  <article class="prose form-page"><header><p class="eyebrow">Cell {exposition.number} · {exposition.transformationPattern} / {exposition.completionTopology} / {exposition.persistenceMode}</p><h1>{exposition.canonicalCrystallization}</h1><p class="lede">{exposition.coordinateGeneratedForm}</p></header>
+    <dl class="metadata"><dt>Companion utterance</dt><dd>{exposition.companionUtterance}</dd><dt>Constraint strength</dt><dd>{exposition.constraintStrength}</dd></dl>
+    <section aria-label="Exposition" set:html={html} />
+    <p><a href={publicationPath(`atlas/${exposition.slug}/`)}>← Return to atlas cell</a></p>
+  </article>
+</BaseLayout>

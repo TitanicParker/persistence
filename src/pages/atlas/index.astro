@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { parseAtlas } from '../../lib/content/atlas';
+import { publicationPath } from '../../lib/site';
+const cells = parseAtlas();
+---
+<BaseLayout title="Atlas — Constraint Grammar">
+  <article class="reading-index">
+    <header><p class="eyebrow">6 × 3 × 3</p><h1>The 54-cell atlas</h1><p class="lede">Every coordinate is present in the HTML below; filtering can be added later as progressive enhancement.</p></header>
+    <ol class="atlas-list">
+      {cells.map((cell) => <li><article><header><span class="cell-number">{String(cell.number).padStart(2,'0')}</span><h2><a href={publicationPath(`atlas/${cell.slug}/`)}>{cell.canonicalCrystallization}</a></h2></header><p>{cell.coordinateGeneratedForm}</p><dl><dt>Transformation</dt><dd>{cell.transformationPattern}</dd><dt>Topology</dt><dd>{cell.completionTopology}</dd><dt>Persistence</dt><dd>{cell.persistenceMode}</dd></dl></article></li>)}
+    </ol>
+  </article>
+</BaseLayout>

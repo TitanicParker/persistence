@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { parseMonograph } from '../../lib/content/monograph';
+import { monographBodyToMarkdown, renderMarkdown } from '../../lib/content/render';
+import { publicationPath } from '../../lib/site';
+export function getStaticPaths() { return parseMonograph().chapters.map((chapter) => ({ params: { slug: chapter.slug }, props: { chapter } })); }
+const { chapter } = Astro.props;
+const html = renderMarkdown(monographBodyToMarkdown(chapter.raw));
+---
+<BaseLayout title={`${chapter.title} — Constraint Grammar`}>
+  <article class="prose">
+    <header><p class="eyebrow">{chapter.part ? `${chapter.part} · ${chapter.partTitle}` : 'Monograph orientation'}</p><h1>{chapter.number ? `${chapter.number}. ` : ''}{chapter.title}</h1></header>
+    <div set:html={html} />
+    <nav class="reader-nav" aria-label="Chapter navigation">
+      {chapter.previousSlug ? <a rel="prev" href={publicationPath(`theory/${chapter.previousSlug}/`)}>← Previous</a> : <span />}
+      <a href={publicationPath('theory/')}>Contents</a>
+      {chapter.nextSlug ? <a rel="next" href={publicationPath(`theory/${chapter.nextSlug}/`)}>Next →</a> : <span />}
+    </nav>
+  </article>
+</BaseLayout>

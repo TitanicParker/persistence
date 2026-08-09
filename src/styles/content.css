@@ -1,0 +1,30 @@
+.reading-index, .prose { width: min(calc(100% - 2rem), 74rem); margin: 0 auto; padding: clamp(3rem, 7vw, 7rem) 0; }
+.reading-index > header, .prose > header { border-bottom: 1px solid var(--rule); padding-bottom: 2rem; margin-bottom: 2.5rem; }
+.reading-index h1, .prose h1 { max-width: 18ch; }
+.chapter-list, .atlas-list { list-style: none; padding: 0; margin: 2rem 0 0; border-top: 1px solid var(--rule); }
+.chapter-list li { display: grid; grid-template-columns: minmax(0,1fr) minmax(12rem, .45fr); gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--rule); }
+.chapter-list small { color: var(--muted); font: .8rem/1.4 system-ui, sans-serif; }
+.atlas-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); }
+.atlas-list > li { border-bottom: 1px solid var(--rule); padding: 1.5rem 1.5rem 1.5rem 0; }
+.atlas-list > li:nth-child(odd) { border-right: 1px solid var(--rule); }
+.atlas-list > li:nth-child(even) { padding-left: 1.5rem; }
+.atlas-list h2 { font-size: 1.45rem; margin: .2rem 0 .5rem; }
+.cell-number { color: var(--muted); font: .76rem/1 system-ui, sans-serif; letter-spacing: .08em; }
+dl.metadata, dl.glossary-definition, .atlas-list dl { display: grid; grid-template-columns: minmax(9rem,.35fr) 1fr; gap: .55rem 1.5rem; }
+dt { font-weight: 600; }
+dd { margin: 0; }
+.atlas-list dl { font-size: .9rem; }
+.reader-nav { margin-top: 4rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 1rem; font: .85rem/1.4 system-ui, sans-serif; }
+.alphabet { display: flex; flex-wrap: wrap; gap: .8rem; margin: 2rem 0; font: .85rem/1 system-ui, sans-serif; }
+.glossary-entry .glossary-definition { margin-top: 2rem; }
+.glossary-entry .glossary-definition dt, .glossary-entry .glossary-definition dd { border-top: 1px solid var(--rule); padding-top: 1rem; }
+.essay .toc { float: left; width: 15rem; margin: 0 2.5rem 2rem 0; }
+.essay .toc ol { padding-left: 1.2rem; }
+.prose > div, .prose > section { max-width: var(--measure); }
+.prose p, .prose li { max-width: var(--measure); }
+@media (max-width: 760px) {
+  .chapter-list li, .atlas-list, dl.metadata, dl.glossary-definition, .atlas-list dl { grid-template-columns: 1fr; }
+  .atlas-list > li:nth-child(odd) { border-right: 0; }
+  .atlas-list > li:nth-child(even) { padding-left: 0; }
+  .essay .toc { float: none; width: auto; margin: 0 0 2rem; }
+}

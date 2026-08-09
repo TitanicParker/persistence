@@ -1,0 +1,76 @@
+name: Content validation
+
+on:
+  push:
+    branches: [publication-foundation]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate-build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Validate canonical corpus
+        run: npm run validate:content
+
+      - name: Run focused tests
+        run: npm test
+
+      - name: Build static publication
+        run: npm run build
+
+      - name: Inspect representative static HTML
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f dist/index.html
+          test -f dist/theory/index.html
+          test -f dist/theory/01-the-object-of-study/index.html
+          test -f dist/atlas/index.html
+          test -f dist/atlas/01-focal-mark/index.html
+          test -f dist/forms/01-focal-mark/index.html
+          test -f dist/glossary/index.html
+          test -f dist/glossary/completed-intelligibility/index.html
+          test -f dist/history/index.html
+          test -f dist/academic/index.html
+          grep -q "The object of study" dist/theory/01-the-object-of-study/index.html
+          grep -q "Focal distinguished standing" dist/atlas/01-focal-mark/index.html
+          grep -q "A field can contain many perfectly visible things" dist/forms/01-focal-mark/index.html
+          grep -q "sufficiently determinate" dist/glossary/completed-intelligibility/index.html
+          grep -q "From Sentence Resolution to Constraint Grammar" dist/history/index.html
+          grep -q "Academic Landscape" dist/academic/index.html
+          grep -q 'href="/persistence/theory/' dist/index.html
+          grep -q 'href="/persistence/atlas/' dist/index.html
+          grep -q 'href="/persistence/forms/' dist/index.html
+          grep -q 'href="/persistence/glossary/' dist/index.html
+          grep -qE '(href|src)="/persistence/_astro/' dist/index.html
+          if grep -R -qE 'href="/(theory|atlas|forms|glossary|history|academic)(/|\")' dist; then
+            echo "Found a publication link that escaped the /persistence/ base path" >&2
+            exit 1
+          fi
+          if grep -R -qE '<script[^>]+type="module"' dist/theory dist/forms dist/glossary dist/history dist/academic; then
+            echo "Unexpected module hydration script found on reading routes" >&2
+            exit 1
+          fi
+          echo "Representative reading routes contain source-derived static HTML, respect /persistence/, and contain no module hydration scripts."
+
+      - name: Upload static build
+        uses: actions/upload-artifact@v4
+        with:
+          name: static-publication
+          path: dist

@@ -1,0 +1,34 @@
+---
+import '../styles/global.css';
+import '../styles/content.css';
+import { publicationPath } from '../lib/site';
+const { title = 'Constraint Grammar of Completed Intelligibility', description = 'A periodic generative theory of transformation, completion, and persistence.' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="site-title" href={publicationPath()}>Constraint Grammar</a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href={publicationPath('theory/')}>Theory</a>
+          <a href={publicationPath('atlas/')}>Atlas</a>
+          <a href={publicationPath('forms/')}>54 Forms</a>
+          <a href={publicationPath('glossary/')}>Glossary</a>
+          <a href={publicationPath('history/')}>History</a>
+          <a href={publicationPath('academic/')}>Academic</a>
+        </nav>
+      </header>
+      <main><slot /></main>
+      <footer class="site-footer">
+        Constraint Grammar of Completed Intelligibility. Source texts remain canonical; interface copy is editorial scaffolding only.
+      </footer>
+    </div>
+  </body>
+</html>

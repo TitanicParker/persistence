@@ -1,0 +1,81 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Use Node.js 24
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Validate canonical corpus
+        run: npm run validate:content
+
+      - name: Run focused tests
+        run: npm test
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+
+      - name: Build static publication
+        run: npm run build
+
+      - name: Verify GitHub Pages base paths
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f dist/index.html
+          test -f dist/theory/index.html
+          test -f dist/atlas/01-focal-mark/index.html
+          test -f dist/forms/01-focal-mark/index.html
+          test -f dist/glossary/completed-intelligibility/index.html
+          test -f dist/history/index.html
+          test -f dist/academic/index.html
+          grep -q 'href="/persistence/theory/' dist/index.html
+          grep -q 'href="/persistence/atlas/' dist/index.html
+          grep -q 'href="/persistence/forms/' dist/index.html
+          grep -q 'href="/persistence/glossary/' dist/index.html
+          grep -qE '(href|src)="/persistence/_astro/' dist/index.html
+          if grep -R -qE 'href="/(theory|atlas|forms|glossary|history|academic)(/|\")' dist; then
+            echo "Found a publication link that escaped the /persistence/ base path" >&2
+            exit 1
+          fi
+          echo "Generated publication links and assets respect /persistence/."
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
