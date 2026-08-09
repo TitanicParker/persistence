@@ -1,13 +1,21 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { parseGlossary } from '../../lib/content/glossary';
+import { resolveGlossaryReference } from '../../lib/content/glossary-links';
 import { publicationPath } from '../../lib/site';
-export function getStaticPaths() { return parseGlossary().map((term) => ({ params: { slug: term.slug }, props: { term } })); }
-const { term } = Astro.props;
+export function getStaticPaths() {
+  const terms = parseGlossary();
+  return terms.map((term) => ({ params: { slug: term.slug }, props: { term, terms } }));
+}
+const { term, terms } = Astro.props;
+const linkedRelations = term.relations
+  .map((reference) => ({ reference, resolution: resolveGlossaryReference(reference, terms) }))
+  .filter((item) => item.resolution);
 ---
 <BaseLayout title={`${term.term} — Glossary`} description={`${term.term}: ${term.definition}`} sourceStatus="Authoritative glossary">
   <article class="prose glossary-entry"><header><p class="eyebrow">{term.category}</p><h1>{term.term}</h1><p class="lede">Preferred status: {term.preferredStatus}</p></header>
     <dl class="glossary-definition"><dt>Definition</dt><dd>{term.definition}</dd><dt>Function in the theory</dt><dd>{term.functionInTheory}</dd><dt>Distinguish from</dt><dd>{term.distinguishFrom}</dd><dt>Relations</dt><dd>{term.relationsRaw}</dd></dl>
+    {linkedRelations.length > 0 && <aside class="resolved-relations" aria-labelledby="linked-relations"><h2 id="linked-relations">Linked glossary references</h2><ul>{linkedRelations.map(({ reference, resolution }) => <li><a href={publicationPath(`glossary/${resolution!.term.slug}/`)}>{reference}</a><small>{resolution!.category === 'exact' ? 'Exact glossary term' : `Safely normalized: ${resolution!.category}`}</small></li>)}</ul></aside>}
     <p><a href={publicationPath('glossary/')}>← Glossary index</a></p>
   </article>
 </BaseLayout>
