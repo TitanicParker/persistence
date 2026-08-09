@@ -5,7 +5,14 @@ import { publicationPath } from '../../lib/site';
 const expositions = parseExpositions();
 ---
 <BaseLayout title="54 Forms — Constraint Grammar">
-  <article class="reading-index"><header><p class="eyebrow">Plain-language reading mode</p><h1>The 54 forms</h1><p class="lede">Fifty-four source-derived expositions, ordered by coordinate position.</p></header>
-    <ol class="chapter-list">{expositions.map((ex) => <li><a href={publicationPath(`forms/${ex.slug}/`)}>{String(ex.number).padStart(2,'0')} · {ex.canonicalCrystallization}</a><small>{ex.transformationPattern} / {ex.completionTopology} / {ex.persistenceMode}</small></li>)}</ol>
+  <article class="reading-index">
+    <header>
+      <p class="eyebrow">Plain-language reading mode</p>
+      <h1>The 54 forms</h1>
+      <p class="lede">One exposition for every atlas coordinate, written to make the generated form intelligible without requiring the reader to begin from the formal table.</p>
+      <p class="index-guidance">The number and coordinate triple match the atlas exactly. Use this section when you want to understand what a position feels like in ordinary terms; use the atlas when you want the compact structural record.</p>
+      <p class="index-crosslink"><a href={publicationPath('atlas/')}>Compare the formal atlas →</a></p>
+    </header>
+    <ol class="chapter-list form-list">{expositions.map((ex) => <li><a href={publicationPath(`forms/${ex.slug}/`)}><span class="list-number">{String(ex.number).padStart(2,'0')}</span> {ex.canonicalCrystallization}</a><small>{ex.transformationPattern} / {ex.completionTopology} / {ex.persistenceMode}</small></li>)}</ol>
   </article>
 </BaseLayout>
