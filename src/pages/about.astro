@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { publicationPath } from '../lib/site';
+---
+<BaseLayout
+  title="About the Publication — Constraint Grammar"
+  description="Publication provenance, source hierarchy, citation guidance, and document status for Constraint Grammar of Completed Intelligibility."
+  sourceStatus="Publication provenance"
+>
+  <article class="prose about-page">
+    <header>
+      <p class="eyebrow">About this publication</p>
+      <h1>One theory, several kinds of document</h1>
+      <p class="lede">This site is a static digital publication of the Constraint Grammar of Completed Intelligibility. It keeps canonical theory, structural reference, explanatory companions, historical reconstruction, academic positioning, and derived essays visibly distinct.</p>
+    </header>
+
+    <section>
+      <h2>Governing hierarchy</h2>
+      <p>The mature theory distinguishes three levels that should not be collapsed:</p>
+      <ol>
+        <li><strong>Coordinate-generated form</strong> — the structural form constrained by a position in the 6 × 3 × 3 grammar.</li>
+        <li><strong>Canonical crystallization</strong> — the preferred mature name used to identify that generated form.</li>
+        <li><strong>Concrete manifestation</strong> — a particular linguistic, social, practical, or other realization that may instantiate the form.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Canonical source corpus</h2>
+      <p>The static publication is generated from source files kept in the repository. The principal canonical sources are:</p>
+      <ul class="source-file-list">
+        <li><code>constraint_grammar_of_completed_intelligibility_final_monograph.txt</code> — mature monograph.</li>
+        <li><code>coordinate_forced_atlas.md</code> — canonical 54-cell structural atlas.</li>
+        <li><code>constraint_grammar_54_plain_language_expositions_final.txt</code> — canonical explanatory companion for the 54 positions.</li>
+        <li><code>constraint_grammar_exhaustive_glossary.md</code> — authoritative terminology and distinctions.</li>
+      </ul>
+      <p>Supporting documents include the intellectual history and academic disciplinary positioning texts. An earlier academic draft remains archival rather than the governing theory source.</p>
+    </section>
+
+    <section>
+      <h2>Derived interpretations</h2>
+      <p>The Layman’s Edition, Venture Edition, and Mainstream Consequences essay are derived readings of the same framework. They are not substitute canonical theory texts. Their prose is preserved as authored while the publication shell identifies their status and links readers back to the formal material.</p>
+    </section>
+
+    <section>
+      <h2>Version and repository</h2>
+      <dl class="metadata">
+        <dt>Publication version</dt><dd>0.2.0</dd>
+        <dt>Publication date</dt><dd>9 August 2026</dd>
+        <dt>Repository</dt><dd><a href="https://github.com/TitanicParker/persistence">TitanicParker/persistence on GitHub</a></dd>
+        <dt>Public URL</dt><dd><a href="https://titanicparker.github.io/persistence/">titanicparker.github.io/persistence/</a></dd>
+      </dl>
+      <p>No personal authorship details are asserted here beyond what is explicit in the public repository context.</p>
+    </section>
+
+    <section>
+      <h2>Suggested citation</h2>
+      <p><cite>Constraint Grammar of Completed Intelligibility</cite>. Digital publication, version 0.2.0, 9 August 2026. <span class="break-anywhere">https://titanicparker.github.io/persistence/</span></p>
+      <p>When citing a specific chapter, atlas cell, form, glossary entry, or essay, use that page’s stable URL and identify its document status.</p>
+    </section>
+
+    <nav class="reader-nav" aria-label="About related reading">
+      <a href={publicationPath('research-status/')}>Research status</a>
+      <a href={publicationPath('theory/')}>Formal theory</a>
+    </nav>
+  </article>
+</BaseLayout>
