@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="VC investment memo assessing the commercial value of the Constraint Grammar of Completed Intelligibility.">
+<title>Where Completion Becomes Economic Value — VC Investment Memo</title>
+<style>
+:root{
+  --ink:#171717;
+  --muted:#666;
+  --paper:#fbfaf7;
+  --panel:#f1efe8;
+  --rule:#d9d5ca;
+  --accent:#183a54;
+  --max:760px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height:1.72;
+  font-size:18px;
+}
+main{max-width:var(--max); margin:0 auto; padding:64px 24px 96px}
+.hero{padding-bottom:38px; border-bottom:1px solid var(--rule)}
+.eyebrow{
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  font-size:.72rem;
+  color:var(--muted);
+  font-weight:700
+}
+h1,h2,h3{line-height:1.15; color:#111}
+h1{font-size:clamp(2.5rem,7vw,4.5rem); letter-spacing:-.035em; margin:.35em 0 .25em}
+h2{font-size:2rem; margin-top:2.7em; padding-top:.2em}
+h3{font-size:1.25rem; margin-top:2em}
+.subtitle{font-size:1.35rem; color:var(--accent); margin:.3em 0}
+.dek{font-size:1.15rem; color:#333}
+.verdict,.callout,.experiment,.final-three{
+  background:var(--panel);
+  border-left:4px solid var(--accent);
+  padding:18px 22px;
+  margin:28px 0;
+}
+.toc{
+  margin:40px 0 48px;
+  border-top:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+  padding:24px 0;
+}
+.toc h2{margin:0 0 12px; font-size:1.2rem}
+.toc ol{columns:2; column-gap:36px; padding-left:1.25em; margin:0}
+.toc li{break-inside:avoid; margin:.25em 0}
+a{color:var(--accent); text-decoration-thickness:.07em; text-underline-offset:.14em}
+blockquote{margin:30px 0; padding:5px 0 5px 24px; border-left:3px solid var(--rule); font-size:1.18rem}
+ul,ol{padding-left:1.35em}
+li{margin:.35em 0}
+.triplet dt{font-weight:700; margin-top:1.1em}
+.triplet dd{margin-left:0; color:#333}
+pre{
+  overflow:auto;
+  background:#111;
+  color:#f4f4f4;
+  padding:18px;
+  border-radius:6px;
+  font-size:.82rem;
+  line-height:1.5;
+}
+code{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace}
+.flow{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  align-items:center;
+  justify-content:center;
+  background:var(--panel);
+  padding:18px;
+  margin:26px 0;
+  font-family:ui-sans-serif,system-ui,sans-serif;
+  font-size:.86rem;
+}
+.note{font-size:.9rem;color:var(--muted)}
+section{scroll-margin-top:24px}
+.final-three p{margin:.7em 0}
+@media(max-width:700px){
+  body{font-size:17px}
+  main{padding:38px 18px 72px}
+  .toc ol{columns:1}
+  h2{font-size:1.65rem}
+}
+@media print{
+  body{background:white;font-size:11pt}
+  main{max-width:none;padding:0}
+  .toc ol{columns:2}
+  a{color:inherit;text-decoration:none}
+}
+</style>
+</head>
+<body>
+<main>
+<article>
+
+<header class="hero">
+  <p class="eyebrow">Investment Memo · August 2026</p>
+  <h1>Where Completion Becomes Economic Value</h1>
+  <p class="subtitle">A venture-capital assessment of the Constraint Grammar of Completed Intelligibility</p>
+  <p class="dek">The investment question is not whether the theory is intellectually interesting. It is whether representing <em>what remains unresolved, what would count as enough, and what kind of result must persist</em> can become a useful machine primitive.</p>
+  <div class="verdict">
+    <strong>Current judgment:</strong> fund the technical thesis, not the grand platform story. The strongest initial wedge is <strong>completion-aware evaluation for AI agents</strong>. The company becomes venture-scale only if the representation improves agent reliability across heterogeneous workflows better than task-specific heuristics and existing eval stacks.
+  </div>
+</header>
+
+<nav class="toc" aria-label="Contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#executive-view">Executive view</a></li>
+    <li><a href="#problem">The problem</a></li>
+    <li><a href="#genuinely-new">What is genuinely new</a></li>
+    <li><a href="#primitive">The hidden commercial primitive</a></li>
+    <li><a href="#why-now">Why now</a></li>
+    <li><a href="#opportunities">Product opportunities</a></li>
+    <li><a href="#wedge">Best initial wedge</a></li>
+    <li><a href="#product">What the product actually is</a></li>
+    <li><a href="#customer">Customer and buyer</a></li>
+    <li><a href="#market">Market structure</a></li>
+    <li><a href="#data">Data strategy</a></li>
+    <li><a href="#feasibility">Technical feasibility</a></li>
+    <li><a href="#moat">Moat</a></li>
+    <li><a href="#competition">Competitive landscape by category</a></li>
+    <li><a href="#experiments">Experiments that must work</a></li>
+    <li><a href="#risks">Risks</a></li>
+    <li><a href="#venture-scale">Venture-scale pathways</a></li>
+    <li><a href="#funding">Funding plan</a></li>
+    <li><a href="#invest">What would make me invest</a></li>
+    <li><a href="#walk">What would make me walk away</a></li>
+    <li><a href="#judgment">Final investment judgment</a></li>
+  </ol>
+</nav>
+
+<section id="executive-view">
+  <h2>1. Executive view</h2>
+  <p>The theory is trying to name a problem that modern software mostly handles indirectly. We have excellent representations for content, entities, relations, probabilities, workflows, goals, tool calls, and outcomes. We have much weaker representations for the shape of <em>unfinishedness itself</em>: what exactly is still unresolved, what sort of change would answer it, what would make that change sufficient, and what kind of achieved result must remain before the system should stop.</p>
+
+  <p>That distinction matters most in agentic systems. A conventional application can often rely on a programmer to define terminal states explicitly. An AI agent operates in environments where the terminal condition is frequently semantic rather than syntactic. “Find the invoice” ends when the correct document is located. “Resolve the customer’s billing problem” does not. The system has to know whether it merely found information, established a relevant relation, repaired a discrepancy, completed an operational change, or only produced language that <em>sounds</em> resolved.</p>
+
+  <p>The Constraint Grammar offers a candidate representation for this missing layer. It separates three questions: what kind of transformation is required, what structural condition makes that transformation sufficient, and how the achieved result persists. The resulting 6 × 3 × 3 space is interesting commercially not because fifty-four is a magical number, but because it may provide a compact shared ontology for very different kinds of unresolved work.</p>
+
+  <p>My strongest thesis is deliberately narrower than the theory’s broadest philosophical ambition: <strong>completion structure could become a useful intermediate representation for evaluating and controlling multi-step AI work.</strong> If that is true, the immediate product is not “a universal theory of intelligence.” It is an evaluation and observability layer that can detect false closure, classify unresolved pressure, distinguish apparent completion from operational completion, and recommend whether an agent should continue, repair, hand off, or stop.</p>
+
+  <p>I would not finance a large company today on the assumption that the fifty-four-coordinate atlas is empirically correct. I would finance a small, technically serious programme to find out whether the representation earns its keep. The threshold is empirical: independent annotators must be able to use it consistently, models must infer it from real traces, and using the representation must improve outcomes on tasks where ordinary pass/fail evals and state machines are inadequate.</p>
+
+  <aside class="callout">
+    <h3>The investment thesis in one paragraph</h3>
+    <p>If the theory is substantially right, it provides a domain-general vocabulary for unresolved work. That could become valuable wherever software must decide not only <em>what happened</em>, but whether enough has happened for a task to be considered complete. The best near-term market is AI-agent evaluation because the pain is immediate, traces are already available as data, buyers already spend on observability and evals, and the product can prove value without asking customers to adopt the theory’s vocabulary themselves.</p>
+  </aside>
+</section>
+
+<section id="problem">
+  <h2>2. The problem</h2>
+  <p>The operational problem is not “AI does not understand completion.” That is too broad and too anthropomorphic. The sharper problem is this:</p>
+
+  <blockquote>
+    <p><strong>Many intelligent software systems can generate plausible next steps without possessing an explicit, reusable representation of why the current situation is still open, what kind of resolution is required, and what evidence would justify stopping.</strong></p>
+  </blockquote>
+
+  <p>Most software gets around this by pushing completion semantics into task-specific code. A support workflow has statuses. An incident system has severity and resolution codes. A project tracker has “done.” A database transaction has commit. A test has pass or fail. These mechanisms work when the designer already knows the relevant terminal condition and can encode it in advance.</p>
+
+  <p>Generative agents break that comfort. They are asked to operate over messy, heterogeneous tasks whose stopping conditions are not reducible to one field. Consider five superficially similar “done” states:</p>
+
+  <ul>
+    <li>A researcher has identified <em>which</em> paper contains the relevant result.</li>
+    <li>A travel agent has found <em>another viable route</em> after the original route became unavailable.</li>
+    <li>A finance agent has shown <em>how two records correspond</em>.</li>
+    <li>An operations agent has <em>repaired</em> a misconfiguration and verified that the fault no longer governs the system.</li>
+    <li>A case-management agent has <em>settled</em> a live obligation so that no further action is owed.</li>
+  </ul>
+
+  <p>All are completions. They are not the same kind of completion. A binary “task complete” label loses the structure that matters for diagnosis. If the agent stops too early, we want to know <em>how</em> it stopped too early. Did it identify an answer without establishing the necessary relation? Did it propose a repair without making the repair effective? Did it collect all the parts without integrating them? Did it close the conversation while an obligation remained live?</p>
+
+  <p>This is where the theory is stronger than a generic observation about stopping criteria. It says unresolvedness itself has recurrent forms. A situation can be open because a distinction is missing, because access is blocked, because a bearing has not been established, because something is misfitted, because parts have not acquired roles in a whole, or because a live demand remains. Those are different failure surfaces, and they imply different next actions.</p>
+
+  <p>The problem therefore sits between semantic understanding and workflow control. Content representations tell us what the situation is about. Process states tell us what steps have occurred. Reward functions tell us whether a target was achieved. The missing layer is a representation of <strong>completion semantics</strong>: the structure by which a state becomes sufficiently resolved for the next uptake.</p>
+</section>
+
+<section id="genuinely-new">
+  <h2>3. What is genuinely new</h2>
+  <p>The novel part is not the observation that tasks can be incomplete, nor the idea that agents need better stopping criteria. Planning systems, workflow engines, process mining, formal methods, reinforcement learning, and case management all contain notions of goals, terminal states, preconditions, constraints, and repair.</p>
+
+  <p>The distinctive proposal is that there may be a <em>small compositional vocabulary</em> underlying many semantically unrelated completion events. The theory decomposes a completed event into three independent contributions:</p>
+
+  <dl class="triplet">
+    <dt>Transformation Pattern</dt>
+    <dd>What kind of unresolvedness changed: Differentiation, Opening, Relating, Repair, Integration, or Settlement.</dd>
+
+    <dt>Completion Topology</dt>
+    <dd>What made the change sufficient: Focal concentration, Distributed constitution, or Release from prior governance.</dd>
+
+    <dt>Persistence Mode</dt>
+    <dd>How the result remains available: as Standing, through Bearing, or as Efficacy.</dd>
+  </dl>
+
+  <p>The commercially important claim is not simply that these categories are descriptive. It is that a coordinate can generate an abstract event form before anyone chooses a canonical name or domain-specific example. If that prospective direction holds up, the representation may be usable by machines and not merely by theorists.</p>
+
+  <p>This distinction between <strong>coordinate-generated form</strong>, <strong>canonical crystallization</strong>, and <strong>concrete manifestation</strong> is also commercially important. It means the ontology does not have to memorize every workflow. The same coordinate-generated structure could appear in a support case, a software repair, a tutoring exchange, or a research task. That is exactly the kind of abstraction a horizontal software layer needs.</p>
+
+  <p>I would describe the theory’s most interesting technical asset as a candidate <strong>factorization of completion</strong>. Instead of treating “done” as one opaque label or learning thousands of domain-specific terminal states independently, it proposes three reusable axes whose conjunction constrains the kind of completed event that can occur.</p>
+</section>
+
+<section id="primitive">
+  <h2>4. The hidden commercial primitive</h2>
+  <p>The hidden primitive is not the number fifty-four. It is the object that the coordinates represent: <strong>a typed unresolved-to-resolved transition</strong>.</p>
+
+  <p>Software already has many primitives for state. A row has values. A graph has nodes and edges. A workflow has steps. An agent trace has messages and tool calls. A vector has position in a learned space. What these do not normally encode in a shared, domain-general way is the event logic of “what was missing, what change answered it, what counted as enough, and what now remains.”</p>
+
+  <p>If the grammar works, a completion-aware system could attach a compact structural object to a task or trace:</p>
+
+  <pre><code>{
+  "opening_pressure": "governed misfit",
+  "transformation": "Repair",
+  "topology": "Release",
+  "persistence": "Efficacy",
+  "evidence_required": [
+    "fault no longer governs operation",
+    "correct behavior verified"
+  ],
+  "status": "not_yet_complete"
+}</code></pre>
+
+  <p>That object does something ordinary task labels do not. It explains why the system should not stop after merely <em>describing</em> a fix. Because the required persistence mode is Efficacy, the completion is not achieved until the changed system works or the fault has ceased to govern it.</p>
+
+  <p>This is the commercial conversion path:</p>
+
+  <div class="flow" aria-label="Commercial conversion path">
+    <span>Phenomenological theory</span>
+    <span>→</span>
+    <span>Completion ontology</span>
+    <span>→</span>
+    <span>Trace labels &amp; classifiers</span>
+    <span>→</span>
+    <span>Agent evals &amp; controls</span>
+    <span>→</span>
+    <span>Lower failure cost</span>
+  </div>
+
+  <p>The analogy to databases or embeddings is useful only at the level of abstraction. Those technologies became valuable because they turned a diffuse problem into a manipulable representation. Completion structure could do the same in a narrower domain if it compresses otherwise bespoke stopping and repair logic into reusable primitives. The burden of proof is much higher than showing that the vocabulary is elegant.</p>
+</section>
+
+<section id="why-now">
+  <h2>5. Why now</h2>
+  <p>The timing case is real, though it should not be overstated. The relevant change is that generative systems are moving from producing isolated outputs toward executing multi-step workflows with tools, memory, handoffs, and environmental effects. In that setting, a wrong answer is only one failure mode. An agent can also choose the wrong next step, fail to notice a dependency, repair the wrong layer, stop prematurely, continue unnecessarily, or produce a linguistically complete response without changing the underlying system.</p>
+
+  <p>The current tooling market reflects this. Agent observability products now emphasize hierarchical traces, tool-call visibility, evaluation, production monitoring, and debugging across complex execution flows. Arize Phoenix, Braintrust, LangSmith, Langfuse, MLflow and others compete around this problem. The existence of a crowded observability market is not proof that the Constraint Grammar has value; it is evidence that teams already pay to understand agent behavior at trace level.</p>
+
+  <p>Recent industrial research also describes a verification gap: organizations can demonstrate agent capabilities experimentally but struggle to put them into production because they cannot reliably verify outputs and behavior. That is precisely the environment in which a better representation of completion could matter—provided it produces measurable signal beyond conventional success metrics.</p>
+
+  <p>The timing is therefore not “AI is hot.” It is:</p>
+
+  <ul>
+    <li>Agents now create trajectories, not just responses.</li>
+    <li>Trajectories expose the difference between plausible continuation and justified stopping.</li>
+    <li>Production teams already collect the telemetry needed to train and test completion classifiers.</li>
+    <li>Existing eval systems are increasingly customizable, which creates an insertion point for a new evaluation dimension.</li>
+    <li>Enterprise deployment is constrained by verification and governance, creating economic value for tools that reduce false completion and unsafe autonomy.</li>
+  </ul>
+
+  <p>Ten years ago the theory would have had to create both the conceptual framework and the computational substrate. Today the substrate—LLMs, traces, tool calls, workflow logs, embedding models, classifiers, and eval platforms—already exists. The question is whether completion structure adds useful signal on top.</p>
+</section>
+
+<section id="opportunities">
+  <h2>6. Product opportunities</h2>
+
+  <h3>6.1 AI agents</h3>
+  <p>This is the most natural domain. The framework can potentially represent four pieces of information that an agent controller often lacks explicitly: what remains unresolved, what class of transformation is needed, what evidence makes that transformation sufficient, and whether the result exists merely as an answer or as an operational effect.</p>
+
+  <p>The strongest use is not to have an LLM recite a coordinate before every action. It is to use completion structure as a latent control representation. A supervisor model could infer a coordinate or partial coordinate from the task and current trace, then evaluate whether the observed trajectory has satisfied the relevant conditions. For a Repair / Release / Efficacy task, “I changed the config” is not enough; verification that the fault no longer governs behavior matters. For a Settlement / Focal / Standing task, a decisive choice may be enough. For an Integration / Distributed / Efficacy task, all components may need to participate in a functioning whole.</p>
+
+  <p>That creates potential improvements in stopping, repair, handoff, multi-agent coordination, and tool-use orchestration. It could also reduce wasted tokens and tool calls by distinguishing genuinely unresolved work from merely available further continuation.</p>
+
+  <h3>6.2 AI evaluation</h3>
+  <p>This is the best commercial wedge because the theory naturally describes failure modes that binary task-success metrics blur. A completion-aware eval could flag:</p>
+
+  <ul>
+    <li><strong>Incomplete but plausible:</strong> the response is fluent and relevant but does not discharge the governing demand.</li>
+    <li><strong>False closure:</strong> the agent claims completion while required evidence or operational effect is missing.</li>
+    <li><strong>Unresolved bearing:</strong> the right entities are present, but the required relationship has not been established.</li>
+    <li><strong>Repair without efficacy:</strong> a fix is proposed or applied but not shown to work.</li>
+    <li><strong>Premature settlement:</strong> the agent closes a case while a live obligation remains.</li>
+    <li><strong>Overrun:</strong> the governing demand has already been satisfied, but the agent continues acting.</li>
+  </ul>
+
+  <p>“Completion quality” could become an eval dimension separate from factual correctness, policy compliance, groundedness, or user preference. That is a meaningful distinction because an answer can be factually correct yet incomplete for the task, or operationally complete yet contain a minor factual imperfection. The framework may help explain that difference rather than merely score it.</p>
+
+  <h3>6.3 Human–AI interaction</h3>
+  <p>The framework could improve interfaces by distinguishing the kind of help a user is actually seeking. A user asking “Which of these is the right contract?” is primarily asking for differentiation. “How else can I get there?” asks for opening. “Why did revenue fall when traffic increased?” asks for relating. “Fix this broken deployment” asks for repair. “Turn these notes into a coherent plan” asks for integration. “What should I choose?” may ask for settlement.</p>
+
+  <p>This is useful because assistant errors often come from performing the wrong kind of work while staying on topic. A model may explain when the user wanted a decision, list options when the user wanted a repair, or provide a recommendation without making the conditions of that recommendation explicit. Completion structure could become a routing signal for response strategy and UI affordances.</p>
+
+  <h3>6.4 Workflow and enterprise software</h3>
+  <p>Enterprise systems already encode completion semantics, but usually in bespoke forms. A support case may have “resolved,” an incident has “mitigated,” an approval has “approved,” an investigation has “closed,” and a compliance exception has “remediated.” These labels compress very different evidentiary requirements.</p>
+
+  <p>The framework becomes valuable where a shallow state machine cannot explain why the same nominal status means different things. “Resolved” may mean a focal decision was recorded, a distributed set of controls now holds, or a prior fault has ceased to govern a system. A completion-aware layer could sit above existing workflow status and attach structured evidence requirements to transitions.</p>
+
+  <p>This is especially interesting in long-running cases where work crosses systems and teams. The economic value would come from fewer reopenings, fewer handoff failures, better auditability, and less bespoke state design. However, this market is slower and more integration-heavy than agent evaluation, so I would treat it as a second-stage opportunity.</p>
+
+  <h3>6.5 Knowledge representation</h3>
+  <p>A conventional knowledge graph knows that entities and relations exist. A completion-aware graph could additionally know the status of a question or operation relative to a governing demand. It could represent that a relation has been hypothesized but not established, a distinction has been made but not operationalized, a repair has been proposed but not verified, or a case has been settled under a condition that still bears on its validity.</p>
+
+  <p>That is useful for structured memory because memory systems currently store facts and episodes more naturally than they store <em>why a matter is still open</em>. For agents working over days or weeks, unresolved pressure may be more important than another summary. The product risk is that existing graph schemas can simply add such fields without needing the full grammar. The theory must show compression or predictive power beyond good schema design.</p>
+
+  <h3>6.6 Education and tutoring</h3>
+  <p>The six Transformation Patterns map naturally to diagnostic teaching moves. A learner may lack a distinction, an accessible route, a relation, a correction, an integrated whole, or a settled conclusion. If that classification is reliable, a tutoring system could choose a targeted intervention instead of generating another generic explanation.</p>
+
+  <p>The attraction is pedagogical precision. The weakness is measurement. Learning outcomes are noisy, long-term, and domain-sensitive. The theory could become a useful tutoring research tool before it becomes a venture wedge.</p>
+
+  <h3>6.7 Scientific and analytical tools</h3>
+  <p>As an annotation framework, the grammar could help researchers code explanatory closure, model revision, hypothesis relation, integration of evidence, or unresolved demands. This may be genuinely useful in qualitative research and model auditing. The likely business is modest unless it connects to high-value scientific workflows or becomes part of automated research agents.</p>
+
+  <h3>6.8 Developer infrastructure</h3>
+  <p>The long-term infrastructure form is plausible: an API or SDK that accepts tasks and traces, infers completion structure, scores completion, and returns next-action guidance. But infrastructure should be the <em>result</em> of proving a repeated use case, not the starting pitch. Developers do not buy ontologies. They buy lower failure rates, better eval coverage, easier debugging, and simpler control logic.</p>
+</section>
+
+<section id="wedge">
+  <h2>7. Best initial wedge</h2>
+  <h3>First choice: AI agent evaluation and completion diagnostics</h3>
+
+  <p>The first buyer is the team already responsible for evaluating production agents: an AI platform lead, applied AI lead, reliability engineer, or product team operating an agent that takes consequential multi-step actions.</p>
+
+  <p>The painful problem is not lack of traces. Many teams already have traces. The problem is that a trace is an event log, not an explanation of whether the trajectory is <em>structurally complete</em>. Existing evals can check factuality, tool errors, policy violations, latency, cost, exact outcomes, LLM-judge scores, or custom assertions. But teams still write large amounts of task-specific logic for “should this workflow have stopped?”, “did we actually repair the issue?”, “was a dependency left unresolved?”, and “why did a case that looked successful later reopen?”</p>
+
+  <p>The product would take a task definition plus an agent trace and produce a completion diagnosis. Crucially, the customer would not need to learn the fifty-four coordinates. The UI would speak operational language:</p>
+
+  <ul>
+    <li>“Agent stopped after identifying the discrepancy; the workflow required verified repair.”</li>
+    <li>“The answer is complete only if this dependency holds; the trace did not verify it.”</li>
+    <li>“The governing request was settled at step 14; steps 15–22 were unnecessary continuation.”</li>
+    <li>“The case was marked resolved, but the downstream system never changed state.”</li>
+  </ul>
+
+  <p>The theory creates an unfair advantage only if its factorization reduces the number of bespoke eval rules required and transfers across domains. If every customer still needs to define the logic manually, the theory is decorative terminology. If a classifier trained on heterogeneous traces can recognize recurring completion failures using this ontology, then the theory is doing real work.</p>
+
+  <h3>Second-best wedge: agent orchestration / supervisor control</h3>
+  <p>Once the evaluator is trustworthy, the same representation can become a runtime controller. A supervisor can ask: continue, repair, verify, hand off, or stop? This has greater ultimate value than evaluation, but it is a worse first wedge because runtime intervention creates higher safety requirements and makes causal attribution harder. Evaluation gives the company a lower-risk way to build the dataset and prove the representation first.</p>
+</section>
+
+<section id="product">
+  <h2>8. What the product actually is</h2>
+  <p>Call the first product <strong>Completion Lens</strong> for the sake of concreteness. The name is not the thesis.</p>
+
+  <h3>User</h3>
+  <p>An AI engineering team with one or more production agents and an existing tracing stack.</p>
+
+  <h3>Input</h3>
+  <p>The system ingests a task specification, expected outcome if available, agent messages, tool calls, tool responses, state changes, human interventions, and final output. It should work through OpenTelemetry-style traces or adapters to existing observability systems so the customer does not have to replace infrastructure.</p>
+
+  <h3>Output</h3>
+  <p>For each trace, the system returns:</p>
+
+  <pre><code>{
+  "governing_unresolvedness": "misfit remains operational",
+  "required_transformation": "Repair",
+  "completion_topology": "Release",
+  "required_persistence": "Efficacy",
+  "completion_score": 0.61,
+  "closure_status": "premature",
+  "missing_evidence": [
+    "post-change verification",
+    "fault no longer reproduces"
+  ],
+  "recommended_next_action": "verify_effect",
+  "explanation": "The agent changed the configuration but did not establish that the prior fault ceased to govern the system."
+}</code></pre>
+
+  <h3>Workflow</h3>
+  <ol>
+    <li>Connect the tracing source.</li>
+    <li>Import a representative corpus of successful and failed runs.</li>
+    <li>Auto-propose completion labels and unresolved-pressure labels.</li>
+    <li>Human reviewers correct a small subset.</li>
+    <li>The system calibrates task- and domain-specific thresholds while preserving the common ontology.</li>
+    <li>Completion diagnostics become available in experiment dashboards and CI eval runs.</li>
+    <li>Production alerts flag false closure, overrun, unverified repair, or unresolved dependencies.</li>
+  </ol>
+
+  <h3>Interface</h3>
+  <p>The primary view should be a trace with a second semantic layer over it. Instead of only showing model and tool spans, the UI marks the opening demand, candidate transformation, landing point, evidence of sufficiency, and persistent result. A failure view groups traces by completion failure type rather than merely by error message or semantic similarity.</p>
+
+  <h3>API surface</h3>
+  <pre><code>POST /v1/analyze-trace
+POST /v1/score-completion
+POST /v1/compare-runs
+POST /v1/label
+GET  /v1/failure-clusters
+POST /v1/should-stop</code></pre>
+
+  <p>The runtime endpoint should come later, after offline performance is established.</p>
+
+  <h3>Value metric</h3>
+  <p>The value metric is not classification accuracy alone. It is reduction in costly agent failures: fewer falsely completed cases, fewer reopened workflows, fewer unnecessary tool calls, fewer human escalations caused by hidden incompletion, and higher end-to-end task success at the same or lower cost.</p>
+
+  <h3>Integration point</h3>
+  <p>Integrate with the tools customers already use for traces and evals. The strategic position is initially an eval plugin or semantic layer, not a rip-and-replace observability platform.</p>
+
+  <h3>Why someone pays</h3>
+  <p>Because a false “done” state in an agentic workflow can be more expensive than an obvious error. Obvious errors are caught. Plausible incompletion passes through. If the product catches classes of failures that existing checks miss and reduces the amount of bespoke evaluation logic, it earns budget.</p>
+</section>
+
+<section id="customer">
+  <h2>9. Customer and buyer</h2>
+  <p>The first customers should not be companies experimenting casually with chatbots. They should have three characteristics:</p>
+
+  <ul>
+    <li>agents perform multi-step work with observable traces;</li>
+    <li>failure includes premature closure, not just wrong content;</li>
+    <li>the organization already has a person or team accountable for evaluation quality.</li>
+  </ul>
+
+  <p>Good early design partners include customer-support automation, developer agents, security operations, enterprise IT automation, financial operations, and internal research agents. These domains create repeated trajectories with concrete downstream consequences and clear examples of tasks that can look complete before they are complete.</p>
+
+  <p>The economic buyer may be the VP/Head of AI, platform engineering leader, or product owner with a reliability budget. The daily user is more likely an applied AI engineer or evaluation engineer. The product must therefore satisfy two people: the engineer must get precise diagnostics and easy integration; the executive must see reduced failure cost or faster deployment.</p>
+</section>
+
+<section id="market">
+  <h2>10. Market structure</h2>
+  <p>I would not build the investment case from a top-down TAM estimate. The relevant market is forming inside several adjacent categories: LLM/agent observability, AI evaluation, agent development platforms, workflow orchestration, process intelligence, and AI governance.</p>
+
+  <p>This is good and bad. It is good because budget already exists. It is bad because every major platform can add “completion evals” as a feature. A standalone company therefore needs a capability that is hard to reproduce from surface definitions alone.</p>
+
+  <p>The realistic market-entry strategy is to sell into the evaluation budget while avoiding a head-on fight over tracing storage, dashboards, prompt management, or generic LLM judging. The product should be the best system for one question: <strong>did this agent actually finish the right kind of work, and if not, what remains unresolved?</strong></p>
+
+  <p>If that question proves broad enough, the company can expand from eval into orchestration. If it does not, the likely outcome is a valuable specialist capability acquired by a larger observability or agent-platform vendor.</p>
+</section>
+
+<section id="data">
+  <h2>11. Data strategy</h2>
+  <p>The data question is where the theory becomes a company or remains a website.</p>
+
+  <h3>11.1 The atlas as labeling ontology</h3>
+  <p>The fifty-four cells can seed a labeling system, but they should not be forced on annotators immediately. The three axes should be tested separately first. Annotators may agree strongly that a trace is Repair and Efficacy while disagreeing between Focal and Release, or vice versa. Axis-level reliability will reveal whether the compositional architecture has empirical traction even if exact coordinate agreement is initially lower.</p>
+
+  <h3>11.2 Seed examples</h3>
+  <p>The existing atlas and plain-language expositions provide positive examples of each form across multiple domains. They are useful for training annotators, generating synthetic contrast sets, and constructing initial few-shot prompts. They are not validation data because they were produced inside the theory.</p>
+
+  <h3>11.3 Human annotation</h3>
+  <p>A serious annotation protocol should use blinded real-world traces and ask concrete questions before exposing canonical names:</p>
+
+  <ol>
+    <li>What remains unresolved at the start?</li>
+    <li>What change would answer that unresolvedness?</li>
+    <li>What evidence would make the change sufficient?</li>
+    <li>What kind of result must remain afterward?</li>
+    <li>Did the trace achieve it?</li>
+  </ol>
+
+  <p>Only then map the answers to axes. This prevents label recognition from substituting for analysis.</p>
+
+  <h3>11.4 Synthetic data</h3>
+  <p>Synthetic data is useful for coverage, especially for rare coordinates and controlled counterfactuals. For example, generate paired traces where everything is identical except that one verifies repair efficacy and the other stops after applying the fix. But synthetic data must not be used to “prove” the ontology. Models trained on theory-generated examples can trivially learn the theory’s language without demonstrating external validity.</p>
+
+  <h3>11.5 Proprietary trace data</h3>
+  <p>The strongest data flywheel comes from customer traces labeled by real downstream outcomes. Reopened cases, human overrides, retries, rollbacks, tool failures, successful handoffs, and verified completion provide weak and strong supervision. Over time the company could accumulate the most valuable asset in the business: a cross-domain corpus of <em>how intelligent workflows falsely appear complete</em>.</p>
+
+  <h3>11.6 Inter-rater reliability</h3>
+  <p>This is a gating metric. If trained annotators cannot reach useful agreement, the ontology is difficult to commercialize. I would want Krippendorff’s alpha or a comparable chance-corrected agreement measure of roughly 0.67 or higher for exploratory use on the three axes, with a path toward 0.80 in mature domain protocols. Exact 54-coordinate agreement may reasonably lag axis agreement, but the product cannot depend on distinctions humans themselves cannot apply consistently.</p>
+
+  <h3>11.7 Empirical validation</h3>
+  <p>The strongest validation is predictive and intervention-based, not descriptive. A completion label should predict downstream reopening, human escalation, retry, or task failure. Better still, a controller using completion state should outperform a matched controller without it. That is the evidence a VC should care about.</p>
+</section>
+
+<section id="feasibility">
+  <h2>12. Technical feasibility</h2>
+  <p>Nothing about the first product requires a new foundation model. The initial system can combine structured rules, LLM-based judges, learned classifiers, embeddings, and domain-specific evidence checks.</p>
+
+  <p>A practical architecture would have five layers:</p>
+
+  <ol>
+    <li><strong>Trace normalization:</strong> map messages, tool calls, state transitions, and outcomes into one event schema.</li>
+    <li><strong>Opening-pressure inference:</strong> infer what the task is still asking for at each point.</li>
+    <li><strong>Coordinate inference:</strong> classify the likely Transformation Pattern, Completion Topology, and Persistence Mode, with probabilities rather than forced certainty.</li>
+    <li><strong>Sufficiency checks:</strong> use task evidence, tool state, assertions, and learned judges to test whether completion requirements are met.</li>
+    <li><strong>Decision layer:</strong> return continue / verify / repair / hand off / stop plus an explanation.</li>
+  </ol>
+
+  <p>The difficult part is not model capability. Modern models can likely reproduce the labels after instruction. The hard part is whether the labels correspond to stable, useful regularities rather than a coherent vocabulary that models can imitate. Technical feasibility of classification is therefore almost irrelevant without utility experiments.</p>
+
+  <p>Constraint strength from the theory may become especially useful here. Some coordinates are near-determinate; others permit broader semantic realization. The system should represent that uncertainty instead of pretending every trace has one uniquely recoverable label. A probabilistic or set-valued output may be truer to the theory and more robust in production.</p>
+</section>
+
+<section id="moat">
+  <h2>13. Moat</h2>
+  <p>The published theory is not a moat. If the key ideas are public, OpenAI, Anthropic, Google, Microsoft, LangChain, Arize, Braintrust, or a competent startup can read them and implement a classifier.</p>
+
+  <p>Defensibility must therefore come from execution assets:</p>
+
+  <ul>
+    <li><strong>Proprietary labeled trace corpus:</strong> especially false-closure and unresolved-work examples tied to real outcomes.</li>
+    <li><strong>Domain-calibrated completion models:</strong> models that know what “enough” means in security operations, support, developer workflows, finance, and other domains.</li>
+    <li><strong>Benchmarks:</strong> a widely adopted completion-evaluation suite can create category authority and distribution.</li>
+    <li><strong>Workflow integration:</strong> once completion policies sit inside CI, eval pipelines, and runtime supervisors, switching costs rise.</li>
+    <li><strong>Customer process models:</strong> mappings from generic coordinates to organization-specific evidence requirements become valuable configuration data.</li>
+    <li><strong>Standards position:</strong> if a completion-state schema becomes a shared extension to agent traces or OpenTelemetry conventions, the company gains ecosystem leverage.</li>
+  </ul>
+
+  <p>The strongest moat is the combination of ontology + outcome-linked data + learned models. The ontology alone is easy to copy. The data alone is messy. The models alone are commoditizing. Together they can become a defensible reliability system.</p>
+</section>
+
+<section id="competition">
+  <h2>14. Competitive landscape by category</h2>
+
+  <h3>Agent observability and evaluation</h3>
+  <p>Products such as Arize Phoenix, Braintrust, LangSmith, Langfuse, MLflow, Galileo, Datadog and others already capture traces, run evaluations, compare experiments, and monitor production behavior. They are the closest commercial competitors and also the easiest distribution partners. The proposed product must not compete on generic tracing. Its differentiation is a structured theory of completion failure.</p>
+
+  <h3>Agent frameworks and orchestration</h3>
+  <p>LangGraph-style state machines, vendor agent SDKs, and workflow frameworks let developers encode states, edges, retries, and termination conditions. Their strength is programmability. Their weakness, for this thesis, is that developers still define the semantic state space. A completion model is valuable only if it can infer useful state from messy tasks without requiring the developer to enumerate every condition.</p>
+
+  <h3>Process mining and workflow intelligence</h3>
+  <p>Process mining systems infer and optimize business processes from event logs. They have deep enterprise distribution and strong operational data. The Constraint Grammar differs by proposing a semantic structure of completion that may cut across process instances. But process vendors could add learned closure semantics. Any enterprise expansion will encounter them.</p>
+
+  <h3>Planning, formal methods, and verification</h3>
+  <p>Formal planning and verification can provide stronger guarantees when states and goals are precisely specified. The Constraint Grammar is not a substitute. Its opportunity is precisely where tasks are semantically rich and under-specified enough that formal terminal conditions are unavailable. If a task can be cheaply formalized, use formal methods.</p>
+
+  <h3>LLM judges and custom evals</h3>
+  <p>The biggest practical competitor may be a well-written rubric prompt. A team can ask an LLM: “Did the agent actually resolve the user’s issue? Explain what remains.” The theory must beat that baseline in consistency, transfer, diagnosis, data efficiency, or downstream actionability. If it cannot, there is no company.</p>
+</section>
+
+<section id="experiments">
+  <h2>15. Experiments that must work</h2>
+  <p>I would run five experiments before committing substantial capital. They are intentionally cheap and falsifiable.</p>
+
+  <div class="experiment">
+    <h3>Experiment 1 — Can humans apply the representation?</h3>
+    <p><strong>Design:</strong> collect 500–1,000 real agent traces across at least three domains. Train independent annotators using a blinded protocol. Measure axis-level and coordinate-level agreement.</p>
+    <p><strong>Success:</strong> chance-corrected agreement ≥0.67 on each axis overall, with no axis collapsing into chronic ambiguity; ≥0.80 on at least one well-defined domain after protocol refinement.</p>
+    <p><strong>Failure:</strong> disagreement remains high even after examples and adjudication, or labels simply track surface vocabulary.</p>
+  </div>
+
+  <div class="experiment">
+    <h3>Experiment 2 — Does it predict hidden failure?</h3>
+    <p><strong>Design:</strong> predict reopenings, retries, human escalations, or failed downstream effects from traces. Compare completion features against strong baselines using raw trace embeddings, task-specific features, and generic LLM judges.</p>
+    <p><strong>Success:</strong> a statistically meaningful lift—ideally 10%+ relative improvement in AUROC/F1 or materially better precision at the operational alert threshold.</p>
+    <p><strong>Failure:</strong> the ontology adds no predictive value once generic embeddings and task metadata are present.</p>
+  </div>
+
+  <div class="experiment">
+    <h3>Experiment 3 — Does it find failures conventional evals miss?</h3>
+    <p><strong>Design:</strong> assemble traces that pass factuality, policy, and nominal task-success checks. Blind reviewers identify materially incomplete outcomes.</p>
+    <p><strong>Success:</strong> completion-aware evals recover a meaningful class of high-cost false positives with acceptable precision—e.g. ≥70% precision on a failure category customers care about.</p>
+    <p><strong>Failure:</strong> “completion failures” reduce to ordinary correctness or missing-requirement checks already captured by existing rubrics.</p>
+  </div>
+
+  <div class="experiment">
+    <h3>Experiment 4 — Does it improve an agent?</h3>
+    <p><strong>Design:</strong> add a completion-aware supervisor to a benchmark or real workflow. Compare to the same agent with ordinary stop heuristics and a generic judge.</p>
+    <p><strong>Success:</strong> ≥5–10 percentage-point improvement in end-to-end task success or equivalent reduction in costly false completion without unacceptable latency/cost.</p>
+    <p><strong>Failure:</strong> labels are explainable after the fact but do not produce better control decisions.</p>
+  </div>
+
+  <div class="experiment">
+    <h3>Experiment 5 — Does it compress enterprise state logic?</h3>
+    <p><strong>Design:</strong> model one messy workflow—such as incident resolution or support escalation—using the grammar and compare with the organization’s existing state/rule system.</p>
+    <p><strong>Success:</strong> fewer bespoke rules, better coverage of exceptional cases, or faster onboarding of a new workflow while preserving auditability.</p>
+    <p><strong>Failure:</strong> the generic ontology adds a semantic layer without reducing implementation complexity.</p>
+  </div>
+
+  <p>Experiments 1 and 4 are the most important. Agreement proves the object is operationalizable. Intervention proves it matters.</p>
+</section>
+
+<section id="risks">
+  <h2>16. Risks</h2>
+
+  <h3>Theory risk</h3>
+  <p>The 54-space may be internally elegant but externally unstable. Real tasks may require additional axes, collapse distinctions, or exhibit completion structures that do not fit the grammar. The correct response is not to defend fifty-four at all costs. A commercial team must be willing to revise the ontology if data demands it.</p>
+
+  <h3>Ontology risk</h3>
+  <p>Different annotators may assign different coordinates because completion depends on scale and framing. One person may see a support case as Repair; another may see the broader customer interaction as Settlement. This is not automatically fatal—the theory already distinguishes formation history and scale—but the product needs explicit protocols for selecting the governing demand.</p>
+
+  <h3>Utility risk</h3>
+  <p>This is the biggest risk. A framework can describe failures beautifully without improving a single system. Investors should refuse to confuse interpretability with control value.</p>
+
+  <h3>Abstraction risk</h3>
+  <p>The representation may be too high-level to determine concrete next actions. Knowing “Repair / Release / Efficacy” does not tell the agent which configuration line to change. The ontology is at best an intermediate representation; it still needs domain knowledge and tools.</p>
+
+  <h3>Adoption risk</h3>
+  <p>Customers will not learn a philosophical vocabulary to use an eval product. The theory must disappear behind operational language and familiar APIs. If the product requires customers to believe the whole theory before receiving value, adoption will be poor.</p>
+
+  <h3>Competition risk</h3>
+  <p>Incumbent observability vendors can add custom evaluators rapidly. Foundation-model providers can improve native agent supervisors. Generic LLM judges may become sufficiently good that a fixed ontology adds little. The company needs outcome data and benchmark leadership quickly.</p>
+
+  <h3>Measurement risk</h3>
+  <p>There is no established scalar called “completion quality.” The theory may naturally produce structured labels rather than one clean metric. That is fine scientifically but can complicate product dashboards, procurement, and benchmark comparisons.</p>
+
+  <h3>Founder-market risk</h3>
+  <p>The skill set that creates a theory is not the same as the skill set that sells enterprise developer infrastructure. Commercialization requires product engineering, eval science, data operations, enterprise security, developer relations, and disciplined willingness to falsify cherished concepts. A founder who treats every customer disagreement as failure to understand the theory will destroy the company.</p>
+</section>
+
+<section id="venture-scale">
+  <h2>17. Venture-scale pathways</h2>
+
+  <h3>Theory as consulting</h3>
+  <p>Companies could pay for workshops that map their workflows into completion structures. This may generate revenue but is not a strong venture outcome. It scales with expert labor and creates weak defensibility.</p>
+
+  <h3>Theory as IP</h3>
+  <p>Licensing the conceptual framework is unlikely to produce venture returns if the core theory is public and easy to restate. Copyright may protect text; it does not create a durable monopoly over the abstraction.</p>
+
+  <h3>Theory as research toolkit</h3>
+  <p>An annotation tool, academic corpus, and evaluation library could become respected and useful. This could support grants or a small research-software business. It becomes venture relevant only if usage produces proprietary data and commercial pull.</p>
+
+  <h3>Theory as software product</h3>
+  <p>A completion-aware eval product can plausibly become a meaningful specialist company if it owns a measurable failure category. Think tens of millions in revenue if it becomes the preferred reliability layer for a subset of agentic workflows, even without becoming a platform.</p>
+
+  <h3>Theory as platform / infrastructure</h3>
+  <p>The $100M+ revenue path requires the representation to move from offline diagnosis into runtime control and to transfer across many domains. The company would need to become the semantic control plane for unresolved work: evaluating traces, deciding when to continue or stop, coordinating handoffs, and maintaining completion state across long-running agents.</p>
+
+  <p>For that to happen, four things must be true:</p>
+  <ol>
+    <li>Completion labels generalize across materially different workflows.</li>
+    <li>They improve control decisions, not just post hoc explanation.</li>
+    <li>Customers are willing to put the system in the execution path.</li>
+    <li>The company accumulates enough proprietary outcome data that generic model vendors cannot reproduce its performance instantly.</li>
+  </ol>
+
+  <p>If those conditions fail but the ontology still helps human analysts, the outcome is a valuable niche product or acquisition target. If even annotation reliability fails, the outcome is an intellectually interesting corpus and website.</p>
+</section>
+
+<section id="funding">
+  <h2>18. Funding plan</h2>
+
+  <h3>Pre-seed</h3>
+  <p>I would fund a compact team to build the corpus, annotation protocol, baseline classifiers, and trace-evaluation prototype. The goal is not revenue maximization. The goal is to answer the two existential questions: can people label the phenomenon consistently, and does the representation predict or prevent failures?</p>
+
+  <p>A sensible pre-seed milestone package would include:</p>
+  <ul>
+    <li>1,000+ real traces across at least three domains;</li>
+    <li>published or auditable inter-rater agreement results;</li>
+    <li>baseline comparisons against generic LLM judges and embeddings;</li>
+    <li>one working integration with a common tracing format;</li>
+    <li>two or three design partners;</li>
+    <li>evidence of at least one material failure class caught better than existing evals.</li>
+  </ul>
+
+  <h3>Seed</h3>
+  <p>I would only support a larger seed round if the product shows repeatable utility. Metrics should include meaningful lift on false-completion detection, a growing proprietary trace corpus, active use inside customer eval pipelines, and at least early paid deployments. The company should also demonstrate that new workflows can be onboarded with less bespoke labeling than the first ones.</p>
+
+  <h3>Series A</h3>
+  <p>Series A requires product-market evidence, not theoretical enthusiasm. I would want multiple customers running the system continuously, expansion within accounts, clear retention, a material number of production traces analyzed, and evidence that completion-aware control or evals affect deployment decisions. Ideally the company is beginning to own a standard interface or benchmark for agent completion.</p>
+
+  <p>If the company reaches seed by selling bespoke ontology consulting, I would not assume it deserves Series A.</p>
+</section>
+
+<section id="invest">
+  <h2>19. What would make me invest</h2>
+  <p>I would invest conditionally at pre-seed if the team treats the theory as a falsifiable technical hypothesis and focuses on agent evaluation first.</p>
+
+  <p>The strongest positive signal would be a blinded study showing that the three-axis representation identifies materially important false-closure failures across multiple domains with high annotator agreement and significantly better predictive or diagnostic performance than a generic LLM judge.</p>
+
+  <p>The second signal would be product pull: experienced AI teams seeing the output and saying, in effect, “this explains a class of failures we currently handle with scattered custom rules.” That reaction matters more than whether they like the terminology.</p>
+
+  <p>The third signal would be transfer. If a model trained on support and developer-agent traces can carry useful completion representations into another domain with modest calibration, then the theory is beginning to behave like infrastructure rather than consulting knowledge.</p>
+</section>
+
+<section id="walk">
+  <h2>20. What would make me walk away</h2>
+  <p>I would walk away from a venture thesis if any of the following persists after a serious empirical attempt:</p>
+
+  <ul>
+    <li>Annotators cannot agree on the axes without extensive theorist intervention.</li>
+    <li>Generic LLM judges perform just as well using ordinary task descriptions.</li>
+    <li>The ontology explains errors after the fact but does not improve prediction or control.</li>
+    <li>Every customer requires a bespoke reinterpretation of the 54-space.</li>
+    <li>The team refuses to revise categories when data contradicts them.</li>
+    <li>The product depends on customers adopting the theory’s vocabulary rather than receiving operational value.</li>
+    <li>The only revenue path is high-touch advisory work.</li>
+  </ul>
+
+  <p>Any one of those might still leave the theory academically valuable. Venture capital is a separate test.</p>
+</section>
+
+<section id="judgment">
+  <h2>21. Final investment judgment</h2>
+  <p>The expert-investor insight is that the theory may be valuable for a reason that is smaller than its philosophical ambition and larger than a taxonomy.</p>
+
+  <p>Most AI infrastructure represents <em>content</em>, <em>behavior</em>, or <em>outcomes</em>. This theory tries to represent <em>the structural reason work is still open or can now be considered closed</em>. That is a different object. In agentic systems, where software must decide whether to continue acting, that object can have direct economic consequences.</p>
+
+  <p>The most credible hidden value is therefore threefold.</p>
+
+  <h3>A vocabulary for false closure</h3>
+  <p>Teams know that agents sometimes stop wrongly, but they often lack a shared taxonomy for why. The grammar may separate superficially similar failures into actionable types: missing distinction, blocked opening, missing bearing, uncorrected misfit, unintegrated parts, or residual demand. That improves debugging only if the labels are stable.</p>
+
+  <h3>A compositional state representation for unresolved work</h3>
+  <p>The three-axis architecture could compress heterogeneous workflows into a common intermediate representation. This matters because agents increasingly cross domains and tools. A shared completion layer could let one supervisor reason about many tasks without learning each workflow entirely from scratch.</p>
+
+  <h3>A stopping-and-repair layer</h3>
+  <p>If the representation can be inferred reliably at runtime, it could guide whether an agent should continue, verify, repair, hand off, or stop. That is the platform-scale opportunity. It is also the claim that most needs experimental proof.</p>
+
+  <p>I would therefore classify the opportunity today as <strong>an investable technical thesis, not yet an investable platform thesis</strong>. The right company starts with evaluation because evaluation creates data, exposes the theory to falsification, fits existing budgets, and avoids premature runtime risk. If the evaluator proves that completion structure predicts and prevents real failures, the company earns the right to move into orchestration and enterprise completion semantics.</p>
+
+  <p>The theory’s strongest commercial feature may ultimately be that it is an ontology of <em>completion rather than content</em>. Content changes drastically from one workflow to another. The structural reasons a task remains unresolved may recur. If that recurrence is real and machine-usable, the theory offers leverage. If it is not, no amount of elegant terminology will create a moat.</p>
+
+  <div class="final-three">
+    <p><strong>THE CORE VALUE:</strong> A machine-usable representation of why work is still unresolved and what would count as sufficient completion could reduce false closure across heterogeneous AI workflows.</p>
+    <p><strong>THE BEST COMPANY:</strong> Build the completion-aware evaluation and reliability layer for AI agents, then expand into runtime stopping, repair, and handoff control only after the evaluator proves itself.</p>
+    <p><strong>THE INVESTMENT CONDITION:</strong> Before substantial capital, prove that completion structure can be labeled consistently and that using it predicts or prevents agent failures materially better than strong generic eval baselines.</p>
+  </div>
+</section>
+
+<section id="sources">
+  <h2>Sources and evidence note</h2>
+  <p>This memo synthesizes the mature Constraint Grammar materials previously reviewed in the <em>TitanicParker/persistence</em> repository: the final monograph, coordinate-forced atlas, final plain-language expositions, exhaustive glossary, intellectual reconstruction, and academic disciplinary-positioning essay.</p>
+
+  <p>Market-timing and competitive observations were checked against current 2026 material, including:</p>
+  <ul>
+    <li>Arize AI, <em>Phoenix / Agent Observability, Evaluation &amp; Improvement</em> — current product positioning around agent tracing and evaluation.</li>
+    <li>MLflow, <em>What Is Agent Observability? A 2026 Developer Guide</em> — overview of hierarchical agent telemetry and the current observability stack.</li>
+    <li>Alvanakis Apostolou, Bosch &amp; Holmström Olsson (2026), <em>Agentic AI in Industry: Adoption Level and Deployment Barriers</em> — evidence of a production verification gap in industrial adoption.</li>
+    <li>Akshathala et al. (2025), <em>Beyond Task Completion: An Assessment Framework for Evaluating Agentic AI Systems</em> — evidence that binary completion metrics omit important runtime behavior.</li>
+    <li>Shahnovsky &amp; Dror (2026), <em>AI Planning Framework for LLM-Based Web Agents</em> — trajectory-level evaluation beyond simple task success.</li>
+  </ul>
+  <p class="note">The commercial conclusions are investor inferences, not claims made by the theory’s academic sources.</p>
+</section>
+
+</article>
+</main>
+</body>
+</html>

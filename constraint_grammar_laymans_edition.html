@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Constraint Grammar of Completed Intelligibility — A Layman's Edition</title>
+  <meta name="description" content="A plain-language introduction to the Constraint Grammar of Completed Intelligibility: transformation, completion, persistence, and the 54-coordinate state-space.">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #fbfaf7;
+      --ink: #22211f;
+      --muted: #68635c;
+      --rule: #d8d2c8;
+      --soft: #f1eee8;
+      --accent: #4b4034;
+      --measure: 72ch;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(18px, 1.3vw, 21px);
+      line-height: 1.72;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; text-decoration-thickness: .07em; text-underline-offset: .16em; }
+    main { padding: 5rem 1.25rem 8rem; }
+    article { max-width: var(--measure); margin: 0 auto; }
+    header { margin-bottom: 4rem; }
+    .eyebrow {
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: .78rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 1rem;
+    }
+    h1, h2, h3 {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.16;
+      letter-spacing: -.025em;
+      color: #191816;
+    }
+    h1 { font-size: clamp(2.65rem, 7vw, 5.6rem); max-width: 14ch; margin: 0 0 1.5rem; }
+    h2 { font-size: clamp(1.75rem, 4vw, 2.8rem); margin: 5rem 0 1.35rem; }
+    h3 { font-size: 1.3rem; margin: 2.8rem 0 .8rem; }
+    p { margin: 1.1rem 0; }
+    .dek { font-size: 1.28em; line-height: 1.55; color: #3a3732; max-width: 58ch; }
+    .byline, .note { color: var(--muted); font-size: .92em; }
+    nav.toc {
+      margin: 3rem 0 4.5rem;
+      padding: 1.5rem 1.7rem;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      background: rgba(241,238,232,.45);
+    }
+    nav.toc h2 { margin: 0 0 1rem; font-size: 1.05rem; letter-spacing: 0; }
+    nav.toc ol { columns: 2; column-gap: 2.4rem; padding-left: 1.3rem; margin: 0; }
+    nav.toc li { break-inside: avoid; margin: .32rem 0; font-size: .9em; }
+    blockquote {
+      margin: 2.2rem 0;
+      padding: .15rem 0 .15rem 1.45rem;
+      border-left: 3px solid var(--accent);
+      font-size: 1.12em;
+      color: #34312d;
+    }
+    figure { margin: 2.8rem 0; }
+    figcaption { color: var(--muted); font-size: .84em; margin-top: .65rem; }
+    .formula {
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      text-align: center;
+      font-weight: 650;
+      font-size: 1.08em;
+      padding: 1.35rem;
+      margin: 2rem 0;
+      border: 1px solid var(--rule);
+      background: var(--soft);
+    }
+    .axis-grid, .example-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .card { border: 1px solid var(--rule); padding: 1.15rem; background: #fffefb; }
+    .card strong { font-family: ui-sans-serif, system-ui, sans-serif; display: block; margin-bottom: .3rem; }
+    table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: .86em; }
+    th, td { text-align: left; vertical-align: top; padding: .75rem .6rem; border-bottom: 1px solid var(--rule); }
+    th { font-family: ui-sans-serif, system-ui, sans-serif; font-weight: 650; }
+    dl.glossary dt { font-family: ui-sans-serif, system-ui, sans-serif; font-weight: 700; margin-top: 1.2rem; }
+    dl.glossary dd { margin: .25rem 0 0; color: #37342f; }
+    .back { display: inline-block; margin-top: 1.4rem; font-size: .8em; color: var(--muted); }
+    footer { margin-top: 5rem; padding-top: 2rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .88em; }
+    @media (max-width: 760px) {
+      main { padding-top: 3rem; }
+      nav.toc ol { columns: 1; }
+      .axis-grid, .example-grid { grid-template-columns: 1fr; }
+      table { font-size: .76em; }
+    }
+  </style>
+</head>
+<body>
+<main>
+<article>
+<header>
+  <p class="eyebrow">A layman's edition</p>
+  <h1>The Constraint Grammar of Completed Intelligibility</h1>
+  <p class="dek">A theory about the recurring ways an unresolved situation becomes complete enough to be taken up as a whole—and about why that completion can be described by three independent questions.</p>
+  <p class="byline">Synthesized from the mature theory, atlas, glossary, plain-language expositions, intellectual reconstruction, and disciplinary-positioning work in this repository.</p>
+</header>
+
+<nav class="toc" id="contents" aria-label="Table of contents">
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#ordinary-mystery">The ordinary mystery of completion</a></li>
+    <li><a href="#completed-intelligibility">What “completed intelligibility” means</a></li>
+    <li><a href="#structured-incompletion">Incompletion has structure</a></li>
+    <li><a href="#three-questions">The three questions hidden inside completion</a></li>
+    <li><a href="#six-transformations">Six ways a situation can fundamentally change</a></li>
+    <li><a href="#three-topologies">Three ways a change can become sufficient</a></li>
+    <li><a href="#three-persistences">Three ways a result can remain</a></li>
+    <li><a href="#fifty-four">Why 6 × 3 × 3 gives 54 forms</a></li>
+    <li><a href="#walkthroughs">Walking through representative coordinates</a></li>
+    <li><a href="#generated-forms">Coordinates generate forms</a></li>
+    <li><a href="#constraint-strength">Why some coordinates are tighter</a></li>
+    <li><a href="#sentence-history">How sentence resolution revealed the system</a></li>
+    <li><a href="#beyond-language">Why the theory goes beyond language</a></li>
+    <li><a href="#truth">Intelligibility before truth</a></li>
+    <li><a href="#claims">What the theory claims—and does not</a></li>
+    <li><a href="#academic-location">Where the project sits academically</a></li>
+    <li><a href="#research-programme">What a research programme could test</a></li>
+    <li><a href="#glossary">A short layman's glossary</a></li>
+    <li><a href="#sources">Sources within this repository</a></li>
+  </ol>
+</nav>
+
+<section id="ordinary-mystery">
+<h2>1. The ordinary mystery of things becoming complete</h2>
+<p>Imagine standing in a hallway with a ring of nearly identical keys. The door is locked. You try one key, then another. For a while the scene has a peculiar unfinished quality. You do not merely lack information in the abstract; the situation is actively asking something of you. Which key? Which difference matters? Then one key turns. The situation changes. The door is no longer a field of unanswered possibilities. You can proceed.</p>
+<p>Or imagine a road closure. The route you planned is blocked. A map shows a side road that rejoins the main road farther on. What resolves the problem is not the discovery of one special object but the creation of another way through. The previously restricted journey becomes continuable.</p>
+<p>Or consider two events whose connection is obscure. Perhaps a machine starts vibrating after a component is replaced. At first the events merely coexist in your attention. Then the bearing becomes clear: the replacement shifted the alignment, and the shift explains the vibration. The scene is newly organized because one thing now counts in relation to another.</p>
+<p>Or consider a mechanism that is malfunctioning. A bicycle brake rubs against the wheel. Tightening one bolt makes the problem worse; adjusting the caliper frees the wheel. The resolution is not just a new fact. A fault that had been governing the system no longer governs it.</p>
+<p>Or look at a pile of parts. A frame, bearings, chain, wheels, and pedals are simply objects beside one another until they are organized into a bicycle. Once assembled, each part acquires a role through the whole. What matters is not that more material has appeared but that the parts now belong to an organization.</p>
+<p>Or think of a decision that has remained open for days. Several options have been considered, objections answered, consequences weighed. Eventually the choice is made. The striking change is that the situation no longer demands the same act of choosing. The live pressure has been discharged.</p>
+<p>These examples are different in subject matter, but the theory developed in this repository asks whether they share something more abstract. In each case there is a before and an after. The before is not simply “nothing.” It has a structured unfinishedness. The after is not necessarily true, permanent, perfect, or final. It is complete in a more local sense: complete enough for a determinate next uptake.</p>
+<p>The Constraint Grammar of Completed Intelligibility is an attempt to describe the recurrent shapes of that transition. Its object is not keys, roads, explanations, repairs, machines, decisions, or sentences as such. Its object is the form by which an unresolved situation becomes sufficiently organized that it can be taken up as a whole.</p>
+<p>That phrase—<em>taken up as a whole</em>—is important. A situation has completed, in the sense relevant here, when the same unresolved work no longer governs our relation to it. We may still criticize it, use it, revise it, reopen it, or place it inside a larger context. Completion does not mean the end of all possible activity. It means that one governing demand has been answered well enough that another act can begin.</p>
+</section>
+
+<section id="completed-intelligibility">
+<h2>2. What “completed intelligibility” means</h2>
+<p>The theory’s central phrase can sound grander than it is. “Completed intelligibility” does not mean total understanding. It does not mean that every relevant fact is known. It does not mean that a situation has become permanently closed. It does not even mean that the achieved interpretation or solution is correct.</p>
+<p>It means that a situation has become sufficiently determinate, relative to what was unresolved about it, to support a stable next uptake.</p>
+<p>Suppose a doctor gives a clear diagnosis that later turns out to be wrong. The diagnosis can still be fully intelligible as a diagnosis. Its parts hang together. It explains the symptoms in a determinate way. It gives the patient and doctor something definite to evaluate, test, or reject. The diagnosis may fail the truth question while succeeding at the prior task of becoming intelligible enough to be judged.</p>
+<p>Likewise a fictional event can be perfectly intelligible without having happened. A bad plan can be complete as a plan even if it will fail. A mathematical claim can be clear before anyone knows whether it is provable. A mistaken explanation can organize observations coherently enough that we can understand exactly what it asserts.</p>
+<p>The theory therefore isolates a level that comes before endorsement. Before we can ask whether something is true, justified, effective, wise, fair, or accurate, there must be something determinate enough to assess. Completed intelligibility is the condition in which that determinate something has formed.</p>
+<p>This also explains why completion is indexed to a demand rather than to time. A route can be complete as a route even though the traveler has not yet walked it. A repaired mechanism can later break. A completed sentence can be followed by another sentence. A decision can later be revisited. Completion means that the pressure defining the present unresolvedness has been answered, not that history has stopped.</p>
+<blockquote>Completion, in this theory, is structural enoughness: the point at which the situation no longer owes the same unresolved work.</blockquote>
+<p>This gives the theory its unusual middle position. It is not a theory of mere process, because it cares about what kind of achieved form remains after a process lands. It is not a theory of static categories, because it defines those forms through a change from structured incompletion. And it is not a theory of truth, because a completed form can be false, fictional, defective, or later revised.</p>
+</section>
+
+<section id="structured-incompletion">
+<h2>3. Incompletion is not nothing</h2>
+<p>One of the theory’s deepest intuitions is that an unfinished situation can already have a shape. A lock and a ring of keys do not represent generic ignorance. They pose a specific unresolved demand: which key makes the operative difference? A blocked road poses another kind of demand: how can continuation become available? A failed mechanism poses another: what organization must change so the failure no longer controls the result?</p>
+<p>The mature vocabulary calls this structured unfinishedness <strong>opening pressure</strong>. It is the negative contour of the completion to come. To say that a situation has opening pressure is to say that something is still owed, and that the kind of thing owed is not arbitrary.</p>
+<p>If several candidates are present but no relevant distinction has yet been made, the pressure is a missing difference. If movement or access is restricted, the pressure is a lack of availability. If two elements have not yet acquired a constitutive bearing on one another, the pressure is a missing relation. If an organization is failing under some operative criterion, the pressure is a governed misfit. If many parts are present without a whole that gives them roles, the pressure is unorganized plurality. If a choice, journey, explanation, adjudication, or obligation remains live, the pressure is residual demand.</p>
+<p>This idea matters because it turns “completion” from an arbitrary ending into an answer. A situation can stop without completing. A machine can seize; a conversation can be interrupted; a person can abandon a decision. In each case activity may cease while the opening pressure remains. Completion, by contrast, changes the governing structure of the situation.</p>
+<p>The theory is therefore built around transformations rather than static properties. It is less interested in the fact that two things are different than in the event by which a previously non-operative difference becomes decisive. It is less interested in the fact that a route exists than in the event by which blocked continuation becomes available. It is less interested in the fact that a mechanism can be correct than in the event by which the fault stops governing the mechanism.</p>
+<p>Structured incompletion also explains why the same subject matter can support different completed forms. A bridge can be considered as an opening of reach, as the integration of components into a load-bearing whole, as a relation between banks, or as the repair of a broken transport network. The topic “bridge” does not fix the form. What matters is which unresolved pressure organizes the event, what changes, what makes that change sufficient, and what remains afterward.</p>
+</section>
+
+<section id="three-questions">
+<h2>4. The three questions hidden inside completion</h2>
+<p>The mature theory’s main conceptual achievement is a separation that sounds simple once stated. Whenever a situation becomes complete enough for uptake, three different questions can be asked.</p>
+<div class="axis-grid" role="list">
+  <div class="card" role="listitem"><strong>1. What kind of thing changed?</strong>The answer is a <em>Transformation Pattern</em>.</div>
+  <div class="card" role="listitem"><strong>2. What made that change sufficient?</strong>The answer is a <em>Completion Topology</em>.</div>
+  <div class="card" role="listitem"><strong>3. What kind of achieved result remains?</strong>The answer is a <em>Persistence Mode</em>.</div>
+</div>
+<p>These are not three names for the same feature. Consider the first question. “What changed?” can be answered by saying that a difference became operative, that availability increased, that a relation became constitutive, that a fault was repaired, that parts became organized into a whole, or that a live demand was settled. Those are six different families of transformation.</p>
+<p>But knowing the family of transformation does not yet tell us what made the change complete. A distinction may become sufficient because one item is singled out, because a criterion holds across a whole field, or because a prior conflation loses its hold. Those are structurally different ways of completing the same general kind of change.</p>
+<p>And even after we know what changed and how it became sufficient, we can still ask what sort of achievement is left. Does the completed determination simply stand there? Does it remain intelligible only through some constitutive relation? Or does it persist mainly as a capacity, effect, function, rule, or changed continuation?</p>
+<p>The theory calls these three axes <strong>Transformation Pattern</strong>, <strong>Completion Topology</strong>, and <strong>Persistence Mode</strong>. The first has six values. The second has three. The third has three. Crossing them yields the architecture that eventually became the fifty-four-coordinate atlas.</p>
+<div class="formula" aria-label="Six times three times three equals fifty-four">6 Transformation Patterns × 3 Completion Topologies × 3 Persistence Modes = 54 coordinates</div>
+<p>The arithmetic is trivial. The conceptual move is not. The theory’s claim is that the three axes recur independently enough that each one contributes a distinct constraint to the resulting completed form. A focal completion can be a differentiation, an opening, a relation, a repair, an integration, or a settlement. A result that persists through bearing can arise under any of the six transformation families and under any of the three completion topologies. The axes can therefore be recombined rather than merely listed.</p>
+<p>This is why the system describes itself as a grammar. Its units are not words, and its rules are not grammatical rules of English. “Grammar” names the idea that recurring functional roles combine systematically to generate structured forms.</p>
+</section>
+
+<section id="six-transformations">
+<h2>5. Six ways a situation can fundamentally change</h2>
+<p>The first axis asks the most immediate question: what kind of unresolvedness has been transformed? The theory identifies six recurrent patterns. They are not stages that every event passes through. They are alternative answers to what the decisive change consists in.</p>
+
+<h3>Differentiation: a difference becomes operative</h3>
+<p>Imagine a crowded keyring. All the keys are visible, but the relevant one has not yet been distinguished. When someone points and says “that one,” the field changes. No new key appears. A difference that was previously unavailable for the task becomes decisive.</p>
+<p>Differentiation includes singling out, sorting, contrast, opposition, boundary formation, exclusion, grading, and contextual marking. The common feature is not any one of those familiar meanings. It is that the completed field contains an operative distinction that the unresolved field did not yet possess in the relevant way.</p>
+<p>The opening pressure is therefore a kind of structural indifference: the field does not yet make the difference that the task requires.</p>
+
+<h3>Opening: availability increases</h3>
+<p>A blocked road becomes traversable through a detour. A bridge makes the far bank reachable. A locked machine is released into another operating mode. A wall is breached and movement can continue beyond the former edge. In each case the decisive change is an increase in access, reach, continuation, or possibility.</p>
+<p>Opening is not the same as beginning. An event can begin without performing Opening, and an Opening transformation can occur late in a larger process. The defining contrast is between restriction and enlarged availability.</p>
+<p>The opening pressure here is confinement, blockage, closed extent, or a continuation that is not yet available.</p>
+
+<h3>Relating: a bearing becomes constitutive</h3>
+<p>Two things can both be present without yet forming a meaningful relation. A sensor and alarm lie on a bench; a buyer and seller make independent demands; several photographs sit out of order. Relating occurs when a bearing among terms becomes part of the organization itself: the sensor now triggers the alarm, each negotiator adjusts to the other, the photographs become a sequence.</p>
+<p>Relating includes direct connection, order, reciprocity, analogy, balance, response, feedback, mapping, and coordination. Its invariant is that the achieved result cannot be adequately described while ignoring the relation that now constitutes it.</p>
+
+<h3>Repair: a governing misfit is displaced</h3>
+<p>Repair begins with an organization that is failing relative to a criterion. A wheel rubs against a brake pad. A calculation violates a constraint. A procedure produces the wrong routing. A mixture falls outside the required range. The decisive change redirects, reweights, reverses, replaces, or releases the faulty organization so that the misfit no longer controls the result.</p>
+<p>The criterion need not be moral, universal, or external. It can be mechanical, practical, mathematical, perceptual, procedural, or local to the task. What matters is that the event is organized by a failure under some operative standard.</p>
+
+<h3>Integration: parts acquire roles through a whole</h3>
+<p>A pile is not a system merely because its pieces are close together. Integration occurs when the pieces take on determinate roles through an organization into a whole. Bearings support a wheel; sections of a bridge distribute load; people in a team divide responsibilities; modules in a device become mutually supporting components.</p>
+<p>The change is therefore not aggregation but role-organization. The parts become intelligible as parts of something. Their identities in the completed situation are partly determined by the whole they compose.</p>
+
+<h3>Settlement: a live demand is discharged</h3>
+<p>Settlement is the easiest transformation to mistake for simple stopping. But stopping can leave a demand intact. A traveler can stop halfway while still needing to continue. A committee can adjourn without deciding. A broken conversation can end while the dispute remains open.</p>
+<p>Settlement occurs when the relevant demand itself is discharged. A choice is made; a journey reaches the point at which no further travel is owed; a set of cases is adjudicated; an explanation satisfies the pressure that earlier events had generated; an obligation is completed.</p>
+<p>The opening pressure is residual demand: something still has to be chosen, continued, explained, judged, answered, or completed.</p>
+<p>Taken together, the six patterns form a sequence of possibilities rather than a temporal ladder: make a difference, open availability, establish a bearing, repair a misfit, organize parts, or discharge a demand. Each is a distinct answer to the question, “What kind of unresolvedness changed?”</p>
+</section>
+
+<section id="three-topologies">
+<h2>6. Three ways a change can become sufficient</h2>
+<p>The second axis is subtler. Knowing that a transformation has occurred is not enough to know why it counts as complete. The theory therefore asks what structural condition makes the change sufficient. It calls the answer a <strong>Completion Topology</strong>.</p>
+<p>“Topology” here should not be read as a claim to mathematical topology in the strict sense. It is a way of describing the structural shape of enoughness. The mature system identifies three recurring modes: Focal, Distributed, and Release.</p>
+
+<h3>Focal: completion gathers around one privileged locus</h3>
+<p>A key is singled out. A route opens from one source. A relation is established at one connection. A repair turns on one decisive adjustment. An integration gathers around one whole. A decision settles on one option. In each case one locus has a privileged role in making the transformation complete.</p>
+<p>The locus need not be physically small or spatially central. A large institution can be a focal whole. A complex choice can complete focally around one selected alternative. The defining feature is asymmetric concentration: one point, source, target, pivot, connection, whole, or settlement point organizes the completion.</p>
+
+<h3>Distributed: plurality belongs to completion itself</h3>
+<p>Some transformations cannot be complete at one point. A sorting criterion must be carried across the field. A bridge must maintain reach across a span. A reciprocal relation requires multiple positions. A system functions through distributed roles. A rule can settle a class of cases only by holding across them.</p>
+<p>Distributed therefore does not simply mean “many things happened.” The plurality is constitutive. No single local success would be enough. Completion requires a range, sequence, system, span, reciprocal field, or plurality of cases.</p>
+
+<h3>Release: completion occurs by de-governance</h3>
+<p>Release is the most important topology to explain carefully because its earlier vocabulary encouraged a misleading spatial picture. It does not mean simply moving away. Its mature invariant is <strong>de-governance</strong>: something that had been determining the situation no longer determines it.</p>
+<p>A conflation is broken, so two positions can stand apart. A restriction is lifted, so another option becomes genuinely available. A fault ceases to control a mechanism, so correct function can return. An imbalance stops dictating the organization, so equilibrium becomes possible. A live obligation is discharged, so the demand for continuation no longer governs the field.</p>
+<p>Release often sounds negative because we describe it in terms of what stops ruling. But its role is positive. The new organization becomes possible precisely because the old governor loses its hold.</p>
+<blockquote>Release is completion by de-governance: what had been keeping the situation in its prior organization is no longer in charge.</blockquote>
+<p>This is one of the theory’s most consequential refinements. Earlier descriptions used a directional metaphor—something like “away.” The mature concept is stronger because it captures why apparently different cases belong together. A broken boundary, a lifted restriction, a corrected fault, and a discharged obligation all share the same topology when their completion occurs through the loss of prior governance.</p>
+</section>
+
+<section id="three-persistences">
+<h2>7. Three ways the result can remain</h2>
+<p>The third axis asks what sort of achieved reality is left once completion has occurred. The theory calls this <strong>Persistence Mode</strong>. It is not a theory of tense, and it does not mean that the result must persist forever. It means: in what mode is the achievement available for the next uptake?</p>
+
+<h3>Standing: “There it is.”</h3>
+<p>Sometimes the completed determination itself is what remains. One key stands as the indicated key. A route stands as open. A relation stands as established. A corrected arrangement stands. A whole stands organized. An alternative stands settled.</p>
+<p>Standing is achieved presence. It does not imply immobility. A standing route can be traveled; a standing relation can remain dynamic. The point is that we can take up the determination itself as the primary result.</p>
+
+<h3>Bearing: “It is so through this relation.”</h3>
+<p>Other achievements cannot be fully understood in isolation from a relation that defines or sustains them. A chosen side remains the chosen side against its alternative. The far bank remains reachable because a bridge maintains the span. A mixture remains corrected because it stays within a relevant proportion. A component remains what it is through its place in an organized whole.</p>
+<p>Bearing is achieved relationality. Remove the constitutive bearing and the result would no longer be the same completed form.</p>
+
+<h3>Efficacy: “Now it works, acts, or changes what can happen.”</h3>
+<p>Sometimes the main residue of completion is consequential. A boundary stops passage. A repaired mechanism now functions. A rule governs later cases. An assembled device now has a capacity its separate parts lacked. A completed journey has effectively discharged the need to continue.</p>
+<p>Efficacy does not require visible activity at every moment. A dormant device can still possess a capacity. A posted rule can be efficacious while nobody is currently invoking it. What persists is the achieved difference in what can happen.</p>
+<p>The three modes can be remembered by a compact contrast: <strong>Standing</strong> says “there it is”; <strong>Bearing</strong> says “it is so through this”; <strong>Efficacy</strong> says “now it works, governs, changes, or has been accomplished.” This shorthand is useful only because the underlying distinctions are functional rather than merely verbal.</p>
+</section>
+
+<section id="fifty-four">
+<h2>8. Why 6 × 3 × 3 gives 54 forms</h2>
+<p>Once the three axes are separated, the famous number fifty-four stops looking mysterious. The theory is not saying that someone surveyed the world, noticed fifty-four interesting kinds of experience, and then built a table around them. It says something more disciplined: if there are six recurring kinds of decisive transformation, three recurring ways a transformation can become sufficient, and three recurring ways the achievement can persist, then crossing those values yields fifty-four coordinate positions.</p>
+<p>Each coordinate is a triple. It says, in effect: take one answer to “what changed?”, one answer to “what made the change enough?”, and one answer to “what remains?”. A coordinate such as <strong>Opening / Distributed / Bearing</strong> therefore carries three simultaneous demands. Something must become more available. That increased availability must require a span, range, plurality, or other distributed structure to count as complete. And the achievement must remain intelligible through a constitutive relation rather than merely standing on its own or persisting chiefly as an effect.</p>
+<p>Those three constraints already tell us a great deal before we attach a memorable name. A bridge to the far bank is a natural example. The far bank becomes reachable: that is Opening. One point alone is not enough; the connection must hold across the river: that is Distributed. And the achieved reachability exists through the span maintained by the bridge: that is Bearing. The atlas canonically sharpens this sort of coordinate into a form such as span-carried reach.</p>
+<p>Now change only one coordinate. Keep Opening and Distributed, but replace Bearing with Efficacy. The question is no longer merely whether access is maintained through a span. The completed result must now persist as operative availability. Think of a building that initially has Wi-Fi only near one router, then receives repeaters throughout its floors. Access becomes available across the field, and the achievement remains as the effective capacity to connect throughout it. The family resemblance is obvious, but the completed form has changed because the third constraint changed.</p>
+<p>Or keep Opening and Bearing but replace Distributed with Focal. Now completion must gather around one privileged source or locus. A trail that forks from one junction, or several continuations that open from one source, fits this structure more naturally than a bridge spanning a gap. One axis has changed, so the logic of sufficiency has changed.</p>
+<p>This is what the theory means by a <strong>coordinate</strong>. It is not merely an address in a spreadsheet. It is a conjunction of constraints. The coordinate tells us what sort of change must occur, what structural condition makes that change count as complete, and how its achieved result must remain available.</p>
+<p>The full atlas displays all fifty-four crossings. But the important thing for a new reader is not to memorize fifty-four names. It is to feel the regularity of the construction. Within each Transformation Pattern there are nine coordinates: three topologies, and within each topology, three persistence modes. Then the same nine-position pattern repeats under the next Transformation Pattern.</p>
+<p>This produces a nested periodicity. Transformation Pattern changes most slowly, grouping coordinates into blocks of nine. Completion Topology changes every three positions: Focal, Distributed, Release. Persistence Mode changes every position: Standing, Bearing, Efficacy. The periodicity is therefore not decorative numbering. It mirrors the way the grammar is composed.</p>
+<table>
+  <thead><tr><th>Question</th><th>Axis</th><th>Values</th></tr></thead>
+  <tbody>
+    <tr><td>What changed?</td><td>Transformation Pattern</td><td>Differentiation, Opening, Relating, Repair, Integration, Settlement</td></tr>
+    <tr><td>What made it sufficient?</td><td>Completion Topology</td><td>Focal, Distributed, Release</td></tr>
+    <tr><td>What remains?</td><td>Persistence Mode</td><td>Standing, Bearing, Efficacy</td></tr>
+  </tbody>
+</table>
+<p>The fifty-four positions are therefore best understood as a structured possibility space proposed by the theory. They are not fifty-four topics. “Bridge,” “choice,” “sentence,” “machine,” “map,” and “conversation” do not occupy one cell each. The same domain can realize many coordinates, and the same coordinate can recur in radically different domains.</p>
+<p>This also prevents a common misunderstanding. The theory does not claim that the number fifty-four is magical or numerologically significant. Fifty-four is simply what follows when the three current dimensions are crossed. The interesting claim is not the arithmetic but the proposed separability and recurrence of the dimensions.</p>
+<a class="back" href="#contents">Back to contents</a>
+</section>
+
+<section id="walkthroughs">
+<h2>9. Walking through representative coordinates</h2>
+<p>A few examples can make the architecture more intuitive than a complete list. The point of these walkthroughs is to show how each coordinate acts like a recipe for structural requirements. The examples come from different domains because the theory is explicitly trying to separate completion structure from subject matter.</p>
+
+<h3>Differentiation / Focal / Standing: one thing becomes the one</h3>
+<p>Return to the crowded keyring. Several keys are equally present for attention. Someone points to one: “This one.” The relevant difference becomes operative at a privileged locus—the selected key—and what remains is simply that key standing as the indicated one.</p>
+<p>The three coordinates fit closely. Differentiation requires an operative distinction. Focal requires completion around one privileged candidate. Standing requires the achieved determination itself to remain available. There is little room left for the local event to become something radically different. The atlas therefore treats this kind of coordinate as near-determinate and gives it a canonical crystallization close to a focal mark.</p>
+
+<h3>Differentiation / Distributed / Efficacy: sorting changes what happens to a field</h3>
+<p>Now imagine mixed recyclables moving down a belt. A scanner discriminates plastic from glass and metal throughout the stream, and the items are diverted into different channels. The transformation is still Differentiation, but one focal item would not be enough. The criterion has to operate across the plurality, so completion is Distributed. And the result is not merely that the categories are visible; the distinction now changes treatment, so it persists as Efficacy.</p>
+<p>Compare this with pointing to one key. Both are differentiations, but the topology and persistence mode reorganize the event. One produces a singled-out standing. The other produces field-wide differential action.</p>
+
+<h3>Opening / Focal / Bearing: several ways from one source</h3>
+<p>A trail reaches a fork. Until that point, the path offers one continuation. At the junction, two routes become available. The transformation is Opening because availability increases. Completion is Focal because the branching gathers around one junction. The result persists through Bearing because each route remains intelligible as a continuation from that shared source.</p>
+<p>If we changed only Bearing to Efficacy, we would expect the source not merely to define the alternatives but actively to generate operative continuations—a switchyard sending trains onto several tracks is an easy example. Again, changing one coordinate changes the character of what remains.</p>
+
+<h3>Opening / Distributed / Bearing: reach carried across a span</h3>
+<p>A river cuts a village off from the opposite bank. A bridge is built. The relevant completion is not concentrated at one end; the span itself belongs to what makes the far side reachable. Nor is the result just a standing object called “bridge.” The achieved reachability is what it is through the connection across the river. That makes this a natural case of Opening / Distributed / Bearing.</p>
+<p>This coordinate is useful because its three questions can be answered independently in ordinary language. What changed? The far bank became available. What made that enough? A connection held across the span. What remains? Reachability through that connection.</p>
+
+<h3>Opening / Release / Standing: an option becomes genuinely available</h3>
+<p>Suppose a student is required to choose one fixed project topic. The teacher later lifts that restriction and permits several topics. The decisive event is not simply that more objects have appeared. A prior rule has lost its governance, and another possibility now stands as genuinely available.</p>
+<p>That is Opening because availability increases, Release because the increase occurs through de-governance of the restriction, and Standing because the result is an option that now stands there for choice.</p>
+
+<h3>Relating / Distributed / Bearing: mutual adjustment</h3>
+<p>Consider two people negotiating. At first each states a position. Then each changes the offer in response to the other. The achieved organization cannot be assigned to either person alone; the relation is distributed across the pair. And each position remains intelligible through how it bears on the other. The theory’s structure here is Relating / Distributed / Bearing.</p>
+<p>A pair of dancers adjusting timing to one another, or two rowers compensating for a drifting boat, can show the same event-shape. The contents differ, but the completion is organized by reciprocal bearing.</p>
+
+<h3>Repair / Release / Efficacy: the fault stops controlling operation</h3>
+<p>Imagine a bicycle wheel rubbing against a misaligned brake. The problem is not solved merely by identifying the misalignment. The organization has to change so that the fault no longer governs the wheel’s motion. Once the caliper is realigned, the wheel turns freely.</p>
+<p>This is a Repair because the opening field is organized by misfit relative to an operative criterion. It is Release because completion occurs when the fault loses its determining hold. It is Efficacy because what remains is a restored capacity to function.</p>
+<p>Notice how important the topology is. “Release” does not mean that the brake moved away in a simple spatial sense. The structural point is that the defective relation no longer rules the mechanism.</p>
+
+<h3>Integration / Focal / Efficacy: a whole gains a capacity</h3>
+<p>Lay the parts of a bicycle on the floor. None of them, by itself or as a heap, can carry a rider down the street. Assemble them into a functioning bicycle and the parts acquire roles through one organized whole. The transformation is Integration. The completion is Focal because the whole acts as the privileged organization through which the parts become parts. The persistence is Efficacy because the completed whole now has a capacity the unintegrated pieces lacked.</p>
+<p>This is one reason the theory insists that Integration is not mere aggregation. The completion changes what the components are able to do through their roles in an organized whole.</p>
+
+<h3>Settlement / Focal / Standing: one choice is settled</h3>
+<p>Three restaurants remain live possibilities. After discussion, the group chooses one. The essential change is not differentiation—the restaurants were already distinguishable. It is Settlement: the demand to keep choosing has been discharged. The completion is Focal because one selected alternative becomes the settlement point. The result is Standing because that choice itself now stands as the achieved decision.</p>
+
+<h3>Settlement / Release / Efficacy: nothing more is owed</h3>
+<p>A journey can end because the traveler gives up, or because the relevant destination has been reached. Those are structurally different. In the second case, the demand to continue no longer governs the situation. The completion occurs through Release from residual demand, and its persistence is Efficacy because the obligation or necessity of continuation has been effectively discharged.</p>
+<p>This coordinate makes the theory’s distinction between stopping and settling especially vivid. Both can look like inactivity from the outside. Only one answers the governing pressure.</p>
+
+<p>These examples are not meant as proofs that every situation has one uniquely correct coordinate. They are teaching cases. Their function is to show why a coordinate is more than a three-part label. Each triple narrows the shape of the event by combining three different requirements.</p>
+<a class="back" href="#contents">Back to contents</a>
+</section>
+
+<section id="generated-forms">
+<h2>10. The deeper insight: coordinates generate forms</h2>
+<p>The mature theory’s most important shift concerns the direction of explanation. An earlier way of thinking about the atlas would be natural: first observe a recognizable completed form, then find the coordinate that classifies it. The mature theory reverses that direction. It asks what can be generated from the coordinate before we consult the memorable name or example.</p>
+<p>This distinction is easy to lose, so it helps to separate four levels.</p>
+<figure>
+  <div class="formula">coordinate constraints → coordinate-generated form → canonical crystallization → concrete manifestation</div>
+  <figcaption>From abstract structural requirements to a particular real-world case.</figcaption>
+</figure>
+<p>The <strong>coordinate constraints</strong> are simply the three chosen values: one Transformation Pattern, one Completion Topology, one Persistence Mode. They tell us what must change, what makes that change sufficient, and how the achievement remains.</p>
+<p>From those constraints we can formulate an abstract event-pattern. That is the <strong>coordinate-generated form</strong>. It is more informative than the bare labels but less semantically specific than a canonical name. For Opening / Distributed / Bearing, for example, the generated form is roughly: something previously unavailable at a separated position becomes available because a connection maintains reach across the intervening span or plurality.</p>
+<p>A particularly vivid semantic realization can then be selected from that generated region. That is the <strong>canonical crystallization</strong>. “Span-carried reach” is the kind of concise label that makes the structural region memorable. But the label is not more fundamental than the coordinate-generated form. It is a stabilized semantic choice inside the region.</p>
+<p>Finally, a bridge over a river, a network cable connecting a remote computer, or a suspension bridge across a ravine is a <strong>concrete manifestation</strong>. Each case has particular material, purpose, scale, and causal detail. None of those details belongs to the coordinate as such.</p>
+<p>Why insist on these levels? Because without them the theory risks becoming a catalogue of fifty-four clever names. A catalogue can be useful, but it cannot explain why the names belong where they do. The coordinate-first approach claims that the three axes have prospective force: given the triple, we should be able to say something substantive about the event-form before seeing the canonical cell.</p>
+<p>That claim can be tested internally. Hide the canonical names. Start with a coordinate. Ask what the three constraints jointly require. Then compare the generated description with the atlas. If the structure survives the removal of the names, the coordinates are doing explanatory work rather than merely indexing remembered examples.</p>
+<p>This is why the mature documents use the phrase <strong>constraint grammar</strong>. A coordinate acts like an intersection of requirements. It does not necessarily generate one uniquely worded sentence or one uniquely named phenomenon. Instead it defines an admissible region: a family of completed forms that satisfy all three constraints.</p>
+<p>The word <em>grammar</em> is therefore being used functionally. In ordinary linguistic grammar, recurring roles combine under constraints to yield well-formed expressions. Here, recurring completion roles combine under constraints to yield recognizable event-structures. The analogy is structural, not a claim that completed intelligibility literally uses nouns, verbs, or phrase-structure rules.</p>
+<p>This also explains the phrase <strong>phenomenological syntax</strong> used in the repository. “Syntax” refers to systematic combination. “Phenomenological” refers to the organization of how a situation appears and becomes available as unfinished, transformed, sufficient, and completed. It is not ordinary sentence syntax.</p>
+<p>The direction of theoretical priority matters enough to state again:</p>
+<blockquote>The coordinate does not point to a pre-existing named box. The coordinate constrains an event-form; a canonical name crystallizes that form; a concrete case manifests it.</blockquote>
+<p>Once this is understood, the fifty-four-cell atlas looks different. The cells are no longer fifty-four independent discoveries that happen to fit a grid. They are local regions within one compositional architecture.</p>
+<a class="back" href="#contents">Back to contents</a>
+</section>
+
+<section id="constraint-strength">
+<h2>11. Why some coordinates are tighter than others</h2>
+<p>If coordinates generate admissible regions rather than single mandatory meanings, another question follows immediately: are all those regions equally broad? The mature theory says no.</p>
+<p>Some combinations of constraints almost force a local form. Others narrow the possibilities strongly but still leave an important semantic choice. Others identify a clear structural pattern while allowing several materially different crystallizations. The atlas marks this difference with three constraint-strength classes.</p>
+<h3>Near-determinate</h3>
+<p>A near-determinate coordinate leaves little freedom beyond wording, domain, or minor mechanism. Differentiation / Focal / Standing is a good example. If a relevant difference becomes operative, completion gathers on one privileged candidate, and the result simply stands, the event naturally approaches indication or focal marking. The coordinate-generated form and the canonical crystallization nearly coincide.</p>
+<h3>Tightly constrained</h3>
+<p>A tightly constrained coordinate defines a narrow family, but the canonical name contributes a meaningful sharpening. Differentiation / Focal / Bearing, for example, requires a focally selected distinction whose identity remains defined through contrast. A canonical crystallization such as binary bearing makes that contrast explicitly two-sided. The coordinate strongly guides that choice without proving that every admissible case must have exactly that semantic form.</p>
+<h3>Open realization</h3>
+<p>An open realization still has a definite phenomenological syntax, but more semantic latitude remains. Differentiation / Focal / Efficacy requires a focal difference that changes what can happen. A boundary is an especially vivid realization: a finish line ends the race, a gate stops water, a marked point terminates a stroke. But the coordinate itself does not logically require “boundary” as the only possible efficacy of a focal distinction. The canonical crystallization therefore occupies one especially lucid part of a wider region.</p>
+<p>This scale is easy to misread. It is <strong>not</strong> a confidence score. An Open realization is not a cell the authors believe less strongly. It is not a truth score, a ranking of importance, or a measure of empirical frequency. It says how much semantic freedom remains after the structural constraints have done their work.</p>
+<p>The distinction is theoretically useful because it prevents overclaiming. Without it, a vivid canonical name can appear to be directly forced by the coordinate even when the coordinates only force a broader event-pattern. By marking unequal widths, the theory can retain memorable crystallizations without pretending that every detail of the name is structurally necessary.</p>
+<p>In other words, the atlas can be both systematic and semantically flexible. Structural determination can be strong even when semantic individuation remains open.</p>
+<p>This is also one place where future research could become sharper. If independent analysts repeatedly generate similar event-patterns from the same coordinate before seeing canonical names, that would support the claim that the coordinate has prospective force. If they diverge radically, the proposed constraint may be too weak or ambiguous. Constraint strength can therefore become an empirical and methodological question rather than merely an editorial label.</p>
+<a class="back" href="#contents">Back to contents</a>
+</section>
+
+<section id="sentence-history">
+<h2>12. How sentence resolution revealed the system</h2>
+<p>The mature theory is broader than language, but it did not begin there. Its intellectual history matters because sentences provided the observational surface on which several of the theory’s central distinctions first became visible.</p>
+<p>The original practical question was roughly: <strong>how does a sentence become complete enough to be taken up as a whole?</strong> That question sounds linguistic, but it immediately raises problems about time, provisional organization, and global versus local completion.</p>
+<p>Consider a sentence that begins in a way compatible with several continuations. Early words may support a provisional interpretation. Later material may preserve it, narrow it, wrap it in a larger frame, or force a reanalysis. A clause can feel locally complete and yet turn out to be subordinate to a larger construction. A final phrase can alter how earlier material is understood. A garden-path sentence can make an apparently settled analysis fail and require earlier parts to be reassigned.</p>
+<p>These cases taught the project that completed intelligibility has a <strong>history of formation</strong>. The final result cannot always be read off from isolated parts. We need to know how local organizations arose, which ones remained subordinate, which transformation came to govern the whole, and where the sentence “landed” as a determinate organization.</p>
+<h3>Local completion and global completion</h3>
+<p>A unit can be complete at one scale without completing the larger situation. A clause can be understandable as a clause while the sentence containing it remains open. A quoted statement can be complete before an attribution arrives. Two complete clauses can later be reorganized by a conditional relation. This forced the theory to distinguish local completions from the organization that governs the selected whole.</p>
+<h3>Provisional interpretations</h3>
+<p>Sentence processing also makes provisionality visible. We routinely understand before the end. We build a working organization from what has arrived so far. Later material can confirm that organization, refine it, or overturn it. This shows why intelligibility should not be modeled as a single instantaneous label attached only after the final word.</p>
+<h3>Governing transformation</h3>
+<p>Multiple operations can occur during the same sentence. A phrase may distinguish an item, another phrase may establish a relation, and a later clause may settle the whole. The theory therefore needed a way to ask which transformation governs the completed unit at the scale being analyzed. The governing transformation is not simply the last event in time. It is the transformation whose organization controls the completed whole.</p>
+<h3>Landing</h3>
+<p>The term <strong>landing</strong> arose to name the point or span at which the governing organization becomes determinate enough for uptake. Landing is not automatically the last word. A sentence can land through a dependency, a clause completion, a distributed relation, or a retrospective reorganization. The concept keeps temporal ending distinct from structural completion.</p>
+<h3>Why later material can reorganize earlier material</h3>
+<p>One of the most fertile lessons from sentence analysis was that the completed whole can redistribute the roles of its parts. An earlier phrase does not always carry its final function from the moment it appears. Later material can reveal that what seemed central was subordinate, that what seemed complete was conditional, or that what seemed like one relation belongs inside another.</p>
+<p>This made a static catalogue of meanings inadequate. To analyze a sentence responsibly, the project had to reconstruct how an opening field developed into a completed organization.</p>
+<p>The early architecture used different names for the three axes: <strong>Work</strong>, <strong>Orientation</strong>, and <strong>Survivor</strong>. The six Works were Distinction, Expansion, Relation, Correction, Integration, and Rest. The three Orientations were Toward, Across, and Away. The three Survivors were Is, With, and Does. The 6 × 3 × 3 geometry was already there, but its theoretical meaning was not yet fully explicit.</p>
+<p>The mature terminology sharpened each axis. Work became <strong>Transformation Pattern</strong>, making clear that the first axis specifies the kind of unresolvedness decisively altered. Orientation became <strong>Completion Topology</strong>, shifting attention away from loose directional imagery and toward the structural condition of sufficiency. Survivor became <strong>Persistence Mode</strong>, clarifying that the third axis concerns how an achieved result remains available rather than which object literally survives.</p>
+<p>The most important change, however, was not renaming. It was a reversal of explanatory direction.</p>
+<div class="example-grid">
+  <div class="card"><strong>Earlier direction</strong>sentence or event → reconstruct formation history → recover coordinate → identify cell</div>
+  <div class="card"><strong>Mature direction</strong>coordinate → generate structural completion pattern → select crystallization → recognize manifestations</div>
+  <div class="card"><strong>What changed</strong>coordinates moved from being mainly classificatory addresses to being candidate generators of completed form</div>
+</div>
+<p>Suppose the coordinate is Opening / Distributed / Bearing. Earlier, one might begin with a sentence or example, analyze how it resolved, and end by placing it in that cell. The mature question is: if we know only those three constraints, what must a completed event look like? Enlarged availability; sufficiency through a span or plurality; persistence through a constitutive bearing. That gives an abstract event-form before any specific sentence is consulted.</p>
+<p>This reversal changed the theory’s level. Sentences remained important, but they ceased to be the ontology of the system. They became one especially revealing place where formation history is observable.</p>
+<a class="back" href="#contents">Back to contents</a>
+</section>
+
+<section id="beyond-language">
+<h2>13. Why the mature theory goes beyond language</h2>
+<p>Why did sentences matter so much if the theory is not ultimately a theory of sentences? Because sentences unfold in time while making their parts publicly inspectable. They are unusually convenient laboratories for watching organization form.</p>
+<p>When we hear or read a sentence, we can often feel the difference between what is provisionally available and what becomes globally settled. We can see later material alter earlier interpretations. We can compare a local clause with the sentence that contains it. We can identify moments where a relation becomes governing or where a residual demand is discharged. In short, sentences make formation history visible.</p>
+<p>But the mature theory’s object is broader: <strong>recurrent structural ways in which an unresolved situation becomes sufficiently complete for determinate uptake</strong>. Nothing in that description requires words.</p>
+<p>A physical case can instantiate the grammar. A gate creates a focal operative distinction that changes what may pass. A bridge opens reach across a span. A set of mechanical components becomes integrated into a functioning whole. A misaligned mechanism is repaired when the fault ceases to govern its operation.</p>
+<p>A perceptual case can instantiate it. A figure becomes distinguished from a background. A previously ambiguous shape becomes organized through a relation. A pattern becomes visible across distributed occurrences.</p>
+<p>A practical case can instantiate it. A blocked plan gains another route. A choice is settled. A rule is applied across multiple cases. A restriction is lifted, making an alternative genuinely available.</p>
+<p>A social case can instantiate it. Two parties enter reciprocal negotiation. A group assigns roles and becomes an organized team. An obligation is discharged. Competing positions are separated from a prior conflation and allowed to stand distinctly.</p>
+<p>A mathematical or formal case can instantiate it if the relevant structural transition is present. A field may be sorted by a criterion; a relation may become constitutive; an inconsistent organization may be repaired relative to constraints; a proof obligation may be discharged. The theory is not saying that these domains are identical. It is saying that one completion structure may recur in different materials.</p>
+<p>This cross-domain ambition is why the mature documents resist treating the canonical names as the deepest objects. If “span-carried reach” were defined by bridges, the form would be tied to physical travel. If instead it is generated from Opening / Distributed / Bearing, then a bridge, a communications link, and another domain-specific manifestation can share the completion structure without sharing their material content.</p>
+<p>Still, the theory does not currently earn a universal claim simply by providing diverse examples. Cross-domain plausibility is not the same as empirical validation. The mature corpus is careful on this point. It proposes a domain-general level of analysis and supplies an internally coherent atlas; it does not yet prove that every possible case of intelligible completion must fit the atlas.</p>
+<p>The most defensible way to state the claim is therefore modest but significant: sentence analysis revealed a candidate grammar whose primitives can be described without reference to sentence syntax, and whose generated forms appear capable of recurring across linguistic and nonlinguistic domains.</p>
+<a class="back" href="#contents">Back to contents</a>
+</section>
+
+<section id="truth">
+<h2>14. Intelligibility before truth</h2>
+<p>One distinction deserves to stand on its own because it prevents several philosophical misunderstandings: the theory studies intelligibility before truth.</p>
+<p>Imagine a detective constructs a coherent account of a crime. The timeline is clear, the motives fit, the actions relate in a determinate way. Later, new evidence shows that the account is false. The explanation did not become unintelligible merely because it was wrong. It had enough organization to be assessed and falsified.</p>
+<p>Or imagine a fictional world. A novel can make the relations among imaginary people and events perfectly intelligible even though none of them exists in fact. Or consider a business plan that clearly specifies a product, customers, financing, and launch sequence but rests on unrealistic assumptions. It can be complete as a plan while being a poor plan.</p>
+<p>The theory is interested in the structural achievement that makes these objects available for judgment at all. Truth, correctness, justification, success, moral adequacy, and reliability are additional questions.</p>
+<p>This does not make truth unimportant. Quite the opposite: assessment requires a sufficiently determinate target. To say “that diagnosis is wrong” presupposes that the diagnosis has become intelligible enough that we know what is being rejected. To say “that plan will fail” presupposes that the plan is organized enough to identify its claims and consequences.</p>
+<p>The priority is therefore logical and explanatory, not evaluative. Completed intelligibility is not a badge of approval. It is a condition of having something determinate enough to approve, reject, test, revise, obey, disobey, use, or criticize.</p>
+<p>This distinction also stops “completion” from being confused with epistemic certainty. A person can be uncertain about whether a complete explanation is true. A mathematical conjecture can be completely stated while unresolved as a theorem. A legal argument can be intelligible while contested. A settled decision can later be judged unwise.</p>
+<p>In everyday life we often blur these levels because understanding and endorsement arrive together. The theory separates them deliberately so it can ask a prior structural question: what happened that made the situation graspable as a determinate whole?</p>
+<a class="back" href="#contents">Back to contents</a>
+</section>
+
+<section id="claims">
+<h2>15. What the theory claims—and what it does not</h2>
+<p>A finite architecture with fifty-four positions can easily sound more final than the evidence warrants. The mature sources therefore distinguish several levels of claim.</p>
+<h3>What the atlas internally demonstrates</h3>
+<p>Within the constructed system, the three dimensions can be crossed into a coherent 6 × 3 × 3 state-space. The coordinate-generated descriptions display a recurring periodic organization. Transformation Pattern, Completion Topology, and Persistence Mode make distinguishable contributions to the local forms. Canonical crystallizations can be related systematically to generated forms, and the atlas can mark differences in how tightly each coordinate constrains its semantic realization.</p>
+<p>This is an internal structural achievement. It shows that the theory is more than a loose list of examples. The same compositional rule can be applied repeatedly across the atlas.</p>
+<h3>What the theory proposes</h3>
+<p>The stronger proposal is that these dimensions capture recurrent forms of completed intelligibility beyond the examples used to build the corpus. In other words, the atlas is offered as a candidate model of a real level of organization: completion structure.</p>
+<p>The theory also proposes that coordinates have prospective explanatory force. An analyst should be able to start from a coordinate and generate an appropriate event-pattern before seeing a canonical name. If that works reliably, the coordinate architecture is doing more than retrospective classification.</p>
+<h3>What remains empirically unvalidated</h3>
+<p>The corpus does not yet establish how reliably independent people can identify the same coordinate in unfamiliar cases. It does not establish how often naturally occurring events fall cleanly into one coordinate. It does not establish whether the fifty-four positions cover all relevant cases, whether some cases genuinely occupy overlapping regions, or whether additional dimensions would be needed under pressure from new domains.</p>
+<p>It also does not yet show behavioral consequences. For example, the theory does not currently prove that people process Focal completion differently from Distributed completion, or that Standing, Bearing, and Efficacy have distinct measurable signatures in memory, attention, prediction, reaction time, or learning.</p>
+<h3>What the theory explicitly does not yet claim</h3>
+<p>The mature framework does not claim that the three dimensions are metaphysically necessary. It does not claim that the 6 × 3 × 3 space is proven exhaustive of every possible form of completion. It does not claim that every actual event has one uniquely recoverable coordinate. It does not identify the coordinates with neural circuits. It does not present a validated psychological mechanism. It does not establish empirical universality across cultures, languages, species, or task domains.</p>
+<p>It is also not yet a mathematical theory in the strongest sense. The state-space and admissible-region language provide disciplined formal scaffolding, but the corpus does not supply a fully axiomatized calculus, metric, probability distribution, or mathematically independent measure of distance between forms.</p>
+<h3>Why the proposal can still be substantial</h3>
+<p>A theory does not have to prove universality to introduce a useful level of analysis. The central substantive proposal is that completion structure can be decomposed into three functionally distinct questions: transformation, sufficiency, and persistence. If that decomposition continues to organize diverse cases, generates non-trivial predictions, and survives independent testing, it would give researchers a vocabulary for distinctions that are often compressed together.</p>
+<p>The proper attitude is therefore neither “the atlas has solved intelligibility” nor “nothing matters until universal proof exists.” The present achievement is a structured research object: a finite generative architecture with clear internal commitments and clear external questions.</p>
+<a class="back" href="#contents">Back to contents</a>
+</section>
+
+<section id="academic-location">
+<h2>16. Where the project sits academically</h2>
+<p>The repository’s disciplinary-positioning work makes an important point: a theory should not be assigned to a discipline merely because some of its vocabulary sounds familiar. Calling the framework a “grammar” does not automatically make it linguistics. Calling its generated descriptions “phenomenological” does not automatically make it classical phenomenology. Using the phrase “state-space” does not turn it into mathematics. Talking about cognition does not by itself provide a psychological mechanism.</p>
+<p>The current best placement offered by the mature corpus is near <strong>theoretical cognitive science</strong> and <strong>philosophy of cognitive science</strong>, with <strong>phenomenology</strong> as a close descriptive neighbor.</p>
+<p>Theoretical cognitive science is a plausible parent because it can host an abstract functional level that cuts across language, perception, action, reasoning, and artificial systems. It also has room for several methods at once: conceptual analysis, behavioral experiments, linguistic evidence, computational modeling, and eventually neural investigation.</p>
+<p>Philosophy of cognitive science is a natural immediate home because the theory currently specifies an explanatory level and candidate architecture rather than a validated mechanism. Questions such as “Are these really independent primitives?”, “What kind of necessity could the state-space have?”, “What counts as a completed form?”, and “How should structural description relate to mechanism?” are philosophical as well as empirical.</p>
+<p>Phenomenology is a close neighbor because the theory begins from structured ways situations appear as unresolved, transformed, sufficient, and available. Its descriptions try to capture recognizable forms of experience and organization before reducing them to lower-level mechanisms. But the finite Cartesian product, coordinate-first generation, and planned empirical tests go beyond what should casually be labeled phenomenology alone.</p>
+<p>Linguistics remains important because sentences were historically the richest observational surface and because language gives researchers large, analyzable corpora of unfolding completion. Psychology is an obvious testing domain if the theory is to make claims about human discrimination, processing, or learning. Artificial intelligence and computational modeling could test whether the coordinate architecture can be operationalized, classified, generated, or used to predict transitions. Philosophy of understanding and epistemology are neighboring conversations because the theory distinguishes intelligibility from truth and justification.</p>
+<p>The key academic claim is therefore not that a new discipline has already been founded. It is that <strong>completion structure</strong> may be a legitimate level of analysis in its own right—one that several existing disciplines can approach from different directions.</p>
+<a class="back" href="#contents">Back to contents</a>
+</section>
+
+<section id="research-programme">
+<h2>17. What a future research programme might test</h2>
+<p>The theory becomes most interesting when its internal architecture is treated as the beginning of research rather than the end of argument. The repository’s mature framing suggests several kinds of test that could distinguish a real generative structure from an elegant editorial system.</p>
+<h3>1. Blind coordinate generation</h3>
+<p>Give trained analysts only the definitions of the three axes and a coordinate such as Repair / Distributed / Bearing. Do not show them the canonical cell name or examples. Ask each analyst to generate the abstract event-pattern the coordinate requires. If independently produced descriptions converge in structure, that would support the claim that the coordinate has prospective force. If they scatter widely, the primitives may be under-specified.</p>
+<h3>2. Blind classification of unfamiliar cases</h3>
+<p>Present new linguistic and nonlinguistic examples without canonical labels and ask independent analysts to classify Transformation Pattern, Completion Topology, and Persistence Mode separately. Measure agreement for each axis and for the full triple. This would test whether the distinctions are operationally recoverable rather than obvious only to people who already know the atlas.</p>
+<h3>3. Out-of-atlas challenge cases</h3>
+<p>Actively search for events that resist the architecture. The strongest research programme should not merely collect friendly examples. It should ask whether some completions require a seventh Transformation Pattern, a fourth topology, a fourth persistence mode, multiple simultaneous coordinates, or a representation not captured by the current product space.</p>
+<h3>4. Cross-domain invariance</h3>
+<p>Take a coordinate-generated form and construct manifestations in physical, social, linguistic, mechanical, mathematical, perceptual, and narrative domains. Then ask whether participants or analysts detect a common completion structure despite large changes in content. Successful transfer would support the theory’s claim that the coordinate is more fundamental than the subject matter.</p>
+<h3>5. Paraphrase and translation</h3>
+<p>If the same event is described in different wording or languages, does its coordinate remain stable? This could help separate linguistic realization from completion structure. Failure would also be informative: it might reveal that some supposedly abstract distinctions depend more heavily on language-specific packaging than the theory currently assumes.</p>
+<h3>6. Processing and prediction</h3>
+<p>If the axes reflect cognitively significant distinctions, they may eventually predict differences in anticipation or updating. Focal completion might direct attention differently from Distributed completion. Release cases might produce different expectations from focal attainment. Bearing and Efficacy might leave different kinds of memory trace or support different inferences. These possibilities are hypotheses, not current findings.</p>
+<h3>7. Computational formalization</h3>
+<p>A computational model could represent an opening state, candidate transformation, topology of sufficiency, and persistence mode, then attempt coordinate prediction or generation. The point would not be to declare that a computer “understands” merely because it implements the labels. The value would be precision: formalization forces the theory to specify what information is required, which distinctions are operational, and where the present language remains metaphorical.</p>
+<h3>8. Constraint-strength validation</h3>
+<p>The Near-determinate, Tightly constrained, and Open realization categories could be tested by asking independent analysts to generate multiple admissible crystallizations from each coordinate. Near-determinate coordinates should produce narrow convergence. Open coordinates should support wider but still structurally bounded variation. If the observed pattern disagrees with the atlas, the scale can be revised.</p>
+<h3>9. Formation history versus completed form</h3>
+<p>Two events might end in the same coordinate while arriving there through different histories. Sentence analysis already suggests this possibility. Experiments could ask whether people treat the completed forms as equivalent despite different routes, or whether formation history leaves systematic traces that require a richer model.</p>
+<h3>10. Scale and governance</h3>
+<p>A complex event can contain many local completions. One practical challenge is deciding the scale at which a coordinate is assigned and which transformation governs the selected whole. Future methods will need explicit rules for scale selection, nested coordinates, and cases where no single global transformation dominates.</p>
+<p>These tests would move the project from a mature conceptual architecture toward an empirical programme. Some could support the framework; others could force revision. That possibility of disciplined failure is a strength. A theory becomes scientifically useful when it tells us not only what fits, but what evidence would make us change it.</p>
+<a class="back" href="#contents">Back to contents</a>
+</section>
+
+<section id="glossary">
+<h2>18. A short layman's glossary</h2>
+<p>The repository contains an exhaustive glossary. What follows is only the small set of terms needed to read this essay comfortably.</p>
+<dl class="glossary">
+  <dt>Completed intelligibility</dt><dd>A situation being settled enough, relative to its unresolved demand, that it can be taken up as a determinate whole. It does not imply truth or permanent finality.</dd>
+  <dt>Unresolved situation</dt><dd>A situation that already poses a structured demand but has not yet answered it.</dd>
+  <dt>Opening pressure</dt><dd>The specific unfinishedness that says what is still owed: a missing difference, restricted availability, absent bearing, governing misfit, unorganized plurality, or residual demand.</dd>
+  <dt>Transformation Pattern</dt><dd>The first axis: what kind of unresolvedness decisively changes.</dd>
+  <dt>Differentiation</dt><dd>A relevant difference becomes operative enough to matter.</dd>
+  <dt>Opening</dt><dd>Access, reach, continuation, availability, or possibility increases.</dd>
+  <dt>Relating</dt><dd>A bearing or dependency among terms becomes constitutive of the situation.</dd>
+  <dt>Repair</dt><dd>An organization failing under an operative criterion is changed so the fault no longer governs the result.</dd>
+  <dt>Integration</dt><dd>Parts acquire roles through organization into a whole.</dd>
+  <dt>Settlement</dt><dd>A live demand for further choice, continuation, explanation, adjudication, or uptake is discharged.</dd>
+  <dt>Completion Topology</dt><dd>The second axis: what structural condition makes the transformation sufficient.</dd>
+  <dt>Focal</dt><dd>Completion gathers around one privileged locus, such as an item, source, pivot, whole, or choice.</dd>
+  <dt>Distributed</dt><dd>Completion requires a plurality, span, sequence, range, reciprocal field, or system; one local point is not enough.</dd>
+  <dt>Release</dt><dd>Completion by de-governance: something that previously controlled the situation loses its determining hold.</dd>
+  <dt>Persistence Mode</dt><dd>The third axis: how the achieved result remains available afterward.</dd>
+  <dt>Standing</dt><dd>The achieved determination itself remains available: “There it is.”</dd>
+  <dt>Bearing</dt><dd>The achievement remains what it is through a constitutive relation: “It is so through this.”</dd>
+  <dt>Efficacy</dt><dd>The achievement remains as a capacity, effect, function, rule, or changed continuation: “Now it works or changes what can happen.”</dd>
+  <dt>Coordinate</dt><dd>One triple made from a Transformation Pattern, Completion Topology, and Persistence Mode.</dd>
+  <dt>Coordinate-generated form</dt><dd>The abstract event-pattern required by a coordinate before a more specific canonical name is chosen.</dd>
+  <dt>Canonical crystallization</dt><dd>A stable, memorable, semantically specific realization selected from the region allowed by a coordinate-generated form.</dd>
+  <dt>Concrete manifestation</dt><dd>A particular real-world or imagined instance of a generated form or crystallization.</dd>
+  <dt>Constraint strength</dt><dd>How much semantic freedom remains after the coordinate constraints are satisfied; not a confidence or truth score.</dd>
+  <dt>Determinate uptake</dt><dd>The next act of understanding, judgment, response, use, or continuation that becomes possible because the situation is sufficiently complete.</dd>
+  <dt>Landing</dt><dd>In formation history, the point or span at which the governing organization becomes determinate enough for uptake.</dd>
+  <dt>Governing transformation</dt><dd>The transformation that organizes the completed whole at the selected scale, even when several local operations occur inside it.</dd>
+</dl>
+<a class="back" href="#contents">Back to contents</a>
+</section>
+
+<section id="sources">
+<h2>19. Sources within this repository</h2>
+<p>This layman's edition is a synthesis of the project’s mature corpus rather than an independent source of the theory. The main conceptual authority is <code>constraint_grammar_of_completed_intelligibility_final_monograph.txt</code>, which states the mature architecture, the three primitive dimensions, the generative priority of coordinate structure, and the present limits of the theory.</p>
+<p>The coordinate details and representative examples are drawn chiefly from <code>coordinate_forced_atlas.md</code> and <code>constraint_grammar_54_plain_language_expositions_final.txt</code>. The terminology and level distinctions follow <code>constraint_grammar_exhaustive_glossary.md</code>.</p>
+<p>The account of how the project developed from sentence resolution into a coordinate-first constraint grammar follows <code>constraint_grammar_from_sentence_resolution_to_constraint_grammar_intellectual_transformation.md</code>. The discussion of disciplinary location and research status follows <code>constraint_grammar_academic_disciplinary_positioning.md</code>.</p>
+<p>Earlier drafts in the repository are useful as historical evidence, but where their vocabulary differs from the mature documents this essay follows the mature terminology.</p>
+</section>
+
+<section id="closing">
+<h2>Closing synthesis: what the theory is trying to let us see</h2>
+<p>The theory begins from an ordinary fact that is easy to overlook because it is so familiar: situations can be unfinished in different ways, and they can become complete in different ways.</p>
+<p>A key is singled out. A blocked route becomes passable. Two events acquire a bearing on one another. A fault stops controlling a mechanism. Parts become one functioning organization. A live decision is finally settled. These are not merely six topics. They are six kinds of transformation answering six kinds of structured incompletion.</p>
+<p>But the kind of change is only the first question. The same transformation can become enough around one privileged locus, across a constitutive plurality, or because a prior governor loses its hold. And the achieved result can remain as a standing determination, as a relation that continues to define it, or as an operative capacity or consequence.</p>
+<p>That three-way separation is the engine of the system. Six transformations multiplied by three completion topologies and three persistence modes yield fifty-four coordinates. The number is not the point. The point is that the coordinates are compositional: each contributes a distinct constraint.</p>
+<p>The mature theory then makes its strongest internal move. The coordinate is not merely a label on a named cell. It can be used to generate an abstract event-form. A canonical name crystallizes one especially useful realization of that form, and a concrete case manifests it in particular material. Some coordinates narrow their possibilities almost to a single local shape; others leave wider semantic freedom. The atlas marks that difference rather than pretending every canonical name is equally forced.</p>
+<p>Sentences were the route by which much of this became visible. Because sentences unfold in time, they expose provisional interpretations, local completions, reanalysis, governing transformations, and landing. But the theory’s mature object is not sentence grammar. It is the structural organization of completion wherever an unresolved situation can become determinate enough for uptake.</p>
+<p>And that last phrase—<em>enough for uptake</em>—keeps the theory in proportion. Completed intelligibility does not guarantee truth, correctness, certainty, permanence, psychological reality, neural implementation, or universal exhaustiveness. It supplies a candidate description of something logically prior: the formation of a determinate object that can then be judged, used, revised, rejected, or carried forward.</p>
+<p>The current theory is therefore best understood as a research proposal with a substantial internal architecture. It has a mature vocabulary, a generative state-space, a disciplined distinction between structural requirement and semantic realization, and an intellectual history that explains why those distinctions were needed. What it does not yet have is the external evidence required to turn a coherent architecture into an established universal theory.</p>
+<p>If future work can show that independent analysts recover the dimensions, that coordinate-first generation works without reliance on canonical names, that the same forms recur across domains, and that the distinctions predict measurable behavior, the framework could become a genuine research programme around completion structure. If those tests fail, the architecture will need revision.</p>
+<p>For now, its central invitation is simpler. When something becomes intelligible enough to proceed with, do not ask only <em>what does it mean?</em> Ask three prior questions: <strong>What changed? What made that change enough? What kind of result now remains?</strong> The Constraint Grammar is the proposal that those three questions reveal a recurring architecture hiding inside many very different acts of completion.</p>
+<a class="back" href="#contents">Back to contents</a>
+</section>
+
+<footer>
+<p>Layman's edition of the Constraint Grammar of Completed Intelligibility. Prepared as a standalone explanatory essay from the mature repository corpus.</p>
+</footer>
+</article>
+</main>
+</body>
+</html>
