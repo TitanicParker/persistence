@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const sections = {
+  theory: {
+    title: 'The Theory',
+    eyebrow: 'Principal work',
+    description: 'The mature monograph, to be segmented into chapter routes rather than presented as a single mega-page.',
+    source: 'constraint_grammar_of_completed_intelligibility_final_monograph.txt',
+    status: 'Canonical / mature theory',
+    next: 'Chapter extraction, stable heading slugs, local table of contents, previous/next navigation.',
+  },
+  atlas: {
+    title: 'The Atlas',
+    eyebrow: '54-coordinate reference',
+    description: 'An interactive view of the 6 × 3 × 3 periodic state-space, preserving generated form, crystallization, persistence, and constraint strength.',
+    source: 'coordinate_forced_atlas.md',
+    status: 'Canonical structural reference',
+    next: 'Parse all 54 rows into typed records; build dimension filters and direct cell routes.',
+  },
+  forms: {
+    title: 'The 54 Forms',
+    eyebrow: 'Plain-language expositions',
+    description: 'Substantial cell-by-cell readings that make each coordinate intelligible through its unresolvedness, movement, sufficiency, persistence, and manifestations.',
+    source: 'constraint_grammar_54_plain_language_expositions_final.txt',
+    status: 'Canonical explanatory companion',
+    next: 'Split CELL 1–54 deterministically and add previous/next plus dimension-neighbor navigation.',
+  },
+  glossary: {
+    title: 'Glossary',
+    eyebrow: 'Terminological reference',
+    description: 'The preferred mature vocabulary, organized by theoretical level and designed for direct citation, search, distinction, and cross-reference.',
+    source: 'constraint_grammar_exhaustive_glossary.md',
+    status: 'Authoritative terminology',
+    next: 'Extract entries, preferred status, definitions, distinctions, relations, alphabetical index, and anchors.',
+  },
+  history: {
+    title: 'Intellectual Development',
+    eyebrow: 'Historical reconstruction',
+    description: 'A coherent account of the shift from sentence resolution and the early atlas toward coordinate-first generation and a constraint grammar of completion.',
+    source: 'constraint_grammar_from_sentence_resolution_to_constraint_grammar_intellectual_transformation.md',
+    status: 'Historical / explanatory',
+    next: 'Segment into essay sections and cross-link legacy vocabulary to mature glossary terms.',
+  },
+  academic: {
+    title: 'Academic Positioning',
+    eyebrow: 'Research context',
+    description: 'Disciplinary location, explanatory level, novelty claims, limitations, and the proposed research programme.',
+    source: 'constraint_grammar_academic_disciplinary_positioning.md',
+    status: 'Supporting scholarly positioning',
+    next: 'Build long-form essay route with citations preserved and a visible research-status note.',
+  },
+};
+
+export function getStaticPaths() {
+  return Object.keys(sections).map((section) => ({ params: { section }, props: sections[section] }));
+}
+
+const { title, eyebrow, description, source, status, next } = Astro.props;
+---
+<BaseLayout title={`${title} — Constraint Grammar`}>
+  <div class="page">
+    <section class="hero">
+      <p class="eyebrow">{eyebrow}</p>
+      <h1>{title}</h1>
+      <p class="lede">{description}</p>
+    </section>
+    <section class="section">
+      <div class="section-intro">
+        <div>
+          <p class="eyebrow">Publication status</p>
+          <h2>{status}</h2>
+        </div>
+        <div>
+          <p><strong>Canonical source:</strong> <code>{source}</code></p>
+          <p><strong>Next implementation step:</strong> {next}</p>
+          <p>This route is deliberately a publication boundary, not a raw-file renderer. The source text remains unchanged while deterministic ingestion will supply chapter, entry, or cell views.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
