@@ -13,8 +13,10 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout
+      - name: Checkout publication branch
         uses: actions/checkout@v4
+        with:
+          ref: publication-foundation
 
       - name: Use Node.js 22 without cache while bootstrapping
         if: ${{ hashFiles('package-lock.json') == '' }}
@@ -38,7 +40,7 @@ jobs:
         run: npm ci
 
       - name: Commit generated lockfile
-        if: ${{ github.event_name == 'push' && hashFiles('package-lock.json') == '' }}
+        if: ${{ github.event_name == 'pull_request' && hashFiles('package-lock.json') == '' }}
         shell: bash
         run: |
           set -euo pipefail
