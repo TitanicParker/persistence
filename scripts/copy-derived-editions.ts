@@ -29,6 +29,10 @@ const publicationCss = `
 @media(max-width:600px){.cg-publication-shell{align-items:flex-start;flex-direction:column;gap:.55rem}.cg-publication-shell nav{gap:.9rem}.cg-publication-shell a{min-height:2.75rem;display:inline-flex;align-items:center}.cg-edition-status{font-size:.72rem}}
 </style>`;
 
+function escapeAttribute(value: string): string {
+  return value.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
 for (const edition of editions) {
   const sourcePath = resolve(edition.source);
   const destinationPath = resolve(edition.destination);
@@ -36,7 +40,11 @@ for (const edition of editions) {
 
   let html = readFileSync(sourcePath, 'utf8');
   const canonical = `https://titanicparker.github.io/persistence/${edition.route}`;
-  const metadata = `${publicationCss}\n<link rel="canonical" href="${canonical}">\n<meta property="og:site_name" content="Constraint Grammar of Completed Intelligibility">\n<meta property="og:url" content="${canonical}">\n<meta name="twitter:card" content="summary">`;
+  const title = html.match(/<title>([\s\S]*?)<\/title>/i)?.[1].trim() ?? 'Constraint Grammar of Completed Intelligibility';
+  const description = html.match(/<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i)?.[1]
+    ?? 'A derived interpretation of the Constraint Grammar of Completed Intelligibility.';
+  const socialImage = 'https://titanicparker.github.io/persistence/social-preview.svg';
+  const metadata = `${publicationCss}\n<link rel="canonical" href="${canonical}">\n<link rel="icon" href="/persistence/favicon.svg" type="image/svg+xml">\n<meta property="og:type" content="article">\n<meta property="og:site_name" content="Constraint Grammar of Completed Intelligibility">\n<meta property="og:title" content="${escapeAttribute(title)}">\n<meta property="og:description" content="${escapeAttribute(description)}">\n<meta property="og:url" content="${canonical}">\n<meta property="og:image" content="${socialImage}">\n<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:title" content="${escapeAttribute(title)}">\n<meta name="twitter:description" content="${escapeAttribute(description)}">\n<meta name="twitter:image" content="${socialImage}">`;
   if (!html.includes('</head>')) throw new Error(`${edition.source}: missing </head>`);
   html = html.replace('</head>', `${metadata}\n</head>`);
 
