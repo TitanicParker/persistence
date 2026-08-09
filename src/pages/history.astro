@@ -4,4 +4,6 @@ import { parseEssay } from '../lib/content/essays';
 import { renderMarkdown } from '../lib/content/render';
 const essay = parseEssay('history'); const html = renderMarkdown(essay.raw);
 ---
-<BaseLayout title={`${essay.title} — Constraint Grammar`}><article class="prose essay"><nav class="toc" aria-label="On this page"><strong>Contents</strong><ol>{essay.sections.filter((s) => s.level <= 2).map((s) => <li><a href={`#${s.slug}`}>{s.title}</a></li>)}</ol></nav><div set:html={html} /></article></BaseLayout>
+<BaseLayout title={`${essay.title} — Constraint Grammar`} description="Historical reconstruction of the project’s development from sentence resolution toward the mature Constraint Grammar." sourceStatus="Historical reconstruction">
+  <article class="prose essay"><nav class="toc" aria-label="On this page"><strong>Contents</strong><ol>{essay.sections.filter((s) => s.level <= 2).map((s) => <li><a href={`#${s.slug}`}>{s.title}</a></li>)}</ol></nav><div set:html={html} /></article>
+</BaseLayout>
