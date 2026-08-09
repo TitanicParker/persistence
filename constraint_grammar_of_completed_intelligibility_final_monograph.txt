@@ -1,0 +1,1123 @@
+THE CONSTRAINT GRAMMAR OF COMPLETED INTELLIGIBILITY
+A Periodic Generative Theory of Transformation, Completion, and Persistence
+
+ABSTRACT
+
+This monograph develops a theory of completed intelligibility: recurrent forms by which an initially unresolved situation becomes sufficiently complete to support determinate uptake. The primary object is neither sentence type nor subject matter, neither proposition nor truth condition, neither a taxonomy of meanings nor a catalogue of examples. It is the structural form of completion itself.
+
+The central claim is that the completed atlas supports a three-dimensional constraint grammar. Every coordinate in the grammar joins three functionally distinct contributions: a Transformation Pattern, which specifies what kind of unresolvedness changes; a Completion Topology, which specifies what makes that change sufficient as a completion; and a Persistence Mode, which specifies the mode in which the achieved completion remains available. The six Transformation Patterns are Differentiation, Opening, Relating, Repair, Integration, and Settlement. The three Completion Topologies are Focal, Distributed, and Release. The three Persistence Modes are Standing, Bearing, and Efficacy. Their Cartesian product yields a fifty-four-position state-space.
+
+The crucial theoretical object is not the canonical name assigned to each of the fifty-four positions. More fundamental is the coordinate-generated phenomenological syntax demanded by the triple itself. Each coordinate can be stated as a compact event-sentence before any canonical crystallization or concrete example is consulted. These fifty-four generated sentences exhibit the same nested periodicity as the state-space: Transformation Pattern supplies the slow nine-position rhythm; Completion Topology supplies the three-position rhythm of focal concentration, distributed constitution, and release from prior governance; Persistence Mode supplies the one-position rhythm of standing, bearing, and efficacy. The periodicity therefore occurs at the level of sentence roles and phenomenological structure, not merely at the level of repeated labels.
+
+This result justifies describing the framework as a constraint grammar rather than merely a classification. A coordinate is a conjunction of constraints on what must change, how that change must become complete, and what sort of achieved reality must remain. The grammar generates an admissible region of completed form. Some regions are narrow enough that a canonical crystallization is nearly forced. Others remain structurally determinate while permitting more semantic latitude. The theory therefore distinguishes coordinate-generated form, canonical crystallization, and concrete manifestation. Structural determination is strong, but semantic individuation is variably free.
+
+The theory also distinguishes completed form from historical formation. Sentences provide a privileged observational case because they unfold in time, allowing opening pressure, local formation, reanalysis, governing transformation, landing, and persistent result to be studied directly. But sentence processing is not the ontology of the system. The grammar concerns completed intelligibility more generally wherever a situation can be understood as moving from a structured incompletion to a completed form.
+
+The strongest present thesis is accordingly limited but substantive. The atlas demonstrates an internally coherent, periodic, compositional state-space in which three recurring dimensions jointly generate recognizable forms of completed intelligibility. It does not yet establish that the three dimensions are metaphysically necessary, that the six-by-three-by-three space is exhaustive of all possible completion, or that every actual instance has one uniquely recoverable coordinate. The demonstrated result is a generative architecture of completion; universality and exhaustiveness remain open research questions.
+
+
+PART I
+THE PHENOMENON OF COMPLETED INTELLIGIBILITY
+
+1. The object of study
+
+There is a recurrent difference between a situation that is still asking something of us and a situation that has become sufficiently complete to be taken up as a determinate whole. A route is still blocked, then passage is established. A field is undifferentiated, then a relevant distinction holds. Separate elements do not yet bear on one another, then a relation becomes constitutive. A mechanism is failing, then the fault no longer governs its operation. Parts are present, then they become a functioning whole. Alternatives remain live, then the demand to choose is discharged.
+
+The theory concerns the structural form of such transitions.
+
+A completed form of intelligibility is not a subject matter. It is not a category such as physical object, social action, mathematical statement, narrative event, or linguistic construction. The same form can recur across radically different domains. Conversely, the same topic can support different forms depending on what changes, how the change becomes complete, and what remains afterward.
+
+Completion is also not finality in an absolute sense. A completed route can be travelled further. A completed relation can remain dynamic. A repaired device can later break. A settled decision can be reopened. A sentence can enter a larger discourse. Completion is indexed to a governing demand. A situation counts as complete when the demand that organized its opening has been answered sufficiently that it no longer governs the field in the same way.
+
+The object of study is therefore neither static form nor mere process. It is a transition from structured incompletion to a determinate mode of completed availability.
+
+2. Intelligibility before truth
+
+The framework deliberately places intelligibility before truth, correctness, justification, or success. A false claim can be fully intelligible. A poor plan can be complete as a plan. A mistaken diagnosis can be structurally settled. A mathematical statement can be intelligible before it is proved. A fictional event can be completely organized without corresponding to fact.
+
+This priority is theoretical rather than evaluative. Truth and correctness presuppose that there is something determinate enough to be judged. The present theory asks about the prior organization that makes such judgment possible: how a field becomes structured enough that one can ask whether the achieved result is true, false, adequate, mistaken, binding, effective, or revisable.
+
+The same point applies beyond language. A mechanism can become intelligible as repaired even if the repair later proves insufficient. A set of observations can become intelligible as a recurrence even if the inferred recurrence is eventually revised. The theory isolates the form of resolution from the independent question of whether the resolution deserves endorsement.
+
+3. Opening pressure
+
+Unresolvedness is not mere absence. A situation can be incomplete in a determinate way. It can contain a pressure whose form already constrains what would count as completion.
+
+A field of candidates can lack an operative difference. A confined field can lack reach or continuation. Separate terms can lack a constitutive bearing. An organization can fail relative to a criterion. Parts can lack role-organization through a whole. A decision, explanation, journey, or obligation can remain live and therefore still demand uptake.
+
+The phrase opening pressure names this structured incompletion. It is the negative contour of the completion to come. What is missing is not arbitrary. The opening pressure determines the kind of transformation that can answer it.
+
+This is why the theory is best formulated in terms of transformations rather than static categories. Differentiation is not the property of being different; it is the event by which a difference becomes operative. Opening is not generic possibility; it is the enlargement of availability relative to a prior restriction. Relating is not the fact that things can be related; it is the establishment of a bearing that becomes constitutive. Repair is not the existence of correctness; it is the displacement of a fault that had governed an organization. Integration is not the mere presence of a whole; it is the acquisition of roles through organization. Settlement is not inactivity; it is the discharge of a live demand.
+
+4. Completion as sufficiency
+
+A transformation alone does not yet specify a completed form. The same kind of change can become sufficient under different structural conditions.
+
+A distinction can be complete when one item is singled out, when a criterion holds across a field, or when a prior conflation is broken. An opening can be complete around a source, across a span, or through release from a restriction. An integration can be complete around one whole, through distributed interdependence, or because incompatible pressures cease to govern the parts separately.
+
+The theory therefore separates the kind of change from the topology by which the change counts as complete.
+
+Nor does completion end with closure. Once the situation has landed, something remains available. Sometimes the achieved determination itself stands. Sometimes the result remains only through a constitutive bearing. Sometimes the completion persists as an accomplished capacity or operative effect.
+
+Completed intelligibility therefore has a threefold articulation:
+
+what changes;
+what makes that change complete;
+what kind of achieved reality remains.
+
+The entire theory develops from this distinction.
+
+5. The deepest object
+
+The deepest object of the framework is not the fifty-four named cells. It is the compositional rule that generates a phenomenological syntax from three independently recurring constraints:
+
+Transformation Pattern + Completion Topology + Persistence Mode
+-> coordinate-generated phenomenological syntax.
+
+A canonical name is a later semantic crystallization of that syntax. A concrete example is a still later manifestation. The direction of theoretical priority runs from coordinate constraint to generated form to crystallization to manifestation, not the reverse.
+
+This ordering matters because it reveals why the atlas is one system rather than fifty-four remembered examples. If the canonical names are removed, the coordinate-generated event-sentences still display the same periodic organization. The grammar therefore does not depend on the names for its structure.
+
+
+PART II
+THE THREE PRIMITIVE DIMENSIONS
+
+6. Transformation Pattern: what kind of change answers the opening pressure
+
+Transformation Pattern identifies the decisive difference between the opening field and the completed field. It is not a topic label and not a temporal stage that every event must traverse. It names the type of change that governs completion.
+
+6.1 Differentiation
+
+A difference that was unavailable, flattened, conflated, unmarked, or non-operative becomes determinate enough to matter.
+
+Differentiation includes focal indication, contextual marking, distributed discrimination, graded contrast, opposition, boundary formation, and exclusion. Its invariant is not any one of those semantic realizations. The invariant is that the completed field contains an operative distinction that the opening field did not possess in the relevant way.
+
+The opening pressure is indifference in the structural sense: the field does not yet make the required difference. Completion answers that pressure by making a criterion count.
+
+6.2 Opening
+
+Availability, reach, continuation, access, or possibility becomes greater than it was under the opening constraint.
+
+Opening must be distinguished from beginning. A sentence can begin without performing Opening, and an event can perform Opening late in its history. The defining change is increased availability relative to prior confinement, blockage, singular continuation, or closed extent.
+
+The opening pressure is restriction. Completion answers it by making a continuation, route, field, option, or beyond available.
+
+6.3 Relating
+
+A bearing, dependency, correspondence, ordering, reciprocity, or mutual determination becomes constitutive of the situation.
+
+Relating is broader than connection between physical objects. It includes sequence, balance, analogy, response, reciprocity, mapping, feedback, and emergent coordination. The invariant is that the completed result cannot be adequately characterized without the newly established bearing among terms or positions.
+
+The opening pressure is non-bearing or insufficiently constituted bearing. Completion answers it by establishing a relation that matters to how the field is organized.
+
+6.4 Repair
+
+An organization that fails relative to an operative criterion is redirected, reweighted, replaced, reversed, or released from the fault.
+
+Repair presupposes a structured misfit. The criterion may be mechanical, logical, procedural, perceptual, mathematical, practical, or otherwise local to the situation. The point is not moral normativity but failure under a standard that is constitutive of the event.
+
+The opening pressure is governed misfit. Completion answers it by changing the organization so that the failure no longer controls the result.
+
+6.5 Integration
+
+Parts acquire determinate roles through organization into a whole and thereby gain structure, mutual support, or joint capacity.
+
+Integration is not aggregation. A heap is not integrated merely because its elements are together. Integration changes the role of the elements: they become parts of something. Their places, functions, dependencies, or contributions are determined through the organization of the whole.
+
+The opening pressure is unorganized plurality. Completion answers it by making the parts intelligible through role-bearing participation in a whole.
+
+6.6 Settlement
+
+A live demand for further uptake, choice, explanation, completion, adjudication, or continuation is discharged.
+
+Settlement is not mere stopping. A process can stop accidentally while its demand remains unresolved. Settlement occurs when the field no longer owes the same next step. Alternatives no longer require choosing. A journey no longer requires continuation. Cases no longer require separate adjudication. Earlier events no longer require the same explanation. An obligation no longer remains open.
+
+The opening pressure is residual demand. Completion answers it by discharging what still had to be done, decided, understood, or continued.
+
+7. Completion Topology: what makes the transformation sufficient
+
+Completion Topology identifies the structural condition under which a transformation counts as complete. It is not ordinary spatial direction. It describes the topology of sufficiency.
+
+7.1 Focal
+
+Completion gathers around a privileged locus.
+
+The locus may be an item, source, target, endpoint, connection, whole, pivot, choice, or settlement point. What makes the topology focal is asymmetric concentration: one locus bears a privileged relation to the completion and organizes the surrounding field around itself.
+
+Focal does not mean small, singular in content, or spatially central. A large organization can complete focally if one whole is the relevant centre. A complex decision can complete focally if one alternative becomes the settled locus. The invariant is concentration of completion.
+
+7.2 Distributed
+
+Completion requires a constitutive plurality, span, sequence, range, reciprocal field, or system. No single locus is sufficient by itself.
+
+The plurality may be spatial, temporal, logical, social, mathematical, or organizational. A criterion can need to hold across a population. A reach can require a span. A relation can depend on predecessor and successor. A system can require distributed roles. A settlement can need to govern cases or conditions.
+
+The defining fact is not that many things happen. It is that plurality belongs to what makes the transformation complete.
+
+7.3 Release
+
+Completion occurs because something that previously governed the field no longer governs it.
+
+Release is the topology most easily misunderstood if treated as ordinary direction. Its positive structure is not motion away from a centre. It is completion by de-governance. Conflation, restriction, mismatch, defective organization, imbalance, compulsory continuation, or unresolved demand loses its determining force.
+
+Release is therefore positive even when described through negation. What matters is the new organization made possible when an old governor ceases to rule. Opposition becomes visible because conflation is released. An option stands because compulsion is released. Correct functioning returns because a fault is released. Equilibrium becomes possible because imbalance ceases to govern. Identity persists because transformation is released as non-essential. Retrospective sense appears because earlier unresolvedness no longer governs the interpretation.
+
+Release can be stated phenomenologically as: completion occurs because what had been holding the field in its prior organization is no longer in charge.
+
+8. Persistence Mode: what kind of achieved reality remains
+
+Persistence Mode identifies the mode in which completion continues to govern uptake after the decisive event has occurred. This axis is neither tense nor aspect nor ontological category. It concerns the form of post-completion availability.
+
+Its three values form one of the clearest recurrent grammars in the atlas.
+
+Standing: there it is.
+Bearing: it remains through this.
+Efficacy: now it works, acts, stops, opens, governs, or has been accomplished.
+
+8.1 Standing
+
+The achieved determination itself remains available as something that now stands.
+
+Standing is the grammar of achieved presence. The completion can be taken up as the result itself: the distinguished item, the open route, the established relation, the corrected arrangement, the organized whole, the settled alternative.
+
+Standing does not mean immobility. A standing relation can remain dynamic; a standing option can later be chosen; a standing route can be travelled. What matters is that the completed determination itself is the primary residue of the event.
+
+Phenomenologically, Standing has the character: there it is; this is now so; this is what has been achieved.
+
+8.2 Bearing
+
+The achieved result persists through a constitutive relation, dependency, contrast, source, condition, proportion, frame, support, or mutual determination.
+
+Bearing is the grammar of achieved relationality. The completion cannot be fully taken up by isolating the result from the bearing that sustains or defines it. A selected side remains selected against its alternative. A remote reach remains through a carrier. A corrected mixture remains within bounds. An integrated structure remains through interdependence. A settlement remains attached to a condition. A past sequence becomes intelligible through a later explanatory bearing.
+
+Phenomenologically, Bearing has the character: it is so through this; it holds with respect to that; remove this relation and the result is no longer the same completed form.
+
+8.3 Efficacy
+
+The achieved result persists as an accomplished capacity, operative effect, changed continuation, rule, function, or consequential difference in what can happen.
+
+Efficacy is the grammar of achieved consequence. The result need not remain dynamically active at every moment. A boundary can be physically still and yet stop passage. A rule can be written and yet govern cases. A device can rest unused and yet possess a capacity its unintegrated parts did not have. A completed journey can be over and yet the demand to continue has been effectively discharged.
+
+Phenomenologically, Efficacy has the character: now this works; now this changes what can happen; now the required effect has been accomplished.
+
+9. Why the three dimensions are irreducibly different within the grammar
+
+The three dimensions answer different kinds of question.
+
+Transformation Pattern asks: what kind of unresolvedness has changed?
+Completion Topology asks: what structural condition makes that change sufficient?
+Persistence Mode asks: in what mode does the achieved completion remain available?
+
+These are not three names for one feature. A Focal completion can be Differentiation, Opening, Relating, Repair, Integration, or Settlement. A Bearing result can occur under any Transformation Pattern and any Completion Topology. Integration remains Integration whether it completes focally, distributively, or through release, and whether its result stands, bears, or becomes efficacious.
+
+The evidence for distinction lies in recurrence under substitution. Hold one axis fixed and vary the other two: a recognizable invariant remains. That is the operational meaning of independence in the present theory.
+
+The dimensions are not independent in the stronger sense that every combination is equally semantically unconstrained. Their conjunctions have different widths. But their functional contributions remain distinct. This distinction is exactly what makes compositional generation possible.
+
+
+PART III
+CONSTRAINED COMPOSITION AND THE FIFTY-FOUR-STATE SPACE
+
+10. Coordinate as simultaneous constraint
+
+Let
+
+T = {Differentiation, Opening, Relating, Repair, Integration, Settlement}
+K = {Focal, Distributed, Release}
+P = {Standing, Bearing, Efficacy}.
+
+A coordinate is a triple
+
+c = <t, k, p> in T x K x P.
+
+The resulting state-space contains
+
+|T x K x P| = 6 x 3 x 3 = 54
+
+positions.
+
+The coordinate should not be understood as three labels attached after interpretation. It is a conjunction of requirements. A completed event belongs to a coordinate only insofar as one coherent form satisfies all three constraints at once.
+
+Schematically, if A_T(t), A_K(k), and A_P(p) denote the admissible regions under the three dimensions, then the coordinate defines
+
+A(c) = A_T(t) ∩ A_K(k) ∩ A_P(p).
+
+This notation is intentionally modest. The regions are not yet formalized mathematical sets. The notation states the logic of the theory: each dimension eliminates otherwise plausible realizations, and the local form is constrained by the intersection.
+
+11. From coordinate to phenomenological syntax
+
+The strongest compositional rule is not merely
+
+coordinate = Transformation + Topology + Persistence.
+
+It is:
+
+Transformation Pattern + Completion Topology + Persistence Mode
+-> coordinate-generated phenomenological syntax.
+
+The output is sentence-shaped because the coordinate describes an event. It has an implicit before and after, a condition of sufficiency, and a mode of achieved result. A coordinate-generated sentence therefore typically contains three roles:
+
+transformation-pattern: what becomes different;
+completion-pattern: what makes that difference count as complete;
+persistence-pattern: what sort of achieved reality remains.
+
+The syntax is phenomenological rather than linguistic. It need not correspond to grammatical subject, verb, and object. Its components are functional positions in an intelligibility event.
+
+A generic generated form can be represented as:
+
+An opening field characterized by pressure X undergoes transformation T; that transformation becomes sufficient under topology K; the completion remains as mode P.
+
+The theory becomes generative when the triple can substantially determine this event-description before a canonical name or concrete example is known.
+
+12. Why the state-space is a grammar rather than a catalogue
+
+A catalogue groups finished items. A grammar supplies recurrent constraints that can be recombined to generate or anticipate local forms.
+
+The fifty-four-position atlas behaves grammatically in four ways.
+
+First, the same three functional slots recur at every position.
+
+Second, holding one slot fixed preserves a recognizable invariant while the other slots change.
+
+Third, the coordinate triple can be used prospectively: given the three values, one can derive a local event-syntax before consulting the canonical crystallization.
+
+Fourth, neighboring coordinates support controlled contrasts. Changing Standing to Bearing does not require reinventing the entire form; it changes the mode of achieved availability. Changing Focal to Distributed changes what makes completion sufficient. Changing Relating to Repair changes the kind of opening pressure and decisive transformation.
+
+This is why lattice, geometry, state-space, and conjugation are all useful descriptions but none is sufficient by itself. The lattice displays product structure. Geometry names one aspect of completion. State-space expresses adjacency and admissible regions. Conjugation describes the recurrent modulation of a transformation-topology pair through three persistence modes. Constraint grammar names the generative principle that makes all of those features intelligible together.
+
+13. Coordinate-generated form as the primary local object
+
+For each coordinate, the first theoretical task is to state the most strongly constrained event that follows from the triple alone.
+
+That statement should be domain-free enough not to privilege a bridge, machine, theorem, conversation, route, or social practice. But it must be concrete enough to describe a recognizable completed event rather than merely restating the coordinate labels.
+
+For example:
+
+Differentiation + Release + Bearing requires something like: a previously flattened difference is released into a differentiated arrangement whose members remain intelligible through their relative bearing.
+
+Opening + Distributed + Bearing requires something like: something previously local becomes available at a separated position because a connection maintains reach across the intervening span.
+
+Repair + Release + Bearing requires something like: a faulty ongoing tendency is abandoned or reversed when a condition becomes decisive, leaving the corrected state governed by that condition.
+
+Integration + Distributed + Efficacy requires something like: a distributed system becomes functional because a role is successfully occupied or coordinated within the larger organization.
+
+The point is not that these sentences are uniquely worded. The point is that the coordinates constrain the event strongly enough that independently adequate formulations converge on the same phenomenological syntax.
+
+
+PART IV
+PERIODICITY, CONJUGATION, AND THE FIFTY-FOUR GENERATED SYNTAXES
+
+14. Periodicity as a property of the generated sentences
+
+The most important structural evidence in the atlas is that periodicity survives the removal of the canonical names.
+
+The fifty-four positions are ordered under three nested frequencies.
+
+Transformation Pattern changes every nine positions.
+Completion Topology changes every three positions.
+Persistence Mode changes every position.
+
+If this were merely a numbering convention, nothing theoretically important would follow. But the same periodicity reappears in the coordinate-generated sentences themselves.
+
+The slow rhythm is semantic transformation: Differentiation, Opening, Relating, Repair, Integration, Settlement.
+
+The middle rhythm is completion topology: Focal, Distributed, Release.
+
+The fast rhythm is persistence: Standing, Bearing, Efficacy.
+
+The generated sentences therefore behave as though they were conjugations of a common deep syntax. The recurrence is not mainly lexical. One can replace the words “focal,” “distributed,” “release,” “standing,” “bearing,” and “efficacy” with ordinary language and the same sentence roles remain.
+
+15. The persistence conjugation: Standing -> Bearing -> Efficacy
+
+Within every fixed Transformation Pattern and Completion Topology, Persistence Mode produces a three-beat transformation of the achieved residue.
+
+Standing asks the completed event to leave an achieved determination.
+Bearing asks the completed event to leave a determination whose identity or maintenance depends on a constitutive relation.
+Efficacy asks the completed event to leave an accomplished capacity, rule, effect, or consequential change in what can happen.
+
+This is not merely a scale from static to active. Bearing is not halfway between Standing and Efficacy. Each names a distinct mode of completed availability.
+
+The phenomenological cadence can be rendered:
+
+Standing: there it is.
+Bearing: it holds through this.
+Efficacy: now it works or has taken effect.
+
+Applied to Integration + Focal, the rhythm becomes:
+
+an organized whole stands;
+the unity remains through a constitutive frame or holding relation;
+the organization yields a capacity available only to the whole.
+
+Applied to Settlement + Distributed:
+
+a cross-case settlement stands;
+the settlement remains bound to a condition;
+the settlement operates across the cases.
+
+Applied to Differentiation + Distributed:
+
+a differentiated scope stands;
+a distinction remains context-bound across the field;
+the criterion produces operative separation across the field.
+
+The recurrence is sufficiently stable that Persistence Mode behaves like a conjugational axis of completion.
+
+16. The topological rhythm: Focal -> Distributed -> Release
+
+Within each Transformation Pattern, the three topologies reorganize what makes the transformation sufficient.
+
+Focal completion says: the change becomes complete because it gathers around a privileged locus.
+
+Distributed completion says: the change becomes complete because it holds through a constitutive plurality, span, sequence, range, or system.
+
+Release completion says: the change becomes complete because a prior governor loses its hold.
+
+The rhythm is not inward-across-outward. It is concentration-constitution-de-governance.
+
+That distinction is particularly important for Release. A released form may remain spatially stationary. A corrected boundary may simply stand in a new place. An equilibrium may remain. A retrospective explanation may concern past events. What makes such forms Release is that completion depends on the loss of prior governance, not on displacement.
+
+17. The transformation rhythm
+
+Across each nine-position family, the same transformation persists while topology and persistence vary.
+
+Differentiation repeatedly asks how an operative difference can become complete and remain.
+
+Opening repeatedly asks how availability, reach, continuation, or possibility can be enlarged and remain.
+
+Relating repeatedly asks how a bearing can become constitutive and remain.
+
+Repair repeatedly asks how a governing misfit can be corrected and remain corrected.
+
+Integration repeatedly asks how parts can acquire roles through a whole and what kind of whole-result remains.
+
+Settlement repeatedly asks how a live demand can be discharged and what kind of closure remains.
+
+This is the slowest periodicity because it changes the central transformation verb of the event. The two faster rhythms then modulate that transformation by completion topology and persistence mode.
+
+18. A conjugation synopsis of all fifty-four coordinate-generated forms
+
+The following synopsis states the generated forms at the theoretical level of the coordinate. It intentionally avoids dependence on canonical names. Its purpose is to show that the entire atlas can be read as one periodic grammar.
+
+DIFFERENTIATION / FOCAL
+
+Standing: One candidate becomes the privileged site of an operative difference until it stands as the distinguished one.
+
+Bearing: One alternative becomes focally distinguished while its completed identity remains defined through the contrast that selected it.
+
+Efficacy: One focal difference becomes operative so that a determinate point or criterion changes what may continue or count.
+
+DIFFERENTIATION / DISTRIBUTED
+
+Standing: A distinguishing criterion is made to hold across a field until a differentiated region or arrangement stands as such.
+
+Bearing: Something becomes distinct within a wider field while its completed distinction remains inseparable from the context through which it counts there.
+
+Efficacy: A criterion is carried through a plurality until it produces operative separation or differential treatment across the field.
+
+DIFFERENTIATION / RELEASE
+
+Standing: Previously conflated positions are released from common governance so that differentiated standings become available in their own right.
+
+Bearing: A flattened difference is released into an articulated arrangement whose members remain intelligible through their relative bearing.
+
+Efficacy: A distinction becomes complete by removing what fails its criterion from prior admissibility, thereby changing what can proceed.
+
+OPENING / FOCAL
+
+Standing: Availability opens around a privileged source or centre until an enlarged field stands accessible from there.
+
+Bearing: Several continuations open from one focal source while each remains intelligible through its bearing back to that origin.
+
+Efficacy: A focal opening actively generates new continuations, possibilities, or outputs.
+
+OPENING / DISTRIBUTED
+
+Standing: Availability is enlarged through a plurality or intervening field until an additional route, passage, or range of access stands open.
+
+Bearing: Something previously local becomes available at a separated position because a connection maintains reach across the intervening span.
+
+Efficacy: An initially localized availability is distributed through a wider field until access becomes operative throughout the plurality.
+
+OPENING / RELEASE
+
+Standing: A prior restriction loses its governance, leaving an additional possibility standing as genuinely available.
+
+Bearing: A restriction that fragmented continuation is released so that enlarged passage persists through a maintained continuity across what had divided it.
+
+Efficacy: A governing limit is broken or released so that continuation becomes effectively capable of reaching beyond its former extent.
+
+RELATING / FOCAL
+
+Standing: A bearing is established around a privileged connection until the relation itself stands as determinate.
+
+Bearing: A focal relational centre organizes unequal or opposed tendencies so that the completed arrangement persists through their maintained counterbearing.
+
+Efficacy: A focal relational event becomes complete when one occurrence effectively elicits, answers, or produces a corresponding occurrence.
+
+RELATING / DISTRIBUTED
+
+Standing: Distinct members are placed into an ordered bearing across a plurality until the relational organization itself stands.
+
+Bearing: Multiple positions become mutually determining across a field so that each remains intelligible through reciprocal bearing on the others.
+
+Efficacy: A distributed relational structure becomes complete by producing an ongoing systemic effect across the network of relations.
+
+RELATING / RELEASE
+
+Standing: Surface separation or difference loses its governance so that an underlying correspondence can stand as the relevant relation.
+
+Bearing: Apparent mismatch is released as governing while distinct things remain intelligible through a deeper correspondence they bear to one another.
+
+Efficacy: Locally separate bearings are released from isolated governance so that their interaction produces an operative pattern not attributable to any one member alone.
+
+REPAIR / FOCAL
+
+Standing: A localized misfit is adjusted toward a determinate criterion until the corrected state itself stands.
+
+Bearing: A focal misfit is repaired by altering its relation to other factors until the result persists through an appropriate balance or proportion.
+
+Efficacy: A localized failure is corrected so that functioning is effectively restored at the focal problem.
+
+REPAIR / DISTRIBUTED
+
+Standing: A candidate organization is tested or corrected across multiple positions or directions until its validity can stand across the relevant plurality.
+
+Bearing: Several constitutive constraints are jointly adjusted until a corrected state can persist only by remaining appropriately related to all of them.
+
+Efficacy: A failing process is corrected within its unfolding course so that the larger trajectory again proceeds effectively.
+
+REPAIR / RELEASE
+
+Standing: A defective governing constraint is released or replaced so that a corrected organization can stand in its place.
+
+Bearing: A faulty ongoing tendency is abandoned or reversed when a condition becomes decisive, leaving the corrected state governed by that condition.
+
+Efficacy: An active fault is removed from governance so that the previously obstructed process becomes effectively capable of operating correctly.
+
+INTEGRATION / FOCAL
+
+Standing: Separate parts acquire roles around one organization until a single integrated whole stands.
+
+Bearing: Parts are gathered into one whole whose unity persists through a constitutive frame or relation holding them together.
+
+Efficacy: Parts are organized around one whole so that their coordinated roles yield a joint capacity unavailable to them separately.
+
+INTEGRATION / DISTRIBUTED
+
+Standing: Parts receive differentiated roles across an organized plurality until the distributed structure itself stands as a whole.
+
+Bearing: Distributed parts are fitted together across a span or system so that the whole persists through mutual support and interdependence.
+
+Efficacy: A distributed system becomes functional because roles are successfully occupied or coordinated within the larger organization.
+
+INTEGRATION / RELEASE
+
+Standing: Parts are reorganized so that prior imbalance ceases to govern them, leaving a self-maintaining integrated whole standing.
+
+Bearing: Previously conflicting forces are released from uncoordinated governance by being integrated into a whole that persists through balanced interdependence.
+
+Efficacy: Previously divergent parts or trajectories are released into compatible roles within one organization, enabling them to accomplish a unified act.
+
+SETTLEMENT / FOCAL
+
+Standing: An unresolved demand among live possibilities gathers into one focal settlement until the selected result stands and further choosing ceases.
+
+Bearing: A focal settlement discharges an unresolved separation while the completed result remains through a constitutive relation joining what had remained apart.
+
+Efficacy: An outstanding process reaches its focal completion condition so that the demand for further continuation is effectively ended.
+
+SETTLEMENT / DISTRIBUTED
+
+Standing: Repeated or dispersed instances are settled across their plurality until a common case-spanning form stands as established.
+
+Bearing: Uncertainty across possible conditions is discharged by establishing a settlement whose validity remains bound to the condition on which it depends.
+
+Efficacy: A common settlement is established across multiple cases so that the unresolved plurality is thereafter governed by one operative resolution.
+
+SETTLEMENT / RELEASE
+
+Standing: A prior demand that threatened an achieved identity or standing is discharged as non-governing, leaving the result able simply to remain what it is.
+
+Bearing: An earlier unresolved state loses its governance when a new settlement places its elements into a relation through which they can be borne together without further demand.
+
+Efficacy: A residual demand for continuation is released completely so that no further action is required and closure becomes an accomplished effect.
+
+19. What the synopsis demonstrates
+
+The fifty-four sentences are not interchangeable paraphrases. Each preserves a local event-character that changes with each coordinate substitution. Yet the same three roles recur throughout.
+
+The Transformation Pattern determines the central change: difference, availability, bearing, correction, role-organization, or discharge.
+
+The Completion Topology determines the sufficiency condition: focal concentration, constitutive distribution, or loss of prior governance.
+
+The Persistence Mode determines the achieved residue: standing, bearing, or efficacy.
+
+The lattice is therefore periodic at the level of deep phenomenological syntax. Equal coordinate intervals correspond to recurring structural roles. The recurrence remains visible even when the generated sentences avoid the dimension names themselves.
+
+This is stronger evidence for compositional organization than repeated terminology would be. A vocabulary can be made periodic by editorial choice. A periodicity in independently derived event-sentences indicates that the role structure itself is recurring.
+
+20. Conjugation and its limits
+
+The metaphor of conjugation is especially useful for the fast persistence rhythm. A fixed Transformation-Topology pair can be modulated through Standing, Bearing, and Efficacy without losing its underlying event identity.
+
+But the theory should not literalize the metaphor. The three persistence modes are not inflections of one linguistic verb, and the atlas is not a morphology. Conjugation names a structural resemblance: a stable stem-like constraint is recurrently transformed according to a small set of systematic modes.
+
+The deeper theoretical term remains constraint grammar. Conjugation is one visible behavior of that grammar.
+
+
+PART V
+STRUCTURAL DETERMINATION AND SEMANTIC CRYSTALLIZATION
+
+21. Three levels that must not be conflated
+
+The mature framework distinguishes three levels.
+
+Coordinate-generated form is the event-syntax demanded by the triple itself.
+
+Canonical crystallization is a selected semantic individuation of that generated region: a concise local form chosen because it makes the structure vivid and stable.
+
+Concrete manifestation is a domain-specific realization of the crystallization or generated form in an actual example.
+
+These levels are related but not identical.
+
+A generated form may admit several plausible crystallizations. A crystallization may admit indefinitely many manifestations. Conversely, no manifestation counts as evidence merely because its vocabulary resembles a canonical name. The manifestation must instantiate the generated syntax.
+
+This hierarchy reverses the intuitive order in which the atlas is often encountered. The memorable name comes first to attention, but it is theoretically downstream from the coordinate.
+
+22. Constraint strength as width of the admissible region
+
+Not all coordinate intersections have the same semantic width.
+
+Some are near-determinate. Once the triple is fixed, the generated region is so narrow that a canonical crystallization adds little beyond lexical compression or domain-neutral sharpening.
+
+Some are tightly constrained. The triple determines a narrow family of possible events, but the canonical crystallization selects one significant local determination within that family.
+
+Some are broader realization regions. The triple strongly fixes transformation, completion topology, and persistence while leaving several distinct semantic structures capable of satisfying those constraints.
+
+This variation is part of the theory, not a defect to be concealed.
+
+If every coordinate had to yield exactly one semantic name, the grammar would be stronger than its evidence warrants and less like a grammar. Generative systems typically constrain spaces of realizations rather than producing one lexical object. The meaningful theoretical question is not whether one name is deductively inevitable, but how much local event-character is determined before semantic individuation begins.
+
+23. Near-determinate coordinates
+
+Several coordinates illustrate how strongly the grammar can constrain a local form.
+
+Opening + Distributed + Bearing almost requires maintained reach across a span or field. Opening supplies enlarged availability; Distributed requires the intervening plurality or span to be constitutive; Bearing requires the achieved access to persist through a carrier or relation. There is little room for an unrelated local event.
+
+Integration + Focal + Efficacy almost requires joint capacity. Integration supplies organized parts; Focal gathers them around one whole; Efficacy requires the result to survive as what the whole can now do.
+
+Integration + Distributed + Efficacy almost requires systemic role activation or functioning. The roles are distributed, and the achieved result must be operative.
+
+Settlement + Release + Efficacy almost requires final discharge. Settlement removes a live demand; Release makes the loss of prior governance the form of completion; Efficacy requires that no further continuation is functionally owed.
+
+In such cases, canonical crystallization is close to lexicalization of the coordinate-generated syntax.
+
+24. Wider admissible regions
+
+Other triples remain strongly structured while permitting more semantic latitude.
+
+Relating + Distributed + Efficacy requires an operative effect produced by a constitutive relational plurality. A cycle is an excellent realization, but the coordinate does not by itself require return-to-origin. Other network effects can satisfy the same syntax.
+
+Repair + Distributed + Standing requires a corrected or validated organization whose adequacy is established across multiple positions, directions, or cases. Reversal testing is one crystallization, but the coordinate does not uniquely demand inversion.
+
+Differentiation + Focal + Efficacy requires a focal distinction that becomes operative in what can happen. A boundary that stops continuation is a strong realization, but the triple can in principle support other kinds of operative focal criterion.
+
+Settlement + Release + Standing requires an achieved standing freed from a previously governing unresolved demand. Identity preserved through transformation is one particularly coherent crystallization, but the generated region is wider than that one phenomenon.
+
+The coordinate is therefore neither arbitrary nor semantically complete. It determines a region whose width can vary.
+
+25. Structural determination is not semantic impoverishment
+
+Semantic freedom should not be understood as residue left over after the theory fails to determine enough. It is what allows the same structural form to recur across domains.
+
+If Opening + Distributed + Bearing could only be realized by literal bridges, it would not be a general completion-form. It can be realized by a cable, an institutional channel, a chain of transmission, a mathematical continuation, or another carrier because the grammar constrains the form of reach, not the material of the carrier.
+
+The theory therefore gains generality by not overdetermining domain. The decisive issue is whether semantic variation preserves the coordinate-generated syntax.
+
+This gives a clean hierarchy of freedom:
+
+structural roles are most constrained;
+semantic crystallization is variably constrained;
+concrete domain is comparatively free;
+linguistic expression is freer still.
+
+A mature theory of completed intelligibility must preserve all four levels.
+
+26. The role of canonical names and companion utterances
+
+Canonical names remain useful as stable handles for recurrent crystallizations. They support memory, comparison, stack-building, and communication. But they are not additional primitives.
+
+A canonical name is best treated as a compression of a local semantic crystallization within an admissible coordinate region.
+
+Companion utterances are even more phenomenological. Short phrases such as “This,” “Beyond,” “Then,” “Set right,” “Together able,” or “Nothing further is owed” capture the felt closure of a crystallization. They often make the landing intuitively immediate.
+
+Their theoretical role is indexical, not definitional. A companion utterance helps one feel the achieved completion after the coordinate-generated form is understood. It should not be used to derive the coordinate by resemblance.
+
+
+PART VI
+HISTORICAL FORMATION: OPENING, GOVERNING TRANSFORMATION, AND LANDING
+
+27. Completed form and formation history
+
+The coordinate grammar describes completed form. It does not encode the entire history by which that form emerges.
+
+This distinction is essential. Two situations can arrive at the same coordinate through substantially different histories. Conversely, superficially similar histories can land in different coordinates because the governing transformation or persistent result differs.
+
+The historical layer therefore answers a different question from the coordinate layer.
+
+Coordinate grammar: what form has become complete?
+Historical formation: how did this particular situation become that form?
+
+The theory does not reduce one to the other.
+
+28. Sentences as a privileged observational case
+
+Sentences are unusually revealing because they unfold in time. Material arrives sequentially; early elements open dependencies; later elements can satisfy, suspend, redirect, or reorganize them. The completed sentence therefore makes visible the difference between local formation and global completion.
+
+But sentences should not be mistaken for the ontology of the theory. They are a privileged observational instrument.
+
+The same architecture can be described in non-linguistic situations whenever there is an identifiable opening pressure, a decisive transformation, a completion condition, and an achieved mode of persistence. The theory is therefore about completed intelligibility with sentence processing as one especially tractable case.
+
+29. Local and global completion
+
+Structured events can complete locally before they complete globally.
+
+A phrase can settle while the sentence remains open. A conditional antecedent can be locally complete while the consequence remains unresolved. A quoted clause can be internally complete before attribution changes how it counts. Parts of a mechanism can be locally organized while the whole still fails. A sequence of observations can contain local regularities before a global recurrence is established.
+
+Local operations can themselves instantiate Differentiation, Opening, Relating, Repair, Integration, or Settlement. Completed local units can then become material for higher-order organization.
+
+The historical architecture is therefore recursive across scale. It is not a universal six-stage cycle. A global Settlement may contain local Relations and Integrations. A global Repair presupposes a prior organization that may itself have been locally integrated. The global coordinate identifies the transformation that governs the completed whole, not every operation that occurred along the path.
+
+30. Governing transformation
+
+In complex histories, several transformations may occur. The theoretical problem is to identify which one determines the completed form of the whole.
+
+A candidate governing transformation is stronger when it has broader scope, greater configurational control over how subordinate material finally counts, stronger control over subsequent uptake, and greater counterfactual centrality.
+
+Scope asks how much of the completed field falls under the transformation.
+
+Configurational control asks whether the transformation determines the final roles of subordinate elements.
+
+Uptake control asks what the completed whole principally leaves available.
+
+Counterfactual centrality asks whether altering or removing the transformation would change the completed event-type rather than only a local detail.
+
+These criteria are not a completed formal theorem. They articulate the distinction between local activity and global governance.
+
+31. Landing
+
+Landing is the historical hinge at which the governing transformation becomes sufficiently determined for the three coordinate constraints to hold jointly.
+
+Landing is not a fourth primitive dimension. It belongs to formation history.
+
+It may occur at a point, over an interval, or through a distributed configuration. In a sentence it may be a word, phrase, clause completion, second member of a dependency, operator, or retrospective element. In a non-linguistic situation it may be the moment a threshold is crossed, a relation closes, a support system becomes self-maintaining, or a residual demand is discharged.
+
+A valid landing must satisfy three conditions.
+
+The Transformation Pattern must actually have occurred.
+The Completion Topology must now be constitutive of why the change is sufficient.
+The Persistence Mode must be licensed by what the completed organization leaves available.
+
+Landing therefore binds historical formation to coordinate form.
+
+32. Retrospective stabilization
+
+Completion often changes the status of what came before. Later material can reveal what earlier material had been doing, which dependencies were provisional, which distinctions mattered, and which local completions were subordinate.
+
+This retrospective feature should not be confused with Repair. Every completed whole stabilizes the roles of its parts to some degree. Repair is the narrower event in which a prior organization fails under a later criterion and must be redirected.
+
+Retrospective stabilization helps explain why finished form can conceal its own history. Once a situation makes sense, the earlier openness can disappear from attention. The result appears given, even when it was produced through a sequence of changing role assignments.
+
+33. Path tolerance
+
+Many histories can converge on the same completed coordinate.
+
+This path tolerance is expected because the coordinate is a compressed invariant. It preserves what is structurally decisive for completion while discarding much of the transient route.
+
+What tends to be conserved is the type of opening pressure, the governing transformation, the completion topology, and the persistence mode.
+
+What can vary is local ordering, lexical material, grammatical construction, rhetorical form, concrete domain, intermediate operations, and the exact location or distribution of landing.
+
+The distinction between history and coordinate is therefore not a weakness of the theory. It is what makes cross-domain recurrence possible.
+
+
+PART VII
+THEORETICAL CONSEQUENCES OF THE CONSTRAINT GRAMMAR
+
+34. A finite state-space of completed form
+
+The atlas gives the grammar a finite representation. The fifty-four coordinates are not fifty-four primitive categories. They are positions generated by crossing three smaller families of constraints.
+
+This has several consequences.
+
+First, local similarity can be explained by shared coordinates rather than by ad hoc resemblance.
+
+Second, neighboring differences can be decomposed by axis. Two forms may share Transformation and Topology while differing only in Persistence; or share Transformation and Persistence while differing in Topology.
+
+Third, the state-space supports structural counterfactuals. One can ask what would have to change for a Standing form to become Bearing, for Focal completion to become Distributed, or for Relating to become Repair.
+
+Fourth, periodicity becomes an internal property of the representation rather than a decorative ordering.
+
+The state-space is therefore analytically useful because it makes compositional neighborhoods visible.
+
+35. Bidirectionality
+
+A genuinely generative grammar should constrain not only retrospective classification but prospective construction.
+
+Given a target coordinate, one can ask what opening pressure must be present, what transformation must answer it, what topology must make that transformation sufficient, and what persistence mode must remain. The coordinate does not specify a unique sentence or situation. It specifies requirements that any successful realization must satisfy.
+
+This suggests a constrained inverse relation:
+
+coordinate -> admissible generated form -> candidate realization.
+
+The significance of inverse generation is theoretical. If a coordinate supports prospective synthesis across novel domains, it demonstrates that the coordinate carries more information than a post hoc label.
+
+The theory does not need a one-to-one inverse. Many realizations may satisfy the same coordinate. The relevant property is productive constraint.
+
+36. Translation and structural preservation
+
+The separation between coordinate-generated form and linguistic realization makes translation theoretically interesting.
+
+Two sentences in different languages may differ in word order, morphology, explicitness, idiom, or local history while preserving a comparable completed form. If so, the coordinate provides one layer of structural preservation beneath surface form.
+
+This should not be inflated into a complete theory of translation. Coordinate identity cannot guarantee propositional equivalence, pragmatic adequacy, register, affect, or cultural fit. It identifies only one possible invariant: the form by which the source and target become complete.
+
+The stronger theoretical use of translation is diagnostic. If semantically adequate translations repeatedly preserve coordinate despite substantial formal differences, that would support the claim that the grammar tracks something not reducible to one language’s surface syntax. If they do not, the failures could reveal hidden language dependence in the primitives.
+
+37. Stacking as a probe of invariance
+
+A stack groups semantically heterogeneous manifestations under one coordinate-generated form.
+
+The theoretical point of stacking is not to accumulate examples but to suppress accidental similarity. A strong stack varies domain, vocabulary, grammar, and medium while preserving the same completion syntax.
+
+If a mechanical case, a social decision, a mathematical relation, a sentence, and a procedural rule all display the same transformation-topology-persistence structure, then the shared form becomes harder to explain as topical resemblance.
+
+Stacking is therefore a probe of invariance. It is most informative when examples are maximally heterogeneous subject to structural comparability.
+
+38. Structural movement through the state-space
+
+Because the grammar is decomposable, structural revision can be described as movement along one axis.
+
+Changing Transformation Pattern requires changing the kind of opening pressure and governing change.
+
+Changing Completion Topology requires changing what makes the transformation sufficient: concentration, constitutive distribution, or release from prior governance.
+
+Changing Persistence Mode requires changing what sort of achieved result remains: determination, constitutive bearing, or efficacy.
+
+This decomposability has theoretical significance beyond editing. It means the coordinates support local counterfactual structure. A neighbor is not merely another category; it represents a principled modification of one functional slot.
+
+39. Why the architecture is theoretically non-trivial before external validation
+
+The internal achievement of the atlas is not that it contains fifty-four plausible descriptions. Plausible descriptions can always be invented after the fact.
+
+The stronger result is that three recurrent constraints can be held independently fixed and systematically recombined; that their combinations generate coherent event-syntaxes before local names are consulted; that the generated syntaxes display nested periodicity; and that canonical crystallizations can often be substantially anticipated from the coordinates alone.
+
+These properties distinguish the construction from an arbitrary taxonomy.
+
+They do not establish empirical universality. But they constitute a genuine theoretical object worthy of external testing: a finite constraint grammar whose internal organization makes prospective predictions about local form.
+
+
+PART VIII
+METHODOLOGICAL CONSEQUENCES AND RESEARCH PROGRAMME
+
+40. Method follows theory
+
+Method should be subordinate to the architecture rather than occupy its centre.
+
+The main methodological problem is circularity. If analysts begin from canonical names and vivid examples, they can redescribe new material until it resembles a familiar crystallization. The theory therefore requires procedures that recover structure before consulting the local label.
+
+The simplest principle is delayed naming:
+
+first reconstruct the opening pressure, governing transformation, completion condition, and persistent result;
+then assign Transformation Pattern, Completion Topology, and Persistence Mode;
+only afterward consult canonical crystallizations or examples.
+
+A fuller blind historical assay and independent decoder can operationalize this principle for research, but the procedure is not itself the theory.
+
+41. What should be tested
+
+External research should distinguish at least four questions.
+
+Dimensional reliability: can independent analysts recover Transformation Pattern, Completion Topology, and Persistence Mode with meaningful agreement?
+
+Generative recoverability: can target coordinates be realized prospectively in novel semantic material and then recovered independently?
+
+Constraint-strength calibration: do near-determinate coordinates actually yield narrower realizations and higher agreement than broader regions?
+
+Scope and extension: do recurrent forms appear that cannot be represented without adding a new value or dimension?
+
+Cross-domain and cross-language studies are especially valuable because the theory claims recurrence beneath semantic and surface variation.
+
+42. Epistemic boundary
+
+The current construction supports a strong internal thesis but not an exhaustive metaphysical one.
+
+It supports the claim that the completed atlas forms a coherent generative state-space under the three primitive dimensions.
+
+It supports the claim that the dimensions contribute distinct recurring constraints.
+
+It supports the claim that the fifty-four coordinate-generated syntaxes display nested periodicity independent of canonical naming.
+
+It supports the claim that many canonical crystallizations can be substantially anticipated from their coordinates and that the degree of anticipation varies systematically.
+
+It does not establish that the six Transformation Patterns are the only possible transformations of intelligibility.
+
+It does not establish that Focal, Distributed, and Release exhaust every possible topology of completion.
+
+It does not establish that Standing, Bearing, and Efficacy exhaust every possible mode of achieved availability.
+
+It does not establish that every instance has one unique coordinate or that the fifty-four-state space is universal across languages, domains, and cognitive systems.
+
+Exhaustiveness should therefore remain an open question. The present achievement is the discovery and articulation of a constrained generative architecture, not proof that no deeper or wider architecture exists.
+
+43. Primitive status
+
+The word primitive is relative to the present grammar.
+
+Transformation Pattern, Completion Topology, and Persistence Mode are primitive because the coordinate-generated forms are constructed from their conjunction and because each axis preserves a recognizable invariant under variation of the others.
+
+Their values are likewise primitive within the current state-space.
+
+This does not imply ontological irreducibility. A future theory may derive the present primitives from deeper principles, divide one value into subtypes, or add a new dimension. Such a development would reinterpret the basis of the grammar without erasing the compositional structure presently demonstrated.
+
+44. Formal skeleton
+
+Let
+
+T = {D, O, Rl, Rp, I, S}
+
+represent Differentiation, Opening, Relating, Repair, Integration, and Settlement.
+
+Let
+
+K = {F, Di, Re}
+
+represent Focal, Distributed, and Release completion.
+
+Let
+
+P = {St, B, E}
+
+represent Standing, Bearing, and Efficacy.
+
+Then
+
+C = T x K x P,
+
+with
+
+|C| = 54.
+
+For each coordinate c = <t, k, p>, define A(c) as the admissible phenomenological region satisfying all three constraints:
+
+A(c) = A_T(t) ∩ A_K(k) ∩ A_P(p).
+
+Let G(c) denote a coordinate-generated syntax: an abstract event-description that expresses the strongest common structure required by A(c).
+
+Let r be a canonical crystallization. Then
+
+r belongs to A(c),
+
+but r need not exhaust A(c).
+
+Let m be a concrete manifestation of r or directly of A(c). Then the theoretical hierarchy is:
+
+coordinate constraints
+-> generated phenomenological syntax
+-> canonical crystallization
+-> concrete manifestation.
+
+The width of A(c) corresponds informally to constraint strength. Narrow A(c) yields near-determinate crystallization; wider A(c) permits greater semantic latitude while preserving structural form.
+
+The periodic grammar can be summarized as three nested operators over generated syntax:
+
+Transformation Pattern supplies the governing transformation role;
+Completion Topology supplies the sufficiency role;
+Persistence Mode supplies the achieved-residue role.
+
+The formal task for future work is not merely to encode these labels but to specify the conditions under which a history or situation satisfies each constraint independently enough to support reliable composition.
+
+45. Research questions generated by the mature theory
+
+The architecture makes several questions especially important.
+
+Can the three dimensions be recovered independently with distinct error profiles?
+
+Does the Standing-Bearing-Efficacy distinction remain stable across domains where ordinary linguistic stativity and activity do not map neatly onto it?
+
+Does Release behave empirically as de-governance rather than as a disguised spatial metaphor?
+
+Do the fifty-four generated syntaxes remain recognizable when canonical names are hidden from analysts?
+
+Does constraint strength predict inter-analyst agreement, generative convergence, or the number of semantically distinct crystallizations produced from a coordinate?
+
+Can new canonical crystallizations be discovered within broader admissible regions without changing the coordinate-generated syntax?
+
+Do translations preserve generated form while moving landing and local history?
+
+Are there recurrent out-of-space forms that demand another Transformation Pattern, Completion Topology, Persistence Mode, or a fourth dimension?
+
+Can the notion of opening pressure be formalized independently of the classification it is later used to support?
+
+Can the grammar be extended beyond sentences without weakening its structural precision?
+
+These are the natural next questions because they test the architecture where it is strongest: at the boundary between invariant structural constraint and variable realization.
+
+
+PART IX
+THE FINAL THEORETICAL STATEMENT
+
+46. What the theory is
+
+The Constraint Grammar of Completed Intelligibility is a theory of recurrent event-forms by which structured incompletion becomes sufficiently complete for determinate uptake.
+
+Its primitive dimensions are:
+
+Transformation Pattern: what kind of change answers the opening pressure.
+
+Completion Topology: what structural condition makes that change sufficient as completion.
+
+Persistence Mode: what kind of achieved reality the completion leaves available.
+
+The values are:
+
+Transformation Pattern
+Differentiation | Opening | Relating | Repair | Integration | Settlement
+
+Completion Topology
+Focal | Distributed | Release
+
+Persistence Mode
+Standing | Bearing | Efficacy
+
+Their product yields fifty-four coordinates.
+
+47. What the grammar generates
+
+The primary local output of a coordinate is not a name. It is a sentence-shaped phenomenological syntax.
+
+Transformation supplies the main event-difference.
+Topology supplies the condition of sufficiency.
+Persistence supplies the form of achieved residue.
+
+Hence:
+
+coordinate
+= <Transformation Pattern, Completion Topology, Persistence Mode>
+
+coordinate-generated form
+= transformation-pattern + completion-pattern + persistence-pattern.
+
+The fifty-four generated forms display nested periodicity because each functional slot recurs independently across the state-space.
+
+48. What crystallization adds
+
+A canonical crystallization semantically sharpens a generated region. It selects one especially stable, vivid, or theoretically useful realization of the coordinate.
+
+Crystallization adds semantic individuation without becoming a new primitive.
+
+Some coordinates are narrow enough that generated form and crystallization nearly coincide.
+
+Others define a wider admissible family.
+
+The theory therefore predicts graded determination rather than uniform one-to-one naming.
+
+49. What history adds
+
+Historical formation explains how a particular situation arrives at a coordinate.
+
+Its minimal architecture is:
+
+opening pressure
+-> governing transformation
+-> landing
+-> persistent result.
+
+Local operations can recur and nest. Several histories can converge on one coordinate. Landing is the hinge where the historical event becomes readable under the three coordinate constraints.
+
+The historical grammar and the coordinate grammar are complementary descriptions: one explains becoming, the other completed form.
+
+50. The strongest warranted thesis
+
+The completed atlas supports the following thesis:
+
+Completed intelligibility admits a recurrent constraint-compositional architecture in which a Transformation Pattern, a Completion Topology, and a Persistence Mode jointly determine a coordinate-generated phenomenological syntax. Crossing six transformations, three completion topologies, and three persistence modes yields a fifty-four-position periodic state-space. The generated syntaxes themselves exhibit the same nested periodicity, demonstrating that the recurrence belongs to the structure of the event-forms rather than merely to their labels. Canonical forms are semantic crystallizations within these generated regions, and the width of those regions varies systematically: some coordinates are near-determinate, while others permit greater semantic individuation without loss of structural identity.
+
+This thesis is stronger than the claim that the atlas is a useful taxonomy.
+
+It is weaker than the claim that the atlas exhausts every possible completed form of intelligibility.
+
+That is the correct epistemic level of the theory.
+
+51. Compact architecture
+
+Object:
+recurrent forms of completed intelligibility.
+
+Opening condition:
+structured pressure for further determination.
+
+Primitive dimensions:
+Transformation Pattern x Completion Topology x Persistence Mode.
+
+Transformation Pattern:
+Differentiation | Opening | Relating | Repair | Integration | Settlement.
+
+Completion Topology:
+Focal | Distributed | Release.
+
+Persistence Mode:
+Standing | Bearing | Efficacy.
+
+State-space:
+6 x 3 x 3 = 54.
+
+Compositional rule:
+coordinate constraints -> coordinate-generated phenomenological syntax.
+
+Generated syntax:
+transformation-pattern + completion-pattern + persistence-pattern.
+
+Periodic rhythms:
+Transformation = slow nine-position rhythm.
+Topology = three-position focal/distributed/release rhythm.
+Persistence = one-position standing/bearing/efficacy rhythm.
+
+Theoretical hierarchy:
+coordinate-generated form != canonical crystallization != concrete manifestation != linguistic expression.
+
+Constraint strength:
+near-determinate | tightly constrained | broader admissible region.
+
+Historical bridge:
+opening pressure -> governing transformation -> landing -> persistent result.
+
+Epistemic status:
+internally demonstrated compositional and periodic architecture; candidate general theory; exhaustiveness unproved.
+
+52. Conclusion
+
+The theory begins from a simple phenomenon: situations can cease to be unresolved in recurrent ways. The decisive step is to resist treating those ways as a list of semantic categories and instead ask what structural work each completed event performs.
+
+Once that question is asked systematically, three distinct contributions become visible.
+
+Something changes in a characteristic way.
+That change becomes sufficient under a characteristic topology.
+The completion remains available in a characteristic mode.
+
+The first contribution is Transformation Pattern. The second is Completion Topology. The third is Persistence Mode.
+
+Their conjunction is not merely descriptive. It constrains a local event-form. When the three coordinates are known, much of the completed intelligibility can often be anticipated before any canonical name is supplied. The coordinate-generated sentences make this generative fact explicit.
+
+Those sentences are the clearest evidence that the atlas is one periodic system. Their deep roles repeat at three nested frequencies. The six transformations provide the slow semantic rhythm. Focal, Distributed, and Release repeatedly reorganize what counts as completion. Standing, Bearing, and Efficacy repeatedly transform the mode of achieved availability. The atlas therefore behaves like a conjugation table, but the conjugation is phenomenological: what is varied is not word form but the structure of completion itself.
+
+The canonical forms remain important, but their status changes. They are not the atoms from which the theory is built. They are crystallizations within coordinate-generated regions. Some crystallizations are so strongly constrained that they appear nearly inevitable. Others select one coherent local form from a wider admissible region. The difference is theoretically informative because it shows where structure ends and semantic individuation begins.
+
+This also clarifies the role of history. A completed coordinate is not a record of every event that produced it. A sentence or situation can pass through many local operations, provisional organizations, and retrospective reassignments before landing. The coordinate is a compressed invariant of completion. Historical analysis explains the route; the constraint grammar explains the achieved form.
+
+The mature architecture can therefore be stated without dependence on the history of its discovery, without making natural-language sentences the ontology of the system, and without requiring metaphysical exhaustiveness.
+
+Completed intelligibility has a recurrent compositional structure. A governing transformation answers an opening pressure. The transformation becomes complete through focal concentration, distributed constitution, or release from prior governance. The achieved result persists as standing, bearing, or efficacy. Crossing these constraints yields a finite periodic state-space whose local forms can be generated in sentence-shaped phenomenological syntax before semantic crystallization.
+
+That is the strongest form of the theory presently supported by the atlas.
