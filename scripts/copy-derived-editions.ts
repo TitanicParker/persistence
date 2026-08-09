@@ -3,6 +3,7 @@ import { dirname, resolve } from 'node:path';
 
 const editions = [
   { source: 'constraint_grammar_laymans_edition.html', destination: 'dist/layman/index.html', route: 'layman/', label: 'Derived explanatory essay · Layman’s Edition' },
+  { source: 'constraint_grammar_five_year_old_edition.html', destination: 'dist/five-year-old/index.html', route: 'five-year-old/', label: 'Derived explanatory essay · Five-Year-Old Edition' },
   { source: 'constraint_grammar_vc_investment_memo.html', destination: 'dist/venture/index.html', route: 'venture/', label: 'Derived strategic interpretation · Venture Edition' },
   { source: 'constraint_grammar_if_mainstream.html', destination: 'dist/mainstream/index.html', route: 'mainstream/', label: 'Derived consequences essay' },
 ] as const;

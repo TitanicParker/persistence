@@ -9,6 +9,7 @@ const entrances = [
 ];
 
 const routes = [
+  ['Five-Year-Old Edition', 'The whole theory reduced to three simple questions: what changed, what made it enough, and what is left afterward?', 'five-year-old/'],
   ['Theory', 'The principal monograph, segmented into durable reading units.', 'theory/'],
   ['Atlas', 'The complete 6 × 3 × 3 coordinate system and its 54 generated positions.', 'atlas/'],
   ['54 Forms', 'Plain-language expositions for every coordinate position.', 'forms/'],
@@ -41,7 +42,7 @@ const routes = [
           <a class="entrance-card" href={publicationPath(entrance.path)}><span class="edition-label">{entrance.edition}</span><h3>{entrance.intent}</h3><p>{entrance.body}</p><span class="entrance-action">{entrance.action} →</span></a>
         ))}
       </div>
-      <p class="mainstream-note">For a broader consequences essay, read <a href={publicationPath('mainstream/')}>If We Learned to See Completion</a>.</p>
+      <p class="mainstream-note">Want the simplest possible explanation? Read <a href={publicationPath('five-year-old/')}>The Five-Year-Old Edition</a>. For a broader consequences essay, read <a href={publicationPath('mainstream/')}>If We Learned to See Completion</a>.</p>
     </section>
 
     <section class="section architecture-section" aria-labelledby="architecture-title">
