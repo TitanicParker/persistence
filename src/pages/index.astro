@@ -22,7 +22,14 @@ const expositionEssays = [
 ---
 <BaseLayout description="A static digital publication of the Constraint Grammar of Completed Intelligibility, with simple explanations, a portable study edition, formal theory, a 54-cell atlas, explanatory forms, glossary, research status, and derived essays." sourceStatus="Publication entrance · editorial framing">
   <div class="page home-page">
-    <a class="sentence-receptacle-link" href={publicationPath('sentence-receptacle/')} aria-label="Sentence Receptacle — future work">Sentence Receptacle</a>
+    <div class="hidden-doorways" aria-label="Alternative entrances">
+      <a class="hidden-doorway wordless-link" href={publicationPath('wordless/')} aria-label="Wordless — table of contents for the Five-to-Eighteen reading path">
+        <span class="toc-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>Wordless</span>
+      </a>
+      <a class="hidden-doorway sentence-receptacle-link" href={publicationPath('sentence-receptacle/')} aria-label="Sentence Receptacle — future work">Sentence Receptacle</a>
+    </div>
+
     <aside class="homepage-rights-notice" aria-label="Copyright and rights status"><span>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</span><a href={publicationPath('rights/')}>Rights & Permissions →</a></aside>
 
     <section class="hero home-hero">
@@ -63,45 +70,79 @@ const expositionEssays = [
 
 <style>
   .home-page { position: relative; }
-  .sentence-receptacle-link {
+  .hidden-doorways {
     position: absolute;
     top: -1.35rem;
+    left: 0;
     right: 0;
     z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .75rem;
+    pointer-events: none;
+  }
+  .hidden-doorway {
+    pointer-events: auto;
     display: inline-flex;
     align-items: center;
-    min-height: 2rem;
-    padding: .38rem .65rem;
+    gap: .45rem;
+    min-height: 2.1rem;
+    padding: .4rem .68rem;
     border: 1px solid var(--border, #d8d3c8);
     border-radius: 999px;
     color: inherit;
-    font-size: .68rem;
-    font-weight: 700;
+    background: color-mix(in srgb, var(--paper, #f7f5ef) 92%, transparent);
+    font: 700 .68rem/1.1 system-ui, sans-serif;
     letter-spacing: .08em;
     text-decoration: none;
     text-transform: uppercase;
-    opacity: .58;
-    transition: opacity .15s ease, background .15s ease, transform .15s ease;
+    opacity: .74;
+    backdrop-filter: blur(8px);
+    transition: opacity .15s ease, background .15s ease, transform .15s ease, border-color .15s ease;
   }
-  .sentence-receptacle-link:hover,
-  .sentence-receptacle-link:focus-visible {
+  .wordless-link {
+    opacity: .92;
+    border-color: color-mix(in srgb, var(--ink, #171714) 28%, var(--rule, #d8d3c8));
+  }
+  .hidden-doorway:hover,
+  .hidden-doorway:focus-visible {
     opacity: 1;
-    background: rgba(247,245,239,.9);
+    background: var(--paper, #f7f5ef);
+    border-color: color-mix(in srgb, var(--ink, #171714) 45%, var(--rule, #d8d3c8));
     transform: translateY(-1px);
   }
-  .sentence-receptacle-link:focus-visible {
+  .hidden-doorway:focus-visible {
     outline: 3px solid currentColor;
     outline-offset: 3px;
   }
+  .toc-icon {
+    width: .88rem;
+    display: inline-grid;
+    gap: 2px;
+  }
+  .toc-icon span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+  }
   @media (max-width: 700px) {
-    .sentence-receptacle-link {
+    .hidden-doorways {
       position: static;
-      margin: 0 0 .8rem auto;
-      width: max-content;
-      display: flex;
+      margin: 0 0 .9rem;
+      align-items: flex-start;
+    }
+    .hidden-doorway {
+      min-height: 2.4rem;
+    }
+  }
+  @media (max-width: 430px) {
+    .hidden-doorways {
+      flex-wrap: wrap;
     }
   }
   @media (prefers-reduced-motion: reduce) {
-    .sentence-receptacle-link { transition: none; }
+    .hidden-doorway { transition: none; }
   }
 </style>
