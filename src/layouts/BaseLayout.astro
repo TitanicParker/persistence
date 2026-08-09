@@ -3,6 +3,16 @@ import '../styles/global.css';
 import '../styles/content.css';
 import { publicationPath } from '../lib/site';
 const { title = 'Constraint Grammar of Completed Intelligibility', description = 'A periodic generative theory of transformation, completion, and persistence.' } = Astro.props;
+const navItems = [
+  ['Theory', 'theory/'],
+  ['Atlas', 'atlas/'],
+  ['54 Forms', 'forms/'],
+  ['Glossary', 'glossary/'],
+  ['History', 'history/'],
+  ['Academic', 'academic/'],
+];
+const currentPath = Astro.url.pathname;
+const isActive = (path: string) => currentPath === publicationPath(path) || currentPath.startsWith(publicationPath(path));
 ---
 <!doctype html>
 <html lang="en">
@@ -13,19 +23,17 @@ const { title = 'Constraint Grammar of Completed Intelligibility', description =
     <title>{title}</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="site-shell">
       <header class="site-header">
         <a class="site-title" href={publicationPath()}>Constraint Grammar</a>
-        <nav class="site-nav" aria-label="Primary">
-          <a href={publicationPath('theory/')}>Theory</a>
-          <a href={publicationPath('atlas/')}>Atlas</a>
-          <a href={publicationPath('forms/')}>54 Forms</a>
-          <a href={publicationPath('glossary/')}>Glossary</a>
-          <a href={publicationPath('history/')}>History</a>
-          <a href={publicationPath('academic/')}>Academic</a>
+        <nav class="site-nav" aria-label="Publication">
+          {navItems.map(([label, path]) => (
+            <a href={publicationPath(path)} aria-current={isActive(path) ? 'page' : undefined}>{label}</a>
+          ))}
         </nav>
       </header>
-      <main><slot /></main>
+      <main id="main-content"><slot /></main>
       <footer class="site-footer">
         Constraint Grammar of Completed Intelligibility. Source texts remain canonical; interface copy is editorial scaffolding only.
       </footer>

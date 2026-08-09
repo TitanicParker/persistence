@@ -4,10 +4,26 @@ import { parseGlossary } from '../../lib/content/glossary';
 import { publicationPath } from '../../lib/site';
 const terms = parseGlossary();
 const grouped = Object.entries(Object.groupBy(terms, (term) => term.category));
+const letters = [...new Set(terms.map((term) => term.term[0]?.toUpperCase()).filter(Boolean))] as string[];
+const firstTermByLetter = new Map<string, string>();
+for (const term of terms) {
+  const letter = term.term[0]?.toUpperCase();
+  if (letter && !firstTermByLetter.has(letter)) firstTermByLetter.set(letter, term.slug);
+}
 ---
 <BaseLayout title="Glossary — Constraint Grammar">
-  <article class="reading-index"><header><p class="eyebrow">Terminological reference</p><h1>Glossary</h1><p class="lede">Canonical terms parsed from the exhaustive glossary, preserving preferred status and theoretical section.</p></header>
-    <nav class="alphabet" aria-label="Alphabetical glossary index">{[...new Set(terms.map((term) => term.term[0]?.toUpperCase()))].map((letter) => <a href={`#letter-${letter}`}>{letter}</a>)}</nav>
-    {grouped.map(([category, categoryTerms]) => <section><h2>{category}</h2><dl>{categoryTerms!.map((term) => <><dt id={`letter-${term.term[0]?.toUpperCase()}`}><a href={publicationPath(`glossary/${term.slug}/`)}>{term.term}</a></dt><dd>{term.definition}</dd></>)}</dl></section>)}
+  <article class="reading-index glossary-index">
+    <header>
+      <p class="eyebrow">Terminological reference</p>
+      <h1>Glossary</h1>
+      <p class="lede">Canonical terms parsed from the exhaustive glossary, preserving preferred status, distinctions, relations, and theoretical section.</p>
+      <p class="index-guidance">Use the alphabetical strip to jump through the reference, then open a term for its full definition and theoretical function. Legacy and deprecated terms remain visible where the source records them.</p>
+    </header>
+    <nav class="alphabet" aria-label="Alphabetical glossary index">{letters.map((letter) => <a href={`#letter-${letter}`}>{letter}</a>)}</nav>
+    {grouped.map(([category, categoryTerms]) => <section class="glossary-category"><h2>{category}</h2><dl>{categoryTerms!.map((term) => {
+      const letter = term.term[0]?.toUpperCase();
+      const isFirstForLetter = letter && firstTermByLetter.get(letter) === term.slug;
+      return <><dt id={isFirstForLetter ? `letter-${letter}` : undefined}><a href={publicationPath(`glossary/${term.slug}/`)}>{term.term}</a></dt><dd>{term.definition}</dd></>;
+    })}</dl></section>)}
   </article>
 </BaseLayout>
