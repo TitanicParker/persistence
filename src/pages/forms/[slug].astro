@@ -17,7 +17,7 @@ export function getStaticPaths() {
 const { exposition, previous, next } = Astro.props;
 const html = renderPlainBlocks(exposition.body.map((b) => b.raw));
 ---
-<BaseLayout title={`${exposition.canonicalCrystallization} — 54 Forms`}>
+<BaseLayout title={`${exposition.canonicalCrystallization} — 54 Forms`} description={`${exposition.canonicalCrystallization}: canonical explanatory companion for atlas cell ${exposition.number}.`} sourceStatus="Canonical explanatory companion">
   <article class="prose form-page"><header><p class="eyebrow">54 Forms · Cell {exposition.number} of 54 · {exposition.transformationPattern} / {exposition.completionTopology} / {exposition.persistenceMode}</p><h1>{exposition.canonicalCrystallization}</h1><p class="lede">{exposition.coordinateGeneratedForm}</p></header>
     <p class="index-crosslink"><a href={publicationPath('forms/')}>← All 54 forms</a> · <a href={publicationPath(`atlas/${exposition.slug}/`)}>Formal atlas cell</a></p>
     <dl class="metadata"><dt>Companion utterance</dt><dd>{exposition.companionUtterance}</dd><dt>Constraint strength</dt><dd>{exposition.constraintStrength}</dd></dl>
