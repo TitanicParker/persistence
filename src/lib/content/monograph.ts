@@ -23,7 +23,8 @@ export function parseMonograph(): { title: string; subtitle: string; parts: stri
   }
 
   const starts: { index: number; number: number | null; title: string }[] = [];
-  const firstPartIndex = [...partAt.keys()][0];
+  const partIndexes = [...partAt.keys()].sort((a, b) => a - b);
+  const firstPartIndex = partIndexes[0];
   if (firstPartIndex == null) throw new Error('Monograph: no PART boundaries found');
   starts.push({ index: 3, number: null, title: 'Abstract and orientation' });
   lines.forEach((line, index) => {
@@ -35,8 +36,12 @@ export function parseMonograph(): { title: string; subtitle: string; parts: stri
   const chapters: Chapter[] = [];
   for (let s = 0; s < starts.length; s++) {
     const start = starts[s];
-    let end = s + 1 < starts.length ? starts[s + 1].index - 1 : lines.length - 1;
+    const nextChapterIndex = s + 1 < starts.length ? starts[s + 1].index : lines.length;
+    const nextPartIndex = partIndexes.find((idx) => idx > start.index) ?? lines.length;
+    let end = Math.min(nextChapterIndex, nextPartIndex) - 1;
     if (start.number == null) end = firstPartIndex - 1;
+    while (end >= start.index && !lines[end].trim()) end--;
+
     let activePart: { label: string; title: string } | null = null;
     for (const [idx, value] of partAt) if (idx <= start.index) activePart = value;
     const raw = lines.slice(start.index, end + 1).join('\n').trim();
