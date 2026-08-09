@@ -1,43 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { publicationPath } from '../lib/site';
+import { acknowledgementText, copyrightLine, permissionInvitation, personalStudyPermission, publicAccessAndReuse, rightsLead } from '../lib/rights';
 ---
-<BaseLayout
-  title="Copyright, Rights & Permissions — Constraint Grammar"
-  description="Copyright, rights, and permissions notice for the Constraint Grammar of Completed Intelligibility publication."
-  sourceStatus="Publication rights notice"
->
+<BaseLayout title="Copyright, Rights & Permissions — Constraint Grammar" description="Copyright, rights, personal-study permission, and permissions notice for the Constraint Grammar of Completed Intelligibility publication." sourceStatus="Publication rights notice">
   <article class="prose rights-page">
-    <header>
-      <p class="eyebrow">Publication rights</p>
-      <h1>Copyright, Rights & Permissions</h1>
-      <p class="lede">This page states the copyright and permissions position for the public repository and publication.</p>
-    </header>
-
-    <section>
-      <p><strong>Copyright © 9 August 2026 Liam Moloney. All Rights Reserved.</strong></p>
-
-      <p>The contents of this repository, including but not limited to the Constraint Grammar of Completed Intelligibility, its theoretical framework, terminology, textual expositions, diagrams, atlases, coordinate descriptions, examples, and associated documentation, are proprietary and protected by applicable copyright law.</p>
-
-      <p>No permission is granted to copy, reproduce, modify, adapt, distribute, publish, sublicense, sell, or create derivative works from these materials without prior written permission from the copyright holder.</p>
-
-      <p>Viewing this public repository does not constitute a grant of any license or other rights except those necessarily provided by GitHub's platform terms.</p>
-
-      <p>For licensing or permission enquiries, contact the copyright holder.</p>
-    </section>
-
-    <section>
-      <h2>Public access and reuse</h2>
-      <p>Making the repository publicly accessible permits viewing and GitHub-platform uses provided by GitHub's applicable platform terms; it does not constitute a broader grant by the copyright holder to reproduce, adapt, redistribute, publish, sublicense, sell, or create derivative works outside those permissions.</p>
-      <p>This work is not offered under an open-source or Creative Commons license.</p>
-    </section>
-
-    <section>
-      <h2>Acknowledgement</h2>
-      <p>The publication uses a first-entry acknowledgement so that the rights status is presented before substantive reading. The acknowledgement records only that this notice has been brought to the visitor's attention; it does not itself grant additional rights.</p>
-      <p><button type="button" class="rights-reset" onclick="localStorage.removeItem('constraint-grammar-rights-acknowledged'); this.textContent='Acknowledgement cleared';">Clear saved acknowledgement</button></p>
-    </section>
-
+    <header><p class="eyebrow">Publication rights</p><h1>Copyright, Rights & Permissions</h1><p class="lede">This page states the copyright and permissions position for the public repository and publication, including the deliberately granted personal-study use of the Portable Knowledge Edition.</p></header>
+    <section><p><strong>{copyrightLine}</strong></p>{rightsLead.map((paragraph) => <p>{paragraph}</p>)}</section>
+    <section><h2>Portable Knowledge Edition: personal study permission</h2>{personalStudyPermission.map((paragraph) => <p>{paragraph}</p>)}<p><a href={publicationPath('constraint-grammar-portable-knowledge-edition.txt')} download>Download the Portable Knowledge Edition (.txt) →</a></p></section>
+    <section><h2>Permission for broader use</h2>{permissionInvitation.map((paragraph) => <p>{paragraph}</p>)}</section>
+    <section><h2>Public access and reuse</h2>{publicAccessAndReuse.map((paragraph) => <p>{paragraph}</p>)}</section>
+    <section><h2>Acknowledgement</h2>{acknowledgementText.map((paragraph) => <p>{paragraph}</p>)}<p><button type="button" class="rights-reset" onclick="localStorage.removeItem('constraint-grammar-rights-acknowledged'); this.textContent='Acknowledgement cleared';">Clear saved acknowledgement</button></p></section>
     <p><a href={publicationPath()}>← Return to the publication</a></p>
   </article>
 </BaseLayout>
