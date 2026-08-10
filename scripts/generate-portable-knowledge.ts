@@ -78,7 +78,7 @@ const introduction = [
   '1. Canonical theory — mature monograph.', '2. Canonical structural atlas — 54 coordinate-generated positions.',
   '3. Canonical explanatory companion — 54 plain-language expositions.', '4. Authoritative glossary — mature terminology and distinctions.',
   '5. Supporting historical reconstruction and academic positioning.',
-  '6. Research-status and provenance pages — editorial context about claims, evidence, versioning, and source hierarchy.',
+  '6. Research-status, provenance, and archival birth record — editorial and historical context about claims, evidence, versioning, source hierarchy, and the date of the present project’s emergence.',
   '7. Derived Five-Year-Old, Layman, Venture, and Mainstream essays — interpretations of the same framework, not substitute canonical sources.', '',
   'GOVERNING DISTINCTION', 'Coordinate-generated form → canonical crystallization → concrete manifestation.', '',
   'COPYRIGHT, RIGHTS & PERMISSIONS', rightsText,
@@ -90,6 +90,8 @@ parts.push(divider('RESEARCH STATUS AND CLAIMS BOUNDARY', 'EDITORIAL SYNTHESIS',
 parts.push(renderedMainText('dist/research-status/index.html'));
 parts.push(divider('ABOUT, PROVENANCE, AND CITATION GUIDANCE', 'PUBLICATION PROVENANCE', 'generated from /about/'));
 parts.push(renderedMainText('dist/about/index.html'));
+parts.push(divider('PUBLICATION BIRTH RECORD', 'ARCHIVAL PROVENANCE NOTE', 'publication_birth_record.md'));
+parts.push(readText('publication_birth_record.md'));
 for (const source of derivedSources) { parts.push(divider(source.label, source.status, source.file)); parts.push(htmlToText(readText(source.file))); }
 parts.push(['', '================================================================', 'END OF PORTABLE KNOWLEDGE EDITION', '================================================================', copyrightLine,
   'For any use beyond the limited personal-study permission stated at the beginning of this file, seek prior written permission from the copyright holder.',
