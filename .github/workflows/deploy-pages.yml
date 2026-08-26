@@ -47,18 +47,20 @@ jobs:
         run: |
           set -euo pipefail
           test -f dist/index.html
+          test -f dist/pixels-of-clarity/index.html
           test -f dist/theory/index.html
           test -f dist/atlas/01-focal-mark/index.html
           test -f dist/forms/01-focal-mark/index.html
           test -f dist/glossary/completed-intelligibility/index.html
           test -f dist/history/index.html
           test -f dist/academic/index.html
+          grep -q 'href="/persistence/pixels-of-clarity/' dist/index.html
           grep -q 'href="/persistence/theory/' dist/index.html
           grep -q 'href="/persistence/atlas/' dist/index.html
           grep -q 'href="/persistence/forms/' dist/index.html
           grep -q 'href="/persistence/glossary/' dist/index.html
           grep -qE '(href|src)="/persistence/_astro/' dist/index.html
-          if grep -R -qE 'href="/(theory|atlas|forms|glossary|history|academic)(/|\")' dist; then
+          if grep -R -qE 'href="/(pixels-of-clarity|theory|atlas|forms|glossary|history|academic)(/|\")' dist; then
             echo "Found a publication link that escaped the /persistence/ base path" >&2
             exit 1
           fi
