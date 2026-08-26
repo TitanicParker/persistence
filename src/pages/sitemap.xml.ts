@@ -9,7 +9,7 @@ export function GET() {
   const base = 'https://titanicparker.github.io/persistence/';
   const routes = new Set<string>([
     '', 'theory/', 'atlas/', 'forms/', 'glossary/', 'history/', 'academic/',
-    'layman/', 'venture/', 'mainstream/', 'research-status/', 'about/', 'search/',
+    'layman/', 'venture/', 'mainstream/', 'pixels-of-clarity/', 'research-status/', 'about/', 'search/',
   ]);
   for (const chapter of parseMonograph().chapters) routes.add(`theory/${chapter.slug}/`);
   for (const cell of parseAtlas()) routes.add(`atlas/${cell.slug}/`);
