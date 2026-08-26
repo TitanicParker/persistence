@@ -18,89 +18,36 @@ const chapters = [
   ['13', 'Every Box Can Speak', 'The Goldmine gives each structural coordinate families of ordinary utterances.', 'chapter-13/'],
   ['14', 'The Hard Boxes', 'Uncertainty is separated into weak evidence, neighbour confusion, ambiguity, and model pressure.', 'chapter-14/'],
   ['15', 'Sometimes There Is No Box Yet', 'The class learns the rule: no completion, no coordinate.', 'chapter-15/'],
+  ['16', 'Clear Does Not Mean True', 'The class discovers that structural intelligibility is not truth, evidence, justice, or judgment.', 'chapter-16/'],
 ];
 
 const forthcoming = [
-  ['16', 'Clear Does Not Mean True'],
-  ['17', 'Catch It in the Wild / Make One for a Box'],
-  ['18', 'The Whole Picture'],
+  ['17', 'Take It Outside'],
+  ['18', 'The Bag Comes Back'],
 ];
 ---
-<BaseLayout
-  title="Pixels of Clarity — The Unfolding Book"
-  description="The live unfolding pedagogical edition of Persistence for ten-year-olds. Read the completed chapters in order as the 54-position grammar is discovered."
-  sourceStatus="Pedagogical edition · 15 of 18 chapters drafted"
->
+<BaseLayout title="Pixels of Clarity — The Unfolding Book" description="The live unfolding pedagogical edition of Persistence for ten-year-olds." sourceStatus="Pedagogical edition · 16 of 18 chapters drafted">
   <article class="book-home">
     <header class="hero">
       <p class="eyebrow">Persistence for Ten-Year-Olds · live book</p>
       <h1>Pixels of Clarity</h1>
       <p class="lede">A class begins with a bag of ordinary sentences. By sorting, comparing, arguing, testing, and wondering, they gradually discover the structure hidden in things they already understand.</p>
-      <div class="progress"><strong>15</strong><span>chapters readable</span><strong>18</strong><span>planned</span></div>
+      <div class="progress"><strong>16</strong><span>chapters readable</span><strong>18</strong><span>planned</span></div>
       <p class="start"><a href={publicationPath('pixels-of-clarity/chapter-01/')}>Start reading Chapter 1 →</a></p>
     </header>
-
     <section class="unfolding">
-      <p class="eyebrow">The unfolding book</p>
-      <h2>Read what exists now</h2>
-      <p>The book is being written in sequence. Each completed chapter below is part of the live reading edition, not a summary of the project.</p>
-      <ol class="chapters">
-        {chapters.map(([number, title, note, path]) => (
-          <li><a href={publicationPath(`pixels-of-clarity/${path}`)}><span class="number">{number}</span><span class="chapter-copy"><strong>{title}</strong><small>{note}</small></span><span class="read">Read →</span></a></li>
-        ))}
-      </ol>
+      <p class="eyebrow">The unfolding book</p><h2>Read what exists now</h2>
+      <ol class="chapters">{chapters.map(([number,title,note,path]) => <li><a href={publicationPath(`pixels-of-clarity/${path}`)}><span class="number">{number}</span><span class="chapter-copy"><strong>{title}</strong><small>{note}</small></span><span class="read">Read →</span></a></li>)}</ol>
     </section>
-
     <section class="bend">
-      <p class="eyebrow">Where the book is now</p>
-      <h2>The map has limits, and that makes it stronger.</h2>
-      <p>Chapters 12–15 turn the 54-position map into a practice rather than a chart: move one dial, hear cells through ordinary language, diagnose hard cases, and refuse a coordinate when completion has not yet occurred.</p>
-      <blockquote>No completion, no coordinate.</blockquote>
-      <p>The next question has now been earned: <strong>can something be completely intelligible and still be false?</strong></p>
+      <p class="eyebrow">Where the book is now</p><h2>The map has learned its limits.</h2>
+      <p>Chapter 16 separates structural intelligibility from truth, correctness, evidence and justice. A coordinate is not a gold star, and the map is not a truth machine.</p>
+      <blockquote>Structure makes judgment possible. It does not replace judgment.</blockquote>
+      <p>The next test is harder: <strong>does this way of seeing survive when nobody has prepared the examples?</strong></p>
     </section>
-
-    <section class="forthcoming">
-      <p class="eyebrow">The remaining arc</p>
-      <h2>What the book is growing toward</h2>
-      <ol>{forthcoming.map(([number, title]) => <li><span>{number}</span><strong>{title}</strong><em>forthcoming</em></li>)}</ol>
-      <p class="note">The eighteen-chapter shape is a target, not a constraint stronger than the pedagogy. If the unfolding inquiry requires a genuine additional chapter, the learning logic wins.</p>
-    </section>
-
-    <section class="resources">
-      <p class="eyebrow">Behind the book</p>
-      <h2>The structural material remains available</h2>
-      <p>This reading page is the front door to the unfolding book. The formal apparatus is still available separately for readers who want to inspect the system directly.</p>
-      <nav><a href={publicationPath('atlas/')}>Formal 54-cell Atlas →</a><a href={publicationPath('glossary/')}>Formal Glossary →</a></nav>
-    </section>
+    <section class="forthcoming"><p class="eyebrow">The final movement</p><h2>Independence</h2><ol>{forthcoming.map(([number,title]) => <li><span>{number}</span><strong>{title}</strong><em>forthcoming</em></li>)}</ol></section>
   </article>
 </BaseLayout>
-
 <style>
-  .book-home { max-width: 900px; margin: 0 auto; padding: 2rem 0 6rem; }
-  .hero { padding: 3rem 0 4rem; }
-  .hero h1 { font-size: clamp(3.5rem, 10vw, 7.5rem); line-height: .88; letter-spacing: -.06em; margin: .3rem 0 1.4rem; }
-  .lede { max-width: 47rem; font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.55; }
-  .progress { display: flex; flex-wrap: wrap; align-items: baseline; gap: .45rem .7rem; margin: 1.8rem 0; }
-  .progress strong { font: 800 2rem/1 system-ui,sans-serif; }
-  .progress span { margin-right: 1rem; font: 700 .75rem/1 system-ui,sans-serif; text-transform: uppercase; letter-spacing: .07em; opacity: .65; }
-  .start a { display: inline-block; font-weight: 800; font-size: 1.1rem; }
-  section { border-top: 1px solid var(--border,#d8d3c8); padding: 3rem 0; }
-  section h2 { font-size: clamp(2rem,5vw,3.4rem); letter-spacing: -.04em; margin: .3rem 0 1rem; }
-  .chapters { list-style: none; padding: 0; margin: 2rem 0 0; border-top: 1px solid var(--border,#d8d3c8); }
-  .chapters li { margin: 0; }
-  .chapters a { display: grid; grid-template-columns: 3rem 1fr auto; gap: 1rem; align-items: center; padding: 1.15rem 0; border-bottom: 1px solid var(--border,#d8d3c8); color: inherit; text-decoration: none; }
-  .chapters a:hover strong { text-decoration: underline; text-underline-offset: 4px; }
-  .number { font: 800 .75rem/1 system-ui,sans-serif; opacity: .5; letter-spacing: .08em; }
-  .chapter-copy { display: grid; gap: .3rem; }
-  .chapter-copy strong { font-size: 1.08rem; }
-  .chapter-copy small { font-size: .9rem; line-height: 1.4; opacity: .72; }
-  .read { font-weight: 800; white-space: nowrap; }
-  blockquote { margin: 2rem 0; padding: 1rem 1.3rem; border-left: 4px solid currentColor; font-size: 1.4rem; font-weight: 700; }
-  .forthcoming ol { list-style: none; padding: 0; margin: 2rem 0; }
-  .forthcoming li { display: grid; grid-template-columns: 3rem 1fr auto; gap: 1rem; padding: .8rem 0; border-bottom: 1px solid var(--border,#d8d3c8); }
-  .forthcoming li span { font: 800 .75rem/1.6 system-ui,sans-serif; opacity: .5; }
-  .forthcoming li em { font-size: .8rem; opacity: .55; }
-  .note { font-size: .92rem; opacity: .78; max-width: 42rem; }
-  .resources nav { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 1.5rem; font-weight: 800; }
-  @media (max-width: 600px) { .chapters a, .forthcoming li { grid-template-columns: 2.3rem 1fr; } .read, .forthcoming li em { display:none; } }
+.book-home{max-width:900px;margin:0 auto;padding:2rem 0 6rem}.hero{padding:3rem 0 4rem}.hero h1{font-size:clamp(3.5rem,10vw,7.5rem);line-height:.88;letter-spacing:-.06em;margin:.3rem 0 1.4rem}.lede{max-width:47rem;font-size:clamp(1.15rem,2vw,1.5rem);line-height:1.55}.progress{display:flex;flex-wrap:wrap;align-items:baseline;gap:.45rem .7rem;margin:1.8rem 0}.progress strong{font:800 2rem/1 system-ui,sans-serif}.progress span{margin-right:1rem;font:700 .75rem/1 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.07em;opacity:.65}.start a{display:inline-block;font-weight:800;font-size:1.1rem}section{border-top:1px solid var(--border,#d8d3c8);padding:3rem 0}section h2{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.04em;margin:.3rem 0 1rem}.chapters,.forthcoming ol{list-style:none;padding:0;margin:2rem 0 0;border-top:1px solid var(--border,#d8d3c8)}.chapters li{margin:0}.chapters a,.forthcoming li{display:grid;grid-template-columns:3rem 1fr auto;gap:1rem;align-items:center;padding:1.15rem 0;border-bottom:1px solid var(--border,#d8d3c8);color:inherit;text-decoration:none}.chapter-copy{display:grid;gap:.3rem}.chapter-copy small{font-size:.9rem;line-height:1.4;opacity:.72}.number,.forthcoming li span{font:800 .75rem/1 system-ui,sans-serif;opacity:.5}.read{font-weight:800;white-space:nowrap}blockquote{margin:2rem 0;padding:1rem 1.3rem;border-left:4px solid currentColor;font-size:1.4rem;font-weight:700}.forthcoming li em{font-size:.8rem;opacity:.55}@media(max-width:600px){.chapters a,.forthcoming li{grid-template-columns:2.3rem 1fr}.read,.forthcoming li em{display:none}}
 </style>
