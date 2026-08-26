@@ -2,223 +2,117 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { publicationPath } from '../lib/site';
 
-const toc = [
-  ['The project', 'the-project'],
-  ['What Persistence is teaching', 'what-persistence-is-teaching'],
-  ['The three questions', 'the-three-questions'],
-  ['The fifteen definitions', 'the-fifteen-definitions'],
-  ['The fifty-four positions', 'the-fifty-four-positions'],
-  ['How the book unfolds', 'how-the-book-unfolds'],
-  ['Pixels of Clarity', 'pixels-of-clarity-corpus'],
-  ['Neighbour tests', 'neighbour-tests'],
-  ['Open questions', 'open-questions'],
-  ['Book status', 'book-status'],
+const chapters = [
+  ['01', 'The Bag of Sentences', 'A pile becomes a claim about what is the same.', 'chapter-01/'],
+  ['02', 'Piles Are Arguments', 'Topic gives way to structural comparison.', 'chapter-02/'],
+  ['03', 'The First Question', 'The class discovers six recurrent kinds of change.', 'chapter-03/'],
+  ['04', 'Six Ways Something Can Change', 'The first six structural families receive their names.', 'chapter-04/'],
+  ['05', 'Same Change, Different Finish', 'The same transformation can become sufficient in different ways.', 'chapter-05/'],
+  ['06', 'Three Ways a Change Becomes Complete', 'Focal, Distributed, and Release are named.', 'chapter-06/'],
+  ['07', 'What Is Left When It Is Done?', 'A third independent structural question appears.', 'chapter-07/'],
+  ['08', 'Why Does This Keep Showing Up?', 'The book bends: the children begin wondering why the same structures recur.', 'chapter-08/'],
+  ['09', 'Three Ways the Result Remains', 'Standing, Bearing, and Efficacy are named after being discovered.', 'chapter-09/'],
+  ['10', 'Three Questions, One Thing', 'The three dimensions locate one completed intelligibility: Dimensional Conjunction.', 'chapter-10/'],
 ];
 
-const transformations = [
-  ['Differentiation', 'A difference that was unavailable, flattened, conflated, or non-operative becomes determinate enough to matter.'],
-  ['Opening', 'Availability, reach, continuation, access, or possibility becomes greater than it was under the opening constraint.'],
-  ['Relating', 'A bearing, dependency, correspondence, ordering, reciprocity, or mutual determination becomes constitutive of the situation.'],
-  ['Repair', 'An organization that fails relative to an operative criterion is changed so that the misfit or fault no longer governs the result.'],
-  ['Integration', 'Separate parts acquire determinate roles through organization into a whole and thereby gain structure, mutual support, or joint capacity.'],
-  ['Settlement', 'A live demand for further uptake, choice, explanation, completion, adjudication, or continuation is discharged.'],
-];
-
-const topologies = [
-  ['Focal', 'The transformation becomes complete because completion gathers around one privileged locus. That locus is constitutive of why the transformation counts as complete.'],
-  ['Distributed', 'The transformation becomes complete only across a constitutive plurality, span, sequence, range, reciprocal field, set of cases, or system. No single locus is sufficient by itself.'],
-  ['Release', 'The transformation becomes complete because something that previously governed the situation loses its determining force. Release means de-governance, not merely removal, absence, negation, separation, or movement away.'],
-];
-
-const persistenceModes = [
-  ['Standing', 'The achieved determination itself remains available as the completed result.'],
-  ['Bearing', 'The achieved result remains what it is only through a constitutive relation, dependency, contrast, condition, source, proportion, frame, support, or mutual determination.'],
-  ['Efficacy', 'The achieved result remains as an accomplished capacity, operative effect, changed continuation, rule, function, or consequential difference in what can happen.'],
+const forthcoming = [
+  ['11', 'The Fifty-Four Boxes'],
+  ['12', 'Move One Dial'],
+  ['13', 'Every Box Can Speak'],
+  ['14', 'The Hard Boxes'],
+  ['15', 'Sometimes There Is No Box Yet'],
+  ['16', 'Clear Does Not Mean True'],
+  ['17', 'Catch It in the Wild / Make One for a Box'],
+  ['18', 'The Whole Picture'],
 ];
 ---
 <BaseLayout
-  title="Pixels of Clarity — Persistence for Ten-Year-Olds"
-  description="A book-in-progress that teaches the 54-position Constraint Grammar of Completed Intelligibility through sentence sorting, comparison, discussion, and discovery."
-  sourceStatus="Pedagogical edition · book in progress"
+  title="Pixels of Clarity — The Unfolding Book"
+  description="The live unfolding pedagogical edition of Persistence for ten-year-olds. Read the completed chapters in order as the 54-position grammar is discovered."
+  sourceStatus="Pedagogical edition · 10 of 18 chapters drafted"
 >
-  <article class="poc-page">
-    <header class="poc-hero">
-      <p class="eyebrow">Persistence for Ten-Year-Olds</p>
+  <article class="book-home">
+    <header class="hero">
+      <p class="eyebrow">Persistence for Ten-Year-Olds · live book</p>
       <h1>Pixels of Clarity</h1>
-      <p class="lede">A book being built from ordinary sentences, sorting, comparison, and discussion — until the hidden 6 × 3 × 3 structure becomes something a child can see and use.</p>
-      <div class="status-row" aria-label="Book status">
-        <span>Book in progress</span>
-        <span>54 positions</span>
-        <span>15 primitive definitions</span>
-      </div>
+      <p class="lede">A class begins with a bag of ordinary sentences. By sorting, comparing, arguing, testing, and wondering, they gradually discover the structure hidden in things they already understand.</p>
+      <div class="progress"><strong>10</strong><span>chapters readable</span><strong>18</strong><span>planned</span></div>
+      <p class="start"><a href={publicationPath('pixels-of-clarity/chapter-01/')}>Start reading Chapter 1 →</a></p>
     </header>
 
-    <div class="poc-layout">
-      <aside class="toc" aria-labelledby="toc-title">
-        <p class="eyebrow" id="toc-title">Table of contents</p>
-        <ol>{toc.map(([label, id]) => <li><a href={`#${id}`}>{label}</a></li>)}</ol>
-      </aside>
+    <section class="unfolding">
+      <p class="eyebrow">The unfolding book</p>
+      <h2>Read what exists now</h2>
+      <p>The book is being written in sequence. Each completed chapter below is part of the live reading edition, not a summary of the project.</p>
+      <ol class="chapters">
+        {chapters.map(([number, title, note, path]) => (
+          <li>
+            <a href={publicationPath(`pixels-of-clarity/${path}`)}>
+              <span class="number">{number}</span>
+              <span class="chapter-copy"><strong>{title}</strong><small>{note}</small></span>
+              <span class="read">Read →</span>
+            </a>
+          </li>
+        ))}
+      </ol>
+    </section>
 
-      <div class="book">
-        <section id="the-project">
-          <p class="chapter-number">01</p>
-          <h2>The project</h2>
-          <p>Imagine a teacher arriving with a large bag of paper strips. Every strip has one ordinary sentence on it. The children turn them over, spread them out, and begin making groups.</p>
-          <p>At first there is no table to memorize. There are only sentences, comparisons, disagreements, and the question: <strong>what is the same about these, and what is different?</strong></p>
-          <p>That sorting gradually becomes structural seeing. The formal grammar is revealed only after the distinctions have become noticeable.</p>
-          <div class="principle"><strong>Pedagogical commitment</strong><span>Do not simplify away the structure. Simplify the route into it.</span></div>
-        </section>
+    <section class="bend">
+      <p class="eyebrow">Where the book is now</p>
+      <h2>The bend has happened.</h2>
+      <p>By Chapter 7 the children have discovered three independent structural questions. Chapter 8 deliberately stops the straight march through the taxonomy and lets a new question arise from their own success: <strong>why does this keep showing up?</strong></p>
+      <p>Chapters 9 and 10 return to the formal grammar without closing that philosophical question. The children now have the names <strong>Standing, Bearing, Efficacy</strong> and the idea of <strong>Dimensional Conjunction</strong>: three questions, one completed form.</p>
+      <blockquote>6 × 3 × 3 = 54. But fifty-four what?</blockquote>
+      <p>That is where the live book currently stands.</p>
+    </section>
 
-        <section id="what-persistence-is-teaching">
-          <p class="chapter-number">02</p>
-          <h2>What Persistence is teaching</h2>
-          <p>Persistence is concerned with <strong>completed intelligibility</strong>: something is unresolved in a determinate way, something answers that unresolvedness, the answer becomes sufficient, and a determinate result remains available.</p>
-          <p>The system is not primarily sorting topics, objects, emotions, or verbs. It is sorting <strong>forms of completed intelligibility</strong>.</p>
-          <p>“Complete” is indexed to the operative demand. It does not mean finished forever.</p>
-          <p>The child’s eventual competence is simple to state: <strong>notice a completion, identify its structural form, locate it in the grammar, distinguish it from its neighbours, and explain what was noticed.</strong></p>
-        </section>
+    <section class="forthcoming">
+      <p class="eyebrow">The remaining arc</p>
+      <h2>What the book is growing toward</h2>
+      <ol>
+        {forthcoming.map(([number, title]) => <li><span>{number}</span><strong>{title}</strong><em>forthcoming</em></li>)}
+      </ol>
+      <p class="note">The eighteen-chapter shape is a target, not a constraint stronger than the pedagogy. If the unfolding inquiry requires a genuine additional chapter, the learning logic wins.</p>
+    </section>
 
-        <section id="the-three-questions">
-          <p class="chapter-number">03</p>
-          <h2>The three questions</h2>
-          <div class="question-grid">
-            <div><span>1</span><h3>What kind of unresolvedness changed?</h3><p>This is the question of <strong>Transformation Pattern</strong>.</p></div>
-            <div><span>2</span><h3>What made that change count as complete?</h3><p>This is the question of <strong>Completion Topology</strong>.</p></div>
-            <div><span>3</span><h3>How does the achieved completion remain available?</h3><p>This is the question of <strong>Persistence Mode</strong>.</p></div>
-          </div>
-          <p>The questions can be used sequentially to navigate the board. The underlying cell is not built sequentially. The three dimensions mutually constrain one completed form.</p>
-          <blockquote>The questions help us find the box. They are not instructions for building what happened.</blockquote>
-        </section>
-
-        <section id="the-fifteen-definitions">
-          <p class="chapter-number">04</p>
-          <h2>The fifteen definitions</h2>
-          <p>These are the invariant theoretical commitments. The child-facing wording may become simpler as the book is developed, but these distinctions may not be flattened.</p>
-
-          <h3>Transformation Pattern — six values</h3>
-          <div class="definition-list">{transformations.map(([term, definition]) => <div><h4>{term}</h4><p>{definition}</p></div>)}</div>
-
-          <h3>Completion Topology — three values</h3>
-          <div class="definition-list">{topologies.map(([term, definition]) => <div><h4>{term}</h4><p>{definition}</p></div>)}</div>
-
-          <h3>Persistence Mode — three values</h3>
-          <div class="definition-list">{persistenceModes.map(([term, definition]) => <div><h4>{term}</h4><p>{definition}</p></div>)}</div>
-        </section>
-
-        <section id="the-fifty-four-positions">
-          <p class="chapter-number">05</p>
-          <h2>The fifty-four positions</h2>
-          <div class="equation" aria-label="Six times three times three equals fifty-four"><strong>6</strong><span>×</span><strong>3</strong><span>×</span><strong>3</strong><span>=</span><strong>54</strong></div>
-          <p>Every coordinate is written:</p>
-          <p class="coordinate">Transformation Pattern × Completion Topology × Persistence Mode</p>
-          <p>The coordinate does not describe three detachable properties. It constrains one unified completion-event.</p>
-          <p>The book will make all 54 positions visible as an occupied board: not empty boxes first, but families of ordinary utterances that let the form become recognizable.</p>
-          <p><a href={publicationPath('atlas/')}>Open the formal 54-cell Atlas →</a></p>
-        </section>
-
-        <section id="how-the-book-unfolds">
-          <p class="chapter-number">06</p>
-          <h2>How the book unfolds</h2>
-          <ol class="sequence">
-            <li><strong>Experience.</strong> Encounter ordinary sentence strips before being given a taxonomy.</li>
-            <li><strong>Compare.</strong> Put sentences together and say why they seem alike.</li>
-            <li><strong>Discriminate.</strong> Find the smallest difference that moves one sentence away from another.</li>
-            <li><strong>Recognize.</strong> Begin seeing recurrent structural families.</li>
-            <li><strong>Name.</strong> Introduce the fifteen formal terms only after the distinctions have become perceptible.</li>
-            <li><strong>Map.</strong> Reveal why six by three by three produces 54 positions.</li>
-            <li><strong>Transfer.</strong> Use the grammar on fresh sentences and ordinary situations.</li>
-          </ol>
-        </section>
-
-        <section id="pixels-of-clarity-corpus">
-          <p class="chapter-number">07</p>
-          <h2>Pixels of Clarity</h2>
-          <p>The working pedagogical corpus began with three independent derivation runs, ten companion utterances for each of the 54 coordinates: 1,620 sentences in all.</p>
-          <p>After conservative duplicate and near-duplicate consolidation, 1,307 utterances remain. They are not treated as canonical answers. They are <strong>pixels</strong>: ordinary linguistic realizations from which the structural picture of a cell can become visible.</p>
-          <p>Convergence is evidence. Variation is useful. Structural disagreement is not silently edited away.</p>
-          <div class="sample-grid">
-            <q>That part is fixed now.</q>
-            <q>Fixing that point makes it work again.</q>
-            <q>There is a way through here now.</q>
-            <q>It all hangs together.</q>
-            <q>We’re square now.</q>
-            <q>The old rule no longer stops us from moving on.</q>
-          </div>
-        </section>
-
-        <section id="neighbour-tests">
-          <p class="chapter-number">08</p>
-          <h2>Neighbour tests</h2>
-          <p>Real fluency appears when a learner can distinguish neighbouring cells, not merely recognize familiar wording.</p>
-          <div class="contrast-set">
-            <p><strong>Repair × Focal × Standing</strong><br />“That part is fixed now.”</p>
-            <p><strong>Repair × Focal × Bearing</strong><br />“This part is right because it fits the guide.”</p>
-            <p><strong>Repair × Focal × Efficacy</strong><br />“Fixing that part makes it work again.”</p>
-          </div>
-          <p>The question is not “Which keyword did you see?” It is: <strong>all three are Repair; what changed in the way the completion remains?</strong></p>
-        </section>
-
-        <section id="open-questions">
-          <p class="chapter-number">09</p>
-          <h2>Open questions</h2>
-          <p>The book will preserve genuine uncertainty where it appears. Difficult cells should become objects of comparison and discussion rather than being forced into artificial neatness.</p>
-          <p>A learner is also allowed to conclude that no completed form has yet occurred. Persistence’s rule is:</p>
-          <blockquote>No completion, no coordinate.</blockquote>
-          <p>Likewise, a coordinate describes intelligibility, not truth. A completed intelligibility may still be false, mistaken, bad, or incorrect.</p>
-        </section>
-
-        <section id="book-status">
-          <p class="chapter-number">10</p>
-          <h2>Book status</h2>
-          <p><strong>This page is the live table of contents and working spine of the pedagogical edition.</strong></p>
-          <p>The next writing work is to derive child-accessible formulations of the fifteen definitions from the 54 utterance families, select the strongest minimal contrasts, design the sentence-sorting progression, and populate the 54 positions with their clearest surviving “pixels.”</p>
-          <p>The academic publication remains the source of theoretical constraint. This edition changes the route into the grammar, not the grammar itself.</p>
-          <div class="next-links"><a href={publicationPath('five-year-old/')}>Five-Year-Old Edition →</a><a href={publicationPath('atlas/')}>Formal Atlas →</a><a href={publicationPath('glossary/')}>Formal Glossary →</a></div>
-        </section>
-      </div>
-    </div>
+    <section class="resources">
+      <p class="eyebrow">Behind the book</p>
+      <h2>The structural material remains available</h2>
+      <p>This reading page is the front door to the unfolding book. The formal apparatus is still available separately for readers who want to inspect the system directly.</p>
+      <nav>
+        <a href={publicationPath('atlas/')}>Formal 54-cell Atlas →</a>
+        <a href={publicationPath('glossary/')}>Formal Glossary →</a>
+      </nav>
+    </section>
   </article>
 </BaseLayout>
 
 <style>
-  .poc-page { max-width: 1120px; margin: 0 auto; padding: 2rem 0 5rem; }
-  .poc-hero { max-width: 820px; padding: 3rem 0 2.5rem; }
-  .poc-hero h1 { font-size: clamp(3.2rem, 9vw, 7rem); line-height: .9; letter-spacing: -.055em; margin: .25rem 0 1.25rem; }
-  .poc-hero .lede { font-size: clamp(1.15rem, 2vw, 1.45rem); max-width: 44rem; }
-  .status-row { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1.5rem; }
-  .status-row span { border: 1px solid var(--border, #d8d3c8); border-radius: 999px; padding: .38rem .68rem; font: 700 .72rem/1 system-ui, sans-serif; letter-spacing: .05em; text-transform: uppercase; }
-  .poc-layout { display: grid; grid-template-columns: minmax(190px, 250px) minmax(0, 720px); gap: clamp(2rem, 6vw, 6rem); align-items: start; }
-  .toc { position: sticky; top: 1.25rem; border-top: 1px solid var(--border, #d8d3c8); padding-top: 1rem; }
-  .toc ol { margin: .75rem 0 0; padding-left: 1.15rem; }
-  .toc li { margin: .38rem 0; font: 600 .84rem/1.35 system-ui, sans-serif; }
-  .toc a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
-  .book section { padding: 1rem 0 4rem; border-top: 1px solid var(--border, #d8d3c8); scroll-margin-top: 1rem; }
-  .book section:first-child { border-top-width: 2px; }
-  .chapter-number { font: 800 .72rem/1 system-ui, sans-serif; letter-spacing: .12em; opacity: .55; margin: 0 0 .8rem; }
-  .book h2 { font-size: clamp(2rem, 4vw, 3.25rem); letter-spacing: -.035em; margin: 0 0 1.35rem; }
-  .book h3 { margin-top: 2.2rem; }
-  .book p, .book li { font-size: 1.04rem; line-height: 1.68; }
-  .principle { display: grid; gap: .35rem; margin: 2rem 0; padding: 1.2rem 1.35rem; border: 1px solid var(--border, #d8d3c8); border-radius: .6rem; }
-  .principle strong { font: 800 .75rem/1 system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; }
-  .question-grid { display: grid; gap: 1rem; margin: 2rem 0; }
-  .question-grid > div { border-left: 3px solid currentColor; padding: .35rem 0 .35rem 1rem; }
-  .question-grid span { font: 800 .72rem/1 system-ui, sans-serif; opacity: .55; }
-  .question-grid h3 { margin: .3rem 0 .4rem; font-size: 1.25rem; }
-  .question-grid p { margin: 0; }
-  blockquote { margin: 2rem 0; padding: 1rem 1.25rem; border-left: 4px solid currentColor; font-size: 1.2rem; font-style: italic; }
-  .definition-list { display: grid; gap: .8rem; margin: 1rem 0 2.5rem; }
-  .definition-list > div { border-top: 1px solid var(--border, #d8d3c8); padding-top: .9rem; }
-  .definition-list h4 { margin: 0 0 .3rem; font-size: 1.05rem; }
-  .definition-list p { margin: 0; }
-  .equation { display: flex; align-items: baseline; flex-wrap: wrap; gap: .7rem; margin: 1.5rem 0; font: 700 clamp(2rem, 6vw, 4.2rem)/1 system-ui, sans-serif; letter-spacing: -.04em; }
-  .equation span { opacity: .42; }
-  .coordinate { font-weight: 700; padding: 1rem; border: 1px solid var(--border, #d8d3c8); border-radius: .5rem; }
-  .sequence { padding-left: 1.35rem; }
-  .sequence li { margin: .8rem 0; }
-  .sample-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: .75rem; margin: 2rem 0; }
-  .sample-grid q { display: block; padding: 1rem; border: 1px solid var(--border, #d8d3c8); border-radius: .55rem; font-size: 1rem; line-height: 1.45; }
-  .contrast-set { display: grid; gap: .7rem; margin: 2rem 0; }
-  .contrast-set p { margin: 0; padding: 1rem 1.1rem; border: 1px solid var(--border, #d8d3c8); border-radius: .55rem; }
-  .next-links { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; margin-top: 2rem; font-weight: 700; }
-  @media (max-width: 760px) { .poc-layout { grid-template-columns: 1fr; } .toc { position: static; } .sample-grid { grid-template-columns: 1fr; } }
+  .book-home { max-width: 900px; margin: 0 auto; padding: 2rem 0 6rem; }
+  .hero { padding: 3rem 0 4rem; }
+  .hero h1 { font-size: clamp(3.5rem, 10vw, 7.5rem); line-height: .88; letter-spacing: -.06em; margin: .3rem 0 1.4rem; }
+  .lede { max-width: 47rem; font-size: clamp(1.15rem, 2vw, 1.5rem); line-height: 1.55; }
+  .progress { display: flex; flex-wrap: wrap; align-items: baseline; gap: .45rem .7rem; margin: 1.8rem 0; }
+  .progress strong { font: 800 2rem/1 system-ui,sans-serif; }
+  .progress span { margin-right: 1rem; font: 700 .75rem/1 system-ui,sans-serif; text-transform: uppercase; letter-spacing: .07em; opacity: .65; }
+  .start a { display: inline-block; font-weight: 800; font-size: 1.1rem; }
+  section { border-top: 1px solid var(--border,#d8d3c8); padding: 3rem 0; }
+  section h2 { font-size: clamp(2rem,5vw,3.4rem); letter-spacing: -.04em; margin: .3rem 0 1rem; }
+  .chapters { list-style: none; padding: 0; margin: 2rem 0 0; border-top: 1px solid var(--border,#d8d3c8); }
+  .chapters li { margin: 0; }
+  .chapters a { display: grid; grid-template-columns: 3rem 1fr auto; gap: 1rem; align-items: center; padding: 1.15rem 0; border-bottom: 1px solid var(--border,#d8d3c8); color: inherit; text-decoration: none; }
+  .chapters a:hover strong { text-decoration: underline; text-underline-offset: 4px; }
+  .number { font: 800 .75rem/1 system-ui,sans-serif; opacity: .5; letter-spacing: .08em; }
+  .chapter-copy { display: grid; gap: .3rem; }
+  .chapter-copy strong { font-size: 1.08rem; }
+  .chapter-copy small { font-size: .9rem; line-height: 1.4; opacity: .72; }
+  .read { font-weight: 800; white-space: nowrap; }
+  blockquote { margin: 2rem 0; padding: 1rem 1.3rem; border-left: 4px solid currentColor; font-size: 1.4rem; font-weight: 700; }
+  .forthcoming ol { list-style: none; padding: 0; margin: 2rem 0; }
+  .forthcoming li { display: grid; grid-template-columns: 3rem 1fr auto; gap: 1rem; padding: .8rem 0; border-bottom: 1px solid var(--border,#d8d3c8); }
+  .forthcoming li span { font: 800 .75rem/1.6 system-ui,sans-serif; opacity: .5; }
+  .forthcoming li em { font-size: .8rem; opacity: .55; }
+  .note { font-size: .92rem; opacity: .78; max-width: 42rem; }
+  .resources nav { display: flex; flex-wrap: wrap; gap: 1rem 2rem; margin-top: 1.5rem; font-weight: 800; }
+  @media (max-width: 600px) { .chapters a, .forthcoming li { grid-template-columns: 2.3rem 1fr; } .read, .forthcoming li em { display:none; } }
 </style>
