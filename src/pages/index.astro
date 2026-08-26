@@ -15,6 +15,7 @@ const academicRoutes = [
 ];
 
 const expositionEssays = [
+  ['Pixels of Clarity', 'A book-in-progress for ten-year-olds: ordinary sentences, sorting, comparison, discussion, and the gradual discovery of the 54-position grammar.', 'pixels-of-clarity/', 'Pedagogical edition · in progress'],
   ['Layman’s Edition', 'A serious plain-language explanation of the framework for readers who do not want to begin with formal theory.', 'layman/', 'Derived explanatory essay'],
   ['Venture Edition', 'A strategic reading of what capabilities, products, and companies might become possible if the framework proves useful.', 'venture/', 'Derived strategic interpretation'],
   ['If We Learned to See Completion', 'A broader consequences essay about what changes if completion becomes something we can recognize systematically.', 'mainstream/', 'Derived consequences essay'],
@@ -62,7 +63,7 @@ const expositionEssays = [
     </section>
 
     <section class="section" aria-labelledby="exposition-essays-title">
-      <div class="section-intro"><div><p class="eyebrow">Exposition and interpretation</p><h2 id="exposition-essays-title">Three longer essays.</h2></div><p>These are derived readings of the same framework. They are ways of explaining, interpreting, or extending the implications of the canonical theory rather than replacements for it.</p></div>
+      <div class="section-intro"><div><p class="eyebrow">Exposition and interpretation</p><h2 id="exposition-essays-title">Four longer routes.</h2></div><p>These are derived readings of the same framework. They are ways of explaining, interpreting, teaching, or extending the implications of the canonical theory rather than replacements for it.</p></div>
       <div class="route-grid">{expositionEssays.map(([title, body, path, status]) => (<a class="route-card" href={publicationPath(path)}><span class="edition-label">{status}</span><h3>{title}</h3><p>{body}</p></a>))}</div>
     </section>
   </div>
