@@ -1,53 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { publicationPath } from '../lib/site';
-
 const chapters = [
-  ['01', 'The Bag of Sentences', 'A pile becomes a claim about what is the same.', 'chapter-01/'],
-  ['02', 'Piles Are Arguments', 'Topic gives way to structural comparison.', 'chapter-02/'],
-  ['03', 'The First Question', 'The class discovers six recurrent kinds of change.', 'chapter-03/'],
-  ['04', 'Six Ways Something Can Change', 'The first six structural families receive their names.', 'chapter-04/'],
-  ['05', 'Same Change, Different Finish', 'The same transformation can become sufficient in different ways.', 'chapter-05/'],
-  ['06', 'Three Ways a Change Becomes Complete', 'Focal, Distributed, and Release are named.', 'chapter-06/'],
-  ['07', 'What Is Left When It Is Done?', 'A third independent structural question appears.', 'chapter-07/'],
-  ['08', 'Why Does This Keep Showing Up?', 'The book bends: the children begin wondering why the same structures recur.', 'chapter-08/'],
-  ['09', 'Three Ways the Result Remains', 'Standing, Bearing, and Efficacy are named after being discovered.', 'chapter-09/'],
-  ['10', 'Three Questions, One Thing', 'The three dimensions locate one completed intelligibility: Dimensional Conjunction.', 'chapter-10/'],
-  ['11', 'The Fifty-Four Boxes', 'The map appears as a compression of distinctions the class has already earned.', 'chapter-11/'],
-  ['12', 'Move One Dial', 'The map becomes a field of neighbours: hold two coordinates still and move one.', 'chapter-12/'],
-  ['13', 'Every Box Can Speak', 'The Goldmine gives each structural coordinate families of ordinary utterances.', 'chapter-13/'],
-  ['14', 'The Hard Boxes', 'Uncertainty is separated into weak evidence, neighbour confusion, ambiguity, and model pressure.', 'chapter-14/'],
-  ['15', 'Sometimes There Is No Box Yet', 'The class learns the rule: no completion, no coordinate.', 'chapter-15/'],
-  ['16', 'Clear Does Not Mean True', 'The class discovers that structural intelligibility is not truth, evidence, justice, or judgment.', 'chapter-16/'],
-];
-
-const forthcoming = [
-  ['17', 'Take It Outside'],
-  ['18', 'The Bag Comes Back'],
-];
+['01','The Bag of Sentences','A pile becomes a claim about what is the same.','chapter-01/'],['02','Piles Are Arguments','Topic gives way to structural comparison.','chapter-02/'],['03','The First Question','The class discovers six recurrent kinds of change.','chapter-03/'],['04','Six Ways Something Can Change','The first six structural families receive their names.','chapter-04/'],['05','Same Change, Different Finish','The same transformation can become sufficient in different ways.','chapter-05/'],['06','Three Ways a Change Becomes Complete','Focal, Distributed, and Release are named.','chapter-06/'],['07','What Is Left When It Is Done?','A third independent structural question appears.','chapter-07/'],['08','Why Does This Keep Showing Up?','The book bends: the children begin wondering why the same structures recur.','chapter-08/'],['09','Three Ways the Result Remains','Standing, Bearing, and Efficacy are named after being discovered.','chapter-09/'],['10','Three Questions, One Thing','The three dimensions locate one completed intelligibility.','chapter-10/'],['11','The Fifty-Four Boxes','The map appears as a compression of distinctions the class has already earned.','chapter-11/'],['12','Move One Dial','The map becomes a field of neighbours.','chapter-12/'],['13','Every Box Can Speak','The Goldmine gives each structural coordinate families of ordinary utterances.','chapter-13/'],['14','The Hard Boxes','Uncertainty becomes something the class can diagnose rather than hide.','chapter-14/'],['15','Sometimes There Is No Box Yet','No completion, no coordinate.','chapter-15/'],['16','Clear Does Not Mean True','Structural intelligibility is separated from truth, evidence and justice.','chapter-16/'],['17','Take It Outside','Prepared examples disappear; the children find and generate structural contrasts for themselves.','chapter-17/']];
+const forthcoming=[['18','The Bag Comes Back']];
 ---
-<BaseLayout title="Pixels of Clarity — The Unfolding Book" description="The live unfolding pedagogical edition of Persistence for ten-year-olds." sourceStatus="Pedagogical edition · 16 of 18 chapters drafted">
-  <article class="book-home">
-    <header class="hero">
-      <p class="eyebrow">Persistence for Ten-Year-Olds · live book</p>
-      <h1>Pixels of Clarity</h1>
-      <p class="lede">A class begins with a bag of ordinary sentences. By sorting, comparing, arguing, testing, and wondering, they gradually discover the structure hidden in things they already understand.</p>
-      <div class="progress"><strong>16</strong><span>chapters readable</span><strong>18</strong><span>planned</span></div>
-      <p class="start"><a href={publicationPath('pixels-of-clarity/chapter-01/')}>Start reading Chapter 1 →</a></p>
-    </header>
-    <section class="unfolding">
-      <p class="eyebrow">The unfolding book</p><h2>Read what exists now</h2>
-      <ol class="chapters">{chapters.map(([number,title,note,path]) => <li><a href={publicationPath(`pixels-of-clarity/${path}`)}><span class="number">{number}</span><span class="chapter-copy"><strong>{title}</strong><small>{note}</small></span><span class="read">Read →</span></a></li>)}</ol>
-    </section>
-    <section class="bend">
-      <p class="eyebrow">Where the book is now</p><h2>The map has learned its limits.</h2>
-      <p>Chapter 16 separates structural intelligibility from truth, correctness, evidence and justice. A coordinate is not a gold star, and the map is not a truth machine.</p>
-      <blockquote>Structure makes judgment possible. It does not replace judgment.</blockquote>
-      <p>The next test is harder: <strong>does this way of seeing survive when nobody has prepared the examples?</strong></p>
-    </section>
-    <section class="forthcoming"><p class="eyebrow">The final movement</p><h2>Independence</h2><ol>{forthcoming.map(([number,title]) => <li><span>{number}</span><strong>{title}</strong><em>forthcoming</em></li>)}</ol></section>
-  </article>
-</BaseLayout>
-<style>
-.book-home{max-width:900px;margin:0 auto;padding:2rem 0 6rem}.hero{padding:3rem 0 4rem}.hero h1{font-size:clamp(3.5rem,10vw,7.5rem);line-height:.88;letter-spacing:-.06em;margin:.3rem 0 1.4rem}.lede{max-width:47rem;font-size:clamp(1.15rem,2vw,1.5rem);line-height:1.55}.progress{display:flex;flex-wrap:wrap;align-items:baseline;gap:.45rem .7rem;margin:1.8rem 0}.progress strong{font:800 2rem/1 system-ui,sans-serif}.progress span{margin-right:1rem;font:700 .75rem/1 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.07em;opacity:.65}.start a{display:inline-block;font-weight:800;font-size:1.1rem}section{border-top:1px solid var(--border,#d8d3c8);padding:3rem 0}section h2{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.04em;margin:.3rem 0 1rem}.chapters,.forthcoming ol{list-style:none;padding:0;margin:2rem 0 0;border-top:1px solid var(--border,#d8d3c8)}.chapters li{margin:0}.chapters a,.forthcoming li{display:grid;grid-template-columns:3rem 1fr auto;gap:1rem;align-items:center;padding:1.15rem 0;border-bottom:1px solid var(--border,#d8d3c8);color:inherit;text-decoration:none}.chapter-copy{display:grid;gap:.3rem}.chapter-copy small{font-size:.9rem;line-height:1.4;opacity:.72}.number,.forthcoming li span{font:800 .75rem/1 system-ui,sans-serif;opacity:.5}.read{font-weight:800;white-space:nowrap}blockquote{margin:2rem 0;padding:1rem 1.3rem;border-left:4px solid currentColor;font-size:1.4rem;font-weight:700}.forthcoming li em{font-size:.8rem;opacity:.55}@media(max-width:600px){.chapters a,.forthcoming li{grid-template-columns:2.3rem 1fr}.read,.forthcoming li em{display:none}}
-</style>
+<BaseLayout title="Pixels of Clarity — The Unfolding Book" description="The live unfolding pedagogical edition of Persistence for ten-year-olds." sourceStatus="Pedagogical edition · 17 of 18 chapters drafted">
+<article class="book-home"><header class="hero"><p class="eyebrow">Persistence for Ten-Year-Olds · live book</p><h1>Pixels of Clarity</h1><p class="lede">A class begins with a bag of ordinary sentences. By sorting, comparing, arguing, testing, and wondering, they gradually discover the structure hidden in things they already understand.</p><div class="progress"><strong>17</strong><span>chapters readable</span><strong>18</strong><span>planned</span></div><p class="start"><a href={publicationPath('pixels-of-clarity/chapter-01/')}>Start reading Chapter 1 →</a></p></header>
+<section><p class="eyebrow">The unfolding book</p><h2>Read what exists now</h2><ol class="chapters">{chapters.map(([n,t,note,path])=><li><a href={publicationPath(`pixels-of-clarity/${path}`)}><span class="number">{n}</span><span class="chapter-copy"><strong>{t}</strong><small>{note}</small></span><span class="read">Read →</span></a></li>)}</ol></section>
+<section><p class="eyebrow">Where the book is now</p><h2>The children can leave the worksheet behind.</h2><p>Chapter 17 removes prepared examples. The children find structural cases in ordinary life, refuse cases that are not ready, defend neighbour distinctions, then reverse the direction and make natural utterances from coordinates themselves.</p><blockquote>ordinary case → coordinate<br/>coordinate → ordinary case</blockquote><p>Only one test remains. <strong>The first problem is coming back.</strong></p></section>
+<section class="forthcoming"><p class="eyebrow">The final chapter</p><ol>{forthcoming.map(([n,t])=><li><span>{n}</span><strong>{t}</strong><em>forthcoming</em></li>)}</ol></section></article></BaseLayout>
+<style>.book-home{max-width:900px;margin:0 auto;padding:2rem 0 6rem}.hero{padding:3rem 0 4rem}.hero h1{font-size:clamp(3.5rem,10vw,7.5rem);line-height:.88;letter-spacing:-.06em;margin:.3rem 0 1.4rem}.lede{max-width:47rem;font-size:clamp(1.15rem,2vw,1.5rem);line-height:1.55}.progress{display:flex;flex-wrap:wrap;align-items:baseline;gap:.45rem .7rem;margin:1.8rem 0}.progress strong{font:800 2rem/1 system-ui,sans-serif}.progress span{margin-right:1rem;font:700 .75rem/1 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.07em;opacity:.65}.start a{font-weight:800;font-size:1.1rem}section{border-top:1px solid var(--border,#d8d3c8);padding:3rem 0}section h2{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.04em}.chapters,.forthcoming ol{list-style:none;padding:0;border-top:1px solid var(--border,#d8d3c8)}.chapters a,.forthcoming li{display:grid;grid-template-columns:3rem 1fr auto;gap:1rem;align-items:center;padding:1.15rem 0;border-bottom:1px solid var(--border,#d8d3c8);color:inherit;text-decoration:none}.chapter-copy{display:grid;gap:.3rem}.chapter-copy small{font-size:.9rem;opacity:.72}.number,.forthcoming li span{font:800 .75rem/1 system-ui,sans-serif;opacity:.5}.read{font-weight:800}blockquote{margin:2rem 0;padding:1rem 1.3rem;border-left:4px solid currentColor;font-size:1.4rem;font-weight:700}.forthcoming li em{font-size:.8rem;opacity:.55}@media(max-width:600px){.chapters a,.forthcoming li{grid-template-columns:2.3rem 1fr}.read,.forthcoming li em{display:none}}</style>
