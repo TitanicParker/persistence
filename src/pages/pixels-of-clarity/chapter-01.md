@@ -1,7 +1,8 @@
 ---
-layout: ../../layouts/PublicationLayout.astro
+layout: ../../layouts/BaseLayout.astro
 title: "Pixels of Clarity — Chapter 1: The Bag of Sentences"
 description: "The first chapter of Pixels of Clarity: a discovery-based route into Persistence for young readers and the adults learning alongside them."
+sourceStatus: "Pedagogical edition · Chapter 1"
 ---
 
 # Chapter 1 — The Bag of Sentences
@@ -395,15 +396,7 @@ You do not need printed cards for this part.
 
 Listen for six ordinary sentences today.
 
-They might come from:
-
-- something somebody says at home;
-- a game;
-- a story;
-- a lesson;
-- something going wrong and being fixed;
-- somebody making a decision;
-- people working something out.
+They might come from something somebody says at home, a game, a story, a lesson, something going wrong and being fixed, somebody making a decision, or people working something out.
 
 Write the six sentences down as closely as you can remember them.
 
@@ -431,4 +424,4 @@ So we will need a sharper question:
 
 **Are we sorting by what the sentence is about—or by what happened inside it?**
 
-[Continue to the book home →](/persistence/pixels-of-clarity/)
+[Back to the book home →](/persistence/pixels-of-clarity/)
