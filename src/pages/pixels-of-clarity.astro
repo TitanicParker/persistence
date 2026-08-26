@@ -13,10 +13,10 @@ const chapters = [
   ['08', 'Why Does This Keep Showing Up?', 'The book bends: the children begin wondering why the same structures recur.', 'chapter-08/'],
   ['09', 'Three Ways the Result Remains', 'Standing, Bearing, and Efficacy are named after being discovered.', 'chapter-09/'],
   ['10', 'Three Questions, One Thing', 'The three dimensions locate one completed intelligibility: Dimensional Conjunction.', 'chapter-10/'],
+  ['11', 'The Fifty-Four Boxes', 'The map appears as a compression of distinctions the class has already earned.', 'chapter-11/'],
 ];
 
 const forthcoming = [
-  ['11', 'The Fifty-Four Boxes'],
   ['12', 'Move One Dial'],
   ['13', 'Every Box Can Speak'],
   ['14', 'The Hard Boxes'],
@@ -29,14 +29,14 @@ const forthcoming = [
 <BaseLayout
   title="Pixels of Clarity — The Unfolding Book"
   description="The live unfolding pedagogical edition of Persistence for ten-year-olds. Read the completed chapters in order as the 54-position grammar is discovered."
-  sourceStatus="Pedagogical edition · 10 of 18 chapters drafted"
+  sourceStatus="Pedagogical edition · 11 of 18 chapters drafted"
 >
   <article class="book-home">
     <header class="hero">
       <p class="eyebrow">Persistence for Ten-Year-Olds · live book</p>
       <h1>Pixels of Clarity</h1>
       <p class="lede">A class begins with a bag of ordinary sentences. By sorting, comparing, arguing, testing, and wondering, they gradually discover the structure hidden in things they already understand.</p>
-      <div class="progress"><strong>10</strong><span>chapters readable</span><strong>18</strong><span>planned</span></div>
+      <div class="progress"><strong>11</strong><span>chapters readable</span><strong>18</strong><span>planned</span></div>
       <p class="start"><a href={publicationPath('pixels-of-clarity/chapter-01/')}>Start reading Chapter 1 →</a></p>
     </header>
 
@@ -46,32 +46,23 @@ const forthcoming = [
       <p>The book is being written in sequence. Each completed chapter below is part of the live reading edition, not a summary of the project.</p>
       <ol class="chapters">
         {chapters.map(([number, title, note, path]) => (
-          <li>
-            <a href={publicationPath(`pixels-of-clarity/${path}`)}>
-              <span class="number">{number}</span>
-              <span class="chapter-copy"><strong>{title}</strong><small>{note}</small></span>
-              <span class="read">Read →</span>
-            </a>
-          </li>
+          <li><a href={publicationPath(`pixels-of-clarity/${path}`)}><span class="number">{number}</span><span class="chapter-copy"><strong>{title}</strong><small>{note}</small></span><span class="read">Read →</span></a></li>
         ))}
       </ol>
     </section>
 
     <section class="bend">
       <p class="eyebrow">Where the book is now</p>
-      <h2>The bend has happened.</h2>
-      <p>By Chapter 7 the children have discovered three independent structural questions. Chapter 8 deliberately stops the straight march through the taxonomy and lets a new question arise from their own success: <strong>why does this keep showing up?</strong></p>
-      <p>Chapters 9 and 10 return to the formal grammar without closing that philosophical question. The children now have the names <strong>Standing, Bearing, Efficacy</strong> and the idea of <strong>Dimensional Conjunction</strong>: three questions, one completed form.</p>
-      <blockquote>6 × 3 × 3 = 54. But fifty-four what?</blockquote>
-      <p>That is where the live book currently stands.</p>
+      <h2>The map has appeared.</h2>
+      <p>The philosophical bend remains alive, but the formal grammar has now caught up with the children's discoveries. Chapter 11 reveals the fifty-four positions not as fifty-four new definitions, but as the possible conjunctions of three dimensions they already know.</p>
+      <blockquote>6 × 3 × 3 = 54.</blockquote>
+      <p>The next problem is fluency: not merely <strong>where does this go?</strong>, but <strong>why here rather than next door?</strong></p>
     </section>
 
     <section class="forthcoming">
       <p class="eyebrow">The remaining arc</p>
       <h2>What the book is growing toward</h2>
-      <ol>
-        {forthcoming.map(([number, title]) => <li><span>{number}</span><strong>{title}</strong><em>forthcoming</em></li>)}
-      </ol>
+      <ol>{forthcoming.map(([number, title]) => <li><span>{number}</span><strong>{title}</strong><em>forthcoming</em></li>)}</ol>
       <p class="note">The eighteen-chapter shape is a target, not a constraint stronger than the pedagogy. If the unfolding inquiry requires a genuine additional chapter, the learning logic wins.</p>
     </section>
 
@@ -79,10 +70,7 @@ const forthcoming = [
       <p class="eyebrow">Behind the book</p>
       <h2>The structural material remains available</h2>
       <p>This reading page is the front door to the unfolding book. The formal apparatus is still available separately for readers who want to inspect the system directly.</p>
-      <nav>
-        <a href={publicationPath('atlas/')}>Formal 54-cell Atlas →</a>
-        <a href={publicationPath('glossary/')}>Formal Glossary →</a>
-      </nav>
+      <nav><a href={publicationPath('atlas/')}>Formal 54-cell Atlas →</a><a href={publicationPath('glossary/')}>Formal Glossary →</a></nav>
     </section>
   </article>
 </BaseLayout>
